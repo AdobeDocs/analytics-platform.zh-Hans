@@ -4,28 +4,35 @@ description: 了解在Data Warehouse本机解决方案和Customer Journey Analyt
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
+hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
+    internal-label: Privacy
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
-source-wordcount: 888
+source-wordcount: '890'
 ht-degree: 1%
-
 ---
-
 # Experience Platform Data Mirror注意事项
 
 本文介绍了在设置Data Mirror数据集时应考虑的因素。
@@ -88,7 +95,7 @@ ht-degree: 1%
 
 ## 治理差异
 
-在XDM [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)和基础概念（如[字段组](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#field-group)）中，字段组中定义的[字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#field)将其标签传播到使用该字段组的所有数据集。 例如，字段组`identities`中的电子邮件字段`emailID`在所有使用字段组`identities`的数据集中标记为相同。
+在XDM [架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)和基础概念（如[字段组](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group)）中，字段组中定义的[字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field)将其标签传播到使用该字段组的所有数据集。 例如，字段组`identities`中的电子邮件字段`emailID`在所有使用字段组`identities`的数据集中标记为相同。
 
 在关系模式中，列名是独立的。 表`customers`中名为`email`的列与表`prospects`中名为`email`的列独立且不同。 此行为意味着标签（如DULE使用标签、策略）必须单独应用于镜像数据集中的字段。 根据以上示例，您需要将标签同时应用于`customers`数据集中的`email`字段和`prospects`数据集中的`email`字段。
 
@@ -96,6 +103,10 @@ ht-degree: 1%
 
 * 更多手动管理和配置工作适合您这样的客户。
 * 您可能需要明确的指导，因此您不会认为通过字段组进行一次性标签设置足以进行适当治理。
+
+## 数据集设置
+
+{{relational-dataset-important}}
 
 ## 拼接
 
@@ -109,9 +120,9 @@ ht-degree: 1%
 
 以下注意事项适用于系统键和字段：
 
-* 主键、版本描述符和时间戳描述符必须是关系XDM架构中的根级别字段。 在引入期间使用[字段映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)来支持此要求。
-* 您可以在[映射阶段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中忽略相应的源字段。
+* 主键、版本描述符和时间戳描述符必须是关系XDM架构中的根级别字段。 在引入期间使用[字段映射](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)来支持此要求。
+* 您可以在[映射阶段](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema)中忽略相应的源字段。
 
 ## 镜像数据的批次大小
 
-对于配置为连接一部分的任何镜像数据集，必须确保每个为镜像数据集摄取数据的批次不超过100 GB。 有关更多详细信息，请参阅批次摄取的[护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}。
+对于配置为连接一部分的任何镜像数据集，必须确保每个为镜像数据集摄取数据的批次不超过100 GB。 有关更多详细信息，请参阅批次摄取的[护栏](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"}。
