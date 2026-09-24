@@ -3,9 +3,9 @@ title: 将数据转换应用于数据馈送
 description: 了解使用组件设置、派生字段或SQL转换数据馈送数据的不同方法。
 hide: true
 feature: Components
-source-git-commit: 6ee0530b8f67f738274817e2535267d71dee0463
+source-git-commit: 6400a6bfcd65bee012beaf39aca873b2f225e45e
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1594'
 ht-degree: 5%
 ---
 # 将数据转换应用于数据馈送
@@ -28,9 +28,9 @@ ht-degree: 5%
 
 | 方法 | 优点 | 缺点 |
 | --- | --- | --- |
-| **组件设置** | <ul><li>在提交数据馈送之前在报告时应用。</li><li>在Analysis Workspace和数据馈送输出中，相同的逻辑始终适用。</li><li>不使用您帐户中有限的某个派生字段。 （您可以使用的组件设置数量没有限制。）</li><li>某些转换（如持久性和量度重复数据删除）很难在SQL中复制，并且当前在派生字段中也不可能实现持久性。</li></ul> | <ul><li>仅适用于每个组件支持的特定设置集 — 没有使用派生字段构建自定义逻辑那么灵活。</li><li>对于一些设置，是否影响数据馈送输出仍待确认。 请参阅下表。</li></ul> |
-| **派生字段** | <ul><li>在提交数据馈送之前在报告时应用。</li><li>在Analysis Workspace和数据馈送输出中，相同的逻辑始终适用。</li><li>与任何单个组件设置（如链接条件规则）相比，支持更灵活的自定义逻辑。</li><li>某些转换，特别是那些依赖范围设置或解析URL的转换很难在SQL中复制。</li></ul> | <ul><li>增加了处理开销，这可能会影响数据馈送提交性能。<!--Under a future usage-based pricing model, this could also add cost.--></li><li>使用您帐户中有限的派生字段之一。 如果组件设置可以执行相同的转换，则首选进行转换。</li></ul> |
-| **SQL** | <ul><li>不受适用于派生字段的函数和运算符限制限制。</li><li>对数据馈送提交性能没有影响。</li></ul> | <ul><li>已在提交数据馈送后应用。</li><li>逻辑在Analysis Workspace中不适用，因此您需要单独在该处复制逻辑。</li><li>有些转换（特别是那些依赖范围设置、解析URL、删除重复值或跨范围保留值的转换）比较难以复制或不切实际。</li></ul> |
+| **组件设置** | <ul><li>在提交数据馈送之前在报告时应用。</li><li>在Analysis Workspace和数据馈送输出中，相同的逻辑始终适用。</li><li>不使用您帐户中有限的某个派生字段。</li><li>您可以使用的组件设置数量没有限制。</li></ul> | <ul><li>仅适用于每个组件支持的特定设置集。 没有使用派生字段构建自定义逻辑那么灵活。</li></ul> |
+| **派生字段** | <ul><li>在提交数据馈送之前在报告时应用。</li><li>在Analysis Workspace和数据馈送输出中，相同的逻辑始终适用。</li><li>与任何单个组件设置（如链接条件规则）相比，支持更灵活的自定义逻辑。</li><li>某些转换，特别是那些依赖范围设置或解析URL的转换很难在SQL中复制。</li></ul> | <ul><li>增加了处理开销，这可能会影响数据馈送提交性能。<!--Under a future usage-based pricing model, this could also add cost.--></li><li>使用您帐户中有限的派生字段之一。 如果组件设置可以执行相同的转换，请改用它。</li></ul> |
+| **SQL** | <ul><li>不受适用于派生字段的函数和运算符限制限制。</li><li>对数据馈送提交性能没有影响。</li></ul> | <ul><li>已在提交数据馈送后应用。</li><li>逻辑在Analysis Workspace中并不适用，因此您需要在该处单独复制逻辑。</li><li>某些转换很难复制或不切实际，特别是那些依赖范围设置、解析URL或跨范围消除重复或保留值的转换。</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -65,7 +65,7 @@ ht-degree: 5%
 | **将量度的范围设为基于事件、配置文件或总数** | [范围](/help/data-views/component-settings/scope.md) | 不可用 | | | <!--Not yet discussed with the team. Don't assume this affects data feed output until confirmed.--> |
 | **拆分分隔值** | [Substring](/help/data-views/component-settings/substring.md) （分隔符或来自左/右方法） | [拆分](/help/data-views/derived-fields/derived-fields.md#split) | 简单/适中 | 组件设置<p>推荐原因：</p><ul><li>相同的逻辑在Analysis Workspace和数据馈送输出中始终如一地适用（对于SQL则不可能）</li><li>它不会占用您有限的派生字段之一。</li></ul> | |
 | **汇总或聚合作用域中的值** | 不可用 | [摘要](/help/data-views/derived-fields/derived-fields.md#summarize) | 困难 | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 取决于范围设置。 请参阅[作用域设置如何影响数据馈送](#scope-settings)。 |
-| **从字符串修剪字符** | [Substring](/help/data-views/component-settings/substring.md) （Trim方法） | [修剪](/help/data-views/derived-fields/derived-fields.md#trim) | 简单/适中 | 组件设置<p>所有三种方法都会产生相同的结果，但首选组件设置，因为：</p><ul><li>相同的逻辑在Analysis Workspace和数据馈送输出中始终如一地适用（对于SQL则不可能）</li><li>它不会占用您有限的派生字段之一。</li></ul> | |
+| **从字符串修剪字符** | [Substring](/help/data-views/component-settings/substring.md) （Trim方法） | [修剪](/help/data-views/derived-fields/derived-fields.md#trim) | 简单/适中 | 组件设置<p>推荐原因：</p><ul><li>相同的逻辑在Analysis Workspace和数据馈送输出中始终如一地适用（对于SQL则不可能）</li><li>它不会占用您有限的派生字段之一。</li></ul> | |
 
 {style="table-layout:auto"}
 
@@ -80,6 +80,6 @@ ht-degree: 5%
 
 ## 派生字段函数模板
 
-[派生字段函数模板](/help/data-views/derived-fields/derived-fields.md#templates)允许您为特定用例快速创建派生字段，例如构建营销渠道、检测机器人或从URL提取UTM参数。 由于模板是从预建规则链构建的，因此在SQL中几乎总是最好使用模板来重制相同的逻辑。
+[派生字段函数模板](/help/data-views/derived-fields/derived-fields.md#templates)允许您为特定用例快速创建派生字段，例如构建营销渠道、检测机器人或从URL提取UTM参数。 由于模板是从预建规则链构建的，因此使用模板几乎总是比在SQL中从头开始重现相同的逻辑要好，就像使用`Marketing Channel Template`一样。
 
 如果模板包含依赖于“范围”设置的函数，则模板会继承该函数的范围警告。 请参阅[作用域设置如何影响数据馈送](#scope-settings)。
