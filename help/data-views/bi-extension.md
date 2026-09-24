@@ -8,27 +8,36 @@ exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
 TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Privacy
+source-git-commit: 8dc03b7c76c53c327f4a20c8fa9d75298d3d13c1
 workflow-type: tm+mt
-source-wordcount: 3763
-ht-degree: 87%
-
+source-wordcount: '3765'
+ht-degree: 86%
 ---
-
 # Customer Journey Analytics BI 扩展
 
 {{select-package}}
@@ -65,7 +74,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-1. 在Experience Platform[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#migrate-credentials)。
+1. 在Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建[未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)。
 
 1. 确保Customer Journey Analytics产品和产品配置文件具有未过期的凭据。 您必须是组织系统管理员才能执行以下步骤。
    1. 从![应用程序](/help/assets/icons/Apps.svg)中选择&#x200B;**[!UICONTROL Admin Console]**。
@@ -127,7 +136,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
-   1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
+   1. 若要复制命令字符串，请使用 **[!UICONTROL ** PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
 1. 打开命令或终端窗口。
 
@@ -160,9 +169,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 更多...]**。
 
-   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL 数据库&#x200B;**]**。
+   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL ** PostgresSQL 数据库&#x200B;**]**。
 
-   1. 在 **[!UICONTROL **&#x200B; PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
+   1. 在 **[!UICONTROL ** PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -201,7 +210,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从左边栏中的&#x200B;**[!UICONTROL **&#x200B;至服务器&#x200B;**]**&#x200B;中选择&#x200B;**[!UICONTROL **&#x200B;更多&#x200B;**]**。
 
-   1. 从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]**。
+   1. 从列表中选择 **[!UICONTROL ** PostgresSQL **]**。
 
    1. 在 [!UICONTROL PostgresSQL] 对话框中：
 
@@ -312,7 +321,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 ## 功能
 
-默认情况下，您的数据视图具有从其友好名称生成的表安全名称。 例如，名为[!UICONTROL 我的 Web 数据视图]的数据视图的视图名称为 `my_web_data_view`。 您可以定义一个在 BI 工具中用于数据视图的首选名称。 请参阅[数据视图设置](create-dataview.md#settings)，以了解更多信息。
+默认情况下，数据视图的表名是从数据视图默认外部ID生成的。 例如，名为&#x200B;**[!UICONTROL 我的Web数据视图]**&#x200B;的数据视图具有外部ID `My_web_data_view`。 您可以定义一个在 BI 工具中用于数据视图的首选名称。 请参阅[数据视图设置](create-dataview.md#settings)，以了解更多信息。
 
 如果要使用数据视图 ID 作为表名称，可以在连接时将可选的 `CJA_USE_IDS` 设置添加到数据库名称。 例如，`prod:cja?CJA_USE_IDS` 显示具有 `dv_ABC123` 等名称的数据视图。
 
@@ -327,12 +336,12 @@ Customer Journey Analytics 中与数据治理相关的设置继承自 Adobe Expe
 在标准 PostgreSQL CLI 中，可以使用 `\dv` 列出视图
 
 ```sql
-prod:all=> \dv
+prod:cja=> \dv
                        List of relations
  Schema |                    Name                    | Type |  Owner             
 --------+--------------------------------------------+------+----------
- public | my_web_data_view                           | view | postgres
- public | my_mobile_data_view                        | view | postgres
+ public | My_web_data_view                           | view | postgres
+ public | My_mobile_data_view                        | view | postgres
 ```
 
 ### 嵌套与扁平化处理
