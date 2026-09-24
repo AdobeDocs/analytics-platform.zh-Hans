@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 1%
+ht-degree: 4%
 ---
 # 数据导出用例 {#data-export-use-cases}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="使用与数据馈送类似的导出功能"
->abstract="虽然Customer Journey Analytics中尚无法完全取代数据馈送，但可通过完整表导出、Platform数据集导出、BI工具集成和报表API来实现类似功能。"
+>abstract="虽然 Customer Journey Analytics 尚未提供可完全替代数据馈送的功能，但您可以通过完整表导出、Platform 数据集导出、BI 工具集成和报表 API 实现类似功能。"
 
 <!-- markdownlint-enable MD034 -->
 
