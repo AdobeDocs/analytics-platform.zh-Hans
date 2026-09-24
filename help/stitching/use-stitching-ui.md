@@ -8,19 +8,21 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: caf1e4497d5dbe370ce23481ee1fbf1b6db59bf6
+    internal-label: Admin
+source-git-commit: 79f124f639c35a97991690e18f6451fc20b02da9
 workflow-type: tm+mt
-source-wordcount: 1788
+source-wordcount: '1788'
 ht-degree: 20%
-
 ---
-
 # 启用拼接
 
 您可以对作为连接的一部分配置的一个或多个事件数据集启用拼合。 您许可的Customer Journey Analytics包将决定您能够为拼合启用的事件数据集数量。
@@ -38,58 +40,58 @@ ht-degree: 20%
 * 如果您要为永久ID或人员ID使用[体验数据模型(XDM)架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)字段，请确保在架构中为事件数据集正确标记了身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
 * 验证持久ID和人员ID的标识覆盖范围：
 
-   * **[!UICONTROL 永久ID]**
+  * **[!UICONTROL 永久ID]**
 
-     查询7天的数据，其中您的永久ID字段不为null，并除以针对数据集中所有事件的7天数据查询。 该百分比应高于95%。
+    查询7天的数据，其中您的永久ID字段不为null，并除以针对数据集中所有事件的7天数据查询。 该百分比应高于95%。
 
-     可用于验证的查询示例：
+    可用于验证的查询示例：
 
-     ```sql
-     SELECT
-       COUNT(*) AS total_events,
-       COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
-       ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
-     FROM 
-       {DATASET_TABLE_NAME}
-     WHERE
-       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-     ```
+    ```sql
+    SELECT
+      COUNT(*) AS total_events,
+      COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
+      ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
+    FROM 
+      {DATASET_TABLE_NAME}
+    WHERE
+      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+      AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
+    ```
 
-     其中：
+    其中：
 
-      * `{PERSISTENT_ID_FIELD}`是永久ID的字段。 例如：`identityMap.ecid[0]`。
+    * `{PERSISTENT_ID_FIELD}`是永久ID的字段。 例如：`identityMap.ecid[0]`。
+    * `{DATASET_TABLE_NAME}`是事件数据集的表名称。
+    * `{FORMAT_STRING}`是时间戳字段的格式字符串。 例如：`MM/DD/YY HH12:MI AM`。
+    * `{START_DATE}`是开始日期。 例如：`2024-01-01 00:00:00`。
+    * `{END_DATE}`是标准格式的结束日期。 例如：`2024-01-08 00:00:00`。
+
+
+  * **[!UICONTROL 人员 ID]**
+    * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 您可以通过转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}运行测试，并通过一些示例永久ID值查询该图形。 验证这些永久ID值是否与图表中的人员ID值相关联。
+    * 对于基于字段的拼合，请查询7天的数据，其中人员ID字段不为null，然后除以针对数据集中所有事件的7天数据查询。 理想情况下，该百分比应高于5%。
+
+      可用于验证的查询示例：
+
+      ```sql
+      SELECT
+        COUNT(*) AS total_events,
+        COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+        ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+      FROM 
+        {DATASET_TABLE_NAME}
+      WHERE
+        TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+        AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
+      ```
+
+      其中：
+
+      * `{PERSON_ID_FIELD}`是人员ID的字段。 例如：`identityMap.crmId[0]`。
       * `{DATASET_TABLE_NAME}`是事件数据集的表名称。
       * `{FORMAT_STRING}`是时间戳字段的格式字符串。 例如：`MM/DD/YY HH12:MI AM`。
       * `{START_DATE}`是开始日期。 例如：`2024-01-01 00:00:00`。
       * `{END_DATE}`是标准格式的结束日期。 例如：`2024-01-08 00:00:00`。
-
-
-   * **[!UICONTROL 人员 ID]**
-      * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 您可以通过转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}运行测试，并通过一些示例永久ID值查询该图形。 验证这些永久ID值是否与图表中的人员ID值相关联。
-      * 对于基于字段的拼合，请查询7天的数据，其中人员ID字段不为null，然后除以针对数据集中所有事件的7天数据查询。 理想情况下，该百分比应高于5%。
-
-        可用于验证的查询示例：
-
-        ```sql
-        SELECT
-          COUNT(*) AS total_events,
-          COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-          ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-        FROM 
-          {DATASET_TABLE_NAME}
-        WHERE
-          TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-          AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-        ```
-
-        其中：
-
-         * `{PERSON_ID_FIELD}`是人员ID的字段。 例如：`identityMap.crmId[0]`。
-         * `{DATASET_TABLE_NAME}`是事件数据集的表名称。
-         * `{FORMAT_STRING}`是时间戳字段的格式字符串。 例如：`MM/DD/YY HH12:MI AM`。
-         * `{START_DATE}`是开始日期。 例如：`2024-01-01 00:00:00`。
-         * `{END_DATE}`是标准格式的结束日期。 例如：`2024-01-08 00:00:00`。
 
 
 
@@ -194,8 +196,8 @@ ht-degree: 20%
 **[!UICONTROL 拼接量度]**&#x200B;是使用最近7天带有事件时间戳的数据示例集计算的。 此样本数据集通常不同于&#x200B;**[!UICONTROL 预览]**&#x200B;表中使用的样本数据。 拼接量度提供以下内容的详细信息：
 
 * **[!UICONTROL 人员ID覆盖率]**：拼接过程中用于标识的选定人员ID覆盖率（实时和重播）。
-   * 为了获得基于字段的最佳拼接结果，应在每个永久ID（设备信息）的至少一个事件中发送个人ID（用户信息）。
-   * 为了获得最佳的基于图形的拼接结果，每个永久ID的身份图中应存在一个（永久ID、人员ID）关系。
+  * 为了获得基于字段的最佳拼接结果，应在每个永久ID（设备信息）的至少一个事件中发送个人ID（用户信息）。
+  * 为了获得最佳的基于图形的拼接结果，每个永久ID的身份图中应存在一个（永久ID、人员ID）关系。
 
   人员ID覆盖范围显示为百分比，并与在稳定开发或生产设置中推荐的内容进行比较。 此覆盖值越高，使用选定的人员ID获得的拼接结果就越好。
 

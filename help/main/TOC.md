@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
+source-git-commit: 137eef954a6300405aa2c045ff29008e1daa72ce
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 92%
+source-wordcount: '1496'
+ht-degree: 93%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
 
@@ -428,14 +428,14 @@ ht-degree: 92%
     + [管理导出日志](/help/components/exports/manage-export-logs.md)
     + [导出故障诊断](/help/components/exports/troubleshoot-exports.md)
     + 数据馈送 {#cja-data-feeds}
-      + {hide-from-toc}[数据馈送概述](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc}[概述](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[比较Adobe Analytics数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc}[比较Workspace和数据馈送](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc}[准备映射列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[映射列](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
-      + {hide-from-toc}[在数据馈送中使用派生字段](/help/components/exports/cja-data-feeds/df-derived-fields.md)
+      + {hide-from-toc}[应用数据转换](/help/components/exports/cja-data-feeds/df-data-transformations.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
