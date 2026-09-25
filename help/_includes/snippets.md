@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '5542'
-ht-degree: 97%
+source-wordcount: '5602'
+ht-degree: 96%
 ---
 # 片段
 
@@ -329,7 +329,10 @@ Customer Journey Analytics 中的各种可视化图表旨在分析您为客户�
 
 ## 关系数据集重要消息 {#relational-dataset-important}
 
+关系数据集基于关系架构类型。 在该关系架构&#x200B;**中定义的关系描述符通常不适用于Customer Journey Analytics连接的定义和配置，也不适用于关系数据集的特定数据集设置。**
+
+此外，在Customer Journey Analytics中，标准XDM架构&#x200B;**中的字段不会自动将**&#x200B;与关系架构中的类似命名字段合并。
 >[!IMPORTANT]
 >
->关系数据集基于关系架构类型。 在该关系架构中定义的关系描述符没有关联，通常不适用于Customer Journey Analytics连接的定义和配置，也不适用于关系数据集的特定数据集设置。 <br/><br>对于Customer Journey Analytics报表和分析，您需要在[数据集设置](/help/connections/create-connection.md#relational-dataset)中明确配置如何基于通用人员ID或帐户ID将关系数据集中的数据连接到其他数据集。
+>对于Customer Journey Analytics报表和分析，您需要在[数据集设置](/help/connections/create-connection.md#relational-dataset)中明确配置如何基于通用人员ID或帐户ID将关系数据集中的数据连接到其他数据集。 <br/><br/>考虑使用派生字段[合并字段](/help/data-views/derived-fields/derived-fields.md#merge-fields)函数在XDM架构和关系架构中合并类似的命名字段（不是对象数组的一部分）。 对于对象数组中的字段，当前不存在用于在XDM和相关架构之间合并字段的解决方案。
 >
