@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
+source-git-commit: ede5644096e8b1169819fb94399d5360066ca529
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1746'
 ht-degree: 0%
 ---
 # 在Customer Journey Analytics和Adobe Analytics中比较数据馈送
@@ -93,6 +93,7 @@ Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三
 | **分段**<br/>&#x200B;使用区段筛选数据馈送输出的功能。 | 应用于数据视图的区段由数据馈送自动继承。 其他区段也可以直接应用于单个数据馈送。 有关详细信息，请参阅数据馈送中的[分段](/help/components/exports/cja-data-feeds/df-segmentation.md)。 | 不支持。 数据馈送会导出所有收集的数据，而不进行区段过滤。 |
 | **计算指标**<br/>&#x200B;可从现有指标创建的自定义指标。 | 不受支持 | 不受支持 |
 | **持久性模型**<br/>&#x200B;维度值如何或是否从一个事件持续到下一个事件。 | 灵活。 数据视图中的持久性设置（分配和到期）在生成馈送时在报告时应用。 支持数据视图中可用的所有分配设置：**原有**、**最近**、**全部**、**第一个已知**&#x200B;和&#x200B;**最后一个已知**。 | 仅表示&#x200B;**最近（最近联系）**&#x200B;和&#x200B;**原始值（首次联系）**&#x200B;归因模型。 线性分配的处理方式与最近联系相同。 |
+| **子事件处理**<br/>&#x200B;子事件在数据馈送输出中的表示方式。 | 以单行表示，但保留关系层次结构。 有关详细信息，请参阅数据馈送中的[子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)。 | 在一行中表示为扁平的分隔字符串。 解析字符串需要自定义逻辑。 |
 | **输出文件格式**<br/>&#x200B;用于数据馈送输出文件的格式已传送到您的云目标。 | Parquet<p>本机支持复杂的嵌套和结构化数据。 诸如`post_product_list`之类的字段表示为结构化数组/嵌套对象。 </p><p>需要Parquet感知工具才能读取，例如BigQuery、Snowflake或Apache Spark。</p><p>架构结构嵌入在输出文件中。</p> | TSV<p>平坦、可读的行。 本身不支持结构化数据；复杂字段（如产品列表）必须编码为需要自定义分析逻辑的专有分隔字符串。</p> |
 | **输出文件路径**<br/>&#x200B;用于传送的输出文件的目录结构。 | 使用&#x200B;**配置单元样式分区路径**（例如，`year=2024/month=01/day=15/`），在数据湖环境（如Databricks或Apache Spark）中查询数据时启用高效分区修剪。 | 使用平面目录结构。 不支持配置单元样式路径。 |
 | **交付目标**<br/>&#x200B;可以发送数据馈送输出文件的云存储位置。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 <p>还支持&#x200B;**SFTP**。</p> |

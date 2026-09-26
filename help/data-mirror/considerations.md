@@ -4,7 +4,6 @@ description: 了解在Data Warehouse本机解决方案和Customer Journey Analyt
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
@@ -28,14 +27,18 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Experience Platform Data Mirror注意事项
 
 本文介绍了在设置Data Mirror数据集时应考虑的因素。
+
+## 限制
+
+{{relational-dataset-important}}
 
 ## 源表的新列
 
@@ -103,10 +106,6 @@ ht-degree: 1%
 
 * 更多手动管理和配置工作适合您这样的客户。
 * 您可能需要明确的指导，因此您不会认为通过字段组进行一次性标签设置足以进行适当治理。
-
-## 数据集设置
-
-{{relational-dataset-important}}
 
 ## 拼接
 
