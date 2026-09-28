@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
 workflow-type: tm+mt
-source-wordcount: '10488'
-ht-degree: 92%
+source-wordcount: '10597'
+ht-degree: 91%
 ---
 # 创建或编辑连接 {#create-or-edit-a-connection}
 
@@ -844,13 +844,13 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->虽然可以配置和选择，但出于性能原因，您应该避免将临时数据集用于时间序列（事件、摘要）数据。 关系型数据集或基于通用 XDM 的数据集比临时数据集更适合用于时间序列数据。
+>尽管可以配置和选择，但出于性能原因，您应该避免将临时数据集用于时间序列（事件、摘要）数据。 关系型数据集或基于通用 XDM 的数据集比临时数据集更适合用于时间序列数据。
 
 临时数据集的具体设置包括：
 
 | 设置 | 选定的数据集类型 | 描述 |
 |---|---|---|
-| **[!UICONTROL 数据集类型]** | 不适用 | 临时数据集中的数据类型。 可能的值包括：**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;和&#x200B;**[!UICONTROL 摘要]**。 |
+| **[!UICONTROL 数据集类型]** | 不适用 | 临时数据集中的数据类型。 可能的值为： **[!UICONTROL Event]**、**[!UICONTROL Profile]** （不适用于[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}）、**[!UICONTROL Lookup]**&#x200B;和&#x200B;**[!UICONTROL Summary]**。 如果要为基于帐户的连接使用临时配置文件数据，请选择&#x200B;**[!UICONTROL 查找]**&#x200B;作为&#x200B;**[!UICONTROL 数据集类型]**，并使用&#x200B;**[!UICONTROL 键]**&#x200B;和&#x200B;**[!UICONTROL 匹配键]**&#x200B;引入帐户数据。 |
 | **[!UICONTROL 人员 ID]** | 事件、轮廓 | 从临时或关系架构中选择表示人员 ID 的字段。 此字段可以是数据集中的任何字段。 从&#x200B;**[!UICONTROL 身份标识命名空间字段]**&#x200B;或从&#x200B;**[!UICONTROL 非身份标识字段]**&#x200B;中选择。 <br/>如果临时架构中的一个或多个字段标记为身份标识并具有身份标识命名空间，就只能从&#x200B;**[!UICONTROL 身份标识命名空间]**&#x200B;中选择一个标识符。 |
 | **[!UICONTROL 身份标识命名空间]** | 事件 | 如果您从&#x200B;**[!UICONTROL 非身份标识]**&#x200B;字段中选择了人员 ID，请选择一个身份标识命名空间。 |
 | **[!UICONTROL 时间戳]** | 事件、摘要 | 从临时架构中选择一个表示时间戳字段的字段。 此字段可以是任何类型为 `DateTime` 的可用字段。 |
@@ -871,7 +871,7 @@ ht-degree: 92%
 
 | 设置 | 选定的数据集类型 | 描述 |
 |---|---|---|
-| **[!UICONTROL 数据集类型]** | 不适用 | 关联型数据集中的数据类型。<br/>如果数据集中包含时间序列数据，那么可能的值包括：**[!UICONTROL 事件]**&#x200B;和&#x200B;**[!UICONTROL 摘要]**。 <br/>如果数据集中包含记录数据，那么可能的值包括：**[!UICONTROL 轮廓]**&#x200B;和&#x200B;**[!UICONTROL 查找]**。 |
+| **[!UICONTROL 数据集类型]** | 不适用 | 关联型数据集中的数据类型。<br/>如果数据集中包含时间序列数据，那么可能的值包括：**[!UICONTROL 事件]**&#x200B;和&#x200B;**[!UICONTROL 摘要]**。 <br/>如果数据集包含记录数据，可能的值为： **[!UICONTROL 配置文件]** （不适用于[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}）和&#x200B;**[!UICONTROL 查找]**。 如果要将关系配置文件数据用于基于帐户的连接，请选择&#x200B;**[!UICONTROL 查找]**&#x200B;作为&#x200B;**[!UICONTROL 数据集类型]**，并使用&#x200B;**[!UICONTROL 键]**&#x200B;和&#x200B;**[!UICONTROL 匹配键]**&#x200B;引入帐户数据。 |
 | **[!UICONTROL 人员 ID]** | 事件、轮廓 | 从关系架构中选择表示人员 ID 的字段。 此选择仅限于在关系架构中标记为身份标识并具有身份标识命名空间的字段的列表。 |
 | **[!UICONTROL 时间戳]** | 事件、摘要 | 在架构中定义为时间戳描述符的字段。 此字段会自动填充。 |
 | **[!UICONTROL 键]** | 查找 | 用于查找数据集的键。<br/>如果记录中不包含您为查找数据集选择的键值，就会跳过该记录。 |
