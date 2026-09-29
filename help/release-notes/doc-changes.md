@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 29538d06c3b4a6db567c2a84e5785cc56af3d33d
+source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
 workflow-type: tm+mt
-source-wordcount: '7124'
-ht-degree: 97%
+source-wordcount: '7162'
+ht-degree: 96%
 ---
 
 # Customer Journey Analytics - 文档更新
@@ -70,6 +70,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年9月** | |
+| 箭头和流失的历程画布比较 | 更新了[中的“[!UICONTROL 与]”比较设置。配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)以显示历程中的每个节点、箭头和流失上现在显示日期范围之间的百分比变化。 |
 | 已合并的博客帖子 | 合并了以下博客帖子：<ul><li>[在Adobe CJA中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=zh-Hans#M598)</li><li>[Adobe Experience Platform和Customer Journey Analytics数据出口用例深入探讨](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=zh-Hans)</li></ul>在我们的[数据导出](/help/use-cases/data-export/overview.md)用例和新的[无值](/help/use-cases/data-views/no-value.md)用例文章中。 |
 | 新的调整大小快捷方式操作 | Analysis Workspace中新增的键盘快捷键现在允许您[调整面板或可视化图表的大小](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization)：更宽、更窄、更高或更短。 |
 | **2026年8月** | |
