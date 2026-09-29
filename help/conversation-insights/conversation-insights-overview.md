@@ -2,17 +2,32 @@
 title: 对话分析概述
 description: 了解“对话见解”的价值及术语，并了解“对话见解”的工作方式。
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1114'
 ht-degree: 1%
 ---
 # 对话分析
 
-对话分析允许您从提供给客户的座席体验分析对话。 这些代理体验可以基于大型语言模型(LLM)或基于人类对话。 “对话见解”可以大规模分析对话，并在整个客户历程中为这些对话提供上下文。 通过对话分析，您可以了解座席对实际用户结果的影响。
+对话分析允许您从提供给客户的座席体验分析对话。 这些代理体验可以基于大型语言模型(LLM)或基于人类对话。 例如，与客户或呼叫中心进行交互的聊天机器人成绩单。
+
+“对话见解”可以大规模分析对话，并在整个客户历程中为这些对话提供上下文。 通过对话分析，您可以了解座席对实际用户结果的影响。
 
 对话分析可解决您可能会遇到的问题。 例如：
 
@@ -29,7 +44,7 @@ ht-degree: 1%
 * 用户向代理询问什么。
 * 对话对您的KPI有何影响。
 
-您可以确定代理执行指令的方式、代理遵守品牌准则的程度以及运行代理的成本是否合理。
+您可以确定代理如何执行指令，代理遵守品牌准则的程度如何，以及结果是否与运行代理的成本相符。
 
 
 ## 概念
@@ -146,7 +161,7 @@ ht-degree: 1%
 * **信号提取和对话混合**：将非结构化提示和响应（也称为turns）转换为可报告的数据点，如意图和情绪。 这样用户就可以大规模地报告这些数据点。
 * **报告**：要确定代理的有效性和ROI，请在客户历程的上下文中大规模分析对话。
 
-下面显示了数据收集、信号提取和会话混合的总体过程。
+下面介绍了数据收集、信号提取和会话混合的总体过程。
 
 ![会话工作原理分析插图](assets/conversation-insights.png){zoomable="yes"}
 

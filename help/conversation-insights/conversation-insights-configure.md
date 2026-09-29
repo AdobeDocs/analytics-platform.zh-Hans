@@ -2,18 +2,31 @@
 title: 创建或编辑对话分析配置
 description: 了解如何配置对话分析配置。
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 8%
+source-wordcount: '654'
+ht-degree: 7%
 ---
 # 创建或编辑配置
 
-
-对话见解使您能够大规模分析对话(从大型语言模型(LLM)或人)，并在整个客户历程中提供这些对话的上下文。 通过对话分析，您可以了解代表对实际用户结果的影响。
+对话分析允许您从提供给客户的座席体验分析对话。 这些代理体验可以基于大型语言模型(LLM)或基于人类对话。 例如，与客户或呼叫中心进行交互的聊天机器人成绩单。
+通过对话分析，您可以了解代表对实际用户结果的影响。
 
 通过对话见解配置界面，您可以快速创建或编辑配置和相关工件（连接、数据视图等）。
 
@@ -88,7 +101,7 @@ ht-degree: 8%
 
    * 为尚未创建的新配置选择&#x200B;**[!UICONTROL 放弃]**。
 
-   * 对于要保存但不想为其创建项目（例如数据视图的更新）的新配置，请选择&#x200B;**[!UICONTROL 保存以供以后使用]**。 因此，您可以稍后重新访问配置，并完成配置的实际创建。
+   * 对于要保存但不想为其创建项目（例如数据视图的更新）的新配置，请选择&#x200B;**[!UICONTROL 保存以供以后使用]**。 您可以稍后重新访问配置，并完成配置的实际创建。
 
    * 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建新配置。
 
