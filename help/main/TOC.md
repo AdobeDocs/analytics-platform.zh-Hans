@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: afc1b55eb54b5f3342800489d0a7f63508ee8b10
+source-git-commit: 9d7c1ca888432c74251b3bc131efc97d19c4ef8b
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1504'
 ht-degree: 92%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
@@ -204,6 +204,7 @@ ht-degree: 92%
     + [热键](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [调色板](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [视图密度](../analysis-workspace/build-workspace-project/view-density.md)
+    + {hide-from-toc}[使用缓存的结果](../analysis-workspace/build-workspace-project/cached-results.md)
     + [调试程序](../analysis-workspace/build-workspace-project/debugger.md)
   + 模板 {#templates}
     + [使用模板](../analysis-workspace/templates/use-templates.md)
@@ -436,7 +437,7 @@ ht-degree: 92%
       + {hide-from-toc}[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[应用数据转换](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[数据馈送中的子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + 数据馈送中的{hide-from-toc}[子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)

@@ -7,25 +7,33 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 TQID: https://experienceleague.adobe.com/DWTWJ2Bd9iEPO2awiiOLcUzUGPc-clZul3dNFcyWvxk
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
 workflow-type: tm+mt
-source-wordcount: 459
+source-wordcount: '459'
 ht-degree: 88%
-
 ---
-
 # 创建项目 {#create-projects}
 
 
@@ -49,15 +57,15 @@ ht-degree: 88%
 * 将[面板](/help/analysis-workspace/c-panels/panels.md)添加到您的项目中。 例如，**[!DNL Example Panel]** ➊。
 
 * 在您的面板中添加[可视化效果](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。 例如：
-   * **[!DNL Line Graph]** [线形图](/help/analysis-workspace/visualizations/line.md)可视化图表➋
-   * **[!DNL Countries]** [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表➌
+  * **[!DNL Line Graph]** [线形图](/help/analysis-workspace/visualizations/line.md)可视化图表➋
+  * **[!DNL Countries]** [自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)可视化图表➌
 * 在可视化效果中添加[组件](/help/components/overview.md) 例如：
-   * **[!DNL Store Country]** [维度](/help/components/dimensions/overview.md) ➍
-   * **[!DNL People]** [量度](/help/components/apply-create-metrics.md) ➎
-   * **[!DNL Avg Order Value]** [计算量度](/help/components/calc-metrics/calc-metr-overview.md) ➏
-   * **[!DNL Mobile App Sessions]** [区段](/help/components/segments/seg-overview.md) ➐
-   * **[!DNL Last Month]** [日期范围](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [注释](/help/components/annotations/overview.md) ➒
+  * **[!DNL Store Country]** [维度](/help/components/dimensions/overview.md) ➍
+  * **[!DNL People]** [量度](/help/components/apply-create-metrics.md) ➎
+  * **[!DNL Avg Order Value]** [计算量度](/help/components/calc-metrics/calc-metr-overview.md) ➏
+  * **[!DNL Mobile App Sessions]** [区段](/help/components/segments/seg-overview.md) ➐
+  * **[!DNL Last Month]** [日期范围](/help/components/date-ranges/overview.md) ➑
+  * **[!DNL Example]** [注释](/help/components/annotations/overview.md) ➒
 
 
 ## 项目信息和设置 {#project-info-settings}
@@ -98,5 +106,11 @@ ht-degree: 88%
 | [视图密度](/help/analysis-workspace/build-workspace-project/view-density.md) | 通过减小左侧面板、自由格式表和同类群组表的垂直边距，让您可在屏幕上看到更多数据。 |
 | 允许评论 | 该选项启用后，Analysis Workspace 中项目的右侧栏中会显示一个评论区域。 有关详细信息，请参阅[在项目中添加和管理评论](/help/analysis-workspace/build-workspace-project/comment-projects.md)。 |
 
+<!--
 
+Add this to the table above (second-to-last-row) when cached results releases: 
+
+- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-results.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
+
+-->
 
