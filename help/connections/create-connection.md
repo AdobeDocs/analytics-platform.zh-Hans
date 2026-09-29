@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+TQID: 'https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -21,6 +21,8 @@ subfeature_v2:
     internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -31,10 +33,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
+source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
 workflow-type: tm+mt
-source-wordcount: '10597'
-ht-degree: 91%
+source-wordcount: '10738'
+ht-degree: 90%
 ---
 # 创建或编辑连接 {#create-or-edit-a-connection}
 
@@ -724,7 +726,29 @@ ht-degree: 91%
 
 
 
-#### 事件数据集
+#### 事件数据集 {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="启用行筛选"
+>abstract="行过滤器可确定哪些事件被摄取到Customer Journey Analytics中。 仅摄取与包含规则匹配的事件。 所有其他事件将被永久排除，并且无法用于Customer Journey Analytics中的报表、分段或分析。<ul><li>您最多可以创建10个过滤器。</li><li> 对过滤器的更改仅适用于更改后摄取的新数据，不会追溯影响之前摄取的数据或触发历史回填。</li></ul>"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_field"
+>title="字段"
+>abstract="从事件数据集中选择一个字段以用于条件。 您可以使用任何类型的任何字段。"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_operator"
+>title="条件"
+>abstract="选择运算符。 运算符用于根据值验证所选字段。"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_values"
+>title="值"
+>abstract="输入一个或多个值。 使用确切的字符串值。 使用逗号分隔值。 每个逗号分隔的值都被视为不同的值，并包含在条件中。"
 
 事件数据集的具体设置取决于连接的类型。
 

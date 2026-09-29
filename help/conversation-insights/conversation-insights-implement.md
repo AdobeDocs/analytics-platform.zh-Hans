@@ -2,12 +2,25 @@
 title: 实施对话分析
 description: 了解如何检测代理应用程序或服务以进行对话分析。
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2322'
 ht-degree: 6%
 ---
 # 实施对话分析
@@ -19,19 +32,19 @@ ht-degree: 6%
 >[!PREREQUISITES]
 >
 >* 您必须具有可用于收集数据的Experience Platform环境（组织和沙盒）。
->* 必须为实验代理和对话字段组启用您的Adobe组织。
+>* 必须为代理和对话字段组启用您的Adobe组织。
 >
 
 ## 架构和数据集
 
-为主要对话事件配置数据集：提示、响应、反馈。 这些数据集可以基于相同的架构（例如，通用的对话分析架构），也可以基于单独的架构。
-您可以为提示、响应和反馈定义单独的数据集，也可以将数据合并到数据集中。 例如，使用一个数据集进行提示和响应，使用另一个数据集进行反馈。 或者对所有对话事件使用单个数据集。
+为主要对话事件配置数据集：提示、响应、反馈。 提示、响应和反馈数据集必须使用[对话事件字段组](#conversation-event-field-group)扩展XDM体验事件基本架构，并且可以选择包含[代理信息字段组](#agentic-information-field-group)和其他[其他字段组](#additional-field-groups)。
 
-用于提示、响应和反馈数据集的架构必须使用必填字段组扩展XDM体验事件基本架构。 并且可以使用其他字段组扩展XDM体验事件基本架构。
+您可以为提示、响应和反馈定义单独的数据集，也可以将数据合并到数据集中。 例如，使用一个数据集进行提示和响应，使用另一个数据集进行反馈。 或者对所有对话事件使用单个数据集。
+对数据集使用相同的基础架构。
 
 ### 代理信息字段组
 
-**[!UICONTROL 代理信息]**&#x200B;字段组是必需的字段组，它使用`agenticExperience`对象。
+**[!UICONTROL 代理信息]**&#x200B;字段组是可选字段组，它使用`agenticExperience`对象。 如果要跟踪代理信息，请考虑使用此字段组。
 
 +++ 详细信息
 
@@ -203,7 +216,7 @@ ht-degree: 6%
 
 #### 对话
 
-唯一的`conversationID`标识对话。 例如：`conversationID = "conv-001"`。 架构还支持`conversationName`。 描述对话整体上下文的可读名称，如： `France Geography Q&A`。
+唯一的`conversationID`标识对话。 例如：`conversationID = "conv-001"`。 架构还支持`conversationName`。 描述对话整体上下文的可读名称，如： `France Geography Q&A`。 对话名称是自动生成的，但您可以更新生成的名称。 对话名称也已填充到`signals[].name`。
 
 `conversationID`允许将所有相关的转化事件分组到相同的对话体验中。
 
@@ -216,7 +229,7 @@ ht-degree: 6%
 `conversationID = "conv-001"`
 `turnID = "turn-001"`
 
-同一`conversationID`和`turnID`用于关联与该转向关联的提示、响应和反馈。 这种关联适用于单独交付或最终位于不同数据集的记录。
+同一`conversationID`和`turnID`用于关联与该转向关联的提示、响应和反馈。 这种关联适用于单独交付或最终位于不同数据集的记录。 `turnId`在同一对话中只需是唯一的，但可在对话中重复使用。 例如，在与`conversationID` `conv-001`和`conv-002`的对话中，您可以同时将`turn-001`作为`turnID`。
 
 
 #### 提示
@@ -231,7 +244,7 @@ ht-degree: 6%
 |---|---|
 | `prompt.source` | 产生提示的人员或内容，通常是最终用户。 |
 | `prompt.raw[]` | 一个或多个原始内容区段。 |
-| `prompt.raw[].text` | 实际的提示文本或内容。 |
+| `prompt.raw[].text` | 实际的提示文本或指向内容的链接（例如，屏幕快照）。 |
 | `prompt.raw[].purpose` | 内容的用途，如用户输入或链接。 |
 
 一个提示可以包含多个原始区段。 例如，用户输入文本并包含一个URL。
@@ -257,6 +270,8 @@ ht-degree: 6%
 | `response.raw[].purpose` | 内容区段的目的。 |
 
 记录的源类型包括：
+
+<!-- randy buck to provide additional details -->
 
 | 来源 | 含义 |
 |---|----|
@@ -287,7 +302,9 @@ ht-degree: 6%
 
 #### 信号
 
-信号是对会话内容的结构化分析观察。 信号提取服务提取信号。
+信号是对会话内容的结构化分析观察。 信号服务提供开箱即用的信号。 提供信号无需任何操作，但您可以将信号添加为集成的一部分。
+
+<!-- randy buck to provide additional details -->
 
 信号包含以下字段。
 
@@ -360,9 +377,6 @@ ht-degree: 6%
 
 +++
 
-
-
-
 ### 其他字段组
 
 您可以将可选字段组添加到用于提示、响应和反馈数据集的架构中。 例如：
@@ -382,9 +396,9 @@ ht-degree: 6%
 
 | 数值 | 说明 |
 |---|---|
-| `conversation turn` | 带提示和回应的完整对话翻转 |
-| `conversation recommendation` | 基于对话的推荐 |
-| `conversation feedback` | 仅反馈事件 |
+| `conversation.turn` | 带提示和回应的完整对话翻转 |
+| `conversation.recommendation` | 基于对话的推荐 |
+| `conversation.feedback` | 仅反馈事件 |
 
 
 ### Source类型
@@ -401,6 +415,8 @@ ht-degree: 6%
 ### 用途类型（原始文本）
 
 您需要为`prompt`、`response`或`feedback`对象中`raw`对象的任何元素的`purpose`特性设置以下值之一。
+
+<!-- randy buck to provide details -->
 
 | 值 | 描述 |
 |---|---|
