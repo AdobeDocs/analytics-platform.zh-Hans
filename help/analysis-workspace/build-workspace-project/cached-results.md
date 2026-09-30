@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7afd51cbdbfc21c8512d0e11be87a6ab8245e366
+source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1336'
 ht-degree: 0%
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 Analysis Workspace会缓存项目在初始配置时的结果，以及项目选定的数据视图、应用的区段、日期范围、面板下拉选择等。 打开项目的每个人都可以看到这些缓存的结果。
 
-如果有人更改了项目配置，则会更新结果，并且[将缓存一个新的项目变体](#project-variations-are-cached-as-the-project-is-modified)。
+如果有人在查看缓存的项目时更改了项目配置，则结果会正常加载（不会立即加载），并且[将缓存一个新的项目变体](#project-variations-are-cached-as-the-project-is-modified)。
 
 #### 修改项目时，将缓存项目变体
 
@@ -80,19 +80,21 @@ Analysis Workspace会缓存项目在初始配置时的结果，以及项目选�
 | --- | --- | --- |
 | 上午 6:00 | 计划的项目交付 | 正常（缓存结果以供将来使用） |
 | 上午7:06 | 用户A打开项目 | 即时 |
-| 上午7:06 | 用户A应用美洲区段 | 正常（缓存结果以供将来使用） |
+| 上午7:07 | 用户A应用美洲区段 | 正常（缓存结果以供将来使用） |
 | 上午8:01 | 用户B打开项目 | 即时 |
-| 上午8:01 | 用户B应用美洲区段 | 即时 |
-| 上午8:01 | 用户B应用欧洲、中东和非洲区段 | 正常（缓存结果以供将来使用） |
+| 上午8:05 | 用户B应用美洲区段 | 即时 |
+| 上午8:12 | 用户B应用欧洲、中东和非洲区段 | 正常（缓存结果以供将来使用） |
 
 >[!ENDSHADEBOX]
 
-### 自动刷新缓存结果的更改
+### 导致缓存结果在下一次项目加载时刷新的更改
 
 对项目基础配置的以下更改会导致Analysis Workspace在下次有人打开项目时刷新结果，即使12小时窗口未过期也是如此：
 
 * 更改数据视图中的组件，如编辑维度或量度的[组件设置](/help/data-views/component-settings/overview.md)
+
 * 对[派生字段](/help/data-views/derived-fields/derived-fields.md)的更改
+
 * 对项目中使用的区段定义的更改
 
 结果以正常速度加载并缓存，这会开始一个新的12小时窗口。
@@ -139,24 +141,27 @@ Analysis Workspace会缓存项目在初始配置时的结果，以及项目选�
 >
 >如果您需要立即查看当天数据、迟到数据或更新查找值，则缓存的结果可能不太适合。 在启用此设置之前，请查看[何时在项目](#when-to-leave-cached-results-disabled-on-a-project)上禁用缓存结果。
 
-在您希望启用缓存结果以便进行近乎即时加载的Workspace项目中：
+在您希望启用缓存结果以加快加载的Workspace项目中：
 
 1. 转到&#x200B;**[!UICONTROL 项目]** > **[!UICONTROL 项目信息和设置]**。
+
 1. 选择&#x200B;**[!UICONTROL 使用缓存结果以加快加载]**。
+
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 ## 在项目中显示缓存的结果时查看
 
 当显示缓存的结果时，项目顶部会显示一个时间戳。 时间戳指定是缓存所有结果，还是只缓存部分结果：
 
-* **[!UICONTROL 显示来自] [_日期和时间_]**&#x200B;的结果：项目中的所有面板都显示来自所显示日期和时间的缓存结果。
+* **[!UICONTROL 显示来自] [_日期和时间_]**的结果：项目中的所有面板都显示来自所显示日期和时间的缓存结果。
+
 * **[!UICONTROL 显示从] [_日期和时间开始的一些结果_]**：某些面板显示从显示的日期和时间开始缓存的结果，而其他面板则刷新得更近。
 
 缓存的项目上的![时间戳](assets/project-cache-timestamp.png)
 
 面板还会显示一个时间戳，显示何时缓存结果：
 
-* **[!UICONTROL 显示来自] [_日期和时间_]**&#x200B;的结果：面板显示来自所显示日期和时间的缓存结果。
+* **[!UICONTROL 显示来自] [_日期和时间_]**的结果：面板显示来自所显示日期和时间的缓存结果。
 
   >[!NOTE]
   >
@@ -184,5 +189,5 @@ Analysis Workspace会缓存项目在初始配置时的结果，以及项目选�
 
 要仅加载单个面板的最新结果，请执行以下操作：
 
-1. 选择位于项目顶部面板时间戳旁边的&#x200B;**[!UICONTROL 刷新]** ![刷新](/help/assets/icons/Refresh.svg)图标。
+1. 选择面板时间戳旁边的&#x200B;**[!UICONTROL 刷新]** ![刷新](/help/assets/icons/Refresh.svg)图标。
 
