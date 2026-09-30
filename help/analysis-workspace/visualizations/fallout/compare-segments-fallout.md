@@ -9,22 +9,28 @@ autotag-review: '2026-05-19T08:42:20.474Z'
 TQID: 'https://experienceleague.adobe.com/ZJqvJYmUSMfWD-yX3B-qbR5QNq7bjr9xtGN-yPXkl5E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 23%
-
 ---
-
 # 在流失分析中应用区段
 
 您可以在 Analysis Workspace 中从接触点创建区段、添加区段作为接触点，并比较多个区段之间的关键工作流程。
@@ -67,7 +73,7 @@ Should we add B2B context here?
 
 ## 在流失中比较区段
 
-您可以在“流失”可视化图表中比较任意区段数量。
+您可以在“流失”可视化图表中比较不限数量的区段。
 
 1. 从左侧的[!UICONTROL 区段]面板中选择要比较的区段。 在此示例中，选择了三个区段：*外部测试版详细信息：页面版本A*、*外部测试版详细信息：页面版本B*&#x200B;和&#x200B;*外部测试版详细信息：页面版本C*。
 1. 将三个区段拖到可视化图表顶部的区段拖放区域。

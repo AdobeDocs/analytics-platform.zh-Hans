@@ -5,19 +5,29 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2474'
 ht-degree: 13%
-
 ---
-
 # 共享查找
 
 在Customer Journey Analytics中，查找数据集通过额外的上下文丰富了您的事件数据。 例如，将产品名称、类别和价格添加到购买事件的产品目录数据集。 或者向营销事件添加营销活动详细信息的营销活动元数据数据集。
 
 通过查找，您可以使用未存储在事件本身中的属性来报告事件数据。
-传统上，查找数据集通过单个固定路径与事件相连。事件数据集中的一个键字段与查找数据集中的一个键字段匹配。当只有一种方法可将两个数据集关联时，此查找可正常工作，但在常见的现实场景中，此简单链接会损坏：
+传统上，查找数据集通过单个固定路径与事件相连。 事件数据集中的一个键字段与查找数据集中的一个键字段匹配。 当只有一种方法可将两个数据集关联时，此查找可正常工作，但在常见的现实场景中，此简单链接会损坏：
 
 * 与产品SKU或产品ID上的事件联接的产品目录，具体取决于事件源。
 * 根据渠道（Web事件的电子邮件、店内事件的忠诚度ID），用户将与不同身份命名空间上的事件关联的查找归为用户属性。
@@ -133,7 +143,7 @@ ht-degree: 13%
 
 >[!TAB 机会]
 
-| 机会 ID | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 值 |
+| 机会 ID | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 数值 |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | A-123 | A-123 | 打开 | 200万美元 |
 | O-543 | Acme CC | A-123 | A-123 | 已关闭 | 100万美元 |
@@ -179,7 +189,7 @@ ht-degree: 13%
 
 >[!TAB 机会]
 
-| 机会ID ![链接](/help/assets/icons/Link.svg) | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 值 |
+| 机会ID ![链接](/help/assets/icons/Link.svg) | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 数值 |
 |---|---|---|---|---|---:|
 | **O-432** | Acme Express | A-123 | A-123 | 打开 | **$2M** |
 | **O-543** | Acme CC | A-123 | A-123 | 已关闭 | **$1M** |
@@ -212,7 +222,7 @@ ht-degree: 13%
 
 >[!TAB 机会]
 
-| 机会 ID | 名称 | 帐户ID ![链接](/help/assets/icons/Link.svg) | 全球帐户 ID | 状态 | 值 |
+| 机会 ID | 名称 | 帐户ID ![链接](/help/assets/icons/Link.svg) | 全球帐户 ID | 状态 | 数值 |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | **A-123** | A-123 | 打开 | **$2M** |
 | O-543 | Acme CC | **A-123** | A-123 | 已关闭 | **$1M** |
@@ -256,7 +266,7 @@ ht-degree: 13%
 
 >[!TAB 机会查找]
 
-| 机会ID ![链接](/help/assets/icons/Link.svg) | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 值 |
+| 机会ID ![链接](/help/assets/icons/Link.svg) | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 数值 |
 |---|---|---|---|---|---:|
 | **O-432** | Acme Express | A-123 | A-123 | 打开 | **$2M** |
 | **O-543** (2x) | Acme CC | A-123 | A-123 | 已关闭 | 100万美元x 2 = **200万美元** |
@@ -293,7 +303,7 @@ ht-degree: 13%
 
 >[!TAB 机会]
 
-| 机会ID ![链接](/help/assets/icons/Link.svg) | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 值 |
+| 机会ID ![链接](/help/assets/icons/Link.svg) | 名称 | 帐户 ID | 全球帐户 ID | 状态 | 数值 |
 |---|---|---|---|---|---:|
 | **O-432** (3x) | Acme Express | A-123 | A-123 | 打开 | 200万美元x 3 = **600万美元** |
 | **O-543** | Acme CC | A-123 | A-123 | 已关闭 | **$1M** |
@@ -324,7 +334,7 @@ ht-degree: 13%
 
 >[!TAB 机会]
 
-| 机会 ID | 名称 | 帐户ID ![链接](/help/assets/icons/Link.svg) | 全球帐户 ID | 状态 | 值 |
+| 机会 ID | 名称 | 帐户ID ![链接](/help/assets/icons/Link.svg) | 全球帐户 ID | 状态 | 数值 |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | **A-123** | A-123 | 打开 | **$2M** |
 | O-543 | Acme CC | **A-123** | A-123 | 已关闭 | **$1M** |

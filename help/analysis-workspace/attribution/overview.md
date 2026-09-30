@@ -4,30 +4,43 @@ description: 了解将成功事件的点数归因到多个维度项的概念。
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
-TQID: https://experienceleague.adobe.com/ncY8TuwUb3duwfK3n8u69eyXWUDzI5OMF-AACOoDmIY
+TQID: 'https://experienceleague.adobe.com/ncY8TuwUb3duwfK3n8u69eyXWUDzI5OMF-AACOoDmIY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Implementation
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 453
+source-wordcount: '453'
 ht-degree: 96%
-
 ---
-
 # 归因概述
 
 通过归因，分析师能够自定义维度项目获取成功事件点数的方式。 例如：
@@ -35,11 +48,11 @@ ht-degree: 96%
 1. 网站访客单击指向您的某个产品页面的付费搜索链接。 他们将产品添加到购物车，但不购买。
 2. 第二天，他们查看自己朋友的社交媒体帖子，单击链接，然后完成购买。
 
-在某些报告中，您可能希望将订单归因到“付费”搜索。 在其他报告中，您可能希望将订单归因到社交。 通过归因，您能够控制报告的这一方面。 它适用于 Adobe Analytics Ultimate、Prime、Select 和 Foundation 上的所有组织。 如果您不确定您与 Adobe 签订的合同类型，请联系贵组织的 Adobe 客户团队。
+在某些报告中，您可能希望将订单归因到“付费”搜索。 在其他报告中，您可能希望将订单归因到社交。 通过归因，您能够控制报告的这一方面。 它适用于 Adobe Analytics Ultimate、Prime、Select 和 Foundation 上的所有组织。 如果您不确定您与 Adobe 签订的合同类型，请联系贵组织的 Adobe 帐户团队。
 
 ## 归因的价值
 
-给定的客户历程不是线性的，而且往往难以预测。 每位客户按各自的进度进行；通常，它们会再次返回、延迟、重新启动或参与其他非线性行为。 这些免费操作使得我们很难了解营销工作在整个客户历程中所产生的影响。 它还会妨碍将多个数据渠道绑定在一起的工作。
+给定的客户历程不是线性的，而且往往难以预测。 每位客户按各自的进度进行；通常，它们会再次返回、延迟、重新启动或参与其他非线性行为。 这些自然发生的行为使得我们很难了解营销工作在整个客户历程中所产生的影响。 它还会妨碍将多个数据渠道绑定在一起的工作。
 
 <!--
 ![Attribution problem](assets/attribution_iq_problem.png)
@@ -49,9 +62,9 @@ Adobe Analytics 通过让您能够执行以下操作来增强归因：
 
 * 定义付费媒体之外的归因：可将任何维度、量度、渠道或事件应用于模型（例如内部搜索），而不仅仅是营销活动。
 * 使用无限制的归因模型比较：动态比较任意所需数量的模型。
-* 避免实施更改：使用报告时间处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
-* 生成与您的归因方案最匹配的会话。
-* 按区段细分归因：轻松对所有重要区段中的营销渠道效果进行比较（例如新客户与老客户、产品 X 与产品 Y、忠诚度级别或 CLV）。
+* 避免实施更改：使用报告时处理和上下文感知会话，可在运行时构建并应用客户历程上下文。
+* 构建最符合您的归因场景的会话。
+* 按区段划分归因：轻松对所有重要区段中的营销渠道效果进行比较（例如新客户与老客户、产品 X 与产品 Y、忠诚度级别或 CLV）。
 * 检查渠道交叉和多接触点分析：使用维恩图和直方图，以及趋势归因结果。
 * 直观地分析关键营销序列：通过多节点流量和流失可视化图表，以可视方式探索导致转化的路径。
 * 生成计算量度：使用任意数量的归因分配方法。

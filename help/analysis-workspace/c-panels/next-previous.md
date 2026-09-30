@@ -8,22 +8,28 @@ autotag-review: '2026-05-19T08:23:13.905Z'
 TQID: 'https://experienceleague.adobe.com/nGn-OZXsx06SRHoBpANkmZIfOftsuSOFJi0aWe-v5sQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 526
+source-wordcount: '526'
 ht-degree: 89%
-
 ---
-
 # “下一项或上一项”面板 {#next-or-previous-item-panel}
 
 >[!CONTEXTUALHELP]
@@ -88,7 +94,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | 可视化图表 | 描述 |
 | --- | --- |
 | **[!UICONTROL 水平条]** | 根据您选择的维度项列出下一项（或上一项）维度。 将光标悬停在单个条形图上可突出显示自由格式表中相应的项。 |
-| **[!UICONTROL 摘要数字]** | 当前月份（迄今为止）所有下一项或上一项维度发生次数的高级摘要数字。 |
+| **[!UICONTROL 摘要数字]** | 当前月份（迄今为止）所有下一项或上一项维度项出现次数的高级汇总数字。 |
 | **[!UICONTROL 自由格式表]** | 根据您选择的维度项以表的格式列出下一项（或上一项）维度。 例如，人们在主页或工作区页面之后（或之前）访问的最受欢迎的页面是哪些（按发生次数计算）。 |
 
 {style="table-layout:auto"}
@@ -96,5 +102,5 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!MORELIKETHIS]
 >
->[创建面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
+>[创建一个面板](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >

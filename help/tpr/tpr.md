@@ -5,13 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 4%
-
 ---
-
 # 总人口报表
 
 总人口报表引入了对在Customer Journey Analytics连接中存在的配置文件和查找数据集中定义的实体进行分析和报表的功能。 该分析和报告功能超越了事件数据集中的基于时间的事件系列。 该功能支持全新类别的查询、量度和受众定义，它们可反映企业客户群的整个范围。

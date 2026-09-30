@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T08:15:04.463Z'
 TQID: 'https://experienceleague.adobe.com/2YMUT3yAbDFzzTOZ-NJlJyMmD8GPO-Kc-Lor6GlLA54'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1081
+source-wordcount: '1081'
 ht-degree: 100%
-
 ---
-
 # 评估升级到 Customer Journey Analytics 后何时禁用 Adobe Analytics {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
@@ -67,7 +76,7 @@ ht-degree: 100%
 
 在决定您的组织是否以及何时应禁用 Adobe Analytics 时，请考虑在升级到 Customer Journey Analytics 期间和之后，Adobe Analytics 的以下用途：
 
-| 在升级期间和升级之后使用 Adobe Analytics | 说明 |
+| 升级期间和升级之后 Adobe Analytics 的用途 | 说明 |
 |---------|----------|
 | 执行并排数据比较 | Adobe 建议您在新的 Customer Journey Analytics 环境开始运行并收集数据后，继续让您的 Adobe Analytics 环境运行一段时间。 这是将您的 Customer Journey Analytics 数据与 Adobe Analytics 数据进行并排比较的最佳方法。<p>在您对 Customer Journey Analytics 环境中的数据感到满意之前，请不要禁用 Adobe Analytics。</p><p>**注释：** Adobe 建议为您的 Customer Journey Analytics 环境实施一个新的 Web SDK，并将其与用于历史数据的 Analytics 源连接器结合使用。 [了解详情](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | 保留 Adobe Analytics 的历史数据 | Adobe 建议您在新的 Customer Journey Analytics 环境开始运行并收集数据后，将 Adobe Analytics 环境与 Analytics 源连接器保留一段时间。 这是将 Adobe Analytics 历史数据纳入 Customer Journey Analytics 的最佳方式。<p>在通过新的 Web SDK 实施在 Customer Journey Analytics 中收集了足够的历史数据后，您可以完全删除 Analytics 源连接器。 当您可以完全依赖使用新的 Customer Journey Analytics Web SDK 实施收集的历史数据时，请执行此操作。</p><p>**注释：** Adobe 建议为您的 Customer Journey Analytics 环境实施一个新的 Web SDK，并将其与用于历史数据的 Analytics 源连接器结合使用。 [了解详情](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
@@ -89,7 +98,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
 >title="在标记中禁用 Analytics 扩展"
->abstract="在 Web SDK 数据完全发挥作用的情况下，与标记管理员合作从标记属性中移除 Adobe Analytics 扩展。 在执行此操作之前，请确保您的用户已从使用 Adobe Analytics 过渡到使用 Customer Journey Analytics。"
+>abstract="在 Web SDK 数据完全正常运行的情况下，与标记管理员合作从标记属性中移除 Adobe Analytics 扩展。 在执行此操作之前，请确保您的用户已从使用 Adobe Analytics 过渡到使用 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -98,7 +107,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"
 >title="禁用 Adobe Analytics 的 API 数据收集"
->abstract="在 Web SDK 数据完全发挥作用的情况下，与适用的工程团队合作从项目中移除 Adobe Analytics 代码。 在执行此操作之前，请确保您的用户已从使用 Adobe Analytics 过渡到使用 Customer Journey Analytics。"
+>abstract="在 Web SDK 数据完全正常运行的情况下，与适用的工程团队合作从项目中移除 Adobe Analytics 代码。 在执行此操作之前，请确保您的用户已从使用 Adobe Analytics 过渡到使用 Customer Journey Analytics。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -138,17 +147,17 @@ ht-degree: 100%
 
    +++
 
-1. 将 Adobe Analytics as a Service 从数据流中移除。
+1. 将 Adobe Analytics 即服务从数据流中移除。
 
    在 Web SDK 数据完全发挥作用的情况下，与 Platform 管理员合作从数据流中删除 Adobe Analytics 服务。
 
-   在移除 Adobe Analytics as a Service 之前，请确保您的 Analytics 用户使用的是 Customer Journey Analytics，而不是 Adobe Analytics。
+   在将 Adobe Analytics 即服务移除之前，请确保您的 Analytics 用户使用的是 Customer Journey Analytics，而不是 Adobe Analytics。
 
 1. 完全移除 Analytics 源连接器。
 
    在通过新的 Web SDK 实施在 Customer Journey Analytics 中收集了足够的历史数据后，您可以完全删除 Analytics 源连接器。
 
-   当您不再需要通过 Analytics 源连接器获取来自 Adobe Analytics 环境的历史数据，并且您可以完全依赖使用新的 Web SDK 实施来收集的历史数据时，请执行此操作。
+   当您不再需要通过 Analytics 源连接器获取来自 Adobe Analytics 环境的历史数据，并且您可以完全依赖通过新的 Web SDK 实施收集的历史数据时，请执行此操作。
 
 {{upgrade-final-step}}
 

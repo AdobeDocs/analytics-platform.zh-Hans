@@ -4,27 +4,37 @@ title: 实时报表概述
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+TQID: 'https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: d1779026-aeed-458e-a1c7-839d4acac922
+    internal-label: Real-time reporting
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '855'
 ht-degree: 6%
-
 ---
-
 # 实时报表概述
 
 Customer Journey Analytics 中的实时报告功能可以实时显示并更新 Analysis Workspace 的一个或多个面板中的数据和可视化图表。
@@ -43,16 +53,16 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 * 实时报表最有价值的用例是关于主要销售、促销或产品发布。
 在该启动项中，您想了解：
 
-   * 与上一次销售相比，销售情况如何？
-   * 与上次产品发布相比，本次产品发布情况如何？
-   * 您为这一重要日子或活动举行的促销活动是否真的有效？
+  * 与上一次销售相比，销售情况如何？
+  * 与上次产品发布相比，本次产品发布情况如何？
+  * 您为这一重要日子或活动举行的促销活动是否真的有效？
 
 * 实时报表的相关用例（但价值较低的用例）是验证用例。
 例如，您要验证：
 
-   * 您最近启动的活动历程是否实际有效？
-   * 新产品页面上线时，您是否从该页面收集客户数据？
-   * 您的直播媒体活动是否正常？
+  * 您最近启动的活动历程是否实际有效？
+  * 新产品页面上线时，您是否从该页面收集客户数据？
+  * 您的直播媒体活动是否正常？
 
 对于操作监控用例，请勿考虑实时报告。 例如，回答站点是否正常运行的问题。 由于[实时刷新切换开关](use-real-time.md)会在30分钟后自动禁用并且实时报表停止刷新，因此您不应将实时报表用作这些用例的可靠源。
 
@@ -88,5 +98,5 @@ Customer Journey Analytics 中的实时报告功能可以实时显示并更新 A
 * 您不能将拼合与实时报表结合使用。 实时报表是关于事件和会话级别的数据，与基于人员的数据不太相关。
 * 除媒体开始和媒体关闭量度外，没有可用的心跳收集媒体量度。 因此，您仍然可以使用实时报表来启用媒体用例。
 * 使用[下载或导出选项](/help/analysis-workspace/export/download-send.md)下载项目或从自由格式表中导出数据时，请考虑以下事项：
-   * 下载的CSV项目或导出的CSV文件包含下载或导出时可用的实时数据。
-   * 下载的PDF项目包含非实时数据，类似于禁用实时刷新时显示的数据。
+  * 下载的CSV项目或导出的CSV文件包含下载或导出时可用的实时数据。
+  * 下载的PDF项目包含非实时数据，类似于禁用实时刷新时显示的数据。

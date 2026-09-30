@@ -5,26 +5,35 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ
+TQID: 'https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1160
+source-wordcount: '1160'
 ht-degree: 88%
-
 ---
-
 # 导入呼叫中心数据和网站数据
 
 Customer Journey Analytics 提供了一项非常有用的强大功能，就是将不同来源的数据合并到一个工作区项目中。 使用本指南了解您的组织如何能够结合使用网站数据与呼叫中心数据。 例如，可了解客户在联系客户支持之前执行了什么操作、查看了什么内容以及搜索了什么词语。 然后可确定要改进的内容和自助服务工具，以使客户可更方便自行解决问题而无需致电。
@@ -35,20 +44,20 @@ Customer Journey Analytics 提供了一项非常有用的强大功能，就是�
 * 对 Adobe Experience Platform 和 Customer Journey Analytics 的访问权限
 * 如果您的数据集包含来自交互式语音应答系统的日志，Adobe 建议先对此类数据进行处理以使其仅包含即时交互，然后再将其导入 Platform。
 * 如果您的数据集包含通话日志，则 Adobe 建议包括以下列：
-   * 通话开始的日期/时间
-   * 来电原因
-   * 呼叫中心 ID
-   * 呼叫中心代理 ID
-   * 通话持续时间
-   * 通话结果
-   * 通话费用（如果有）
-   * 贵组织希望包含的任何其他通话元数据
+  * 通话开始的日期/时间
+  * 来电原因
+  * 呼叫中心 ID
+  * 呼叫中心代理 ID
+  * 通话持续时间
+  * 通话结果
+  * 通话费用（如果有）
+  * 贵组织希望包含的任何其他通话元数据
 
 ## 将网站数据和呼叫中心数据导入 Platform
 
 将您的数据导入 Adobe Experience Platform。 请参阅 Adobe Experience Platform 文档中的[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)和[摄取数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
-将数据导入 Platform 时，遵循以下提示将有助于在所生成的报告增加洞察信息：
+将数据导入 Platform 时，遵循以下提示有助于提高生成的报告中的洞察：
 
 * 确保用于将呼叫中心数据和网站数据进行关联的标识符采用相似的格式。
 * 在每个数据集中包含数据源。 例如，在每个架构中包含 `data_source` 列，并分别将每个事件的值设置为 `"Web"` 或 `"Call center"`。<!--mapper-->
@@ -64,7 +73,7 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 在Customer Journey Analytics中[创建连接](/help/connections/create-connection.md)。
 
-* 如果使用 CCA，则会有新的拼合数据集可供您使用。 使用新创建的拼合 ID 字段作为人员 ID。
+* 如果使用 CCA，则会有新的拼合数据集可供您使用。 使用新创建的拼接 ID 字段作为人员 ID。
 * 否则，可以选择在连接中使用的原始网站数据集和呼叫中心数据集。
 
 ## 创建数据视图
@@ -76,15 +85,15 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 ## 创建可视化图表
 
-可使用以下可视化图表洞察拼接的数据集。
+以下可视化图表可用于从您的拼接数据集中获取洞察。
 
 ### 数据集重叠
 
 此可视化图表有助于您了解 CCA 进行数据拼合的效果。
 
 1. 创建两个区段。 这两个区段中使用的变量与上面提到的用于反映每个事件的数据源的变量相同。 有关详细信息，请参阅[创建区段](/help/components/segments/seg-create.md)。
-   * 数据集 ID 代表网站数据的“人员”容器
-   * 数据集 ID 代表呼叫中心数据的“人员”容器
+   * 数据集 ID 等于您的网站数据的“人员”容器
+   * 数据集 ID 等于您的呼叫中心数据的“人员”容器
 2. 在 Analysis Workspace 中，将[维恩图](/help/analysis-workspace/visualizations/venn.md)可视化图表拖到工作区画布上。
 3. 将两个新创建的区段拖到&#x200B;**[!UICONTROL 添加区段]**&#x200B;区域，将“人员”量度拖到&#x200B;**[!UICONTROL 添加量度]**&#x200B;区域。
 
@@ -95,9 +104,9 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 此自由格式表允许您查看对呼叫中心事件贡献最大的网页。 首先，确保所需的维度和量度具有正确的归因模型：
 
 1. 将包含网页名称的维度拖到一个自由格式表可视化图表上。
-1. 将该指标替换为您要衡量的呼叫中心指标。
+1. 将该量度替换为您要衡量的呼叫中心量度。
 1. 单击该量度标题附近的齿轮图标。 单击&#x200B;**[!UICONTROL 使用非默认的归因模型]**。
-1. 设置所需的[归因模型](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)。 例如，半衰期为 15 分钟的时间衰减模型和会话的回溯时段。 此归因模型将作用归于引起致电您的呼叫中心的页面。
+1. 设置所需的[归因模型](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)。 例如，半衰期为 15 分钟的时间衰减模型和会话的回溯时段。 此归因模型将点数归于促成致电您的呼叫中心的那些页面。
 
 所得的报表展示促使致电您的呼叫中心的前几名的页面。<!-- use case behind what we use these pages for -->
 
@@ -113,7 +122,7 @@ Customer Journey Analytics需要一个通用标识符来生成[组合数据集](
 
 ### 流程可视化
 
-对于客户在使用呼叫中心渠道之前正在尝试做什么，可获得深入的洞察。 此流程可视化帮助您了解客户致电呼叫中心所经历的最常见的历程。 通过此洞察，可确定对于网站可作出的最有效的改进，以使客户降低致电的可能性。
+对于客户在使用呼叫中心渠道之前正在尝试做什么，可获得深入的洞察。 此流程可视化帮助您了解客户致电呼叫中心所经历的最常见的历程。 通过此洞察，您可以确定对网站进行哪些最有效的改进，从而降低客户致电的可能性。
 
 1. 在左侧单击&#x200B;**[!UICONTROL 可视化]**&#x200B;选项卡，然后将流程可视化拖至工作区画布上。
 2. 在左侧单击&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡，并找到“致电原因”维度。

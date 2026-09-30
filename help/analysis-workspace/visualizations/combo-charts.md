@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:32:13.517Z'
 TQID: 'https://experienceleague.adobe.com/xXpUD-E71BVVe0WOQ-tbLILq1c5kRN-Jy2xHufxBfBk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: '626'
 ht-degree: 92%
-
 ---
-
 # 组合 {#combo}
 
 <!-- markdownlint-disable MD034 -->
@@ -82,7 +87,7 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 
    ![组合图表以条形图显示当前时段，以线形图显示比较时段](assets/combo-output.png)
 
-   当前时段显示在条形图中。 线形图表示比较时段。 线形图上的点被称为&#x200B;*条形铃*。
+   当前时段显示在条形图中。 折线图表示比较时段。 线形图上的点被称为&#x200B;*条形铃*。
 
 ## 支持的函数
 
@@ -92,7 +97,7 @@ _请参阅本文中_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&
 | --- | --- |
 | **[!UICONTROL 列总和]** | 添加列中某量度的所有数值（某一维度的各个元素） |
 | **[!UICONTROL 累积平均数]** | 返回最后 N 行的平均数。 |
-| **[!UICONTROL 中间值]** | 返回列中某量度的中间值。 中间值是位于一组数字中间的数字。 一半的数字大于或等于中间值，一半的数字小于或等于中间值。 |
+| **[!UICONTROL 中间值]** | 返回列中某量度的中间值。 中位数是位于一组数字中间的数字。 一半的数字大于或等于中位数，一半的数字小于或等于中位数。 |
 | **[!UICONTROL 累积数]** | N 行的累积总和。 |
 | **[!UICONTROL 列最大值]** | 返回某量度列的一组维度元素中的最大值。 |
 | **[!UICONTROL 平均值]** | 返回某度量的算术平均值或平均值。 |

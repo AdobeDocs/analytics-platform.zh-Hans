@@ -9,24 +9,31 @@ autotag-review: '2026-05-19T08:17:31.632Z'
 TQID: 'https://experienceleague.adobe.com/ov6cr-MF9OeH8OU23Km0KdD2l0LirVpVor4nndHpqo8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 587
+source-wordcount: '587'
 ht-degree: 100%
-
 ---
-
-# 为 Analytics 源连接器创建一个自定义架构 {#create-custom-schema}
+# 为 Analytics 源连接器创建自定义架构 {#create-custom-schema}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -42,7 +49,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-historical"
 >title="为历史数据创建 Analytics 源连接器"
->abstract="您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。"
+>abstract="您可以使用 Analytics 源连接器将 Adobe Analytics 报告包数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +57,7 @@ ht-degree: 100%
 
 ## 了解 Analytics 源连接器如何将历史数据带入 Customer Journey Analytics
 
-您可以使用 Analytics 源连接器将 Adobe Analytics 报告套件数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
+您可以使用 Analytics 源连接器将 Adobe Analytics 报告包数据导入到 Adobe Experience Platform。 然后，这些数据可以用作 Customer Journey Analytics 中的历史数据。
 
 此过程假设您希望[创建一个自定义架构，以便与您的 Customer Journey Analytics Web SDK 实施一起使用](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)，因为您需要一个根据您的组织需求和您使用的特定 Platform 应用程序量身定制的精简模式。
 

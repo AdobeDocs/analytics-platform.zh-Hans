@@ -18,10 +18,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 6%
+source-wordcount: '2592'
+ht-degree: 5%
 ---
 # 实施对话分析
 
@@ -39,8 +39,225 @@ ht-degree: 6%
 
 为主要对话事件配置数据集：提示、响应、反馈。 提示、响应和反馈数据集必须使用[对话事件字段组](#conversation-event-field-group)扩展XDM体验事件基本架构，并且可以选择包含[代理信息字段组](#agentic-information-field-group)和其他[其他字段组](#additional-field-groups)。
 
-您可以为提示、响应和反馈定义单独的数据集，也可以将数据合并到数据集中。 例如，使用一个数据集进行提示和响应，使用另一个数据集进行反馈。 或者对所有对话事件使用单个数据集。
-对数据集使用相同的基础架构。
+您可以为提示、响应和反馈定义单独的数据集，也可以将数据合并到数据集中。 例如，使用一个数据集进行提示和响应，使用另一个数据集进行反馈。 或者，为每种类型的对话事件使用单独的数据集，如[工作方式](/help/conversation-insights/conversation-insights-overview.md#how-it-works)中所述。
+
+举例说明，请使用：
+
+* **离散数据集实现**。 为提示、响应和反馈事件分隔数据集。 如果符合以下条件，请遵循此实施方法：
+
+  * 希望减少客户端实施中的状态。
+  * 无论响应延迟或不存在，都发送提示数据。
+
+* **合并的数据集实施**。 例如，一个合并的提示和响应事件数据集和一个单独的反馈事件数据集。  如果符合以下条件，请遵循此实施方法：
+
+  * 希望减少调用，因为您的实施支持完成轮换。
+  * 在等待响应到达时，无需关注延迟。
+
+>[!IMPORTANT]
+>
+>对数据集使用相同的基础架构。
+>
+
+数据集布局和将对话事件传递到这些数据集是两个不同的问题。 一旦数据可用，就发送每个会话事件，以确保会话标识符稳定并转换标识符。 稳定标识符使[Conversation Blender服务](#data-blending)能够跨数据集正确关联。
+
+
+### “对话事件”字段组
+
+**[!UICONTROL 对话事件]**&#x200B;字段组是必填字段组，并使用`conversation`对象。
+
+对话对象捕获以下项的数据：
+
+#### 对话
+
+唯一的`conversationID`标识对话。 例如：`conversationID = "conv-001"`。 `conversationID`允许将所有相关的转化事件分组到相同的对话体验中。
+
+架构还支持`conversationName`。 描述对话整体上下文的可读名称，如： `France Geography Q&A`。 对话名称是自动生成的，但您可以更新生成的名称。 对话名称也已填充到`signals[].name`。 Adobe使用与`signals[].name` = &quot;title&quot;信号相同的值填充`conversationName`。 您可以在填充的任何数据集中设置`conversation.conversationName`并覆盖Adobe提供的值。
+
+#### 翻转
+
+轮次是对话中的一个交互周期。
+
+`turnID`唯一的`turnID`标识转弯。 例如：
+
+`conversationID = "conv-001"`
+`turnID = "turn-001"`
+
+同一`conversationID`和`turnID`用于关联与该转向关联的提示、响应和反馈。 这种关联适用于单独交付或最终位于不同数据集的记录。 `turnId`在同一对话中只需是唯一的，但可在对话中重复使用。 例如，在与`conversationID` `conv-001`和`conv-002`的对话中，您可以同时将`turn-001`作为`turnID`。
+
+
+#### 提示
+
+提示是提交给代理的输入。 在大多数客户情景中，此输入是用户的问题、请求、说明或消息。
+
+提示使用以下表示形式： `conversation.prompt`
+
+重要的提示字段包括：
+
+| 字段 | 含义 |
+|---|---|
+| `prompt.source` | 产生提示的人员或内容，通常是最终用户。 |
+| `prompt.raw[]` | 一个或多个原始内容区段。 |
+| `prompt.raw[].text` | 实际的提示文本或指向内容的链接（例如，屏幕快照）。 |
+| `prompt.raw[].purpose` | 内容的用途，如用户输入或链接。 |
+
+一个提示可以包含多个原始区段。 例如，用户输入文本并包含一个URL。
+
+* `Prompt`
+  * `"What is the capital of France"`
+  * `"https://example.com/france"`
+
+
+#### 响应
+
+响应是指代理或其他响应方返回的内容。
+
+`conversation.response`唯一的`responseID`表示响应。
+
+重要的响应字段包括：
+
+| 字段 | 含义 |
+|---|---|
+| `response.source` | 产生响应的人员或人员。 |
+| `response.raw[]` | 一个或多个响应内容区段 |
+| `response.raw[].text` | 响应文本或内容。 |
+| `response.raw[].purpose` | 内容区段的目的。 |
+
+记录的源类型包括：
+
+<!-- randy buck to provide additional details -->
+
+| 来源 | 含义 |
+|---|----|
+| `bot` | 自动代理响应。 |
+| `canned` | 预定义或模板化的响应。 |
+| `concierge` | 人体代理反应。 |
+| `end-user` | 人工生成的内容（如果适用）。 |
+
+#### 反馈
+
+反馈是用户对交互的明确评估或反应。
+
+反馈结构包括： `conversation.feedback`。
+
+示例：
+
+* `feedback.raw[].text: "Great help"`
+* `feedback.rating.score:` 1
+* `feedback.rating.classification`: `"Thumbs Up"`
+* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
+
+记录的评分范围是`-1.0`到`1.0`。
+
+可以使用以下项将反馈事件表示为仅反馈事件： `eventType = "conversation.feedback"`。
+
+当反馈应用于特定回合时，请保留相应的`conversationID`和`turnID`，以便对话搅拌器能够将反馈与相关交互相关联。
+
+
+#### 信号
+
+信号是对会话内容的结构化分析观察。 [信号提取服务](#signal-extraction)提供开箱即用的信号。 提供信号无需任何操作，但您可以将信号添加为集成的一部分。
+
+信号包含以下字段。
+
+| 字段 | 含义 |
+|---|----|
+| `scope` | 用于派生信号的输入范围，如转换或会话至今。 |
+| `name` | 信号标识符，例如主题、意图、音调或情绪。 还支持产品定义的信号名称。 |
+| `type` | 值类型：字符串、数字或布尔值。 |
+| `values[]` | 与信号相关的一个或多个值。 |
+| `stringValue` | 字符串信号值，例如意图、音调或主题。 |
+| `numberValue` | 数字信号值，如情绪分数。 |
+| `booleanValue` | 真/假信号值。 |
+| `confidence` | 信号值中的可选生产者置信度，通常介于0和1之间。 |
+| `qualifiers[]` | 向信号值添加上下文的可选描述符。 |
+| `metadata[]` | 可选的制造者定义的键/值元数据。 |
+
+
+信号提取服务填充信号数据集的`signals`对象。
+
+已弃用以前的`signals[].attributes.{subjects,intents,tones,sentiment}`容器。
+
+#### Source类型
+
+您需要为事件中的每个`prompt`、`response`或`feedback`对象设置`source`的值。 可接受任何值。 使用有助于您了解数据源自何处的值。 例如：
+
+| 值 | 描述 |
+|---|---|
+| `end-user` | 人工用户输入。 |
+| `agent` | 代理输入。 |
+| `bot` | 自动代理响应。 |
+| `canned-prompt` | 预定义/模板化的响应。 |
+| `concierge` | 人体代理反应。 |
+
+#### 用途类型（原始文本）
+
+您需要在`prompt`、`response`或`feedback`对象中`raw`对象的任何元素上设置`purpose`属性的值。 可接受任何字符串值。 此字段用于区分原始文本中存储的内容。 有用的值如下所示，其他值同样有效：
+
+| 值 | 描述 |
+|---|---|
+| `free-form-text` | 自由格式文本。 |
+| `screenshot` | 屏幕快照详细信息。 |
+| `attachment` | 附件详细信息。 |
+| `link` | 外部链接。 |
+| `url` | URL。 |
+| `image-link` | 链接到图像。 |
+| `citation` | 引用。 |
+| `media` | 媒体。 |
+
+
+
+#### 对话
+
+有关对话对象的完整详细信息，请参阅下文。
+
++++ 详细信息 
+
+| 字段路径（点表示法） | 类型 | 示例值 | 注释 |
+|---|---|---|---|
+| `conversationID` | 字符串 | `"conv-001"` | 将多个组组合在一起。 |
+| `conversationName` | 字符串 | `"France Geography Q&A"` | **新建。** 为对话提供的名称，该名称表示对话的整体上下文。 |
+| `turnID` | 字符串 | `"turn-001"` | 此回合的唯一ID。 |
+| `prompt.source` | 字符串 | `"end-user"` | Source提示，其他选项可能包括缓存值、固定值等。 |
+| `prompt.raw[]` | 数组 | 请参阅下面的原始对象 | 原始提示数据。 |
+| `prompt.raw[].text` | 字符串 | `"What is the capital of France?"` | 实际文本内容。 |
+| `prompt.raw[].purpose` | 字符串 | `"User Input"` | 此文本段的用途。 |
+| `response.source` | 字符串 | `"bot"` | Source回应。 |
+| `response.raw[]` | 数组 | 请参阅下面的原始对象 | 原始响应数据。 |
+| `response.raw[].text` | 字符串 | `"The capital of France is Paris."` | 响应文本内容。 |
+| `response.raw[].purpose` | 字符串 | `"main"` | 响应区段的用途，其他选项可能包括链接、图片等。 |
+| `feedback.source` | 字符串 | `"end-user"` | Source提供反馈。 |
+| `feedback.raw[]` | 数组 | 请参阅下面的原始对象 | 原始反馈数据。 |
+| `feedback.raw[].text` | 字符串 | `"Great help"` | 反馈文本。 |
+| `feedback.raw[].purpose` | 字符串 | `"free-form text"` | 对于反馈区段，其他选项可能包括屏幕截图、媒体等。 |
+| `feedback.rating.score` | 数字 | `1` | 数字评分从`-1.0`到`1.0`。 |
+| `feedback.rating.classification` | 字符串 | `"Thumbs Up"` | 评级分类。 |
+| `feedback.rating.reasons[]` | 数组 | `["Accurate", "Quick response"]` | 评级原因数组。 |
+| `signals[]` | 数组 | 请参阅下面的信号对象 | 基于此事件和迄今为止的对话派生的信号。 每个条目都是一个具有自己作用域的命名信号。 |
+| `signals[].scope` | 字符串 | `"turn"` | 从中派生这组信号的输入范围（轮换、会话至今、最后N个轮换、反馈）。 |
+| `signals[].attributes` | 对象 | 请参阅以下属性 | **已弃用。** 信号属性的容器。 每个属性都是一个对象，其中包含一个或多个值。 这是为了满足支持用于生成信号的ML/代理信息量的预期需要。 |
+| `signals[].attributes.subjects` | 对象 | 请参阅以下主题 | **已弃用。** 主题容器。 |
+| `signals[].attributes.subjects.values[]` | 数组 | 请参阅下面的主题值 | **已弃用。** 主题值数组。 |
+| `signals[].attributes.subjects.values[].phrase` | 字符串 | `"product pricing"` | **已弃用。** 从范围输入中提取的短语或关键字。 |
+| `signals[].attributes.subjects.values[].qualifiers[]` | 数组 | `["important", "urgent"]` | **已弃用。** 短语的限定符列表 |
+| `signals[].attributes.intents` | 对象 | 查看以下意图 | **已弃用。** 意图容器。 |
+| `signals[].attributes.intents.values[]` | 数组 | `["make a purchase", "learn more"]` | **已弃用。** 从范围输入派生的意图。 |
+| `signals[].attributes.tones` | 对象 | 查看下面的色调 | **已弃用。** 色调容器。 |
+| `signals[].attributes.tones.values[]` | 数组 | `["thrilled", "contemplative"]` | **已弃用。** 从范围输入派生的色调。 |
+| `signals[].attributes.sentiment` | 对象 | 请参阅下面的情绪 | **已弃用。** 情绪的容器。 |
+| `signals[].attributes.sentiment.value` | 数字 | `0.71` | **已弃用。** 得分从`-1`（负）到`1`（正）表示情绪。 |
+| `signals[].name` | 字符串 | `"sentiment"` | **新**（替换已弃用的`attributes`容器）。 此信号的标识符，例如“主体”、“意图”、“色调”、“情绪”或任何生产商定义的名称。 制作者无需更改架构即可添加新信号类型。 |
+| `signals[].type` | 字符串 | `"number"` | **新建。** 此信号值（`string`、`number`或`boolean`）的数据类型。 告知使用者在`values[]`的每个条目上填充了哪个类型的值字段。 |
+| `signals[].values[]` | 数组 | 请参阅下面的值对象 | 此信号的一个或多个值。 |
+| `signals[].values[].stringValue` | 字符串 | `"curious"` | 当`type`为字符串时填充。 类别值，例如意图、音调或提取的短语/ |
+| `signals[].values[].numberValue` | 数字 | `0.71` | 当`type`为数字时填充。 例如，从`-1`到`1`的情绪分数，或强度/ |
+| `signals[].values[].booleanValue` | 布尔值 | `true` | 当`type`为布尔值时填充。 `true` / `false`标志 |
+| `signals[].values[].confidence` | 数字 | `0.9` | **新建。** 生产者分配给此值的置信度，从`0`到`1`。 |
+| `signals[].values[].qualifiers[]` | 数组 | `["important", "urgent"]` | 此值的其他描述符，与关键字类似，但更有意义/ |
+| `signals[].values[].metadata[]` | 数组 | 请参阅下面的参数 | **新建。** Producer为此值定义的元数据作为键/值对，例如有关生成信号/的ML/代理的上下文 |
+
++++
+
+
 
 ### 代理信息字段组
 
@@ -77,7 +294,7 @@ ht-degree: 6%
 | `skills[].score` | 数字 | `0.95` | 匹配技能所得的分数 |
 | `skills[].failed` | 布尔值 | `false` | 表示技能执行失败的标记 |
 | `skills[].errorReason` | 字符串 | `"timeout"` | 在`failed`为true时技能失败的原因 |
-| `skills[].sequenceNumber` | 整数 | `1` | 在单个代理执行中单调递增此技能调用的索引 — 不是全局性的，因为子代理并行运行。 使用者按`agentID`、`sequenceNumber`、`timestamp`进行分页排序。 可选 |
+| `skills[].sequenceNumber` | 整数 | `1` | 在单个代理执行中单调增加此技能调用的索引。 此索引不是全局索引，因为子代理并行运行。 使用者按`agentID`、`sequenceNumber`、`timestamp`进行分页排序。 可选 |
 | `skills[].timestamp` | 字符串（日期时间） | `"2026-09-11T00:03:15Z"` | 启用该技能的时间，ISO 8601 UTC。 在`sequenceNumber`之后使用的排序键。 生成者应始终填充此内容 |
 | `skills[].skillSource` | 字符串 | `"inline"` | 如何将技能定义传递到运行时： `inline` （内联加载到上下文中）或`deferred` （按需加载） |
 | `skills[].executionContext` | 字符串 | `"inline"` | 执行与呼叫代理相关的技能的位置： `inline`或`forked`（在分支的子代理上下文中运行） |
@@ -207,176 +424,6 @@ ht-degree: 6%
 
 +++
 
-
-### “对话事件”字段组
-
-**[!UICONTROL 对话事件]**&#x200B;字段组是必填字段组，并使用`conversation`对象。
-
-对话对象捕获以下项的数据：
-
-#### 对话
-
-唯一的`conversationID`标识对话。 例如：`conversationID = "conv-001"`。 架构还支持`conversationName`。 描述对话整体上下文的可读名称，如： `France Geography Q&A`。 对话名称是自动生成的，但您可以更新生成的名称。 对话名称也已填充到`signals[].name`。
-
-`conversationID`允许将所有相关的转化事件分组到相同的对话体验中。
-
-#### 翻转
-
-轮次是对话中的一个交互周期。
-
-`turnID`唯一的`turnID`标识转弯。 例如：
-
-`conversationID = "conv-001"`
-`turnID = "turn-001"`
-
-同一`conversationID`和`turnID`用于关联与该转向关联的提示、响应和反馈。 这种关联适用于单独交付或最终位于不同数据集的记录。 `turnId`在同一对话中只需是唯一的，但可在对话中重复使用。 例如，在与`conversationID` `conv-001`和`conv-002`的对话中，您可以同时将`turn-001`作为`turnID`。
-
-
-#### 提示
-
-提示是提交给代理的输入。 在大多数客户情景中，此输入是用户的问题、请求、说明或消息。
-
-提示使用以下表示形式： `conversation.prompt`
-
-重要的提示字段包括：
-
-| 字段 | 含义 |
-|---|---|
-| `prompt.source` | 产生提示的人员或内容，通常是最终用户。 |
-| `prompt.raw[]` | 一个或多个原始内容区段。 |
-| `prompt.raw[].text` | 实际的提示文本或指向内容的链接（例如，屏幕快照）。 |
-| `prompt.raw[].purpose` | 内容的用途，如用户输入或链接。 |
-
-一个提示可以包含多个原始区段。 例如，用户输入文本并包含一个URL。
-
-* `Prompt`
-  * `"What is the capital of France"`
-  * `"https://example.com/france"`
-
-
-#### 响应
-
-响应是指代理或其他响应方返回的内容。
-
-`conversation.response`唯一的`responseID`表示响应。
-
-重要的响应字段包括：
-
-| 字段 | 含义 |
-|---|---|
-| `response.source` | 产生响应的人员或人员。 |
-| `response.raw[]` | 一个或多个响应内容区段 |
-| `response.raw[].text` | 响应文本或内容。 |
-| `response.raw[].purpose` | 内容区段的目的。 |
-
-记录的源类型包括：
-
-<!-- randy buck to provide additional details -->
-
-| 来源 | 含义 |
-|---|----|
-| `bot` | 自动代理响应。 |
-| `canned` | 预定义或模板化的响应。 |
-| `concierge` | 人体代理反应。 |
-| `end-user` | 人工生成的内容（如果适用）。 |
-
-#### 反馈
-
-反馈是用户对交互的明确评估或反应。
-
-反馈结构包括： `conversation.feedback`。
-
-示例：
-
-* `feedback.raw[].text: "Great help"`
-* feedback.rating.score： 1
-* feedback.rating.classification： &quot;Thumbs Up&quot;
-* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
-
-记录的评分范围是`-1.0`到`1.0`。
-
-可以使用以下项将反馈事件表示为仅反馈事件： `eventType = "conversation.feedback"`。
-
-当反馈应用于特定回合时，请保留相应的`conversationID`和`turnID`，以便对话搅拌器能够将反馈与相关交互相关联。
-
-
-#### 信号
-
-信号是对会话内容的结构化分析观察。 信号服务提供开箱即用的信号。 提供信号无需任何操作，但您可以将信号添加为集成的一部分。
-
-<!-- randy buck to provide additional details -->
-
-信号包含以下字段。
-
-| 字段 | 含义 |
-|---|----|
-| `scope` | 用于派生信号的输入范围，如转换或会话至今。 |
-| `name` | 信号标识符，例如主题、意图、音调或情绪。 还支持产品定义的信号名称。 |
-| `type` | 值类型：字符串、数字或布尔值。 |
-| `values[]` | 与信号相关的一个或多个值。 |
-| `stringValue` | 字符串信号值，例如意图、音调或主题。 |
-| `numberValue` | 数字信号值，如情绪分数。 |
-| `booleanValue` | 真/假信号值。 |
-| `confidence` | 信号值中的可选生产者置信度，通常介于0和1之间。 |
-| `qualifiers[]` | 向信号值添加上下文的可选描述符。 |
-| `metadata[]` | 可选的制造者定义的键/值元数据。 |
-
-
-信号提取服务填充信号数据集的`signals`对象。
-
-已弃用以前的`signals[].attributes.{subjects,intents,tones,sentiment}`容器。
-
-#### 对话
-
-有关对话对象的完整详细信息，请参阅下文。
-
-+++ 详细信息 
-
-| 字段路径（点表示法） | 类型 | 示例值 | 注释 |
-|---|---|---|---|
-| `conversationID` | 字符串 | `"conv-001"` | 将多个轮流分组 |
-| `conversationName` | 字符串 | `"France Geography Q&A"` | **新建。** 为对话提供的名称，该名称表示对话的整体上下文 |
-| `turnID` | 字符串 | `"turn-001"` | 此回合的唯一ID |
-| `prompt.source` | 字符串 | `"end-user"` | Source提示，其他选项可能包括缓存值、固定值等。 |
-| `prompt.raw[]` | 数组 | 请参阅下面的原始对象 | 原始提示数据 |
-| `prompt.raw[].text` | 字符串 | `"What is the capital of France?"` | 实际文本内容 |
-| `prompt.raw[].purpose` | 字符串 | `"User Input"` | 此文本段的用途 |
-| `response.source` | 字符串 | `"bot"` | Source响应 |
-| `response.raw[]` | 数组 | 请参阅下面的原始对象 | 原始响应数据 |
-| `response.raw[].text` | 字符串 | `"The capital of France is Paris."` | 响应文本内容 |
-| `response.raw[].purpose` | 字符串 | `"main"` | 响应区段的用途，其他选项可能包括链接、图片等。 |
-| `feedback.source` | 字符串 | `"end-user"` | Source反馈 |
-| `feedback.raw[]` | 数组 | 请参阅下面的原始对象 | 原始反馈数据 |
-| `feedback.raw[].text` | 字符串 | `"Great help"` | 反馈文本 |
-| `feedback.raw[].purpose` | 字符串 | `"free-form text"` | 对于反馈区段，其他选项可能包括屏幕截图、媒体等。 |
-| `feedback.rating.score` | 数字 | `1` | 数值评级得分从–1.0到1.0 |
-| `feedback.rating.classification` | 字符串 | `"Thumbs Up"` | 评级分类 |
-| `feedback.rating.reasons[]` | 数组 | `["Accurate", "Quick response"]` | 评级原因数组 |
-| `signals[]` | 数组 | 请参阅下面的信号对象 | 基于此事件和迄今为止的对话派生的信号。 每个条目都是一个具有自己作用域的命名信号 |
-| `signals[].scope` | 字符串 | `"turn"` | 从中派生这组信号的输入范围（轮换、会话至今、最后N个轮换、反馈） |
-| `signals[].attributes` | 对象 | 请参阅以下属性 | **已弃用。** 信号属性的容器。 每个属性都是一个对象，其中包含一个或多个值。 这是为了满足支持用于生成信号的ML/代理信息量的预期需要。 |
-| `signals[].attributes.subjects` | 对象 | 请参阅以下主题 | **已弃用。** 主题容器 |
-| `signals[].attributes.subjects.values[]` | 数组 | 请参阅下面的主题值 | **已弃用。** 主题值数组 |
-| `signals[].attributes.subjects.values[].phrase` | 字符串 | `"product pricing"` | **已弃用。** 从限定范围的输入中提取的短语或关键词 |
-| `signals[].attributes.subjects.values[].qualifiers[]` | 数组 | `["important", "urgent"]` | **已弃用。** 短语的限定符列表 |
-| `signals[].attributes.intents` | 对象 | 查看以下意图 | **已弃用。** 意图容器 |
-| `signals[].attributes.intents.values[]` | 数组 | `["make a purchase", "learn more"]` | **已弃用。** 从范围输入派生的意图 |
-| `signals[].attributes.tones` | 对象 | 查看下面的色调 | **已弃用。** 色调容器 |
-| `signals[].attributes.tones.values[]` | 数组 | `["thrilled", "contemplative"]` | **已弃用。** 从范围输入派生的色调 |
-| `signals[].attributes.sentiment` | 对象 | 请参阅下面的情绪 | **已弃用。** 情绪容器 |
-| `signals[].attributes.sentiment.value` | 数字 | `0.71` | **已弃用。** 得分从–1（负）到1（正）表示情绪 |
-| `signals[].name` | 字符串 | `"sentiment"` | **新**（替换已弃用的`attributes`容器）。 此信号的标识符，例如“主体”、“意图”、“色调”、“情绪”或任何制作者定义的名称 — 制作者可以添加新的信号类型而无需架构更改 |
-| `signals[].type` | 字符串 | `"number"` | **新建。** 此信号值（`string`、`number`或`boolean`）的数据类型 — 告知使用者在`values[]`的每个条目上填充了哪个类型的值字段 |
-| `signals[].values[]` | 数组 | 请参阅下面的值对象 | 此信号的一个或多个值 |
-| `signals[].values[].stringValue` | 字符串 | `"curious"` | 当`type`为“字符串”时填充 — 一个分类值，例如意图、音调或提取的短语 |
-| `signals[].values[].numberValue` | 数字 | `0.71` | 当`type`为“数字”（例如，情绪分数从–1到1或强度）时填充 |
-| `signals[].values[].booleanValue` | 布尔值 | `true` | 当`type`为“boolean”（真/假标志）时填充 |
-| `signals[].values[].confidence` | 数字 | `0.9` | **新建。** 生产者分配给此值的置信度，从0到1 |
-| `signals[].values[].qualifiers[]` | 数组 | `["important", "urgent"]` | 此值的其他描述符，与关键字类似，但更有意义 |
-| `signals[].values[].metadata[]` | 数组 | 请参阅下面的参数 | **新建。** 生成器为此值定义的元数据作为键/值对，例如有关生成信号的ML/代理的上下文 |
-
-+++
-
 ### 其他字段组
 
 您可以将可选字段组添加到用于提示、响应和反馈数据集的架构中。 例如：
@@ -396,37 +443,9 @@ ht-degree: 6%
 
 | 数值 | 说明 |
 |---|---|
-| `conversation.turn` | 带提示和回应的完整对话翻转 |
-| `conversation.recommendation` | 基于对话的推荐 |
-| `conversation.feedback` | 仅反馈事件 |
-
-
-### Source类型
-
-您需要为事件中的每个`prompt`、`response`或`feedback`对象设置`source`的以下值之一：
-
-| 值 | 描述 |
-|---|---|
-| `end-user` | 人工用户输入 |
-| `bot` | 自动代理响应 |
-| `canned` | 预定义/模板化响应 |
-| `concierge` | 人体代理反应 |
-
-### 用途类型（原始文本）
-
-您需要为`prompt`、`response`或`feedback`对象中`raw`对象的任何元素的`purpose`特性设置以下值之一。
-
-<!-- randy buck to provide details -->
-
-| 值 | 描述 |
-|---|---|
-| `User Input` | 主要用户输入 |
-| `main` | 主要响应内容 |
-| `advertisement` | 促销内容 |
-| `citation` | 引用/源链接 |
-| `link` | 外部链接 |
-| `image` | 图像引用 |
-| `enum picker` | 结构化反馈选择 |
+| `conversation.turn` | 完成对话并提示和响应。 |
+| `conversation.recommendation` | 基于对话的推荐。 |
+| `conversation.feedback` | 仅对话反馈事件。 |
 
 
 ### 示例
@@ -637,7 +656,25 @@ ht-degree: 6%
 
 ## 信号提取
 
-信号提取发生在数据收集之后。 您的代理应用程序或服务不会填充其他信号。
+信号提取发生在数据收集之后。 您的代理应用程序或服务可以填充其他信号。
+
+### 信号名称
+
+您需要为`signals[].name`设置一个值。 任何字符串值都是可接受的；但是，Adobe在信号提取过程中会填充以下名称。 请避免将这些`name`值用于您发送的任何信号，因为这些值将被覆盖。
+
+* `intents`
+* `sentiment`
+* `tones`
+* `topics`
+* `keywords`
+* `title`
+
+### 信号范围
+
+任何字符串值都可以接受；但是，Adobe在信号提取过程中会填充以下范围。 请避免将这些`scope`值用于您发送的任何信号，因为这些值将被覆盖。
+
+* `turn`
+* `feedback`
 
 +++ 带有信号的示例转换事件
 

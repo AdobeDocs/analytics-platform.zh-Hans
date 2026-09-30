@@ -9,25 +9,36 @@ autotag-review: '2026-05-19T07:58:46.205Z'
 TQID: 'https://experienceleague.adobe.com/X5R0sqTkZKxvzH7mwv69-Ez3MIbuTg6XDGuxrw-iugw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: '662'
 ht-degree: 83%
-
 ---
-
 # 摄取 Google Analytics 历史数据
 
 本页面重点介绍如何将您的 Google Analytics 历史数据作为数据集摄取到 Adobe Experience Platform 中，以便您在 Customer Journey Analytics 的数据视图中引用该数据集。 您可以将此页面上的步骤与[配置实时 Google Analytics 实施](streaming.md)结合使用，这会生成一个循环数据集。 将此历史数据集与您当前实施的数据集结合起来，以便在 Customer Journey Analytics 中获得包含当前数据和回填数据的无缝数据视图。

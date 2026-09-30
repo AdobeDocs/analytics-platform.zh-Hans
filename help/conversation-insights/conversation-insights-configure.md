@@ -18,15 +18,15 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 20%
 ---
 # 创建或编辑配置
 
 对话分析允许您从提供给客户的座席体验分析对话。 这些代理体验可以基于大型语言模型(LLM)或基于人类对话。 例如，与客户或呼叫中心进行交互的聊天机器人成绩单。
-通过对话分析，您可以了解代表对实际用户结果的影响。
+通过对话分析，您可以了解座席对实际用户结果的影响。
 
 通过对话见解配置界面，您可以快速创建或编辑配置和相关工件（连接、数据视图等）。
 
@@ -114,7 +114,47 @@ ht-degree: 7%
 
 ## 数据视图验证
 
-（解释您从相关数据集中看到的量度和维度）
+您在[配置步骤](#configuration-steps)中配置的数据视图具有&#x200B;**[!UICONTROL 对话见解]**，作为[数据视图](/help/data-views/manage-dataviews.md)中&#x200B;**[!UICONTROL 集成]**&#x200B;的值。
+
+对于每个配置的数据视图：
+
+* **容器**： [容器选项卡](/help/data-views/create-dataview.md#containers)包含一个新的&#x200B;**[!UICONTROL 容器名称]**： **[!UICONTROL 对话]**，其中具有&#x200B;**[!UICONTROL 显示名称]**： **[!UICONTROL 容器]**&#x200B;作为附加的&#x200B;**[!UICONTROL 系统]** **[!UICONTROL 容器类型]**。
+* **组件**：您看到其他架构字段文件夹。 例如：agentExperience和conversation。 此外，还会自动添加以下组件：
+
+  | 量度 | 架构数据类型 | 架构路径 |
+  |---|---|---|
+  | 客户反馈 | 字符串 | 事件类型 |
+  | 正面情绪 | 字符串 | 派生字段 |
+  | 建议 | 字符串 | 事件类型 |
+  | 转弯 | 字符串 | 事件类型 |
+
+  | 维度 | 架构数据类型 | 架构路径 |
+  |---|---|---|
+  | 代理 ID | 字符串 | `agenticExperience.agents.agentID` |
+  | 代理商名称 | 字符串 | `agenticExperience.agents.name` |
+  | 调度器名称 | 字符串 | `agenticExperience.name` |
+  | 调度器的版本 | 字符串 | `agenticExperience.version` |
+  | 对话 ID | 字符串 | `conversation.conversationID` |
+  | 对话名称 | 字符串 | `conversation.conversationName` |
+  | 对话信号名称 | 字符串 | `conversation.signals.name` |
+  | 对话摘要布尔值 | 布尔值 | `conversation.signals.values.booleanValue` |
+  | 对话摘要置信度 | 双精度型 | `conversation.signals.values.confidence` |
+  | 对话摘要元数据键 | 字符串 | `conversation.signals.values.metadata.key` |
+  | 对话摘要数值 | 双精度型 | `conversation.signals.values.numberValue` |
+  | 对话摘要限定符 | 字符串 | `conversation.signals.values.qualifiers` |
+  | 对话语气信号 | 字符串 | `conversation.signals.attributes.tones.values` |
+  | 环境 | 字符串 | `agenticExperience.environment` |
+  | 反馈分类 | 字符串 | 派生字段 |
+  | 反馈评分分类 | 字符串 | `conversation.feedback.rating.classification` |
+  | 反馈分区的用途 | 字符串 | `conversation.feedback.raw.purpose` |
+  | 反馈的来源 | 字符串 | `conversation.feedback.source` |
+  | 字句 | 字符串 | `conversation.signals.attributes.subjects.values.phrase` |
+  | 回答的原始文本 | 字符串 | `conversation.response.raw.text` |
+  | 回答的来源 | 字符串 | `conversation.response.source` |
+  | 情绪分类 | 字符串 | 派生字段 |
+  | 技能名称 | 字符串 | `agenticExperience.agents.skills.name` |
+  | 技能版本 | 字符串 | `agenticExperience.agents.skills.version` |
+  | 数值 | 字符串 | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--

@@ -4,27 +4,35 @@ description: 了解如何更深入地挖掘受众周围的数据，并通过同�
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-TQID: https://experienceleague.adobe.com/3WB5sKKSaLe9VvAe6rlCTUqDYsG3kiqLCN-KaEtIlDw
+TQID: 'https://experienceleague.adobe.com/3WB5sKKSaLe9VvAe6rlCTUqDYsG3kiqLCN-KaEtIlDw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: addf009e-030a-4310-8534-776a3e62ed48
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer lifecycle
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 754
+source-wordcount: '754'
 ht-degree: 89%
-
 ---
-
 # 同类群组表概述 {#cohort-table-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -53,7 +61,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >[!ENDSHADEBOX]
 
 
-*cohort* 是指一组在特定期限内共享相同特性的人员。 例如，在您想了解如何让一个同类群组喜欢某个品牌时，![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL 同类群组表]**&#x200B;可视化图表就能派上用场。 您可以轻松识别趋势中的变化，然后相应地采取回应。 （网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://en.wikipedia.org/wiki/Cohort_analysis)。）
+*cohort* 是指一组在特定期限内共享相同特性的人员。 例如，在您想了解如何让一个同类群组喜欢某个品牌时，![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL 同类群组表]**&#x200B;可视化图表就能派上用场。 您可以轻松识别趋势中的变化，然后作出相应回应。 （网上提供了有关[!UICONTROL 同类群组分析]的解释说明，例如[同类群组分析基础](https://en.wikipedia.org/wiki/Cohort_analysis)。）
 
 创建队列报表后，您可以组织其组件（特定的维度、指标和区段），然后可以与其他任何人员共享这份队列报表。 请参阅[策划和共享](/help/analysis-workspace/curate-share/curate.md)。
 
@@ -80,7 +88,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 >
 >[!UICONTROL 同类群组分析]不支持不可分段的量度（包括计算量度）、非整数量度（例如收入）或发生次数。 只有可以在区段中使用的量度才能在[!UICONTROL 同类群组分析]中使用，并且它们一次只能递增 1。
 
-Customer Journey Analytics 中的同类群组表支持基于双倍量度（或任何基于数值的量度）。 例如，Purchase.Value（双倍）可用作包含/返回量度。 此外，通过 Analytics Source Connector 传递到 Adobe Experience Platform 的所有量度也都是双倍的。
+Customer Journey Analytics 中的同类群组表支持基于双精度值的量度（或任何基于数值的量度）。 例如，Purchase.Value（双精度值）可用作包含/返回量度。 此外，通过 Analytics Source Connector 传递到 Adobe Experience Platform 的所有量度也都是双精度值。
 
 ## 同类群组表功能
 
@@ -90,7 +98,7 @@ Customer Journey Analytics 中的同类群组表支持基于双倍量度（或�
 
 ### 维系率表
 
-[!UICONTROL 维系率]同类群组表回访人员：每个数据单元格显示了同类群组中在该时段内执行操作的原始人数和百分比。 您最多可以包含 3 个指标和 10 个区段。
+[!UICONTROL 维系率]同类群组表回访人员：每个数据单元格显示了同类群组中在该时段内执行操作的原始人数和百分比。 您最多可以包含 3 个量度和 10 个区段。
 
 ![维系率同类群组报告显示了同类群组中的人员单位和百分比。](assets/retention-report.png)
 

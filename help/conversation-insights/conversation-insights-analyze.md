@@ -18,9 +18,33 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '12'
+source-wordcount: '132'
 ht-degree: 0%
 ---
 # 分析对话见解
+
+## 简单分析
+
+要分析对话见解，请在Analysis Workspace中创建或编辑项目，并将其中一个配置的数据视图用作项目中一个或多个面板的数据视图。
+
++++ 示例项目
+
+![对话分析的基本示例项目](assets/conversation-insights-analyze-sample-project-basic.png)
+
++++
+
+## 在大规模和上下文中分析对话
+
+要大规模分析对话并在整个客户历程中为这些对话提供上下文，请执行以下操作：
+
+* 将您的对话见解事件与其他事件数据集以及其他配置文件和查找数据集相结合。 将这些数据集添加到您为对话分析配置选择的连接中。
+* 将其他组件（量度和维度）添加到您为对话分析配置选择的数据视图中。
+* ...
+
++++ 示例项目
+
+待定。
+
++++ 

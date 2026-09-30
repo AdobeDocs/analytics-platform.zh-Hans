@@ -5,27 +5,39 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-TQID: https://experienceleague.adobe.com/q-egeF94DZ-kxHpVBJX7A-Th0N30t7ji-V2EoXMe1P4
+TQID: 'https://experienceleague.adobe.com/q-egeF94DZ-kxHpVBJX7A-Th0N30t7ji-V2EoXMe1P4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: Optimization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 659
+source-wordcount: '659'
 ht-degree: 100%
-
 ---
-
 # [!UICONTROL 频率]分析 {#frequency}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,7 +49,7 @@ ht-degree: 100%
 
 <!-- markdownlint-enable MD034 -->
 
-![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析根据产品中事件发生的频率对事件数据进行分组。 该分析的纵轴包含表示事件频率的区间。 横轴测量的是每个区间的用户数或会话数。
+![频率](/help/assets/icons/Histogram.svg) **[!UICONTROL 频率]**&#x200B;分析根据产品中事件发生的频率对事件数据进行分组。 该分析的纵轴包含表示事件频率的桶。 横轴测量的是每个桶的用户数或会话数。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435812/?captions=chi_hans&quality=12&learn=on)
 
@@ -45,7 +57,7 @@ ht-degree: 100%
 
 该分析的用例包括：
 
-* **参与度**：跟踪用户对产品中任何事件的参与度。 您可以单击条形图的任意部分，以将其保存为一个区段。 针对参与度较低的群组的区段可以帮助您确定用户为何未以期望的频率与事件互动。 针对高参与度群组的区段可以帮助您了解用户为何经常与事件互动。 您可以根据该信息鼓励其他用户采取类似的行为。
+* **参与度**：跟踪用户对产品中任何事件的参与度。 您可以单击条形图的任意部分，以将其保存为一个区段。 针对参与度较低的桶的区段可以帮助您确定用户为何未以期望的频率与事件互动。 针对高参与度桶的区段可以帮助您了解用户为何经常与事件互动。 您可以根据该信息鼓励其他用户采取类似的行为。
 * **客户忠诚度**：将事件设置为“订单”，将量度设置为“用户”。 通过此分析，您可以根据用户在指定日期范围内在您的网站上购买的次数对用户进行分组。
 * **支持优化**：查看每个用户发出的支持型呼叫次数或未结案件数量，以洞察哪些用户遇到的问题最多。 然后，您可以创建一个区段，重点关注他们的体验，以帮助识别和解决他们的问题。
 * **订阅服务**：参与度较低的用户更容易流失。 了解高度参与的用户的行为有助于鼓励参与度较低的用户采取类似的行为，从而降低他们取消订阅的可能性。
@@ -75,9 +87,9 @@ ht-degree: 100%
 
 * **[!UICONTROL 自动确定存储桶]**：自动根据数据分布确定最佳存储桶大小。
 * **[!UICONTROL 自定义存储桶]**：自定义如何将数据分组到存储桶中。
-   * [!UICONTROL 从]：第一个存储桶。 小于该值的频率将被排除在报告之外。
-   * [!UICONTROL 至]：频率大于此值的归入最后一个桶。
-   * [!UICONTROL 大小]：桶间隔。
+  * [!UICONTROL 从]：第一个存储桶。 小于该值的频率将被排除在报告之外。
+  * [!UICONTROL 至]：频率大于此值的归入最后一个桶。
+  * [!UICONTROL 大小]：桶间隔。
 
 ### 时间比较
 
@@ -88,7 +100,7 @@ ht-degree: 100%
 您需要分析的日期范围。 此设置包含两个部分：
 
 * **[!UICONTROL 间隔]**：您想要查看趋势数据的日期粒度。 图表和表格默认显示汇总数据，并可以选择将表格扩展为趋势视图。 在趋势视图中，用户会根据总使用频率和每个时间间隔内的使用频率进行分组，这意味着一个用户在不同时间间隔内可以计入不同的存储桶。
-* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日程表选择器选择固定的日期范围。
+* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日历选择器选择固定的日期范围。
 
 
 <!--

@@ -6,24 +6,32 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-TQID: https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ
+TQID: 'https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: '838'
 ht-degree: 50%
-
 ---
-
 # 发送和计划项目
 
 您可以通过电子邮件将Customer Journey Analytics项目作为文件发送给选定的用户。 您可以临时发送文件，也可以配置项目以按计划发送。
@@ -32,7 +40,7 @@ ht-degree: 50%
 
 * 可以采用 CSV 或 PDF 格式发送文件。
 
-* 任何应用于项目的标记都会自动应用于导出文件。
+* 任何应用于项目的标记都会自动应用于导出。
 
 如[导出概述](/help/analysis-workspace/export/export-project-overview.md)中所述，还有其他导出 Customer Journey Analytics 数据的方法。
 

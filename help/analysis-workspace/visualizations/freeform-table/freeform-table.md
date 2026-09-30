@@ -4,25 +4,32 @@ description: 了解如何使用自由格式表，这是Analysis Workspace中进�
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-TQID: https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8
+TQID: 'https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 815
+source-wordcount: '824'
 ht-degree: 94%
-
 ---
-
 # 自由格式表概述 {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -58,7 +65,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 自由格式表生成器
 
-如果您希望先向表中添加多个组件，然后再渲染数据，可以选择&#x200B;**[!UICONTROL 启用表生成器]**。 启用该生成器后，您可以通过拖放维度、细分、量度和区段来生成表格，用于回答更复杂的问题。 选择&#x200B;**[!UICONTROL 生成]**&#x200B;后数据会更新。
+如果您希望先向表中添加多个组件，然后再渲染数据，可以选择&#x200B;**[!UICONTROL 启用表生成器]**。 启用该生成器后，您可以通过拖放维度、细分、量度和区段来构建表格，用于回答更复杂的问题。 选择&#x200B;**[!UICONTROL 生成]**&#x200B;后数据会更新。
 
 ![自由格式表生成器显示](assets/table-builder.png)
 
@@ -111,14 +118,14 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 | --- | --- |
 | **[!UICONTROL 插入复制的可视化内容]** | 将复制的可视化图表粘贴（插入）到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 将数据复制到剪贴板]** | 将可视化图表中的数据复制到剪贴板上。 |
-| **[!UICONTROL 将选择复制到剪贴板]** | 将可视化图表中的选择复制到剪贴板上。 |
+| **[!UICONTROL 将选择复制到剪贴板]** | 将可视化图表中的所选内容复制到剪贴板上。 |
 | **[!UICONTROL 将项目下载为 CSV（*维度名称*）]** | 将可视化图表的维度项（最多 50,000 个）立即下载到本地设备。 所选维度最多可有 50,000 个维度项。 |
 | **[!UICONTROL 复制可视化图表]** | 复制可视化图表，您可以将其插入到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 下载数据 CSV]** | 将可视化图表显示的数据立即下载到本地设备。 |
 | **[!UICONTROL 导出整个表...]** | 将整个表导出到指定的云位置。 请参阅[将 Customer Journey Analytics 报告导出至云](../../export/export-cloud.md) |
 | **[!UICONTROL 复制可视化]** | 生成一个与可视化图表完全相同的副本。 |
 | **[!UICONTROL 编辑描述]** | 添加（或编辑）可视化图表的文本描述。 请参阅[文本](../text.md)。 |
-| **[!UICONTROL 获取可视化图表链接]** | 将链接直接复制并共享到可视化图表。 共享链接对话框会显示该链接。 选择“复制”将链接复制到剪贴板。 |
+| **[!UICONTROL 获取可视化图表链接]** | 直接复制并共享指向该可视化图表的链接。 共享链接对话框会显示该链接。 选择“复制”将链接复制到剪贴板。 |
 | **[!UICONTROL 从头开始]** | 删除当前可视化图表的设置，以便您从头开始重新配置。 |
 
 

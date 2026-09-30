@@ -5,32 +5,47 @@ title: 从Workspace报表生成演示
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-TQID: https://experienceleague.adobe.com/FS8pF5-orvK65JCWs8stf2gMbrUXYmcsM-DXJhzlML4
+TQID: 'https://experienceleague.adobe.com/FS8pF5-orvK65JCWs8stf2gMbrUXYmcsM-DXJhzlML4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1720
+source-wordcount: '1720'
 ht-degree: 9%
-
 ---
-
 # 数据storytelling：从Workspace报表生成幻灯片演示 {#generate-powerpoint}
 
 >[!NOTE]
@@ -239,21 +254,21 @@ Analysis Workspace通过考虑以下项目元素来创建数据故事：
 
   大多数可视化图表都可以包含在从Workspace项目生成的幻灯片中。 但是，在显示配置选项时，以下可视化图表无法包含和显示为灰色：
 
-   * 面积图
+  * 面积图
 
-   * 项目符号
+  * 项目符号
 
-   * 同类群组表
+  * 同类群组表
 
-   * 组合
+  * 组合
 
-   * 具有多个维度列的自由格式表（支持具有单个维度列的表）
+  * 具有多个维度列的自由格式表（支持具有单个维度列的表）
 
-   * 历程画布
+  * 历程画布
 
-   * 散点图
+  * 散点图
 
-   * 树状图
+  * 树状图
 
 * 引导式分析
 

@@ -2,17 +2,25 @@
 title: 子事件分析
 description: 了解子事件分析如何让您在客户历程分析中筛选事件内的单个产品或其他容器，从而消除产品报表中的归因出血。
 feature: Segmentation
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
+    internal-label: Segment Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 680
+source-wordcount: '680'
 ht-degree: 8%
-
 ---
-
 # 子事件分析
 
 通过子事件分析，可在比事件级别更精细的级别分析事件数据。 您可以对事件中的单个容器进行分段，而不是筛选整个事件。 例如：

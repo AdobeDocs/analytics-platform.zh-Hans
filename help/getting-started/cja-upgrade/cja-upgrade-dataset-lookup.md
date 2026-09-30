@@ -9,26 +9,36 @@ autotag-review: '2026-05-19T08:11:57.362Z'
 TQID: 'https://experienceleague.adobe.com/mu-yJABb7bfRMW6Kn5DBUZuSxggVyIUeOeGQHMgxetM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Administration
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 818
+source-wordcount: '818'
 ht-degree: 100%
-
 ---
-
 # 创建查找数据集，以对 Customer Journey Analytics 中的数据进行分类 {#upgrade-lookup-dataset}
 
 <!-- markdownlint-disable MD034 -->
@@ -36,13 +46,13 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="为包含分类数据的每个维度创建一个查找数据集"
->abstract="与 Adobe Analytics 中的分类数据类似，查找数据集是 Customer Journey Analytics 中的数据分类的方法。"
+>abstract="与 Adobe Analytics 中的分类数据类似，查找数据集是在 Customer Journey Analytics 中对数据进行分类的方法。"
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-与 Adobe Analytics 中的分类数据类似，查找数据集是 Customer Journey Analytics 中的数据分类的方法。
+与 Adobe Analytics 中的分类数据类似，查找数据集是在 Customer Journey Analytics 中对数据进行分类的方法。
 
 使用 Analytics 源连接器时，一些标准查找数据集会在报告时自动应用。 有关详细信息，请参阅[向数据集添加标准查找](/help/connections/standard-lookups.md)。
 
@@ -82,7 +92,7 @@ ht-degree: 100%
 
 对包含要分类的数据的每个维度重复此过程。
 
-要创建用于 Customer Journey Analytics 中的架构的查找数据集，请执行以下操作：
+要创建在 Customer Journey Analytics 中与架构配合使用的查找数据集，请执行以下操作：
 
 >[!NOTE]
 >

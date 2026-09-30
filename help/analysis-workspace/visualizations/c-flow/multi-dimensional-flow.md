@@ -8,22 +8,28 @@ autotag-review: '2026-05-19T08:41:06.716Z'
 TQID: 'https://experienceleague.adobe.com/1er03t5uOypgXP6sjFW3z7vbN8IucVak2OiDeUG-OaU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 338
+source-wordcount: '338'
 ht-degree: 89%
-
 ---
-
 # 维度间流量
 
 通过维度间流量可以跨不同维度查看用户路径。 本文介绍了如何将此流用于两个用例：移动应用程序交互和事件，以及营销活动如何推动Web访问
@@ -50,7 +56,7 @@ A dimension label at the top of each Flow column makes using multiple dimensions
 
   ![显示将页面维度拖到末端空白处的流量。](assets/flowapp-add.png)
 
-下面的流量可视化图表显示了添加&#x200B;**[!UICONTROL 事件类型]**&#x200B;维度的结果。 该可视化图表可让您洞察移动应用程序用户在将产品添加到购物车、关闭应用程序、展现产品建议等之前是如何在应用程序的各个屏幕之间移动的。
+下面的流量可视化图表显示了添加&#x200B;**[!UICONTROL 事件类型]**&#x200B;维度的结果。 该可视化图表可让您洞察移动应用程序用户在将产品添加到购物车、关闭应用程序、收到产品建议等之前，是如何在应用程序的各个屏幕之间移动的。
 
 ![显示将页面维度结果展现在列表顶部的流量。](assets/flowapp-result.png)
 

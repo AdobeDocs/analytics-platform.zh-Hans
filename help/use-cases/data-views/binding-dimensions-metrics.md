@@ -4,22 +4,28 @@ description: 将维度归因于对象数组，以进行复杂的持久性分析�
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/1QpmW2FTqA2B7JgqJEO6MNJzrBkGIL9s4gZYxhIp9UI
+TQID: 'https://experienceleague.adobe.com/1QpmW2FTqA2B7JgqJEO6MNJzrBkGIL9s4gZYxhIp9UI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1357
+source-wordcount: '1357'
 ht-degree: 70%
-
 ---
-
 # 使用绑定维度和量度
 
 Customer Journey Analytics 提供了几种方法，使维度值在所设置的点击之后持续存在。 Adobe 提供的一种持久性方法称为“绑定”。 在早期版本的 Adobe Analytics 中，这个概念被称为促销。
@@ -285,7 +291,7 @@ Customer Journey Analytics会自动检测所选维度和绑定维度之间的关
 
 ## 示例 3：将视频搜索词绑定到用户轮廓
 
-您可以将搜索词绑定到用户轮廓，以便轮廓之间的持久性保持完全分离。 例如，您的组织运行一个流媒体服务，其中一个总帐户可以有多个轮廓。 访客有一个儿童轮廓和一个成人轮廓。
+您可以将搜索词绑定到用户轮廓，以便轮廓之间的持久性保持完全分离。 例如，您的组织运营一项流媒体服务，其中一个主帐户可以有多个轮廓。 访客有一个儿童轮廓和一个成人轮廓。
 
 1. 该帐户在儿童轮廓下登录并搜索儿童电视节目。 请注意，这`"ProfileID"`是`2`代表儿童轮廓。
 
@@ -408,7 +414,7 @@ Analysis Workspace将Orangey的第二集归因于搜索词`kids show`，而不�
    }
    ```
 
-1. 他们通过结账过程并购买这两件物品。
+1. 他们完成结账过程并购买这两件物品。
 
    ```json
    {

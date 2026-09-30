@@ -5,32 +5,45 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-TQID: https://experienceleague.adobe.com/BPrXvtXRO3WdxhjucGLGuoWL1AIvwcoUVhqIPX3NEek
+TQID: 'https://experienceleague.adobe.com/BPrXvtXRO3WdxhjucGLGuoWL1AIvwcoUVhqIPX3NEek'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2592
+source-wordcount: '2592'
 ht-degree: 87%
-
 ---
-
 # 使用 Data Insights 代理可视化数据
 
 >[!AVAILABILITY]
@@ -47,9 +60,9 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 | 功能 | 范围内 | 范围外 |
 | --- | --- | --- |
-| **可视化图表类型** | <ul><li>折线图</li><li>多条线形图</li><li>自由格式表</li><li>条形图</li><li>圆环图</li><li>摘要数字</li></ul> | <ul><li>流量</li><li>流失</li><li>同类群组表格</li><li>面积图，堆叠面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图，横向堆叠条形图</li><li>关键量度摘要</li><li>散点图</li><li>概要变化</li><li>文本</li><li>树状图</li><li>维恩图</li><li>引导式分析：活跃增长、转化趋势、参与度、首次使用影响、频率、漏斗、净增长、版本影响、用户留存、时间线、趋势分析</li></ul> |
-| **工作区操作和代理功能** | <ul><li>构建和更新可视化图表<p>生成自由格式表和相关联的可视化图表（例如线形图、条形图、圆环图等）。</p><p>例如：*2 月至 5 月各 SKU 的利润是多少？*</p></li><li>提出跟进问题<p>根据先前提示词的上下文，对提示词做出回应。 例如：</p> <ul><li>提示词 1：*3 月的趋势事件。*</li><li>提示词 2：*请改为显示 3 月至 4 月的数据*</li></ul> </li><li>范围外提示词识别<p>如果您提交超出范围的提示词，例如&#x200B;*导出此项目*，Data Insights 代理就会做出回应，告知您该问题超出范围。</p></li></ul> | <ul><li>共享</li><li>导出</li><li>下载</li><li>管理用户偏好设置</li><li>管理数据视图</li><li>Analytics 功能板应用程序</li><li>归因</li><li>内联摘要或回答<p>Data Insights 代理无法在聊天边栏中通过对用户提示词的概述回答进行内联回复。 范围外的提示示例包括：*请概括我上一个提示中的洞察*&#x200B;和&#x200B;*请总结线形图中的亮点。*</p></li></ul> |
-| **澄清问题** | 如果您提出的问题没有充分的上下文让 Data Insights 代理能够回答，或者问题太过笼统，Data Insights 代理就会提出用于澄清的问题或一些建议选项。 <p>以下澄清问题是与组件相关问题的示例：</p><ul><li>量度：*您指的是哪个“收入”量度？*</li><li>维度：*您想关注以下哪一个“地区”？*</li><li>区段：*您想应用哪个“帐户”区段？*</li><li>日期范围：*您所说的“上个月”是指过去的整个月还是过去 30 天？*</li></ul><p>以下澄清问题是与维度项相关问题的示例：</p> <ul><li>您指的是哪个“商店名称”？ （例如，商店 #5274、商店 #2949 等。）</li></ul> | 澄清问题仅限于组件和维度项。 Data Insights 代理无法澄清数据视图、可视化图表、数据粒度、比较和范围等方面的问题。 如果无法使用澄清问题，代理会默认采用您最有可能提出的问题。 如果它返回意外的可视化图表或数据粒度，您可以提出跟进问题或调整可视化图表和数据。 |
+| **可视化图表类型** | <ul><li>线形图</li><li>多条线形图</li><li>自由格式表</li><li>条形图</li><li>圆环图</li><li>摘要数字</li></ul> | <ul><li>流量</li><li>流失</li><li>同类群组表</li><li>面积图，堆叠面积图</li><li>堆叠的条形图</li><li>项目符号</li><li>组合</li><li>直方图</li><li>水平条形图，横向堆叠条形图</li><li>关键量度摘要</li><li>散点图</li><li>摘要变化</li><li>文本</li><li>树状图</li><li>维恩图</li><li>引导式分析：活跃增长、转化趋势、参与度、首次使用影响、频率、漏斗、净增长、版本影响、留存、时间线、趋势</li></ul> |
+| **工作区操作和代理功能** | <ul><li>构建和更新可视化图表<p>生成自由格式表和相关联的可视化图表（例如线形图、条形图、圆环图等）。</p><p>例如：*2 月至 5 月各 SKU 的利润是多少？*</p></li><li>提出跟进问题<p>根据先前提示词的上下文，对提示词做出回应。 例如：</p> <ul><li>提示词 1：*3 月的趋势事件。*</li><li>提示词 2：*请改为显示 3 月至 4 月的数据*</li></ul> </li><li>范围外提示词识别<p>如果您提交超出范围的提示词，例如&#x200B;*导出此项目*，Data Insights 代理就会做出回应，告知您该问题超出范围。</p></li></ul> | <ul><li>共享</li><li>导出</li><li>下载</li><li>管理用户偏好设置</li><li>管理数据视图</li><li>Analytics 功能板应用程序</li><li>归因</li><li>内联摘要或回答<p>Data Insights 代理无法在聊天边栏中以内联方式提供对用户提示的摘要回答。 范围外的提示示例包括：*请概括我上一个提示中的洞察*&#x200B;和&#x200B;*请总结线形图中的亮点。*</p></li></ul> |
+| **澄清问题** | 如果您提出的问题没有充分的上下文让 Data Insights 代理能够回答，或者问题太过笼统，Data Insights 代理就会提出用于澄清的问题或一些建议选项。 <p>以下澄清问题是与组件相关问题的示例：</p><ul><li>量度：*您指的是哪个“收入”量度？*</li><li>维度：*您想关注以下哪一个“地区”？*</li><li>区段：*您想应用哪个“帐户”区段？*</li><li>日期范围：*您所说的“上个月”是指过去的整个月还是过去 30 天？*</li></ul><p>以下澄清问题是与维度项相关问题的示例：</p> <ul><li>您指的是哪个“商店名称”？ （例如，商店 #5274、商店 #2949 等。）</li></ul> | 澄清问题仅限于组件和维度项。 Data Insights 代理无法澄清数据视图、可视化图表、数据粒度、比较和范围等方面的问题。 如果无法使用澄清问题，代理会默认按您最有可能想问的内容处理。 如果它返回意外的可视化图表或数据粒度，您可以提出跟进问题或调整可视化图表和数据。 |
 | **数据可验证性和正确性** | 通过查看生成的自由格式表和数据可视化图表可以确认数据的可验证性和正确性。 <p>例如，如果您要求 Data Insights 代理统计&#x200B;*上个月的订单趋势*，您可以确认在新生成的面板、数据可视化图表和自由格式表中选择了正确的量度（“订单”）和日期范围（“上个月”）。</p> | Data Insights 代理不会在回答中告知您添加了哪些组件或可视化图表。 |
 | **反馈机制** | <ul><li>拇指向上</li><li>拇指向下</li><li>标记</li></ul> |  |
 
@@ -74,22 +87,22 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 * **权限**：必须先在 [!UICONTROL Adobe Admin Console] 中授予必要的权限，然后用户才能访问 Data Insights 代理。
 
   要授予权限，[产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)必须在[!UICONTROL Admin Console]中完成以下步骤：
-   1. 在 **[!UICONTROL Admin Console]** 中选择&#x200B;**[!UICONTROL 产品]**&#x200B;选项卡，可查看&#x200B;**[!UICONTROL 所有产品和服务]**&#x200B;页面。
-   1. 选择 **[!UICONTROL Customer Journey Analytics]**。
-   1. 在&#x200B;**[!UICONTROL 产品轮廓]**&#x200B;选项卡中，选择您想要为其提供 [!UICONTROL AI 助手：产品知识]访问权限的产品轮廓标题。
-   1. 在具体的产品轮廓中，选择&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡。
+  1. 在 **[!UICONTROL Admin Console]** 中选择&#x200B;**[!UICONTROL 产品]**&#x200B;选项卡，可查看&#x200B;**[!UICONTROL 所有产品和服务]**&#x200B;页面。
+  1. 选择 **[!UICONTROL Customer Journey Analytics]**。
+  1. 在&#x200B;**[!UICONTROL 产品轮廓]**&#x200B;选项卡中，选择您想要为其提供 [!UICONTROL AI 助手：产品知识]访问权限的产品轮廓标题。
+  1. 在具体的产品轮廓中，选择&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡。
 
-      ![Admin Console 中的权限选项卡](assets/ai-assistant-permissions-tab.png)
+     ![Admin Console 中的权限选项卡](assets/ai-assistant-permissions-tab.png)
 
-   1. 在所提供表格的&#x200B;**[!UICONTROL 报告工具]**&#x200B;行中，选择编辑图标![编辑](/help/assets/icons/Edit.svg)。
-   1. 滚动到或搜索 **[!UICONTROL AI 助手：产品知识]**，然后选择此权限旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
-   1. 滚动到或搜索 **[!UICONTROL Data Insights 代理]**，然后选择此权限旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
+  1. 在所提供表格的&#x200B;**[!UICONTROL 报告工具]**&#x200B;行中，选择编辑图标![编辑](/help/assets/icons/Edit.svg)。
+  1. 滚动到或搜索 **[!UICONTROL AI 助手：产品知识]**，然后选择此权限旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
+  1. 滚动到或搜索 **[!UICONTROL Data Insights 代理]**，然后选择此权限旁边的加号图标 ![AddCircle](/help/assets/icons/AddCircle.svg)。
 
-      **[!UICONTROL AI 助手：产品知识]**&#x200B;权限和 **[!UICONTROL Data Insights 代理]**&#x200B;权限已添加到&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;一列中。
+     **[!UICONTROL AI 助手：产品知识]**&#x200B;权限和 **[!UICONTROL Data Insights 代理]**&#x200B;权限已添加到&#x200B;**[!UICONTROL 包含的权限项]**&#x200B;一列中。
 
-      ![添加权限](assets/ai-assistant-permissions.png)。
+     ![添加权限](assets/ai-assistant-permissions.png)。
 
-   1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
+  1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;来保存权限。
 
   有关访问控制的其他信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
 
@@ -98,34 +111,34 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
   >[!IMPORTANT]
   >
   >启用数据视图时，请考虑以下事项：
-  >* 每个 IMS 组织最多可以启用 50 个数据视图。 如果您为某个特定组织的所有产品轮廓启用了超过 50 个数据视图，Data Insights 代理将使用最常用的 50 个数据视图。
+  >* 每个 IMS 组织最多可以启用 50 个数据视图。 如果您为某个特定组织的所有产品配置文件启用了超过 50 个数据视图，Data Insights 代理将使用最常用的 50 个数据视图。
   >  您可以使用数据视图[&#128279;](/help/data-views/manage-dataviews.md#manage-data-views)中Data Insights Agent列上的信息查看IMS组织中为Data Insights Agent启用的数据视图数量。
   >* 您启用数据视图后的同一天内，Data Insights 代理就可以引用这些被包含的数据视图。
 
   要为 Data Insights 代理启用数据视图，请执行以下操作：
 
-   1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+  1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
-   1. 选择您想为 Data Insights 代理启用的一个或多个数据视图，然后选择&#x200B;**[!UICONTROL 为 Data Insights 代理启用]**。
+  1. 选择您想为 Data Insights 代理启用的一个或多个数据视图，然后选择&#x200B;**[!UICONTROL 为 Data Insights 代理启用]**。
 
-      ![为 Data Insights 代理启用数据视图](assets/data-view-enable-dia.png)
+     ![为 Data Insights 代理启用数据视图](assets/data-view-enable-dia.png)
 
-      有关为Data Insights Agent启用数据视图的详细信息，请参阅数据视图的[AI设置](/help/data-views/create-dataview.md#ai-settings)。
+     有关为Data Insights Agent启用数据视图的详细信息，请参阅数据视图的[AI设置](/help/data-views/create-dataview.md#ai-settings)。
 
   要查看在您的 IMS 组织中为 Data Insights 代理启用的数据视图的数量，请执行以下操作：
 
-   1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
+  1. 在 Customer Journey Analytics 中选择&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据视图]**。
 
-   1. 选择 **[!UICONTROL Data Insights 代理]**&#x200B;一列顶部的信息图标。
+  1. 选择 **[!UICONTROL Data Insights 代理]**&#x200B;一列顶部的信息图标。
 
-      ![Data Insights 代理信息图标](assets/data-insights-agent-tooltip.png)
+     ![Data Insights 代理信息图标](assets/data-insights-agent-tooltip.png)
 
 
 ## 访问 AI 助手中的 Data Insights 代理
 
 1. 转到[experience.adobe.com](https://experience.adobe.com/)并使用您的Adobe ID登录。
 
-2. 从Adobe CX企业主页中选择&#x200B;**Customer Journey Analytics**。
+2. 从Adobe CX Enterprise主页中选择&#x200B;**Customer Journey Analytics**。
 
 3. 在项目页面顶部的横幅中选择&#x200B;**[!UICONTROL 空白项目]**，打开一个新的空白项目。
 
@@ -149,7 +162,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 ### 示例 1
 
-例如，假设您对您的企业 7 月份收到的订单感兴趣。
+例如，假设您对企业在 7 月份收到的订单感兴趣。
 
 **提示词：**&#x200B;输入&#x200B;*“7 月份订单趋势。”*
 
@@ -157,7 +170,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 **回答：** Data Insights 代理通过查看数据视图中的数据（包括量度和组件）来收集相关见解。 它将提示词转换成数据范围内的合适的维度和量度。
 
-您可以看到，它自动生成了一个线形图和一个自由格式表来显示 7 月的订单。
+您可以看到，它自动生成了一个折线图和一个自由格式表来显示 7 月的订单。
 
 ![对提示词的回答——线形图和自由格式表](/help/assets/ai-asst-result.png)
 
@@ -173,7 +186,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 ### 示例 3
 
-接下来，除了各地区的收入之外，您还想查看各地区的利润数据。 您不必重复先前的提示词，而是可以要求 Data Insights 代理更新最近期的可视化图表和自由格式表。
+接下来，除了各地区的收入之外，您还想查看各地区的利润数据。 您不必重复先前的提示词，而是可以要求 Data Insights 代理更新最新的可视化图表和自由格式表。
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“添加利润。”*
 
@@ -183,7 +196,7 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 ### 示例 4
 
-最后我们来看看按产品类别划分的收入。
+最后，我们来看看按产品类别划分的收入。
 
 **提示词：**&#x200B;在提示词窗口中输入&#x200B;*“按产品类别划分的收入比例”。*
 
@@ -191,11 +204,11 @@ Data Insights 代理可从 Customer Journey Analytics 中的 [AI 助手](/help/a
 
 ![圆环图](/help/assets/ai-asst-result3.png)
 
-## 跨CX企业版应用程序访问Data Insights Agent
+## 跨CX Enterprise应用程序访问Data Insights Agent
 
-Adobe Experience Platform Agent Orchestrator允许您在多个CX Enterprise应用程序（如Adobe Journey Optimizer和Real-Time CDP）中访问Data Insights Agent的功能。
+Adobe Experience Platform Agent Orchestrator允许您在多个CX Enterprise应用程序（如Data Insights Agent和Real-Time CDP）中访问Adobe Journey Optimizer的功能。
 
-Agent Orchestrator 能够理解您的请求，确定需要使用哪些专门的代理，并编排它们以提供正确的回答。 它可以在多轮次交互中跟踪上下文，使您可以在之前查询的基础上自然地构建对话。
+Agent Orchestrator 能够理解您的请求，确定需要使用哪些专门的代理，并编排它们以提供正确的回答。 它可以在多轮交互中跟踪上下文，因此您可以自然地基于之前的查询继续提问。
 
 有关更多信息，请参阅 [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/cn/products/experience-platform/agent-orchestrator.html)。
 
@@ -224,7 +237,7 @@ Data Insights 代理会处理每个用户提示词所提供的上下文，尝试
 
 回答可能会因提示词中使用的具体单词和短语而有所不同，语言的细微变化可能会导致不同的结果。
 
-为了获得最佳结果，请考虑以下原则：
+为了获得最佳结果，请考虑以下准则：
 
 * **用词具体：**&#x200B;使用确切的术语，以缩小回答范围。 以下是一个具体提示词的示例：“加州上个月的销售额”
 
@@ -232,15 +245,15 @@ Data Insights 代理会处理每个用户提示词所提供的上下文，尝试
 
 * **提出直接的问题：**&#x200B;直接描述问题可以让 Data Insights 代理更容易提供清晰、相关的见解。 以下是在提示词中直接提问的示例：“今年各产品类别的平均收入是多少？”
 
-您可以在 Data Insights 代理的提示词中使用下表中的术语和短语示例，还提供了您可以预期的回答类型。
+查看下表，其中列出了可在 Data Insights 代理提示词中使用的术语和短语示例，以及您可以预期的响应类型。
 
-这些示例旨在帮助您了解特定字词或结构如何影响Data Insights Agent的输出，从而确保更精确、更有价值的见解。 Data Insight 代理使用生成式 AI，因此相似的提示词得到的可视化图表或选定的数据可能会略有不同。
+这些示例旨在帮助您了解特定字词或结构如何影响Data Insights Agent的输出，从而确保更精确、更有价值的见解。 Data Insights 代理使用生成式 AI，因此相似的提示词得到的可视化图表或选定的数据可能会略有不同。
 
 | 期望的结果 | 术语和短语示例 |
 | --- | --- |
 | 摘要数字可视化图表 | <ul><li>合计</li></ul> |
 | 比较组件 | <ul><li>比较</li><li>VS</li><li>对比度</li><li>每周</li><li>月度环比</li><li>季度环比</li><li>年度同比</li></ul> |
-| 圆环图可视化图表 | <ul><li>比例</li><li>份额</li><li>分发</li><li>百分比</li><li>贡献</li><li>部分</li><li>部分</li></ul> |
+| 圆环图可视化图表 | <ul><li>比例</li><li>份额</li><li>分布</li><li>百分比</li><li>贡献</li><li>部分</li><li>部分</li></ul> |
 | 折线图可视化图表 | <ul><li>趋势</li><li>[时间范围]内的[量度]</li></ul> |
 | 条形图可视化图表 | <ul><li>按[维度]的[量度]</li></ul> |
 
@@ -278,11 +291,11 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 * **合理平衡所需组件数量**。 请勿将数据集的所有字段作为量度或维度组件添加到数据视图，尤其是您不希望在分析中使用的那些字段。 但另一方面，也不应将自己严格局限于预期分析中会用到的字段。 数据视图过于受限将限制您的分析灵活性，并影响 Data Insights 代理的功能发挥。
 * **始终使用友好的显示名称**。 请确保您在数据视图中定义为量度或维度组件的所有字段都具备易于理解的组件名称。 为字段重命名为易于理解的名称的过程，对于来自 Adobe Analytics 源连接器数据集的字段尤为重要。 这些字段通常具有不易识别的不友好名称，如 `eVar41` 或 `prop25`。
 * **使用具有辨识度的名称**。 当您在数据视图中将同一个字段同时用作量度和维度组件时，使用具有辨识度的名称尤为重要。 或当您将同一个字段用于多个相同类型的组件（例如两个不同的量度），且每个组件具有不同的设置时，更应使用具有辨识度的名称。
-* **使用组件命名惯例**。 您可以通过组件命名规范对组件进行分组管理。 例如，使用&#x200B;**[!UICONTROL 订单 | 产品]**&#x200B;和&#x200B;**[!UICONTROL 订单 | 客户]**&#x200B;等命名方式，可以区分数据中可能存在的不同订单量度。
+* **使用组件命名惯例**。 您可以使用组件命名惯例对组件进行分组。 例如，使用&#x200B;**[!UICONTROL 订单 | 产品]**&#x200B;和&#x200B;**[!UICONTROL 订单 | 客户]**&#x200B;等命名方式，可以区分数据中可能存在的不同订单量度。
 * **使用数据字典**。 在数据字典中添加组件的描述和其他相关数据。 Data Insights Agent当前不使用数据字典中的描述和标记，但将来可能会使用。
-* **使用已审核的计算量度**。 建立一致的流程，仅使用已审核的计算量度作为数据视图中的组件，并避免使用试验性计算量度。
+* **使用已审核的计算量度**。 建立一致的流程，仅使用已批准的计算量度作为数据视图中的组件，并避免使用试验性计算量度。
 * **共享所需的区段**。 请确保共享所需的区段，并将其设为可见，以支持 Data Insights 代理的提示使用。
-* **在各数据视图间统一组件命名标准**。 如果您在多个数据视图中将同一字段用作组件，请确保为该组件使用统一的友好名称和唯一标识符。 统一的名称和标识符可使 Data Insights 代理在切换数据视图时保持上下文连续性。
+* **在各数据视图间统一组件命名标准**。 如果您在多个数据视图中将同一字段用作组件，请确保为该组件使用单一的友好名称和单一标识符。 统一的名称和标识符可使 Data Insights 代理在切换数据视图时保持上下文连续性。
 
 >[!MORELIKETHIS]
 >

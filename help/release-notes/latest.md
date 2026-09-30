@@ -3,7 +3,7 @@ title: 当前的Customer Journey Analytics发行说明
 description: 查看最新的Customer Journey Analytics发行说明，包括当前时期的新增功能、修复的问题和延迟的版本。
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
+TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -12,15 +12,17 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-    internal-label: Templates, Templates (CJA)
+    internal-label: Templates
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
     internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
@@ -33,6 +35,8 @@ subfeature_v2:
     internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
     internal-label: Exports
+  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -45,10 +49,10 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 171fefc812dc63aee86def3338b286bbce6913bd
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '1287'
-ht-degree: 19%
+ht-degree: 20%
 ---
 # 当前Customer Journey Analytics发行说明（2026年9月）
 
@@ -65,9 +69,9 @@ ht-degree: 19%
 | **同意策略筛选和报告**<br/>&#x200B;您现在可以报告哪些访客与您的Adobe Experience Platform同意策略匹配。 （同意策略维度和量度会添加到连接中的数据视图。）<p>此外，您可以先排除非同意访客，然后再将其数据摄取到Customer Journey Analytics。</p><p>有关详细信息，请参阅[同意报告和筛选概述](/help/connections/consent-reporting-filtering/consent-overview.md)。</p> | | 2026年9月21日 |
 | **将区段限制为报表日期范围**<br/>&#x200B;当区段包含日期范围组件时，Workspace报表中的数据可能会超出报表日期范围。<p>现在提供了一个新选项，通过该选项可将结果限制为报表日期范围，而不管该区段中包含的任何日期组件如何。</p><p>创建或修改顶级容器为“人员”的区段时，此选项可用。</p><p>有关详细信息，请参阅[生成区段](/help/components/segments/seg-builder.md#components)。</p> | 2026年8月26日 | 2026年9月9日 |
 | **在Analysis Workspace中使用对话见解分析LLM客户体验**<br/> Customer Journey Analytics现在将非结构化聊天数据引入Analysis Workspace，允许您报告资产中利用LLM进行的浏览和购买体验。<p>利用此功能，您可以：</p><ul><li>通过Web SDK从对话代理（贵组织的自定义代理或Adobe Brand Concierge）收集提示、响应和代理元数据。</li><li>分析意图、语气和情绪，以便您了解客户提出的问题、您的座席如何回应以及客户对其交互的感受。</li><li>使用现有架构、数据集和数据视图进行大规模分析，然后在Analysis Workspace中显示见解。</li><li>通过将代理互动与更广泛的客户历程联系起来，将对话与成果联系起来，以便您衡量对转化、参与度等工作的实际影响。</li></ul><p>以前，由LLM提供支持的体验难以测量，并且几乎无法连接到您现有的客户历程。</p><p>（文档链接将随后提供。）</p> | | 2026年9月30日<p>（原计划于2026年9月22日）</p> |
-| **每小时警报**<br/>&#x200B;您现在可以将警报的时间粒度设置为“每小时”。<p>每小时警报适用于在给定小时内到达的数据。 如果数据的滞后时间超过一小时，则较长的粒度可确保警报评估完整的数据。 如果您不确定数据需要多长时间才能到达，请咨询数据工程师。</p><p>（文档链接将随后提供。）</p> | | 2026年9月 |
-| **警报投放严格遵循配置的延迟**<br/>&#x200B;现在，无论指定事件范围的数据已完成还是仍在接收数据，警报均会在您设置的延迟窗口的末尾投放。 延迟时段之后到达的任何数据都不会包含在警报中。<p>以前，警报包括后台处理检查，用于等待迟到的数据，即使这意味着警报在配置的延迟时段后发送。</p><p>（文档链接将随后提供。）</p> | | 2026年9月 |
-| **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接将随后提供。）</p> | | 2026年9月 |
+| **每小时警报**<br/>&#x200B;您现在可以将警报的时间粒度设置为“每小时”。<p>每小时警报适用于在给定小时内到达的数据。 如果数据的滞后时间超过一小时，则较长的粒度可确保警报评估完整的数据。 如果您不确定数据需要多长时间才能到达，请咨询数据工程师。</p><p>（文档链接将随后提供。）</p> | | 2026 年 9 月 |
+| **警报投放严格遵循配置的延迟**<br/>&#x200B;现在，无论指定事件范围的数据已完成还是仍在接收数据，警报均会在您设置的延迟窗口的末尾投放。 延迟时段之后到达的任何数据都不会包含在警报中。<p>以前，警报包括后台处理检查，用于等待迟到的数据，即使这意味着警报在配置的延迟时段后发送。</p><p>（文档链接将随后提供。）</p> | | 2026 年 9 月 |
+| **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接将随后提供。）</p> | | 2026 年 9 月 |
 | **CX Enterprise Coworker中的升级和实施技能**<br/>&#x200B;同事将获得新技能。 这些技能有助于使Customer Journey Analytics的升级和实施更加顺畅、轻松：<ul><li>**实施指南技能**：生成量身定制的升级或实施步骤和建议列表。 然后，可以使用预定义的行动手册将升级和实施指导转化为同事项目。</li><li>**智能升级和实施核对清单技能**：使用同事项目根据定制的升级或实施核对清单管理和跟踪实施进度，维护项目状态，跨团队协作，分配任务，并在需要时引入批准审核。</li><li>**数据验证技能**：验证您的实施配置正确且符合最佳实践。</li></ul><p>（文档链接随后提供。）</p> | | 2026年9月30日 |
 
 ### Customer Journey Analytics 中的修复
