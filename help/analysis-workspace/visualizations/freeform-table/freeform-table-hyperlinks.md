@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:42:43.573Z'
 TQID: 'https://experienceleague.adobe.com/HnG-l4s4MLz-vmdQVtFzVQIC-lzsbAxWItNFFYHqv5I'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1627
+source-wordcount: '1627'
 ht-degree: 97%
-
 ---
-
 # 在自由格式表中创建超链接
 
 您可以为维度项创建超链接，使其在 Analysis Workspace 中的自由格式表中可点击。
@@ -31,7 +36,7 @@ ht-degree: 97%
 
 * 具有 URL 值的维度项（例如，“页面 URL”维度）。
 
-* 包含具有 URL 值细分的维度项（例如，具有“页面 URL”维度细分的“页面名称”维度）。
+* 包含具有 URL 值的细分的维度项（例如，具有“页面 URL”维度细分的“页面名称”维度）。
 
 * 具有作为 URL 一部分的值的维度项或细分（例如，作为 URL 一部分的“页面名称”维度）。
 
@@ -53,8 +58,8 @@ ht-degree: 97%
 
 * 创建超链接时，不会检查 URL 的有效性。 如果您
 
-   * 创建具有无效 URL 的超链接，或者
-   * 创建引用没有 URL 值的维度项的超链接（通过直接引用维度项或使用 `$value` 或 `$breakdown` 变量），
+  * 创建具有无效 URL 的超链接，或者
+  * 创建引用没有 URL 值的维度项的超链接（通过直接引用维度项或使用 `$value` 或 `$breakdown` 变量），
 
   那么单击超链接的用户会看到一条错误消息，指示该 URL 无效。
 
@@ -68,23 +73,23 @@ ht-degree: 97%
 
    * **为单个维度项创建超链接：**&#x200B;右键单击表格中要创建超链接的维度项，然后选择&#x200B;[!UICONTROL **创建超链接**]。
 
-      1. 打开维度项的上下文菜单。
-      1. 从上下文菜单中选择&#x200B;[!UICONTROL **创建超链接**]。
+     1. 打开维度项的上下文菜单。
+     1. 从上下文菜单中选择&#x200B;[!UICONTROL **创建超链接**]。
 
-         [!UICONTROL **创建超链接**]&#x200B;对话框会显示。 您要为其创建超链接的维度项的名称将显示在对话框中。
+        [!UICONTROL **创建超链接**]&#x200B;对话框会显示。 您要为其创建超链接的维度项的名称将显示在对话框中。
 
-         ![为单个项目创建超链接的对话框](assets/hyperlink-dialog-single.png)
+        ![为单个项目创建超链接的对话框](assets/hyperlink-dialog-single.png)
 
    * **为维度列中的所有维度项创建超链接：**&#x200B;右键单击维度列标题中的维度名称，然后选择&#x200B;[!UICONTROL **为所有维度项创建超链接**]。
 
-      1. 从维度列标题打开上下文菜单。
-      1. 从上下文菜单中选择&#x200B;[!UICONTROL **为所有维度项创建超链接**]。
+     1. 从维度列标题打开上下文菜单。
+     1. 从上下文菜单中选择&#x200B;[!UICONTROL **为所有维度项创建超链接**]。
 
-         <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
+        <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
 
-         [!UICONTROL **为所有维度项创建超链接**]&#x200B;对话框会显示。 您要为其创建超链接的维度的名称将显示在对话框中。
+        [!UICONTROL **为所有维度项创建超链接**]&#x200B;对话框会显示。 您要为其创建超链接的维度的名称将显示在对话框中。
 
-         ![创建超链接对话框](assets/hyperlink-dialog-multiple.png)
+        ![创建超链接对话框](assets/hyperlink-dialog-multiple.png)
 
 1. 从以下选项中进行选择：
 
@@ -102,12 +107,12 @@ ht-degree: 97%
 
      | 字段 | 描述 |
      |---------|----------|
-     | [!UICONTROL **自定义 URL**] | 指定要用于超链接的自定义 URL。 必须以完全限定的 URL 形式输入 URL。 例如：<https://www.example.com><p>您创建的自定义 URL 可以是静态的，也可以是动态的：</p> <ul><li>**静态 URL：**&#x200B;当您希望所有维度项都链接到同一 URL 时，您可以为单个维度项或所有维度项指定一个静态 URL。 例如：`https://wiki.internal.company_name/page_name#item_definition`</p></li><li>**动态 URL：**&#x200B;如果您想为多个维度项或维度列中的所有维度项创建唯一的超链接，则可以创建一个动态 URL。<p>要使自定义 URL 动态化，您可以在 URL 中加入一个变量，以根据维度的值或细分维度的值更改 URL。</p><p>使用变量时，任何包含在 URL 中无效的字符（如空格）的维度项都会进行 URL 编码。</p><p>可用的变量如下：（**注释**：虽然您可以在同一个 URL 中使用这些变量，但单独使用它们的情况更常见。）</p> <ul><li>**`$value`：**&#x200B;允许您将维度项的值插入到您指定的 URL 中。 <p>假设您想要为自由格式表中的所有页面名称维度项创建超链接，其中每个维度项的值都是网页 URL 的一部分。 在这种情况下，您可以构建一个针对每个维度项动态调整的单个自定义 URL。 <br/>例如：`https://company-name.com/browse/product#\$value`</p><p>当此自定义 URL 应用于值为“ProductY”和“ProductZ”的页面名称维度项时，所生成的超链接将如下所示：<br/>`https://company-name.com/browse/product#ProductY` 和 <br/>`https://company-name.com/browse/product#ProductZ` </p><p>![在超链接中使用值](assets/table-hyperlinks-vaule.png)</p><p>**提示**：在自定义 URL 字段中仅添加 `$value` 变量，与在创建 URL 时选择&#x200B;[!UICONTROL **使用维度项的值**]&#x200B;选项的效果相同。</p></li><li>**`$breakdown`：**&#x200B;允许您将细分维度项的值插入到您指定的 URL 中。 使用 `$breakdown`，您可以在报告中使用具有便于用户使用的名称的维度（例如“产品名称”维度）。 并根据可能不太便于用户使用的细分维度（如产品 ID 或页面 URL 维度）生成超链接。<p>在引用细分维度时，对于给定的维度项，通常只会有一个细分项。 如果给定维度项有多个细分项，则 URL 中会使用第一个细分项的值。 如果没有列出细分项，则该 URL 无效。 细分项的排序顺序与表格的排序顺序相同。</p><p>您可以在&#x200B;[!UICONTROL **细分维度**]&#x200B;字段中指定细分维度。</p> <p>考虑下面为&#x200B;[!UICONTROL **细分维度**]&#x200B;字段描述的示例场景。</p></li></ul> |
+     | [!UICONTROL **自定义 URL**] | 指定要用于超链接的自定义 URL。 必须以完整 URL 的形式输入 URL。 例如：<https://www.example.com><p>您创建的自定义 URL 可以是静态的，也可以是动态的：</p> <ul><li>**静态 URL：**&#x200B;当您希望所有维度项都链接到同一 URL 时，您可以为单个维度项或所有维度项指定一个静态 URL。 例如：`https://wiki.internal.company_name/page_name#item_definition`</p></li><li>**动态 URL：**&#x200B;如果您想为多个维度项或维度列中的所有维度项创建唯一的超链接，则可以创建一个动态 URL。<p>要使自定义 URL 动态化，您可以在 URL 中加入一个变量，以根据维度的值或细分维度的值更改 URL。</p><p>使用变量时，任何包含在 URL 中无效的字符（如空格）的维度项都会进行 URL 编码。</p><p>可用的变量如下：（**注释**：虽然您可以在同一个 URL 中使用这些变量，但单独使用它们的情况更常见。）</p> <ul><li>**`$value`：**&#x200B;允许您将维度项的值插入到您指定的 URL 中。 <p>假设您想要为自由格式表中的所有页面名称维度项创建超链接，其中每个维度项的值都是网页 URL 的一部分。 在这种情况下，您可以构建一个针对每个维度项动态调整的单个自定义 URL。 <br/>例如：`https://company-name.com/browse/product#\$value`</p><p>当此自定义 URL 应用于值为“ProductY”和“ProductZ”的页面名称维度项时，所生成的超链接将如下所示：<br/>`https://company-name.com/browse/product#ProductY` 和 <br/>`https://company-name.com/browse/product#ProductZ` </p><p>![在超链接中使用值](assets/table-hyperlinks-vaule.png)</p><p>**提示**：在自定义 URL 字段中仅添加 `$value` 变量，与在创建 URL 时选择&#x200B;[!UICONTROL **使用维度项的值**]&#x200B;选项的效果相同。</p></li><li>**`$breakdown`：**&#x200B;允许您将细分维度项的值插入到您指定的 URL 中。 使用 `$breakdown`，您可以在报告中使用具有便于用户使用的名称的维度（例如“产品名称”维度）。 并根据可能不太便于用户使用的细分维度（如产品 ID 或页面 URL 维度）生成超链接。<p>在引用细分维度时，对于给定的维度项，通常只会有一个细分项。 如果给定维度项有多个细分项，则 URL 中会使用第一个细分项的值。 如果没有列出细分项，则该 URL 无效。 细分项的排序顺序与表格的排序顺序相同。</p><p>您可以在&#x200B;[!UICONTROL **细分维度**]&#x200B;字段中指定细分维度。</p> <p>考虑下面为&#x200B;[!UICONTROL **细分维度**]&#x200B;字段描述的示例场景。</p></li></ul> |
      | [!UICONTROL **细分维度（可选）**] | 开始键入要使用的划分维度的名称，然后从下拉菜单中选择该名称。 <p>如果在此字段中选择了一个细分维度，则必须在&#x200B;[!UICONTROL **自定义 URL**] 字段中指定的 URL 中使用 `$breakdown` 变量来引用它。</p><p>假设您想要为自由格式表中的所有“产品名称”维度项创建超链接。 每个“产品名称”维度项均包含一个“产品 ID”维度的细分。</p></p>在这种情况下，您可以为每个“产品名称”维度创建超链接，利用“产品 ID”细分维度的值，将用户引导至产品页面。 </p><p>在&#x200B;[!UICONTROL **自定义 URL**] 字段中指定的自定义 URL 末尾添加 `$breakdown` 变量。 例如：</p><p>`https://company-name.com/browse/product/$breakdown`</p>将此自定义 URL 应用于您的产品名称维度项（具有值为“ProductY”和“ProductZ”的细分维度项）时，生成的超链接如下所示：<br/>`https://company-name.com/browse/product/ProductY` 和 <br/>`https://company-name.com/browse/product/ProductZ`</p><p>然后，您要在&#x200B;[!UICONTROL **细分维度**]&#x200B;字段中选择产品 ID 维度 </p><p>![在超链接中使用细分](assets/table-hyperlinks-breakdown.png)</p> |
 
 1. 选择&#x200B;[!UICONTROL **创建**]。
 
-   查看自由格式表的用户会看到超链接的维度项。 单击维度项时，用户将被带到单独的浏览器选项卡中的超链接页面。
+   查看自由格式表的用户会看到带有超链接的维度项。 单击维度项时，用户将被带到单独的浏览器选项卡中的超链接页面。
 
    <!-- add screenshot of a table with hyperlinks.-->
 
@@ -121,15 +126,15 @@ ht-degree: 97%
 
    * **编辑单个维度项的超链接：**
 
-      1. 打开维度项的上下文菜单。
-      1. 从上下文菜单中选择&#x200B;[!UICONTROL **编辑超链接**]。
+     1. 打开维度项的上下文菜单。
+     1. 从上下文菜单中选择&#x200B;[!UICONTROL **编辑超链接**]。
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a single dimension item](assets/hyperlink-single-edit.png)-->
 
    * **编辑维度列中所有维度项的超链接：**
 
-      1. 从维度列标题打开上下文菜单。
-      1. 从上下文菜单中选择&#x200B;**[!UICONTROL 为所有维度项编辑超链接]**。
+     1. 从维度列标题中打开上下文菜单。
+     1. 从上下文菜单中选择&#x200B;**[!UICONTROL 为所有维度项编辑超链接]**。
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a dimension](assets/hyperlink-dimension-edit.png)-->
 
@@ -155,19 +160,19 @@ ht-degree: 97%
 
    * **从单个维度项中移除超链接：**
 
-      1. 打开维度项的上下文菜单。
-      1. 从上下文菜单中选择&#x200B;[!UICONTROL **移除超链接**]。
-         <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
+     1. 打开维度项的上下文菜单。
+     1. 从上下文菜单中选择&#x200B;[!UICONTROL **移除超链接**]。
+        <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
 
    * **移除维度列中所有维度项的超链接：**
 
-      1. 从维度列标题打开上下文菜单。
-      1. 从上下文菜单中选择&#x200B;**[!UICONTROL 为所有维度项移除超链接]**。
+     1. 从维度列标题打开上下文菜单。
+     1. 从上下文菜单中选择&#x200B;**[!UICONTROL 为所有维度项移除超链接]**。
 
      <!-- Do we really need a screenshot? [Remove hyperlink from a dimension](assets/hyperlink-dimension-remove.png)-->
 
 
 
-   如果您选择了单个维度项，则会从单个维度项中移除超链接。 或者，如果您选择了维度列标题中的维度名称，则会从所有维度项中移除。
+   如果您选择了单个维度项，则会从单个维度项中移除超链接。 或者，如果您选择了维度列标题中的维度名称，则会从所有维度项中移除超链接。
 
 1. [保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)以保存更改。

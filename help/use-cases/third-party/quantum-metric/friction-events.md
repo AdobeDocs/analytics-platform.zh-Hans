@@ -9,28 +9,42 @@ autotag-review: '2026-05-19T09:50:19.249Z'
 TQID: 'https://experienceleague.adobe.com/ez4GO2CJ0g-nOGI4GlYrZQhuGKxQRvWoXPe4vcHGznU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: '685'
 ht-degree: 1%
-
 ---
-
 # 将量子量度摩擦事件添加到Customer Journey Analytics
 
 Quantum Metric收集页面加载缓慢、页面加载错误、范围点击等摩擦事件。 这些事件可以作为用户历程中的补充事件传递到Customer Journey Analytics。 利用这些组合数据，您可以更好地了解摩擦对下游指标的影响。
@@ -57,7 +71,7 @@ Quantum Metric收集页面加载缓慢、页面加载错误、范围点击等摩
 
 ## 步骤2：使用量子量度标记扩展捕获摩擦事件
 
-有关如何设置标记以包含Quantum量度数据的说明，请参阅Adobe Experience Platform目标指南中的[Quantum量度扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/analytics/quantum-metric)。 使用此扩展可将更多行传递到现有数据集。
+有关如何设置标记以包含Quantum量度数据的说明，请参阅Adobe Experience Platform目标指南中的[Quantum量度扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)。 使用此扩展可将更多行传递到现有数据集。
 
 使用Adobe Experience Platform数据收集中的标记手动设置摩擦事件的名称，以便将其包含在XDM对象中并进行分析。 一种方法是使用规则的自定义代码：
 

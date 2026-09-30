@@ -5,32 +5,47 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-TQID: https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA
+TQID: 'https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Taxonomy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1545
-ht-degree: 10%
-
+source-wordcount: '1545'
+ht-degree: 11%
 ---
-
 # 构建用于 Customer Journey Analytics 的架构 {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
@@ -38,7 +53,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="架建架构"
->abstract="在您的组织内讨论数据收集的要求，并确定如何生成用于 Adobe Experience Platform 的架构。 出现此步骤是因为您想要使用一个为您的组织定制的架构的使用推荐过程。 正确执行此步骤至关重要，因为组织内所有团队都遵循一个架构可以使数据摄取变得更加容易。<br><br>将组织中的所有相关方聚集在一起以遵循一个统一架构的预计时间为 1-2 个月。 这个时间范围在很大程度上取决于需要协调的团队数量以及需要统一的维度 + 量度的数量。"
+>abstract="在您的组织内讨论数据收集的要求，并确定如何构建用于 Adobe Experience Platform 的架构。 之所以会出现此步骤，是因为您想要使用建议的流程，即使用为您的组织量身定制的架构。 正确执行此步骤至关重要，因为组织内所有团队都遵循一个架构可以使数据摄取变得更加容易。<br><br>将组织中的所有相关方聚集在一起以遵循一个统一架构的预计时间为 1-2 个月。 这个时间范围在很大程度上取决于需要协调的团队数量以及需要统一的维度 + 量度的数量。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -110,14 +125,14 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 在构建架构时，要坚持事实。 例如，`error.type = "validation"`，`user.isLoggedIn = true`，`checkout.step = "shipping"`。 将数据视图中的量度定义为这些事实的计数和过滤计数。 例如：
 
 * `checkout.step` （枚举/字符串）可以为：
-   * “结帐：到达送货步骤”（此处为`checkout.step == "shipping"`计数）
-   * “结帐：已到达付款步骤”
+  * “结帐：到达送货步骤”（此处为`checkout.step == "shipping"`计数）
+  * “结帐：已到达付款步骤”
 * `error.type` （枚举/字符串）可以为：
-   * “验证错误”
-   * “授权错误”
+  * “验证错误”
+  * “授权错误”
 * `user.isLoggedIn` （布尔值）可以为：
-   * “经过身份验证的会话”
-   * &quot;经过身份验证的转化&quot;
+  * “经过身份验证的会话”
+  * &quot;经过身份验证的转化&quot;
 
 >[!TIP]
 >
@@ -129,7 +144,7 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 
 1. **使用Adobe Analytics可识别和自动映射的XDM字段路径：**&#x200B;当您通过Edge Network将可识别的XDM字段发送到Adobe Analytics时，这些字段会[自动映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping)，无需额外配置。
 1. **对特定于组织的概念使用自定义XDM字段：**&#x200B;任何未自动映射到Analytics变量的XDM字段在Adobe Analytics中作为[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)转发。
-1. **使用Adobe Analytics处理规则将这些上下文数据变量映射到prop/eVars：** [处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)最终使您可以将任何自定义XDM字段映射到任何eVar或prop。 此概念支持Adobe Analytics中的奇偶校验报表，同时保持架构干净并以Customer Journey Analytics为中心。
+1. **使用Adobe Analytics处理规则将这些上下文数据变量映射到prop/eVars：** [处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)最终使您可以将任何自定义XDM字段映射到任何eVar或prop。 此概念支持Adobe Analytics中的奇偶校验报表，同时保持架构干净并以Customer Journey Analytics为中心。
 
 ## 确定利益相关者并确定所有权
 
@@ -147,7 +162,7 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 架构设计应根据贵组织的隐私政策反映隐私和治理期望。 在架构架构时，请考虑以下几点：
 
 * 仅收集支持定义的用例所需的内容。
-* 确保在收集策略中反映同意和数据使用要求。 有关详细信息，请参阅[使用Web SDK处理客户同意数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/consent/sdk)。
+* 确保在收集策略中反映同意和数据使用要求。 有关详细信息，请参阅[使用Web SDK处理客户同意数据](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk)。
 * 考虑如何在Adobe Experience Platform治理工具中标记和控制敏感字段。 有关详细信息，请参阅[Adobe Customer Journey Analytics和数据管理](/help/privacy/privacy-overview.md)。
 
 ## 后续步骤

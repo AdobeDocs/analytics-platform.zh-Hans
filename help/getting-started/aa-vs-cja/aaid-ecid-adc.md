@@ -8,40 +8,49 @@ autotag-review: '2026-05-19T07:16:36.730Z'
 TQID: 'https://experienceleague.adobe.com/8ijMa5NbkCx0H48qSZkYrgTDRaVCSBmO9twZvWFJ83o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 632
+source-wordcount: '632'
 ht-degree: 90%
-
 ---
-
 # AAID、ECID、AACUSTOMID 和 Analytics 源连接器
 
-Adobe Analytics 数据包含多个身份标识字段。 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 对三个重要的身份标识字段进行了特殊处理：AAID、ECID、AACUSTOMID。
+Adobe Analytics 数据包含多个身份标识字段。 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) 对三个重要的身份标识字段进行了特殊处理：AAID、ECID、AACUSTOMID。
 
 ## AAID
 
 Adobe Analytics ID (AAID) 是 Adobe Analytics 中的主要设备标识符，并且必定存在于通过 Analytics 源连接器传递的每个事件中。 AAID 有时称作“旧版 Analytics ID”或 `s_vi` Cookie Id。 不过，即使 `s_vi` Cookie不存在，也会创建 AAID。 在 [Adobe Analytics 数据馈送](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans#columns%2C-descriptions%2C-and-data-types?lang=zh-Hans)中，AAID 由 `post_visid_high/post_visid_low` 列表示。
 
-在 Analytics Source Connector 中，AAID 将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`。 给定事件的 AAID 字段包含单个身份标识，它可能是 [Analytics ID 操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=zh-Hans)中所述的几种不同类型之一。 （在整个报告包中，AAID 在不同事件中可能包含混合类型。 每个事件的类型都显示在Analytics数据馈送的`post_visid_type`列中。) 另请参阅：[数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=zh-Hans)。
+在 Analytics Source Connector 中，AAID 将转换为 `HEX(post_visid_high) + "-" + HEX(post_visid_low)`。 给定事件的 AAID 字段包含单个身份标识，它可能是 [Analytics ID 操作顺序](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html)中所述的几种不同类型之一。 （在整个报告包中，AAID 在不同事件中可能包含混合类型。 每个事件的类型都显示在Analytics数据馈送的`post_visid_type`列中。) 另请参阅：[数据列引用](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html)。
 
 ## ECID
 
 ECID (Experience Cloud ID)有时也称为MCID (Marketing Cloud ID)，它是一个单独的设备标识符字段，在使用[访客ID服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans) (AppMeasurement)或Adobe Analytics Identity服务(Web SDK)实施Analytics时，会在Experience Platform中填充该字段。 在 Adobe Analytics 数据馈送中，ECID 由 `mcvisid` 列表示。
 
-如果事件中存在 ECID，则 AAID 可能基于 ECID，具体取决于是否配置了 Analytics [宽限期](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=zh-Hans)。 另请参阅：[Analytics 和 Experience Cloud ID 请求](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=zh-Hans)。
+如果事件中存在 ECID，则 AAID 可能基于 ECID，具体取决于是否配置了 Analytics [宽限期](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html)。 另请参阅：[Analytics 和 Experience Cloud ID 请求](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html)。
 
 ## AACUSTOMID
 

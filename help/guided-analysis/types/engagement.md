@@ -1,28 +1,38 @@
 ---
 title: 参与度分析
-description: 了解功能参与的广度和深度。
+description: 了解功能参与度的广度和深度。
 feature: Adobe Product Analytics, Guided Analysis
 keywords: 产品分析
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-TQID: https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM
+TQID: 'https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d494f34f-674c-496a-a400-b33552b95463
+    internal-label: Adobe Product Analytics
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: '758'
 ht-degree: 100%
-
 ---
-
 # [!UICONTROL 参与]分析 {#engagement}
 
 <!-- markdownlint-disable MD034 -->
@@ -30,21 +40,21 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_engagement_button"
 >title="参与"
->abstract="了解功能参与的广度和深度。"
+>abstract="了解功能参与度的广度和深度。"
 
 <!-- markdownlint-enable MD034 -->
 
 
 通过![EngagementGraph](/help/assets/icons/EngagementGraph.svg)**[!UICONTROL 参与度]**&#x200B;分析可以洞察某个功能的使用频率，以及使用该功能的人数。 当将多个功能进行相互比较时，此分析效果最佳。 通过了解您的核心功能、优势功能、一次性功能和可疑功能，有助于推动投资决策。
 
-位于该可视化图表顶部的功能表明，这些功能在活跃用户中经常被使用。 在此可视化图中向右偏移的功能表明，这些功能在活跃用户中得到了广泛采用。 一个功能被使用的次数中位数将图表水平分割。 活跃用户的中位数百分比将图表垂直分割。 中位数是基于查询中选定的事件计算的，而非基于所有数据。
+位于该可视化图表顶部的功能表明，这些功能在参与度高的用户中经常被使用。 在此可视化图中向右偏移的功能表明，这些功能在活跃用户中得到了广泛采用。 一个功能被使用的次数中位数将图表水平分割。 活跃用户的中位数百分比将图表垂直分割。 中位数是基于查询中选定的事件计算的，而非基于所有数据。
 
 * 矩阵左上角的功能是您的&#x200B;**优势**&#x200B;功能；它们虽然并未被广泛采用，但经常被活跃用户使用。
 * 矩阵右上角的功能是您的&#x200B;**高影响力**&#x200B;功能；它们既被广泛采用，又被频繁使用。
 * 矩阵左下角的功能是&#x200B;**低影响力**&#x200B;功能；它们并未被广泛采纳或频繁使用。
 * 矩阵右下角的功能是您的&#x200B;**一次性**&#x200B;功能；它们被广泛采用，但使用频率不高。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447477/?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/?quality=12&learn=on)
 
 ## 用例
 
@@ -52,7 +62,7 @@ ht-degree: 100%
 
 * **按功能划分的参与度**：您可以在参与度和特定功能的采用率之间建立直接关联。 了解哪些功能使用频率最高，有助于确定哪些功能值得进一步投入。
 * **发现未充分利用的功能**：活跃用户少但使用率高的功能可能表明这是一个优势功能，它很有价值，但并未被广大用户发现或使用。 考虑提高这些功能的可发现性，以便更多用户能够利用它们。
-* **改进热门功能**：拥有高活跃用户但使用率低的功能，可能表明其需求量很大但使用不足。 这些情况提供了相应的机会，可以更好地向用户了解哪些改进能使该功能对他们更有价值。
+* **改进热门功能**：拥有高活跃用户但使用率低的功能，可能表明其需求量很大但使用不足。 这些情况提供了相应的机会，可以更好地从用户那里了解哪些改进能使该功能对他们更有价值。
 * **创建基于功能的区段**：以这种方式查看功能使用情况，以发掘更多分析机会。 为图表上的任意一点创建一个区段，以便更深入地了解该用户群体，并将这些知识应用于您的用户参与策略。
 * **功能采用 A/B 测试**：比较不同用户群体对多个功能的使用情况。 在查询边栏中添加区段，以确定关键用户群体在功能使用方面的差异。
 
@@ -77,8 +87,8 @@ ht-degree: 100%
 [!UICONTROL 参与度]分析提供以下图表设置，这些设置可在图表上方的菜单中进行调整：
 
 * **[!UICONTROL 中位数]**：确定中位数线在何处显示，以及所绘制的点与这些中位数有何关系。
-   * **[!UICONTROL 标准]**：显示使用情况和参与度的绝对值。
-   * **[!UICONTROL 标准化]**：展示每个中位数的相对变化。
+  * **[!UICONTROL 标准]**：显示使用情况和参与度的绝对值。
+  * **[!UICONTROL 标准化]**：展示每个中位数的相对变化。
 * **[!UICONTROL 热门事件叠加]**：根据公司和用户的新近度和相关性（与查询边栏中的事件选择器所采用的算法相同），查看您的事件与前 20 个事件相比的表现如何。
 
 ### 时间比较
@@ -90,7 +100,7 @@ ht-degree: 100%
 您需要分析的日期范围。 此设置包含两个部分：
 
 * **[!UICONTROL 间隔]**：您想要查看趋势数据的日期粒度。 此分析对[!UICONTROL 间隔]的处理方式与对查询边栏中的[!UICONTROL 计为]的处理方式类似。 不支持每小时活跃用户。
-* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日程表选择器选择固定的日期范围。
+* **[!UICONTROL 日期]**：开始和结束日期。 为方便您使用，我们提供滚动日期范围预设以及之前保存的自定义范围，或者您可以使用日历选择器选择固定的日期范围。
 
 <!--
 ## Example

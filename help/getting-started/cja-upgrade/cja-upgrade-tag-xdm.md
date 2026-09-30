@@ -9,23 +9,30 @@ autotag-review: '2026-05-19T08:20:10.493Z'
 TQID: 'https://experienceleague.adobe.com/CZMnHpY8nofEV8fbpLSe7TUZCR7nOd8xKWoMkCzfH0I'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1377
+source-wordcount: '1377'
 ht-degree: 95%
-
 ---
-
 # 将 XDM 数据收集逻辑添加到您的标记中 {#upgrade-tag-xdm}
 
 <!-- markdownlint-disable MD034 -->
@@ -33,7 +40,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="将 XDM 数据收集逻辑添加到您的标记中"
->abstract="在您的网站上安装加载器标记后，您可以添加规则和数据元素来填充 XDM 对象，然后发送给 Adobe。 Adobe 建议维护一个解决方案设计文档来跟踪标记的配置方式。<br><br>这一步工作量很大，因为要为您的属性设置所有分析逻辑。 预计需要花费一个月或更长的时间来建立正确的标记规则、测试它们并将它们部署到您的网站上。"
+>abstract="在您的网站上安装加载器标记后，您可以添加规则和数据元素来填充用于发送到 Adobe 的 XDM 对象。 Adobe 建议维护一个解决方案设计文档来跟踪标记的配置方式。<br><br>这一步工作量很大，因为要为您的属性设置所有分析逻辑。 预计需要花费一个月或更长的时间来建立正确的标记规则、测试它们并将它们部署到您的网站上。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,7 +50,7 @@ ht-degree: 95%
 
 ## 配置数据元素
 
-数据元素是数据词典（或数据映射）的构建块。 使用数据元素可跨市场营销和广告技术收集、组织和交付数据。 您可以在标记中设置从数据层读取的数据元素，并可用于将数据传送到 Adobe Experience Platform。 （有关数据元素的更多信息，请参阅标记文档中的[数据元素](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/ui/data-elements)。）
+数据元素是数据词典（或数据映射）的构建块。 使用数据元素可跨营销和广告技术收集、组织和交付数据。 您可以在标记中设置从数据层读取的数据元素，并可用于将数据传送到 Adobe Experience Platform。 （有关数据元素的更多信息，请参阅标记文档中的[数据元素](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/ui/data-elements)。）
 
 以下部分描述了建议配置的数据元素，以及您可以配置的其他常见数据元素。
 
@@ -167,7 +174,7 @@ ht-degree: 95%
 
 ## **配置规则**
 
-Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则使用 Adobe Experience Platform Web SDK 扩展将数据（如 XDM 对象）发送到 Adobe Experience Platform。
+Adobe Experience Platform 中的标签遵循基于规则的系统。 它们会查找用户交互和相关数据。 如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。 您可以使用规则使用 Adobe Experience Platform Web SDK 扩展将数据（如 XDM 对象）发送到 Adobe Experience Platform。
 
 去定义规则
 
@@ -177,7 +184,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 >
 >您可以在标记中以各种方式使用规则来操作变量（使用数据元素）。
 >
->有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)。
+>有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)。
 
 1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
@@ -195,27 +202,27 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
    * **[!UICONTROL 事件]**：选择&#x200B;**[!UICONTROL + 添加]**。 然后，在&#x200B;**[!UICONTROL 事件配置]**&#x200B;对话框中，指定以下信息。 完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
 
-      * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**
+     * **[!UICONTROL 扩展]**：从列表中选择&#x200B;**[!UICONTROL 核心]**
 
-      * **[!UICONTROL 事件类型]**：从列表中选择&#x200B;**[!UICONTROL 加载的窗口]**。
+     * **[!UICONTROL 事件类型]**：从列表中选择&#x200B;**[!UICONTROL 加载的窗口]**。
 
-        ![规则 – 事件配置](assets/event-windowloaded-pageview.png)
+       ![规则 – 事件配置](assets/event-windowloaded-pageview.png)
 
    * **[!UICONTROL 操作]**：选择&#x200B;**[!UICONTROL + 添加]**。 然后，在[!UICONTROL 操作配置]对话框中，指定以下信息。 完成后，选择&#x200B;**[!UICONTROL 保留更改]**。
 
-      * **[!UICONTROL 扩展]**：从列表中选择 **[!UICONTROL Adobe Experience Platform Web SDK]**。
+     * **[!UICONTROL 扩展]**：从列表中选择 **[!UICONTROL Adobe Experience Platform Web SDK]**。
 
-      * **[!UICONTROL 操作类型]**：从列表中选择&#x200B;**[!UICONTROL 发送事件]**
+     * **[!UICONTROL 操作类型]**：从列表中选择&#x200B;**[!UICONTROL 发送事件]**
 
-      * **[!UICONTROL 类型]**：从列表中选择 **[!UICONTROL Web Webpagedetails 页面浏览量]**。
+     * **[!UICONTROL 类型]**：从列表中选择 **[!UICONTROL Web Webpagedetails 页面浏览量]**。
 
-      * **[!UICONTROL XDM 数据]**：选择圆柱体图标，然后从数据元素列表中选择 **[!UICONTROL XDM - 页面浏览量]**。
+     * **[!UICONTROL XDM 数据]**：选择圆柱体图标，然后从数据元素列表中选择 **[!UICONTROL XDM - 页面浏览量]**。
 
-        ![规则 – 操作配置](assets/action-pageview-xdm.png)
+       ![规则 – 操作配置](assets/action-pageview-xdm.png)
 
-        您的规则应如下所示：
+       您的规则应如下所示：
 
-        ![创建规则](assets/rule-pageview.png)
+       ![创建规则](assets/rule-pageview.png)
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -227,11 +234,11 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 他们寻�
 
 ## 生成并发布标记
 
-在定义了数据元素和规则之后，您必须构建和发布该标记。 创建库生成时，必须将其分配给环境。 然后，将会编译该内部版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
+在定义了数据元素和规则之后，您必须构建和发布该标记。 创建库构建时，必须将其分配给环境。 然后，将会编译该构建版本的扩展、规则和数据元素，并将这些内容放入分配的环境。 每个环境都提供了一个唯一的嵌入代码，从而允许您将其分配的内部版本集成到网站中。
 
-Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。 有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
+Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些工作流应适合您部署 Adobe Experience Platform Web SDK。 有关详细信息，请参阅[发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
-要生成并发布您的标记：
+要构建并发布您的标记：
 
 1. 使用您的 Adobe ID 凭据登录 experience.adobe.com。
 
@@ -255,7 +262,7 @@ Adobe Experience Platform 标签支持简单到复杂的发布工作流，这些
 
 1. 选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-   您的标记已保存，并为您的开发环境构建。 绿色圆点表示在开发环境中成功构建了标记。
+   您的标记已保存，并为您的开发环境构建。 绿色圆点表示您的标记已在您的开发环境中成功构建。
 
 1. 您可以选择&#x200B;**[!UICONTROL ...]** 重建库或将库移动到临时或生产环境。
 

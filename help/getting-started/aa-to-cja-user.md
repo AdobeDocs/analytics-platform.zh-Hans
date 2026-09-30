@@ -9,30 +9,46 @@ autotag-review: '2026-05-19T06:30:45.150Z'
 TQID: 'https://experienceleague.adobe.com/Qyb6t5w-DTcecgqvhUE6NplDrlPmW2lzhk0RWbf7g-g'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1539
+source-wordcount: '1539'
 ht-degree: 95%
-
 ---
-
 # 适用于 Adobe Analytics 用户的用户指南
 
 如果您的组织开始使用 Adobe Customer Journey Analytics，您可能会注意到 Adobe Analytics 与 Customer Journey Analytics 之间的一些相似之处和差异。 本页旨在解释这些差异，以帮助贵组织适应新的实施和报告工作流。 本页还提供了有关新概念的其他资源，以及进一步的步骤，帮助您作为分析师，更轻松、更成功。
@@ -43,7 +59,7 @@ Customer Journey Analytics 中的几项功能已经过重命名和重新设计�
 
 您在报告端所熟悉的许多内容并未发生更改。
 
-* 您仍然可以使用[&#x200B; Analysis Workspace &#x200B;](/help/analysis-workspace/home.md)分析数据。 工作区的操作方式与在传统Adobe Analytics中相同。
+* 您仍然可以使用[ Analysis Workspace ](/help/analysis-workspace/home.md)分析数据。 工作区的操作方式与在传统Adobe Analytics中相同。
 * 有相同版本的 [Adobe Analytics 功能板](/help/mobile-app/home.md)可用，且在 Customer Journey Analytics 与 Adobe Analytics 中的工作原理类似。
 * [Report Builder](/help/report-builder/rb-overview.md) 具有新界面，并可在 MS Windows、MacOS 和 Web 版本的 Excel 上运行。 （在此版本的Report Builder之前，除非在VMware上运行Mac，否则无法在VMware中使用。） 此版本尚不支持传统的AA数据请求。
 
@@ -76,7 +92,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 -->
 
 
-Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Analytics Source Connector 或 Web SDK 导入报表包数据。 多个报告包中的现有实施可以合并为Experience Platform。 基于这些数据集的连接和数据视图可以合并之前存在于单独的报告包中的数据。
+Adobe 提供了多种将数据导入 Adobe Experience Platform 的方法，包括通过 Analytics Source Connector 或 Web SDK 导入报告包数据。 多个报告包中的现有实施可以合并为Experience Platform。 基于这些数据集的连接和数据视图可以合并之前存在于单独的报告包中的数据。
 
 ## 对虚拟报告包概念的更改 {#data-views}
 
@@ -135,17 +151,17 @@ Adobe Analytics 和 Customer Journey Analytics 之间的计算量度名称类似
 
 “客户属性”现在称为“轮廓数据集”。 轮廓数据集包含应用于[!UICONTROL 事件]数据中的人员、用户或客户的数据。 例如，它允许您上传有关客户的 CRM 数据。 您可以选择想要包含的人员 ID。 [!DNL Experience Platform] 中定义的每个数据集都有自己的一组定义的一个或多个人员 ID。
 
-## 更改了Adobe识别访客的方式
+## Adobe 识别访客方式的变化
 
-Customer Journey Analytics 扩展了 ECID 之外的身份标识概念，以包含您要使用的任何 ID，包括客户 ID、Cookie ID、拼合 ID、用户 ID、跟踪代码等。 跨数据集使用通用命名空间 ID，或使用[拼接](../stitching/overview.md)功能可帮助将不同数据集中的人员关联在一起。 在 Customer Journey Analytics 中设置工作区项目的任何用户都必须了解跨数据集使用的 ID。 请观看以下视频，其中重点介绍了 Customer Journey Analytics 中身份标识的使用
+Customer Journey Analytics 将身份标识的概念从 ECID 扩展到您想要使用的任何 ID，包括客户 ID、Cookie ID、拼接 ID、用户 ID、跟踪代码等。 跨数据集使用通用命名空间 ID，或使用[拼接](../stitching/overview.md)功能可帮助将不同数据集中的人员关联在一起。 在 Customer Journey Analytics 中设置工作区项目的任何用户都必须了解跨数据集使用的 ID。 请观看以下视频，其中重点介绍了 Customer Journey Analytics 中身份标识的使用
 
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"}获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中使用身份标识](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"}获取演示视频。
 
 >[!ENDSHADEBOX]
 
 ## 对低流量维度项目概念的更改
 
-在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。 Customer Journey Analytics 对高基数字段的限制较少。 对报告模式所做的更改允许 Analysis Workspace 报告更多独特维度项目。 请参阅[高基数维度](../components/dimensions/high-cardinality.md)，了解有关 Customer Journey Analytics 如何优化报告具有许多独特值的维度方面的更多信息。
+在传统Adobe Analytics中，接收过多唯一值的变量会开始将维度项存储在[!UICONTROL 低流量]下。 Customer Journey Analytics 对高基数字段的限制较少。 报告架构的变化使 Analysis Workspace 能够报告更多唯一的维度项目。 请参阅[高基数维度](../components/dimensions/high-cardinality.md)，了解有关 Customer Journey Analytics 如何优化报告具有许多独特值的维度方面的更多信息。

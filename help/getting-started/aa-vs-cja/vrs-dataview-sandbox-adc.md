@@ -4,30 +4,40 @@ description: 了解虚拟报告环境和沙盒环境。
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-TQID: https://experienceleague.adobe.com/U-90bs2lmli3TxdxDyu2jQZvIU29C80tbiHSDyAmGFA
+TQID: 'https://experienceleague.adobe.com/U-90bs2lmli3TxdxDyu2jQZvIU29C80tbiHSDyAmGFA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 785
+source-wordcount: '785'
 ht-degree: 96%
-
 ---
-
 # 虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics 源连接器
 
-Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。 了解以下功能之间的异同以及这些功能与 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 的关系非常有用：
+Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。 了解以下功能之间的异同以及这些功能与 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) 的关系非常有用：
 
 * Adobe Analytics 虚拟报告包
 * Customer Journey Analytics 数据视图
@@ -45,7 +55,7 @@ Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。 了解�
 * 可用于控制 Adobe Analytics 中不同用户对不同类型数据的访问和管理。
 * 为 Adobe Analytics 提供可选的[报告时处理](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=zh-Hans)功能。 在这种情况下，虚拟报告包可用于为“访问”创建自定义定义。
 * 在报告运行时应用，类似于区段评估。 这会在收集数据并将其存储在 Adobe Analytics 中&#x200B;_之后_&#x200B;进行。
-* 在 Adobe Analytics 中进行[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=zh-Hans)时需要。
+* 在 Adobe Analytics 中进行[跨设备分析](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html)时需要。
 * 可用变量数量与标准 Analytics 报告包相同（250 个 eVar、250 个 prop、1000 个事件），但虚拟报告包策划可限制向用户公开哪些变量。
 * 支持自定义日程表选项。
 
@@ -58,7 +68,7 @@ Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。 了解�
 
 ## Customer Journey Analytics 数据视图
 
-有关更多信息，请参阅[数据视图概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=zh-Hans)。
+有关更多信息，请参阅[数据视图概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html)。
 
 数据视图：
 
@@ -80,7 +90,7 @@ Adobe 提供了多种方法来创建虚拟报告环境和沙盒环境。 了解�
 
 ## Adobe Experience Platform 沙盒
 
-有关更多信息，请参阅：[沙盒概述。](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hans)
+有关更多信息，请参阅：[沙盒概述。](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)
 
 Adobe Experience Platform 沙盒：
 
@@ -95,4 +105,4 @@ Adobe Experience Platform 沙盒不会：
 注意：
 
 * 来自不同沙盒的数据无法在 Customer Journey Analytics 中组合。
-* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。 每个报告包均可以配置为单个沙盒的来源。 有关更多详细信息，请参阅 [Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
+* Analytics Source Connector 将报告包数据发送&#x200B;_到_&#x200B;特定的沙盒中。 每个报告包均可以配置为单个沙盒的来源。 有关更多详细信息，请参阅 [Analytics Source Connector 文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。

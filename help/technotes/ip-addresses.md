@@ -9,23 +9,32 @@ autotag-review: '2026-05-19T09:27:51.516Z'
 TQID: 'https://experienceleague.adobe.com/4DM6LjcCM4xWw8j-1xcEvJ8XOVdvF5zNiOXir538Z0A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 196
+source-wordcount: '196'
 ht-degree: 32%
-
 ---
-
 # Customer Journey Analytics使用的IP地址
 
 一些防火墙配置会阻止源自 Adobe 数据收集服务器或负责访问数据的服务器的 IP 地址。 您可以使用此范围列表来更改贵组织的防火墙设置，以允许从组织内访问和发送数据。
@@ -158,4 +167,4 @@ ht-degree: 32%
 >
 >Customer Journey Analytics使用的[域](domains.md)
 >
->CX Enterprise使用的[个IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses)
+>CX Enterprise使用的[IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

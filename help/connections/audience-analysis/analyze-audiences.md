@@ -9,22 +9,30 @@ autotag-review: '2026-05-19T10:44:54.802Z'
 TQID: 'https://experienceleague.adobe.com/ljj9CIUW58m27w8Mo9HlRJ0kgYXGIgqwuarPR2wNUjw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 503
+source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # 在Customer Journey Analytics中分析Experience Platform受众 {#analyze-audiences-RTCDP}
 
 在您[创建受众分析配置](/help/connections/audience-analysis/audience-analysis-configure.md)后，受众数据将作为新维度在数据视图中可用，您可以在该视图中配置要创建受众的数据。 如果您有权访问添加了受众分析维度的数据视图，则可以在Analysis Workspace中的任意位置使用新的受众维度。

@@ -3,13 +3,23 @@ title: 品牌可见度集成
 description: 将品牌可见度与Customer Journey Analytics集成
 feature: Experience Platform Integration
 role: User
-source-git-commit: ab73c95a3ff0d57a4868d74266084a79c4c3721d
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2572'
 ht-degree: 2%
-
 ---
-
 
 # Adobe Brand Visibility集成
 
@@ -60,7 +70,7 @@ LLM流量可通过两种方式访问您的网站。 Customer Journey Analytics�
 品牌可见度托管连接器将数据作为摘要数据集交付给Experience Platform。 要在Customer Journey Analytics中测量客户历程，您需要自行完成两个设置步骤：
 
 1. 创建包含品牌可见度数据集的连接。 请参阅[创建或编辑连接](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}。
-2. 在该连接上创建数据视图。 数据视图允许在Analysis Workspace中使用以下维度和量度。 请参阅[创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}。
+2. 在该连接上创建数据视图。 数据视图允许在Analysis Workspace中使用以下维度和量度。 请参阅[创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}。
 
 数据集：
 
@@ -178,4 +188,4 @@ Brand Visibility读取服务器端的CDN访问日志，并提取请求方是机�
 
 ## 出站集成
 
-有关出站集成的信息，请参阅Customer Journey Analytics品牌可见性文档中的[Adobe集成](https://experienceleague.adobe.com/zh-hans/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。
+有关出站集成的信息，请参阅Customer Journey Analytics品牌可见性文档中的[Adobe集成](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。

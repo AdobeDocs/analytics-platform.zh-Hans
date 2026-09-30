@@ -5,7 +5,19 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
-source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 16%
@@ -144,7 +156,7 @@ Migration Planner提供了一个迁移向导，可自动完成以下复杂且耗
 
    1. 在&#x200B;[!UICONTROL **规则**]&#x200B;和&#x200B;[!UICONTROL **数据元素**]&#x200B;选项卡上，选择要包含在迁移中的项。
 
-      库&#x200B;**中标记为**&#x200B;的规则已发布。 标记为&#x200B;[!UICONTROL **属性**]&#x200B;的规则仅存在于属性中，但不是所选库的一部分。
+      库&#x200B;**]中标记为[!UICONTROL **&#x200B;的规则已发布。 标记为&#x200B;[!UICONTROL **属性**]&#x200B;的规则仅存在于属性中，但不是所选库的一部分。
 
    1. 复查所选规则的任何调查结果。 对于每个发现结果，选择&#x200B;[!UICONTROL **查看**]&#x200B;以解决该问题，或选择&#x200B;[!UICONTROL **忽略**]&#x200B;以保持未寻址。
 
@@ -252,7 +264,7 @@ Migration Planner可以标记以下类型的调查结果：
 
 映射集确定Analytics变量如何映射到XDM架构字段。
 
-您可以在迁移过程[&#128279;](#migrate-an-analytics-implementation-to-the-web-sdk)中创建新映射集。 或者，您也可以创建一个独立的映射集，以便用于未来的迁移或其他迁移任务。
+您可以在迁移过程](#migrate-an-analytics-implementation-to-the-web-sdk)中创建新映射集[。 或者，您也可以创建一个独立的映射集，以便用于未来的迁移或其他迁移任务。
 
 ### 创建独立的映射集 {#xdm-mapping}
 
@@ -329,7 +341,7 @@ Migration Planner可以标记以下类型的调查结果：
 
 * [!UICONTROL **已发布**]：映射集已最终完成。
 
-* 迁移&#x200B;**中的**：映射集绑定到一个或多个迁移。
+* 迁移&#x200B;**]中的[!UICONTROL **：映射集绑定到一个或多个迁移。
 
 <!-- Confirm how to publish a mapping set, how versions are created (v1, v2, v3), and what "bindings" represent. -->
 

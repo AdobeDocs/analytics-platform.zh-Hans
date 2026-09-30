@@ -5,32 +5,47 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
 role: Admin
-TQID: https://experienceleague.adobe.com/oCI3IKOfeOTpNQYOflo5QngPfu4ytnpyewA8ccOf64Q
+TQID: 'https://experienceleague.adobe.com/oCI3IKOfeOTpNQYOflo5QngPfu4ytnpyewA8ccOf64Q'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1998
+source-wordcount: '1998'
 ht-degree: 86%
-
 ---
-
 # 摄取和使用批次数据
 
 本快速入门指南介绍了如何将批处理数据导入 Adobe Experience Platform，然后在 Customer Journey Analytics 中使用这些数据。
@@ -137,7 +152,7 @@ ht-degree: 86%
 
    系统会提示您启用轮廓的架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -149,7 +164,7 @@ ht-degree: 86%
 
 您已经创建了一个最小的架构，用于对可摄取到 Adobe Experience Platform 中的忠诚度数据进行建模。 该架构允许使用电子邮件地址标识轮廓。 通过为概要文件启用架构，可以确保批处理文件中的数据添加到实时客户轮廓中。
 
-请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 ### 设置数据集
 
@@ -208,7 +223,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 2. 选择 **[!UICONTROL 将 CSV 映射到 XDM 架构]**。 选择&#x200B;**[!UICONTROL 启动]**。
 
-   将 ![&#x200B; CSV 映射到 XDN](./assets/workflow-mapcsvtoxdm.png)
+   将 ![ CSV 映射到 XDN](./assets/workflow-mapcsvtoxdm.png)
 
 3. 在 [!UICONTROL CSV 映射到 XDM 架构]场景，在 [!UICONTROL 数据流详细信息]步骤中：
 
@@ -238,7 +253,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 
 6. 选择 **[!UICONTROL 完成]** 开始将您的批处理数据提取到 Adobe Experience Platform 中。
 
-有关以下内容的更多信息，请参阅[将CSV文件映射到现有XDM架构](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=zh-Hans)：
+有关以下内容的更多信息，请参阅[将CSV文件映射到现有XDM架构](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html)：
 
 - 当传入数据与XDM架构不兼容时如何映射数据。
 - 使用映射模板，

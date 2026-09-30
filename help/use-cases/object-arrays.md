@@ -9,24 +9,34 @@ autotag-review: '2026-05-19T09:33:58.249Z'
 TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
+    internal-label: Schema
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: cf731116-8803-4027-85aa-9c0a126e8321
+    internal-label: Dataset configuration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 518
+source-wordcount: '518'
 ht-degree: 59%
-
 ---
-
 # 使用对象数组
 
 某些平台架构可以具有对象数组。 Adobe Customer Journey Analytics支持摄取和报告事件、查找和配置文件数据中的对象数组。 最常见的示例之一是包含多个产品的购物车。 每个产品都有一个名称、SKU、类别、价格、数量以及要跟踪的任何其他维度。 所有这些方面都有各自的要求，但都必须适合同一次点击。
@@ -285,5 +295,5 @@ Customer Journey Analytics本身不会组合名称相似但对象级别不同的
 
 ## 限制
 
-限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)中的[数据模型限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-model-limits)和[数据大小限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-size-limits)。
+限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)中的[数据模型限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)和[数据大小限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)。
 

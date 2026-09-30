@@ -6,28 +6,39 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-TQID: https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY
+TQID: 'https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 942cc774812d4a6b3b7f45df837ff9277e8f9b46
+    internal-label: Data management
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 435
+source-wordcount: '435'
 ht-degree: 4%
-
 ---
-
 # 将量子度量数据添加到Customer Journey Analytics
 
 >[!IMPORTANT]
@@ -54,7 +65,7 @@ CJA解锁对QM数据、顺序数据分析、富归因和其他高级报表的报
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 >[!NOTE]
->虽然您可以将Quantum量度数据添加到与Customer Journey Analytics其余数据相同的连接，但如果没有两个数据集之间通用的人员ID，则无法拼合这些数据。 如果需要此行为，Adobe建议使用[标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/analytics/quantum-metric)而不是源连接器。
+>虽然您可以将Quantum量度数据添加到与Customer Journey Analytics其余数据相同的连接，但如果没有两个数据集之间通用的人员ID，则无法拼合这些数据。 如果需要此行为，Adobe建议使用[标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric)而不是源连接器。
 
 ## 步骤3：在Customer Journey Analytics中创建数据视图
 

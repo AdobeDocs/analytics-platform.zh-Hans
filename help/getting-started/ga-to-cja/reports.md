@@ -7,22 +7,30 @@ feature: Basics
 exl-id: c2d8f4a1-7b3e-4c9f-a5d2-8e1b6c3f9072
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 2125f1a16ffed79f77757120c5679dd4defa1638
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3200
+source-wordcount: '3202'
 ht-degree: 0%
-
 ---
-
 
 # Customer Journey Analytics中的GA4报表
 
@@ -111,7 +119,7 @@ GA4的登陆页面报告显示了用户在开始会话时到达的页面。
 
 +++
 
-+++事件
++++活动
 
 GA4的事件报表通过事件级别的量度显示每个事件触发的次数。
 
@@ -234,7 +242,7 @@ GA4的技术报告显示了浏览器、操作系统、屏幕分辨率和设备�
 
 >[!NOTE]
 >
->由于现代浏览器减少了用户代理字符串中的详细信息，因此完整而准确的值取决于在Web SDK配置中收集[用户代理客户端提示](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/use-cases/client-hints)。
+>由于现代浏览器减少了用户代理字符串中的详细信息，因此完整而准确的值取决于在Web SDK配置中收集[用户代理客户端提示](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)。
 
 +++
 

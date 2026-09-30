@@ -4,25 +4,33 @@ title: 指标和受众会员资格的一致性
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-TQID: https://experienceleague.adobe.com/IYlFUArrqejRjs5uDJ0MNGixQG4IP6ly4qLQBMALCjA
+TQID: 'https://experienceleague.adobe.com/IYlFUArrqejRjs5uDJ0MNGixQG4IP6ly4qLQBMALCjA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 671
+source-wordcount: '671'
 ht-degree: 100%
-
 ---
-
 # 指标和受众会员资格的一致性
 
 在现实情景中，无法保证跨 Real-time Customer Data Platform（Real-time CDP）和 Customer Journey Analytics 的量度和受众会员计数的一致性。 本文档解释了原因。
@@ -31,7 +39,7 @@ ht-degree: 100%
 
 ## 身份标识配置的差异
 
-Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。 Real-time CDP 完全依赖于[身份标识图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans)中的信息来构建合并的轮廓。
+Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。 Real-time CDP 完全依赖于[身份标识图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html)中的信息来构建合并的轮廓。
 
 可以将 Customer Journey Analytics 配置为使用 [拼接](../stitching/overview.md)。 如果您使用[基于字段的拼接](/help/stitching/fbs.md)作为拼接机制，可从数据湖中的某个数据集中指定一个标识符，以拼接并提升该数据集的合并轮廓质量。 如果您使用[基于图形的拼接](/help/stitching/gbs.md)作为拼接机制，则会基于指定的身份标识命名空间，利用身份标识图执行类似的处理流程。
 
@@ -44,7 +52,7 @@ Real-time CDP 和 Customer Journey Analytics 现在对个人的定义不同。 R
 
 Customer Journey Analytics 允许在查询时进行广泛的数据修改，例如组合字段、拆分字段以及其他操作，如包含/排除、子字符串、重复值消除、会话化和行级过滤。
 
-Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans)来确定哪些数据将被优先处理，哪些数据将合并以创建个人的统一视图。
+Real-time CDP 提供了一套不同的数据操作工具。 它应用[合并策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)来确定哪些数据将被优先处理，哪些数据将合并以创建个人的统一视图。
 
 ## TTL（生存时间）和数据摄取的差异
 

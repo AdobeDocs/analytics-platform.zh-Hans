@@ -4,27 +4,37 @@ description: 将Adobe Target与Customer Journey Analytics集成
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
+TQID: 'https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 34593a4407e6334e9abab6034accd84fc5a70d33
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 452
+source-wordcount: '452'
 ht-degree: 40%
-
 ---
-
 # Target报表
 
 Customer Journey Analytics中的Target报表功能允许您直接在Customer Journey Analytics中测量和报告Adobe Target活动。 此功能与通过Analytics for Target (A4T)在Adobe Analytics (AA)中执行的功能类似，只是与Adobe Experience Platform (AEP)相连。 创建使用Customer Journey Analytics作为报表源的Target活动后，将在相应的沙盒中创建名为Adobe Target分类事件的查找数据集。 此查找数据集通过将Target活动ID与其用户友好属性（如活动名称和体验名称）分类来丰富您的报表。

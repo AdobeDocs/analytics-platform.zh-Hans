@@ -8,37 +8,46 @@ autotag-review: '2026-05-19T07:19:20.352Z'
 TQID: 'https://experienceleague.adobe.com/n3xsScsv43IG-tOQhgNjeqB2UmWzbIVw7sv5CcpZPd0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: df066828-d385-4da6-af58-80137fb27d7b
+    internal-label: Journey Optimizer integration
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 753
+source-wordcount: '753'
 ht-degree: 100%
-
 ---
-
 # 集成决策管理
 
 
-Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hans)通过集中的营销产品建议库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时轮廓）帮助您在适当的时间向客户发送合适的产品建议，从而轻松实现个性化。
+Adobe Journey Optimizer [决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html)通过集中的营销产品建议库和决策引擎（该引擎可将规则和约束应用于 Adobe Experience Platform 创建的丰富实时轮廓）帮助您在适当的时间向客户发送合适的产品建议，从而轻松实现个性化。
 
-决策管理是 Adobe Journey Optimizer 的一部分并与之集成。 它还可以独立于 Adobe Journey Optimizer 中定义的历程和营销活动使用，利用其丰富的 [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=zh-Hans) 支持。
+决策管理是 Adobe Journey Optimizer 的一部分并与之集成。 它还可以独立于 Adobe Journey Optimizer 中定义的历程和营销活动使用，利用其丰富的 [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) 支持。
 
-可通过执行以下步骤而导入决策管理生成的数据以在 Customer Journey Analytics 中执行高级分析：
+您可以通过执行以下步骤导入决策管理生成的数据，以在 Customer Journey Analytics 中执行高级分析：
 
 ## 将数据从决策管理发送到 Adobe Experience Platform
 
-Adobe Experience Platform 作为中心数据源，联系着决策管理与 Customer Journey Analytics。 决策管理的数据在体验平台中&#x200B;**自动**&#x200B;收集，或作为&#x200B;**明确发送的体验事件**（例如印象或点击）的一部分收集。 有关详细信息，请参阅[数据收集快速入门](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=zh-Hans)。
+Adobe Experience Platform 作为中心数据源，联系着决策管理与 Customer Journey Analytics。 决策管理的数据在体验平台中&#x200B;**自动**&#x200B;收集，或作为&#x200B;**明确发送的体验事件**（例如印象或点击）的一部分收集。 有关详细信息，请参阅[数据收集快速入门](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html)。
 
 ## 创建连接
 
@@ -48,17 +57,17 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 
 | 数据集 | 数据集类型 | 连接设置 | 描述 |
 | --- | --- | --- | --- |
-| ODE 决策事件 - _沙盒_&#x200B;决策 | 事件 | 人员 ID：`IdentityMap` | 包含决策管理决策事件的自动生成的数据。 _沙盒_&#x200B;指的是具体的沙盒名称。 |
+| ODE 决策事件 - _沙盒_&#x200B;决策 | 事件 | 人员 ID：`IdentityMap` | 包含为决策管理决策事件自动生成的数据。 _沙盒_&#x200B;指的是具体的沙盒名称。 |
 | Adobe Journey Optimizer 消息反馈事件数据集 | 事件 | 人员 ID：`IdentityMap` | 包含消息传递事件。 |
 | Adobe Journey Optimizer 电子邮件跟踪体验事件数据集 | 事件 | 人员 ID：`IdentityMap` | 包含电子邮件跟踪事件。 |
 | Adobe Journey Optimizer 推送跟踪体验事件数据集 | 事件 | 人员 ID：`IdentityMap` | 包含推送跟踪事件。 |
-| Adobe Journey Optimizer 实体数据集 | 查询 | 键：`_id`<br>匹配键：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和营销活动元数据与所有 Adobe Journey Optimizer 事件数据相关联的分类。 |
+| Adobe Journey Optimizer 实体数据集 | 查询 | 键：`_id`<br>匹配键：`_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | 包含将历程和 Campaign 元数据与所有 Adobe Journey Optimizer 事件数据相关联的分类。 |
 
 {style="table-layout:auto"}
 
 ## 创建数据视图
 
-创建连接之后，可创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hans)，以配置在 Customer Journey Analytics 中可用的所需维度和量度。
+创建连接之后，可创建一个或多个[数据视图](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html)，以配置在 Customer Journey Analytics 中可用的所需维度和量度。
 
 >[!NOTE]
 >
@@ -91,10 +100,10 @@ Adobe Experience Platform 作为中心数据源，联系着决策管理与 Custo
 | 回退决策选项分数 | 单个范围上下文中回退决策选项的计算值。 | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | 组件类型：量度 |
 | 产品建议驳回 | 在没有任何其他直接互动的情况下被驳回或拒绝的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | 组件类型：量度 |
 | 产品建议显示 | 显示在轮廓中的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.display` | 组件类型：量度 |
-| 产品建议互动 | 与轮廓互动的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
+| 产品建议互动 | 轮廓与之互动的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.interact` | 组件类型：量度 |
 | 产品建议发送 | 发送到轮廓的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.send` | 组件类型：量度 |
 | 产品建议触发 | 客户端 SDK 选择显示的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.trigger` | 组件类型：量度 |
-| 产品建议取消订阅 | 轮廓请求的在将来不显示的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | 组件类型：量度 |
+| 产品建议取消订阅 | 轮廓请求今后不再显示的产品建议数量。 | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | 组件类型：量度 |
 
 {style="table-layout:auto"}
 

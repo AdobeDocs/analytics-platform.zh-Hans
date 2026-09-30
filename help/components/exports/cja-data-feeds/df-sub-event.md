@@ -3,7 +3,18 @@ title: 了解数据馈送中的子事件和对象数组
 description: 了解Customer Journey Analytics数据馈送如何从架构数组导出子事件，从而保留层次结构而不是像Workspace那样将其扁平化。
 hide: true
 feature: Components
-source-git-commit: afc1b55eb54b5f3342800489d0a7f63508ee8b10
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 1%

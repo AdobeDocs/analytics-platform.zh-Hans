@@ -8,22 +8,28 @@ autotag-review: '2026-05-19T08:41:54.033Z'
 TQID: 'https://experienceleague.adobe.com/sitlejANJcDN2u-baGg2iz2SaOyZJe8jbyXjgBbasss'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 389
+source-wordcount: '389'
 ht-degree: 76%
-
 ---
-
 # 流失概述 {#fallout-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -38,7 +44,7 @@ ht-degree: 76%
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的流失可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的流失可视化图表。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本，请参阅[流失](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow)。_
 
 >[!ENDSHADEBOX]
 
@@ -47,7 +53,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建流失可视化报告](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建流失可视化报告](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"}以观看演示视频。
 
 {{videoaa}}
 
@@ -56,15 +62,15 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 流失可视化图表允许您：
 
-* 对同一个报告中的两个不同区段执行逐项比较。
+* 对同一个报告中的两个不同区段进行并排比较。
 * 拖放（和重新排列）漏斗步骤（接触点）。
-* 混合和匹配来自不同维度和量度的值。
+* 混合搭配来自不同维度和量度的值。
 * 创建多维度流失报告。
 * 识别客户在流失之后马上前往何处。
 
 流失显示一个序列中每个步骤或接触点之间的转化和流失率。
 
-例如，您可以跟踪购买过程中的人员流失点。 只需选择一个开始接触点和一个结束接触点，然后添加中间接触点即可创建网站导航路径。 但是，您还可以执行多维度流失。
+例如，您可以跟踪购买过程中的人员流失点。 只需选择一个开始接触点和一个结束接触点，然后添加中间接触点即可创建网站导航路径。 但是，您还可以进行多维度流失分析。
 
 ## 在“流失”、“流量”和“历程”画布可视化图表之间进行选择
 
@@ -86,7 +92,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 流失可视化图表最适合于：
 
-* 涉及具有预定义页面序列和单一入口点及路径的历程的流量分析。 （使用历程画布来描绘具有多个入口点和路径的历程。）
+* 涉及具有预定义页面序列和单一入口点及路径的历程的流失分析。 （对于具有多个入口点和路径的历程，请使用历程画布。）
 
 * 需要在同一个报告中对两个不同的区段进行并列比较的历程。
 

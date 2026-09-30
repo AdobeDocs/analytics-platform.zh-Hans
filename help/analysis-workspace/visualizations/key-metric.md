@@ -8,32 +8,37 @@ autotag-review: '2026-05-19T08:31:00.048Z'
 TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 960
+source-wordcount: '969'
 ht-degree: 91%
-
 ---
-
 # 关键量度摘要 {#key-metric-summary}
 
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="关键量度摘要"
->abstract="创建由线条、摘要变化和摘要数字图表组合而成的可视化图表。 使用此可视化效果来比较两个时段内重要量度的趋势。"
+>abstract="创建由折线图、摘要变化和摘要数字图表组合而成的可视化图表。 使用此可视化效果来比较两个时段内重要量度的趋势。"
 
 
 >[!BEGINSHADEBOX]
 
-_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;中的关键量度摘要可视化。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**&#x200B;版本，请参阅[关键量度摘要](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)。_
+_本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**&#x200B;中的关键量度摘要可视化。_<br/>_对于本文的_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**&#x200B;版本，请参阅[关键量度摘要](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/visualizations/key-metric)。_
 
 >[!ENDSHADEBOX]
 
@@ -48,11 +53,11 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
 
 ## 用例
 
-该可视化图表处理各种常见用例，包括：
+该可视化图表适用于各种常见用例，包括：
 
 * 一位分析师试图了解与去年同期相比，本月机会创造情况。
 
-* 一位营销人员正在探索特定商机类型的商机开发从本月到上个月的变化。
+* 一位营销人员正在探索特定销售线索类型的销售线索开发从本月到上个月的变化。
 
 * 一位高管想了解新预订从本季度到上季度的变化。
 
@@ -69,7 +74,7 @@ _本文记录了_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourney
    | **[!UICONTROL 量度]** | 选择您希望检查的量度。 支持全部量度。 |
    | **[!UICONTROL 主要日期范围]** | 自由格式表的当前日期范围。<p>从数据视图的任何可用日期范围中进行选择。</p> <p>如果您想使用与可视化图表所在面板上相同的日期范围，请选择&#x200B;[!UICONTROL **面板日期范围**]。</p> |
    | **[!UICONTROL 比较日期范围。]** | 要与主要日期范围进行比较的日期范围。 |
-   | **[!UICONTROL 区段（可选）]** | 您对此摘要特别感兴趣的任何区段。 |
+   | **[!UICONTROL 区段（可选）]** | 您对此摘要感兴趣的任何区段。 |
 
    {style="table-layout:auto"}
 
@@ -119,7 +124,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 * **[!UICONTROL 前期]**&#x200B;线形图（始终以灰色显示）对应于配置步骤中的&#x200B;**[!UICONTROL 比较日期范围]**。
 
-* 如果在配置期间未指定比较日期范围，或在可视化图表设置中隐藏比较日期范围时，则仅显示主日期范围的线形图。 摘要变化已被隐藏。
+* 如果在配置期间未指定比较日期范围，或在可视化图表设置中隐藏比较日期范围时，则仅显示主日期范围的折线图。 摘要变化已被隐藏。
 
 * 从此处，您可以将鼠标悬停在线形图上，查看各个日期的统计数据：
 
@@ -147,11 +152,11 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 | **[!UICONTROL 隐藏标题]** | 隐藏可视化图表的标题。 |
 | **[!UICONTROL 百分比]** | 以百分比而不是数字来显示可视化图表。 |
 | **[!UICONTROL 显示趋势线]** | 在可视化图表中显示趋势线。 |
-| **[!UICONTROL 在趋势线上显示最大值和最小值]** | 在主线形图和比较线形图上显示或隐藏最小值和最大值 |
+| **[!UICONTROL 在趋势线上显示最大值和最小值]** | 在主折线图和比较折线图上显示或隐藏最小值和最大值 |
 | **[!UICONTROL 显示比较百分比和趋势线]** | 显示或隐藏比较数据。 隐藏时，比较线形图和摘要变化对象在视图中隐藏。 |
 | **[!UICONTROL 显示总数]** | 显示或隐藏摘要数字 |
 | **[!UICONTROL 显示原始差异]** | 显示或隐藏主要日期范围和次要日期范围中量度的总值之间的原始差异 |
-| **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**，智能地缩写数值。 选择后，输入一个数字来定义缩写量。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写**</td><td>**结果**</td></tr><tr><td>$12,011,141.25</td><td>未选定</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>选定，设置为 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>选定，设置为 2</td><td align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>选定，设置为 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>选择，设置为 3</td><td align="right">$12.011M</td></tr></table> |
+| **[!UICONTROL 缩写值]** | 选择&#x200B;**[!UICONTROL 缩写值]**，智能地缩写数值。 选择后，输入一个数字来定义缩写程度。 例如：<br/><table><tr><td>**原始值**</td><td>**缩写**</td><td>**结果**</td></tr><tr><td>$12,011,141.25</td><td>未选定</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>选定，设置为 1</td><td align="right">$12M</td></tr><tr><td>$12,011,141.25</td><td>选定，设置为 2</td><td align="right">$12.0M</td></tr><tr><td>$12,011,141.25</td><td>选定，设置为 2</td><td align="right">$12.011M</td></tr><tr><td>$12,011,141.25</td><td>选择，设置为 3</td><td align="right">$12.011M</td></tr></table> |
 
 ## 编辑可视化图表
 
