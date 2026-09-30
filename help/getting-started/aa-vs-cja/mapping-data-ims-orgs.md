@@ -74,7 +74,7 @@ ht-degree: 2%
 
 Adobe客户经理收到一封电子邮件，其中包含从多个组织映射Analytics数据的请求，随后将在Adobe中审核该请求。 有关任何其他问题、可选培训及其他信息，Adobe客户经理将与您联系。
 
-批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)的[列表中的报表包名称。
+批准后，将创建请求的映射，并通知您。 源IMS组织名称已附加到Experience Platform中Analytics报表包[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data)的列表中的报表包名称。
 
 
 ## 限制

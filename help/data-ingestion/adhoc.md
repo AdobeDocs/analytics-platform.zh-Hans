@@ -104,7 +104,7 @@ ht-degree: 26%
 
       1. 选择&#x200B;**[!UICONTROL 完成]**。
 
-成功准备并上传数据后，您将被重定向到Experience Platform界面中的&#x200B;**[!UICONTROL 数据集]**。<br/> 您从CSV ]**数据集看到**[!UICONTROL &#x200B;示例数据的&#x200B;**[!UICONTROL 数据集活动]**，状态为![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL 正在处理]**。
+成功准备并上传数据后，您将被重定向到Experience Platform界面中的&#x200B;**[!UICONTROL 数据集]**。<br/> 您从CSV **数据集看到**&#x200B;示例数据的&#x200B;**[!UICONTROL 数据集活动]**，状态为![StatusOrange](/help/assets/icons/StatusOrange.svg) **[!UICONTROL 正在处理]**。
 
 ![临时数据的数据集活动](assets/datasets-dataset-activity.png)
 

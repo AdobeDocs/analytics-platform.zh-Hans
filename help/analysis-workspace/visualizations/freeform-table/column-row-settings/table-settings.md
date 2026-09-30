@@ -173,7 +173,7 @@ ht-degree: 53%
 
 * 将自由格式表重置为修改前的状态。
 
-  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**旁边的![齿轮](/help/assets/icons/Gear.svg)。
+  1. 选择&#x200B;**[!UICONTROL _维度名称&#x200B;_（已修改）]**&#x200B;旁边的![齿轮](/help/assets/icons/Gear.svg)。
   1. 从&#x200B;**[!UICONTROL 已修改行]**&#x200B;弹出窗口中选择&#x200B;**[!UICONTROL 重置已修改行]**。
 
      ![重置自由格式表](assets/popup-reset.png)

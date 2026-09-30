@@ -74,7 +74,7 @@ ALTER TABLE myDeltaTable SET TBLPROPERTIES (delta.enableChangeDataFeed = true)
 set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 ```
 
-有关详细信息，请阅读有关启用更改数据馈送](https://docs.databricks.com/aws/en/delta/delta-change-data-feed#enable-change-data-feed)的[[!DNL Azure Databricks] 指南。
+有关详细信息，请阅读有关启用更改数据馈送[&#128279;](https://docs.databricks.com/aws/en/delta/delta-change-data-feed#enable-change-data-feed)的[!DNL Azure Databricks] 指南。
 
 请阅读以下文档，以了解如何为[!DNL Azure Databricks]源连接启用更改数据捕获的步骤：
 
@@ -85,7 +85,7 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 
 要在[!DNL Google BigQuery]源连接中使用变更数据捕获，请在[!DNL Google Cloud]控制台中导航到您的[!DNL Google BigQuery]页面，并将`enable_change_history`设置为`TRUE`。 此属性启用数据表的更改历史记录。
 
-有关详细信息，请阅读 [!DNL GoogleSQL]](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)中[数据定义语言语句的指南。
+有关详细信息，请阅读 [!DNL GoogleSQL]&#x200B;[&#128279;](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#table_option_list)中数据定义语言语句的指南。
 
 请阅读以下文档，以了解如何为[!DNL Google BigQuery]源连接启用更改数据捕获的步骤：
 
@@ -102,7 +102,7 @@ set spark.databricks.delta.properties.defaults.enableChangeDataFeed = true;
 ALTER TABLE mytable SET CHANGE_TRACKING = TRUE
 ```
 
-有关详细信息，请阅读有关使用changes子句](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes)的[[!DNL Snowflake] 指南。
+有关详细信息，请阅读有关使用changes子句[&#128279;](https://docs.snowflake.com/en/sql-reference/constructs/changes#usage-notes)的[!DNL Snowflake] 指南。
 
 请阅读以下文档，以了解如何为[!DNL Snowflake]源连接启用更改数据捕获的步骤：
 

@@ -69,7 +69,7 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;窗格中：
 
-   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**[!UICONTROL  daterangeName is (All)]**。]**
+   1. 从该视觉对象上的&#x200B;**[!UICONTROL 筛选器中选择**&#x200B;[!UICONTROL &#x200B; daterangeName is (All)]&#x200B;**。]**
    1. 选择&#x200B;**[!UICONTROL 基本筛选]**&#x200B;作为&#x200B;**[!UICONTROL 筛选器类型]**。
    1. 在&#x200B;**[!UICONTROL Search]**&#x200B;字段下，选择&#x200B;**[!UICONTROL Last Year 2023]**，它是您在Customer Journey Analytics中定义的日期范围的名称。
    1. 选择![CrossSize75](/help/assets/icons/CrossSize75.svg)以从&#x200B;**[!UICONTROL 列]**&#x200B;中删除&#x200B;**[!UICONTROL daterangeName]**。
