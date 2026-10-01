@@ -2,7 +2,7 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 92%
@@ -316,14 +316,6 @@ ht-degree: 92%
     + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [数据收集](/help/content-analytics/config/datacollection.md)
 
-+ Analytics 功能板 {#cja-dashboards}
-  + [概述](../mobile-app/home.md)
-  + [策划人任务](../mobile-app/curator.md)
-  + [创建移动记分卡](../mobile-app/create-scorecard.md)
-  + [管理移动记分卡](../mobile-app/manage-scorecard.md)
-  + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
-  + [执行用户快速入门指南](../mobile-app/executive.md)
-
 + 引导式分析 {#guided-analysis}
   + [概述](../guided-analysis/overview.md)
   + [积极增长](../guided-analysis/types/active-growth.md)
@@ -340,13 +332,20 @@ ht-degree: 92%
   + [行业用例](../guided-analysis/industry-use-cases.md)
   + [常见问题解答](../guided-analysis/faq.md)
 
-+ 对话见解 {#conversation-insights}
-  + {hide-from-toc}[概述](/help/conversation-insights/conversation-insights-overview.md)
-  + {hide-from-toc}[配置](/help/conversation-insights/conversation-insights-configure.md)
-  + {hide-from-toc}[管理](/help/conversation-insights/conversation-insights-manage.md)
-  + {hide-from-toc}[实施](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[分析](/help/conversation-insights/conversation-insights-analyze.md)
++ 对话分析 {#conversation-insights}
+  + [概述](/help/conversation-insights/overview.md)
+  + [配置](/help/conversation-insights/configure.md)
+  + [管理](/help/conversation-insights/manage.md)
+  + [实施](/help/conversation-insights/implement.md)
+  + [分析](/help/conversation-insights/analyze.md)
 
++ Analytics 功能板 {#cja-dashboards}
+  + [概述](../mobile-app/home.md)
+  + [策划人任务](../mobile-app/curator.md)
+  + [创建移动记分卡](../mobile-app/create-scorecard.md)
+  + [管理移动记分卡](../mobile-app/manage-scorecard.md)
+  + [设置执行用户以使用功能板](../mobile-app/set-up-execs.md)
+  + [执行用户快速入门指南](../mobile-app/executive.md)
 
 + 组件 {#cja-components}
   + [概述](../components/overview.md)
@@ -437,7 +436,7 @@ ht-degree: 92%
       + {hide-from-toc}[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[应用数据转换](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[数据馈送中的子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + 数据馈送中的{hide-from-toc}[子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
