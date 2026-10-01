@@ -17,9 +17,9 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+source-git-commit: 3acb31df785d038def3432a9734b499810636860
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1117'
 ht-degree: 1%
 ---
 # 对话分析
@@ -168,7 +168,7 @@ ht-degree: 1%
 | | 描述 |
 |---|---|
 | 1 | 您可以检测代理应用程序或服务，以创建包含提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈![反馈](/help/assets/icons2/Feedback.svg)数据集的事件。<br/>有关如何检测代理应用程序或服务的详细信息，请参阅[实施文档](./implement.md)。 |
-| 2 | 信号提取服务从提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈数据集![Feedback](/help/assets/icons2/Feedback.svg)中提取信号作为信号事件![OnAir](/help/assets/icons/OnAir.svg)，并将这些信号事件存储在新的数据集中。<br>此步骤作为定义[对话分析配置](./configure.md)的一部分实施。 |
-| 3 | 对话混合器服务将来自提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)、反馈![Feedback](/help/assets/icons2/Feedback.svg)和信号![OnAir](/help/assets/icons/OnAir.svg)事件数据集的事件混合，并将混合的![Merge](/help/assets/icons/Merge.svg)事件输出到新数据集中。<br>此步骤作为定义[对话分析配置](./configure.md)的一部分实施。 |
-| 4 | 混合![Merge](/help/assets/icons/Merge.svg)数据集成为连接的一部分，并且在用于混合数据集的架构中定义的组件成为数据视图的一部分。<br>此步骤作为定义[对话分析配置](./configure.md)的一部分实施。 |
+| 2 | 信号提取服务从提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈数据集![Feedback](/help/assets/icons2/Feedback.svg)中提取信号作为信号事件![OnAir](/help/assets/icons/OnAir.svg)，并将这些信号事件存储在新的数据集中。<br>此步骤作为[对话分析配置](./configure.md)的定义的一部分实施。 |
+| 3 | 对话混合器服务将来自提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)、反馈![Feedback](/help/assets/icons2/Feedback.svg)和信号![OnAir](/help/assets/icons/OnAir.svg)事件数据集的事件混合，并将混合的![Merge](/help/assets/icons/Merge.svg)事件输出到新数据集中。<br>此步骤作为[对话分析配置](./configure.md)的定义的一部分实施。 |
+| 4 | 混合![Merge](/help/assets/icons/Merge.svg)数据集成为连接的一部分，并且在用于混合数据集的架构中定义的组件成为数据视图的一部分。<br>此步骤作为[对话分析配置](./configure.md)的定义的一部分实施。 |
 
