@@ -137,9 +137,9 @@ ht-degree: 74%
   | [!UICONTROL 数据治理] | [!UICONTROL 查看数据使用策略] | 对属于您组织的数据使用策略的只读访问权限。 |
   | [!UICONTROL 数据治理] | [!UICONTROL 管理数据使用策略] | 有权读取、创建、编辑和删除数据使用策略。 |
 
-  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
+  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
 
-* 如果Journey Optimizer与存在Journey Optimizer连接的Customer Journey Analytics集成，则还必须添加[历程权限](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)才能访问连接：
+* 如果Journey Optimizer与存在Journey Optimizer连接的Customer Journey Analytics集成，则还必须添加[历程权限](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)才能访问连接：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
@@ -150,14 +150,14 @@ ht-degree: 74%
 
 * 将数据集导出到[目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  要执行此任务，用户必须属于提供以下[目标权限](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls)的&#x200B;**Experience Platform角色**：
+  要执行此任务，用户必须属于提供以下[目标权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/home#access-controls)的&#x200B;**Experience Platform角色**：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
   | [!UICONTROL 目标] | [!UICONTROL 管理目标] | 读取、创建和删除目标连接和目标帐户的访问权限。 |
   | [!UICONTROL 目标] | [!UICONTROL 激活目标] | 允许用户将区段激活到现有目标。 在激活工作流中启用映射步骤。 此权限还要求给想要将数据激活到目标的用户授予“查看目标”权限。 |
 
-  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
+  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
 
 
 * 使用 [BI 扩展](../data-views/bi-extension.md)
