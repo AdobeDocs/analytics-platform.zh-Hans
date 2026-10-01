@@ -4,7 +4,6 @@ description: 了解如何管理“对话分析”配置。
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,23 +12,23 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
 ---
 # 管理配置
 
-在您[创建对话分析配置](/help/conversation-insights/conversation-insights-configure.md)之后，您可以查看、编辑或删除这些配置。
+在您[创建对话分析配置](/help/conversation-insights/configure.md)之后，您可以查看、编辑或删除这些配置。
 
 只有系统管理员可以管理对话分析配置。
 
-有关对话分析的信息，请参阅[对话分析概述](/help/conversation-insights/conversation-insights-overview.md)。
+有关对话分析的信息，请参阅[对话分析概述](/help/conversation-insights/overview.md)。
+
 
 ## 查看和筛选现有配置
 
@@ -72,7 +71,7 @@ ht-degree: 6%
 要创建新的对话分析配置，请执行以下操作：
 
 1. 选择&#x200B;**[!UICONTROL 创建配置]**。
-1. 使用[**[!UICONTROL 创建配置]**](./conversation-insights-configure.md)对话框配置对话见解。
+1. 使用[**[!UICONTROL 创建配置]**](./configure.md)对话框配置对话见解。
 
 ## 编辑配置
 
@@ -84,7 +83,7 @@ ht-degree: 6%
    * 选中要编辑的配置旁边的复选框，然后从蓝色操作栏中选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
    * 为要编辑的配置选择![更多](/help/assets/icons/More.svg)。 从上下文菜单中选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
 
-1. 使用配置的[**[!UICONTROL 配置/_名称_]**](./conversation-insights-configure.md)&#x200B;对话框管理对话见解。
+1. 使用配置的[**[!UICONTROL 配置/_名称_]**](./configure.md)&#x200B;对话框管理对话见解。
 
 ## 删除配置
 

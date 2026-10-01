@@ -10,27 +10,36 @@ autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 7319
+source-wordcount: '7127'
 ht-degree: 87%
-
 ---
-
 # 管理连接 {#manage-connections}
 
 >[!CONTEXTUALHELP]
@@ -71,9 +80,9 @@ ht-degree: 87%
 | 列或图标 | 描述 |
 | --- | --- |
 | **[!UICONTROL _名称_]** | 好记的连接名称。 选择带有超链接的名称，以查看[连接的详细信息](#connection-details)。 |
-| ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 要查看有关[!UICONTROL 包含的数据集]、[!UICONTROL 沙盒]、[!UICONTROL 所有者]等的信息，请选择连接名称旁边的![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)。<p>弹出窗口显示有关数据集的详细信息。 <p>![连接信息弹窗](assets/connection-info-popup.png) |
-| ![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | 要为连接[创建一个数据视图](#create-a-data-view)，请选择![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)。 仅当连接没有与之关联的数据视图时才会显示此图标。 |
-| ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 选择![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，打开上下文菜单。 您可以选择︰ <p>![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**，以[编辑](#edit-a-connection)连接。<p>![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]**，以[删除](#delete-a-connection)连接。<p>![数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 创建新的数据视图]**，为连接[创建一个新的数据视图](#create-a-data-view)。<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 连接映射]**，以查看连接的[连接映射](#map-a-connection)。 |
+| ![信息](/help/assets/icons/InfoOutline.svg) | 要查看有关[!UICONTROL 包含的数据集]、[!UICONTROL 沙盒]、[!UICONTROL 所有者]等的信息，请选择连接名称旁边的![信息](/help/assets/icons/InfoOutline.svg)。<p>弹出窗口显示有关数据集的详细信息。 <p>![连接信息弹窗](assets/connection-info-popup.png) |
+| ![数据视图](/help/assets/icons/DataAdd.svg) | 要为连接[创建一个数据视图](#create-a-data-view)，请选择![数据视图](/help/assets/icons/DataAdd.svg)。 仅当连接没有与之关联的数据视图时才会显示此图标。 |
+| ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，打开上下文菜单。 您可以选择︰ <p>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**，以[编辑](#edit-a-connection)连接。<p>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**，以[删除](#delete-a-connection)连接。<p>![数据视图](/help/assets/icons/DataAdd.svg) **[!UICONTROL 创建新的数据视图]**，为连接[创建一个新的数据视图](#create-a-data-view)。<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 连接映射]**，以查看连接的[连接映射](#map-a-connection)。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 连接类型&#x200B;]** | 连接的类型：基于&#x200B;**[!UICONTROL 人员]**&#x200B;或基于&#x200B;**[!UICONTROL 帐户]**&#x200B;的连接。 |
 | **[!UICONTROL 数据集]** | 连接中包含的一个或多个数据集链接。 您可以选择数据集超链接来查看连接中的数据集。 如果选定的连接中包含更多数据集，请选择 **[!UICONTROL +*x* 更多]**，以显示&#x200B;**[!UICONTROL 包含的数据集]**&#x200B;面板。 该面板显示所有数据集的链接，以及一个用于搜索成为连接中一部分的特定数据集的![搜索](/help/assets/icons/Search.svg)选项。<p>![包括的数据集](assets/datasets-included.png)<p>选择数据集名称，在 Experience Platform 界面的一个新选项卡中打开该数据集。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。 您在创建连接时选择此沙盒。 连接保存后，就无法更改沙盒。 |
@@ -85,11 +94,11 @@ ht-degree: 87%
 | **[!UICONTROL 集成]** | 显示已为该连接启用的任何 Experience Platform 应用程序。 |
 | **[!UICONTROL 在 CJA 中使用]** | 显示是否已启用该连接以用于 Customer Journey Analytics。 |
 
-要配置在表格中显示哪些列，请选择![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
+要配置在表格中显示哪些列，请选择![列设置](/help/assets/icons/ColumnSetting.svg)。 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
 
 ### 搜索连接
 
-您可以使用![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索连接。
+您可以使用![搜索](/help/assets/icons/Search.svg)框快速搜索连接。
 
 ### 筛选连接
 
@@ -110,14 +119,14 @@ ht-degree: 87%
 
 要编辑连接：
 
-1. 选择连接名称旁边的![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)
-1. 从上下文菜单中选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL 编辑]**。
+1. 选择连接名称旁边的![更多](/help/assets/icons/More.svg)
+1. 从上下文菜单中选择![编辑](/help/assets/icons/Edit.svg)**[!UICONTROL 编辑]**。
 
 或者，您可以：
 
 1. 选择连接行。
 
-1. 选择蓝色操作栏中的![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**。
+1. 选择蓝色操作栏中的![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**。
 
 有关更多信息，请参阅[创建或编辑连接](create-connection.md)。
 
@@ -126,14 +135,14 @@ ht-degree: 87%
 
 要删除连接：
 
-1. 选择连接名称旁边的![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 选择![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)**[!UICONTROL 删除]**。
+1. 选择连接名称旁边的![更多](/help/assets/icons/More.svg)。
+1. 选择![删除](/help/assets/icons/Delete.svg)**[!UICONTROL 删除]**。
 
 或者，您可以：
 
 1. 选择连接行。
 
-1. 选择蓝色操作栏中的![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]**。
+1. 选择蓝色操作栏中的![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**。
 
 删除连接时，**[!UICONTROL 删除连接]**&#x200B;面板会指示删除的是哪些数据视图，以及哪些工作区项目会受到影响。
 
@@ -152,14 +161,14 @@ ht-degree: 87%
 
 要为连接创建一个数据视图：
 
-1. 选择连接名称旁边的![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 选择![添加数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg)**[!UICONTROL 创建新的数据视图]**。
+1. 选择连接名称旁边的![更多](/help/assets/icons/More.svg)。
+1. 选择![添加数据视图](/help/assets/icons/DataAdd.svg)**[!UICONTROL 创建新的数据视图]**。
 
 或者，您可以：
 
 1. 选择连接行。
 
-1. 选择蓝色操作栏中的![添加数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 创建数据视图]**。
+1. 选择蓝色操作栏中的![添加数据视图](/help/assets/icons/DataAdd.svg) **[!UICONTROL 创建数据视图]**。
 
 有关更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)。
 
@@ -255,7 +264,7 @@ ht-degree: 87%
 
 要查看详细说明了属于连接的各个数据集之间关系的[连接图](/help/connections/create-connection.md#connection-map)：
 
-1. 选择连接名称旁边的![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 选择连接名称旁边的![更多](/help/assets/icons/More.svg)。
 1. 选择 ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL 连接图]**。
 
 ### 连接详细信息 {#connection-detail}
@@ -272,15 +281,15 @@ ht-degree: 87%
 
 | 用户界面 | 描述 |
 | --- | --- |
-| ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**&#x200B;连接 | 要编辑连接的详细信息，请选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑连接]**。 有关更多信息，请参阅[创建或编辑连接](create-connection.md)。 |
+| ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;连接 | 要编辑连接的详细信息，请选择![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑连接]**。 有关更多信息，请参阅[创建或编辑连接](create-connection.md)。 |
 | **[!UICONTROL *数据集选择器&#x200B;*]** | 选择一个或多个数据集，显示连接中的详细信息。 不能选择其他数量的数据集。 默认为&#x200B;**[!UICONTROL 全部数据集]**。 |
-| **[!UICONTROL *日期范围选择器&#x200B;*]** | 选择要显示连接中详细信息的数据范围。 编辑开始日期、结束日期，或选择![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)以打开日期范围选择器。 在日期范围选择器中，使用预定义的时间段之一选择日期范围（例如&#x200B;**[!UICONTROL 过去 6 个月]**）或使用日程表选择开始和结束日期。 选择&#x200B;**[!UICONTROL 应用]**，将新的日期范围应用到连接详细信息。 |
+| **[!UICONTROL *日期范围选择器&#x200B;*]** | 选择要显示连接中详细信息的数据范围。 编辑开始日期、结束日期，或选择![日程表](/help/assets/icons/Calendar.svg)以打开日期范围选择器。 在日期范围选择器中，使用预定义的时间段之一选择日期范围（例如&#x200B;**[!UICONTROL 过去 6 个月]**）或使用日程表选择开始和结束日期。 选择&#x200B;**[!UICONTROL 应用]**，将新的日期范围应用到连接详细信息。 |
 | **[!UICONTROL 事件数据记录可用]** | **对于整个连接**&#x200B;可用于报告的事件数据集总行数。 这个数量与任何日期范围或数据集的选择无关。 |
-| [!UICONTROL **[!UICONTROL 量度]**] | 汇总添加、跳过和删除的事件、查找、轮廓和摘要数据集记录以及添加的批次数。 这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 查看详细信息]**，以显示&#x200B;**[!UICONTROL 查看跳过的详细信息]**&#x200B;弹出窗口。 该弹出窗口列出了所有事件数据集或选定数据集中跳过的记录数及其原因。<p>![跳过的记录数](assets/skipped-records.png)<p>选择![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)弹出窗口，查看更多信息。 对于某些跳过的原因，例如[!UICONTROL 访客 ID 为空]，弹出窗口中会显示 **[!UICONTROL EQS (Experience Platform for Query Service) 的示例 PSQL]**，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。 选择![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制 EQS 的示例 PSQL]** 来复制 SQL。 |
+| [!UICONTROL **[!UICONTROL 量度]**] | 汇总添加、跳过和删除的事件、查找、轮廓和摘要数据集记录以及添加的批次数。 这些量度基于&#x200B;**您选择的数据集和日期范围**。<p>选择&#x200B;**[!UICONTROL 查看详细信息]**，以显示&#x200B;**[!UICONTROL 查看跳过的详细信息]**&#x200B;弹出窗口。 该弹出窗口列出了所有事件数据集或选定数据集中跳过的记录数及其原因。<p>![跳过的记录数](assets/skipped-records.png)<p>选择![信息](/help/assets/icons/InfoOutline.svg)弹出窗口，查看更多信息。 对于某些跳过的原因，例如[!UICONTROL 访客 ID 为空]，弹出窗口中会显示 **[!UICONTROL EQS (Experience Platform for Query Service) 的示例 PSQL]**，您可以在[查询服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)中使用它来查询数据集中跳过的记录。 选择![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制 EQS 的示例 PSQL]** 来复制 SQL。 |
 | **[!UICONTROL 添加的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;添加了多少行。 每 10 分钟更新一次。 |
 | **[!UICONTROL 跳过的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;跳过了多少行。 跳过记录的原因包括：缺少时间戳、缺少或无效的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 等。 每 10 分钟更新一次。 <p>无效 ID（例如 `undefined` 或 `00000000`，或者在某个事件中，[!UICONTROL 人员 ID] 中在给定月份内出现超过 100 万次的数字和字母的任何组合）是无法归因到任何特定用户或人员的 ID。 这些行无法摄取到系统中，并会导致摄取和报告容易出错。 要修复无效的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}，您有 3 个选项：<ul><li>使用[拼接](/help/stitching/overview.md)可以利用有效的用户 ID 来填充未定义或全部为零的用户 ID。</li><li>将用户 ID 留空，这样它们会在摄取过程中被跳过（这比使用无效或全为零的用户 ID 更可取）。</li><li>先修复系统中的任意无效用户 ID，然后再摄取数据。</li></ul> |
 | **[!UICONTROL 删除的记录数]** | 可视化图表，展示了在选定时段内，**为您选择的数据集和日期范围**&#x200B;删除了多少行。 例如，有人可能在 [!DNL Experience Platform] 中删除了一个数据集。 每 10 分钟更新一次。<p>在某些情况下，该值还可以包括替换的记录，如拼接或某些查找数据集更新。 考虑以下示例：</p><ul><li>您将一条记录上传到 XDM 个人轮廓数据集，Customer Journey Analytics 被配置为将其作为轮廓查找数据摄取。 在连接详细信息中，该数据集将会显示已添加 1 条记录。</li><li>您将原始记录的副本上传到同一个 AEP 数据集，该数据集现在包含两条记录。 Customer Journey Analytics 从轮廓或帐户 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 查找数据集中摄取额外记录。 Customer Journey Analytics 如果发现已经在连接中为某个人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 摄取了轮廓或帐户记录，就会删除其更早版本，添加新的轮廓数据。 在连接详细信息中，此操作表示添加了 1 条记录和删除了 1 条记录，因为 Customer Journey Analytics 只保留任何摄取的人员 ID 或帐户 ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 的最新轮廓查找数据。</li><li>总的来说，AEP 数据集包含恰好相同的两条记录。 另外，Customer Journey Analytics 连接详细信息显示其摄取数据的状态：此轮廓数据集添加了 2 条记录，删除了 1 条记录。 </li></ul> |
-| ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | 数据集搜索字段。 您可以按数据集名称或数据集 ID 来搜索数据集表。 |
+| ![Search](/help/assets/icons/Search.svg) | 数据集搜索字段。 您可以按数据集名称或数据集 ID 来搜索数据集表。 |
 | [!UICONTROL 数据集表] | 作为连接一部分的数据集。 请参阅下表的进一步说明。 选择 ![SelectBox](/help/assets/icons/SelectBox.svg) 一个数据集，只显示选定数据集的连接详细信息。 这相当于从&#x200B;**[!UICONTROL _数据集选择器_]**&#x200B;中选择一个数据集。 |
 
 数据集表会针对每个数据集显示以下列：
@@ -313,14 +322,14 @@ ht-degree: 87%
 
 | 选项 | 描述 |
 | --- | --- |
-| ![刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 刷新]** | 要刷新连接并允许反映最近添加的记录，请选择![刷新](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL 刷新]**。 |
-| ![删除](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL 删除]** | [删除](#delete-a-connection)此连接。 |
-| ![添加数据视图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL 创建数据视图]** | 根据该连接[创建一个数据视图](#create-a-data-view)。 有关更多信息，请参阅[数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。 |
+| ![刷新](/help/assets/icons/Refresh.svg) **[!UICONTROL 刷新]** | 要刷新连接并允许反映最近添加的记录，请选择![刷新](/help/assets/icons/Refresh.svg) **[!UICONTROL 刷新]**。 |
+| ![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]** | [删除](#delete-a-connection)此连接。 |
+| ![添加数据视图](/help/assets/icons/DataAdd.svg) **[!UICONTROL 创建数据视图]** | 根据该连接[创建一个数据视图](#create-a-data-view)。 有关更多信息，请参阅[数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。 |
 | **[!UICONTROL 在 CJA 中使用]** | 在 Customer Journey Analytics 中使用 Journey Optimizer 连接，为您的 Journey Optimizer 连接带来附加价值。 更多信息请参阅[在 Customer Journey Analytics 中使用 Journey Optimizer 连接](#use-a-journey-optimizer-connection-in-customer-journey-analytics)。 |
 | **[!UICONTROL 连接名称]** | 友好的连接名称。 |
 | **[!UICONTROL 连接说明]** | 描述此连接目的的更详细描述。 |
 | **[!UICONTROL 沙盒]** | 此连接从中获取其数据集的 [Experience Platform 沙盒](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/home)。 您在创建连接时选择此沙盒。 连接保存后，就无法更改沙盒。 |
-| **[!UICONTROL 连接 ID]** | 为连接生成的标识符。 您可以使用![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)来复制此值。 |
+| **[!UICONTROL 连接 ID]** | 为连接生成的标识符。 您可以使用![复制](/help/assets/icons/Copy.svg)来复制此值。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 主要 ID 类型&#x200B;]** | 基于人员的连接的主要 ID 类型是&#x200B;**[!UICONTROL 人员]**，基于帐户的连接的主要 ID 类型是&#x200B;**[!UICONTROL 帐户]**。 |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 容器&#x200B;]** | 为连接配置的容器。 |
 | **[!UICONTROL 使用连接的数据视图]** | 使用此连接的数据视图。 |
@@ -529,7 +538,7 @@ ht-degree: 87%
   * 四个可视化摘要图表，显示与上月相比此数据的总变化和百分比变化：
 
     * **[!UICONTROL 核心数据可报告行数]**。 当前月份在过去 13 个月内可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳从 2023 年 1 月到 2024 年 1 月的可用行数总数。
-    * **[!UICONTROL 扩展数据容量行]**。 当前月份中 13 个月之前时段内可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。
+    * **[!UICONTROL 扩展数据容量行]**。 当前月份在早于 13 个月的时间段内可用的总行数，以及与上个月相比的百分比变化。 例如，2024 年 2 月 1 日，该数字显示事件时间戳早于 2023 年 1 月的可用行数总数。
     * **[!UICONTROL 每月摄取的行]**。 在计费月份摄取的行，与上月相比具有百分比变化
     * **[!UICONTROL 核心数据量]**。 磁盘上存储的带有本月时间戳的数据总量（以 TB 为单位），以及与上个月相比的变化百分比。
     * **[!UICONTROL 平均行大小]**。 当月每个摄取行使用的平均存储量（以kB为单位），与上月相比具有百分比变化。

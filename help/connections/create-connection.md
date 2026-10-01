@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
+source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
 workflow-type: tm+mt
-source-wordcount: '10738'
-ht-degree: 90%
+source-wordcount: '10677'
+ht-degree: 89%
 ---
 # 创建或编辑连接 {#create-or-edit-a-connection}
 
@@ -560,7 +560,7 @@ ht-degree: 90%
 
    | 列 | 描述 |
    |---|---|
-   | **[!UICONTROL 数据集]** | 数据集的名称。 选择名称即可将您定向到 Experience Platform 中的数据集。 选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。 您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
+   | **[!UICONTROL 数据集]** | 数据集的名称。 选择名称即可将您定向到 Experience Platform 中的数据集。 选择![信息大纲](/help/assets/icons/InfoOutline.svg)以显示包含数据集更多详细信息的弹出窗口。 您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
    | **[!UICONTROL 数据集类型]** | 数据集的类型：[事件](#event-dataset)、[轮廓](#profile-dataset)、[查找](#lookup-dataset)、[摘要](#summary-dataset)、[临时](#ad-hoc-dataset)或[关系](#relational-dataset)。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 数据集的架构。 选择名称即可转到 Experience Platform 中的架构。 |
@@ -568,10 +568,10 @@ ht-degree: 90%
    | **[!UICONTROL 数据集 ID]** | 数据集 ID 的名称。 |
    | **[!UICONTROL 上次更新时间]** | 数据集的最后更新时间戳。 |
 
-   * 要更改为数据集列表显示的列，请选择 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
-   * 要搜索特定数据集，请使用 ![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索字段。
-   * 要在显示或隐藏所选数据集之间切换，请选择 ![选择](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL 隐藏所选项]**&#x200B;或&#x200B;**[!UICONTROL 显示所选项]**。
-   * 要从所选数据集的列表中删除数据集，请使用 ![关闭](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。 要删除所有所选的数据集，请选择&#x200B;**[!UICONTROL 全部清除]**。
+   * 若要更改为数据集列表显示的列，请选择![ColumnSetting](/help/assets/icons/ColumnSetting.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
+   * 要搜索特定数据集，请使用 ![搜索](/help/assets/icons/Search.svg) 搜索字段。
+   * 若要在显示或隐藏选定的数据集之间进行切换，请选择![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL 隐藏选定项]**&#x200B;或&#x200B;**[!UICONTROL 显示选定项]**。
+   * 要从所选数据集的列表中删除数据集，请使用 ![关闭](/help/assets/icons2/Close.svg)。 要删除所有所选的数据集，请选择&#x200B;**[!UICONTROL 全部清除]**。
    * 要显示数据集的详细信息，请选择 ![InfoOutline](/help/assets/icons/InfoOutline.svg)。
 
 
@@ -623,7 +623,7 @@ ht-degree: 90%
 
    | 列 | 描述 |
    |---|---|
-   | **[!UICONTROL 数据集]** | 数据集的名称。 选择名称即可将您定向到 Experience Platform 中的数据集。 选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。 您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
+   | **[!UICONTROL 数据集]** | 数据集的名称。 选择名称即可将您定向到 Experience Platform 中的数据集。 选择 ![信息](/help/assets/icons/InfoOutline.svg) 以显示一个包含数据集更多详细信息的弹出窗口。 您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
    | **[!UICONTROL 数据集类型]** | 数据集的类型：[事件](#event-dataset)、[轮廓](#profile-dataset)、[查找](#lookup-dataset)、[摘要](#summary-dataset)、[临时](#ad-hoc-dataset)或[关系](#relational-dataset)。 |
    | **[!UICONTROL 记录数]** | Experience Platform 中数据集上个月的总记录数。 |
    | **[!UICONTROL 架构]** | 数据集的架构。 选择名称即可转到 Experience Platform 中的架构。 |
@@ -631,10 +631,10 @@ ht-degree: 90%
    | **[!UICONTROL 数据集 ID]** | 数据集 ID 的名称。 |
    | **[!UICONTROL 上次更新时间]** | 数据集的最后更新时间戳。 |
 
-   * 要更改为数据集列表显示的列，请选择 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
-   * 要搜索特定数据集，请使用 ![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索字段。
-   * 要在显示或隐藏所选数据集之间切换，请选择 ![选择](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL 隐藏所选项]**&#x200B;或&#x200B;**[!UICONTROL 显示所选项]**。
-   * 要从所选数据集的列表中删除数据集，请使用 ![关闭](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。 要删除所有所选的数据集，请选择&#x200B;**[!UICONTROL 全部清除]**。
+   * 要更改为数据集列表显示的列，请选择 ![列设置](/help/assets/icons/ColumnSetting.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
+   * 要搜索特定数据集，请使用 ![搜索](/help/assets/icons/Search.svg) 搜索字段。
+   * 要在显示或隐藏所选数据集之间切换，请选择 ![选择](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL 隐藏所选项]**&#x200B;或&#x200B;**[!UICONTROL 显示所选项]**。
+   * 要从所选数据集的列表中删除数据集，请使用 ![关闭](/help/assets/icons/Close.svg)。 要删除所有所选的数据集，请选择&#x200B;**[!UICONTROL 全部清除]**。
    * 要显示数据集的详细信息，请选择 ![InfoOutline](/help/assets/icons/InfoOutline.svg)。
 
 

@@ -1,5 +1,5 @@
 ---
-title: 为 Customer Journey Analytics 创建一个架构
+title: 为 Customer Journey Analytics 创建架构
 description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
 role: Admin
 solution: Customer Journey Analytics
@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1672'
 ht-degree: 100%
 ---
 # 创建并配置用于 Customer Journey Analytics 的连接 {#upgrade-create-connection}
@@ -106,7 +106,7 @@ ht-degree: 100%
 
    | 列 | 描述 |
    |---|---|
-   | 数据集 | 数据集的名称。 选择名称即可将您定向到 Experience Platform 中的数据集。 选择 ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) 以显示一个包含数据集更多详细信息的弹出窗口。 您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
+   | 数据集 | 数据集的名称。 选择名称即可将您定向到 Experience Platform 中的数据集。 选择 ![信息](/help/assets/icons/InfoOutline.svg) 以显示一个包含数据集更多详细信息的弹出窗口。 您可以选择 **[!UICONTROL 在 Platform 中编辑]** 以直接在 Experience Platform 中编辑数据集。 |
    | 数据集类型 | 数据集的类型：事件、轮廓、查找或摘要。 |
    | 记录数 | Experience Platform 中数据集上个月的总记录数。 |
    | 架构 | 数据集的架构。 选择名称即可将您定向到 Experience Platform 中的架构。 |
@@ -116,10 +116,10 @@ ht-degree: 100%
 
 
 1. 选择一个或多个数据集并选择&#x200B;**[!UICONTROL 下一个]**。 必须有至少一个事件数据集是该连接的一部分。
-   * 要更改为数据集列表显示的列，请选择 ![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
-   * 要搜索特定数据集，请使用 ![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索字段。
-   * 要在显示或隐藏所选数据集之间切换，请选择 ![选择](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL 隐藏所选项]**&#x200B;或&#x200B;**[!UICONTROL 显示所选项]**。
-   * 要从所选数据集的列表中删除数据集，请使用 ![关闭](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。 要删除所有所选的数据集，请选择&#x200B;**[!UICONTROL 全部清除]**。
+   * 要更改为数据集列表显示的列，请选择 ![列设置](/help/assets/icons/ColumnSetting.svg)，然后选择要在[!UICONTROL 自定义表]对话框中显示的列。
+   * 要搜索特定数据集，请使用 ![搜索](/help/assets/icons/Search.svg) 搜索字段。
+   * 要在显示或隐藏所选数据集之间切换，请选择 ![选择](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL 隐藏所选项]**&#x200B;或&#x200B;**[!UICONTROL 显示所选项]**。
+   * 要从所选数据集的列表中删除数据集，请使用 ![关闭](/help/assets/icons/Close.svg)。 要删除所有所选的数据集，请选择&#x200B;**[!UICONTROL 全部清除]**。
 
 
 
@@ -137,7 +137,7 @@ ht-degree: 100%
    | **[!UICONTROL 时区]** | 仅适用于摘要数据。 为时间序列摘要数据选择适当的时区。 |
    | **[!UICONTROL 数据源类型]** | 选择数据源类型。 <br/>数据源的类型包括： <ul><li>[!UICONTROL Web 数据]</li><li>[!UICONTROL 移动应用程序数据]</li><li>[!UICONTROL POS 数据]</li><li>[!UICONTROL CRM 数据]</li><li>[!UICONTROL 调查数据]</li><li>[!UICONTROL 呼叫中心数据]</li><li>[!UICONTROL 产品数据]</li><li> [!UICONTROL 帐户数据]</li><li> [!UICONTROL 事务数据]</li><li>[!UICONTROL 客户反馈数据]</li><li> [!UICONTROL 其他]</li></ul>该字段用于查看正在使用的数据源类型。 |
    | **[!UICONTROL 导入新数据]** | 如果您想建立持续连接，请启用此选项。 通过持续的连接，添加到数据集的新数据批次会自动在工作区中提供。 |
-   | **[!UICONTROL 数据集回填]** | 启用&#x200B;**[!UICONTROL 回填所有现有数据]**&#x200B;以确保所有现有数据均已回填。<br/><br/>选择&#x200B;**[!UICONTROL 请求补填]**&#x200B;填充特定时期的历史数据。 您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)选择日期来定义期间。</li><li>选择&#x200B;**[!UICONTROL 队列补填]**&#x200B;将回填内容添加到列表中，或&#x200B;**[!UICONTROL 取消]**&#x200B;取消。</li></ol>对于每个条目，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 编辑时段，或选择 ![删除](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。 历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。 非生产沙盒的回填期限为 3 个月。</li></ul> |
+   | **[!UICONTROL 数据集回填]** | 启用&#x200B;**[!UICONTROL 回填所有现有数据]**&#x200B;以确保所有现有数据均已回填。<br/><br/>选择&#x200B;**[!UICONTROL 请求补填]**&#x200B;填充特定时期的历史数据。 您最多可以定义 10 个数据集回填期。<ol><li>通过输入开始和结束数据或使用![日程表](/help/assets/icons/Calendar.svg)选择日期来定义期间。</li><li>选择&#x200B;**[!UICONTROL 队列补填]**&#x200B;将回填内容添加到列表中，或&#x200B;**[!UICONTROL 取消]**&#x200B;取消。</li></ol>对于每个条目，选择 ![编辑](/help/assets/icons/Edit.svg) 编辑时段，或选择 ![删除](/help/assets/icons/Close.svg) 删除该条目。<br/><br/>在回填上：<ul><li>您可以单独回填每个数据集。</li><li>您会优先处理新添加到此连接中数据集的新数据，因此这些新数据的滞后时间最短。</li><li>任何回填（历史）数据的导入速度都会比较慢。 历史数据的数量会影响延迟。</li><li>Analytics Source Connector 会为生产沙盒导入最多 13 个月的数据（无论大小）。 非生产沙盒的回填期限为 3 个月。</li></ul> |
    | **[!UICONTROL 转换数据集]** | 对于特定的 B2B 查找数据集，您可以启用数据集转换，以支持适当的 B2B 基于人员的报告场景。 |
    | **[!UICONTROL 回填状态]** | 可能的状态指示符有：<ul><li>成功</li><li>X 回填处理</li><li>关</li></ul> |
    | **[!UICONTROL 数据集 ID]** | 此 ID 是自动生成的。 |

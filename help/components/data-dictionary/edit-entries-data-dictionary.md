@@ -7,27 +7,36 @@ exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
 TQID: https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1301
-ht-degree: 67%
-
+source-wordcount: '1247'
+ht-degree: 65%
 ---
-
 # 编辑组件条目
 
 Customer Journey Analytics管理员可以在数据字典中编辑给定数据视图的组件条目。 所做的任何更改均对数据视图的所有用户可见。
@@ -48,19 +57,19 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
 
    组件的类型可以通过颜色和图标来识别。
 
-   * **维度** ![Dimension图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)为橙色
+   * **维度** ![Dimension图标](/help/assets/icons/Data.svg)为橙色
 
-   * **区段** ![区段图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg)为蓝色
+   * **区段** ![区段图标](/help/assets/icons/Segmentation.svg)为蓝色
 
-   * **日期范围** ![日期范围图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)为紫色
+   * **日期范围** ![日期范围图标](/help/assets/icons/Calendar.svg)为紫色
 
-   * **量度** ![量度图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)呈绿色
+   * **量度** ![量度图标](/help/assets/icons/Event.svg)呈绿色
 
    * **Adobe图标** ![Adobe图标](assets/default-calc-metric-icon.png)表示计算量度模板或区段模板
 
-   * **计算器图标** ![计算器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg)指示由您组织中的Analytics管理员创建的计算量度
+   * **计算器图标** ![计算器图标](/help/assets/icons/Calculator.svg)指示由您组织中的Analytics管理员创建的计算量度
 
-1. （可选）选择&#x200B;**过滤**&#x200B;图标![，即“数据词典过滤”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)，然后选择以下任一过滤器选项过滤组件列表：
+1. （可选）选择&#x200B;**过滤**&#x200B;图标![，即“数据词典过滤”图标](/help/assets/icons/Filter.svg)，然后选择以下任一过滤器选项过滤组件列表：
 
    | 选项 | 功能 |
    |---------|----------|
@@ -79,7 +88,7 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
 
    {style="table-layout:auto"}
 
-1. （可选）选择&#x200B;**排序**&#x200B;图标![组件排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)，然后选择以下任何区段选项来排序组件列表：
+1. （可选）选择&#x200B;**排序**&#x200B;图标![组件排序图标](/help/assets/icons/SortOrderDown.svg)，然后选择以下任何区段选项来排序组件列表：
 
    | 选项 | 功能 |
    |---------|----------|
@@ -91,7 +100,7 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
 
 1. 从组件列表中，选择要编辑的组件。
 
-1. 选择组件名称旁边的&#x200B;**编辑**&#x200B;图标，即![“数据词典编辑”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
+1. 选择组件名称旁边的&#x200B;**编辑**&#x200B;图标，即![“数据词典编辑”图标](/help/assets/icons/Edit.svg)。
 
 1. 编辑有关组件的以下任何信息：
 
@@ -111,4 +120,4 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
 
    {style="table-layout:auto"}
 
-1. 单击&#x200B;**保存**&#x200B;图标，即![“数据词典保存”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SaveFloppy_18_N.svg)来保存您的更改。
+1. 单击&#x200B;**保存**&#x200B;图标，即![“数据词典保存”图标](/help/assets/icons/SaveFloppy.svg)来保存您的更改。

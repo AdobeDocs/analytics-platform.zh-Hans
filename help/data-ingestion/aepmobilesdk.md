@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3512'
 ht-degree: 63%
 ---
 # 通过Mobile SDK引入数据
@@ -380,7 +380,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 它们会�
 
      - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
-   - 单击[!UICONTROL 移动核心 — 前台]旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+   - 单击[!UICONTROL 移动核心 — 前台]旁边的![加号](/help/assets/icons/AddCircle.svg)。
 
      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL 移动核心]**。
 
@@ -388,7 +388,7 @@ Adobe Experience Platform 中的标签遵循基于规则的系统。 它们会�
 
      - 选择&#x200B;**[!UICONTROL 保留更改]**。
 
-   - 单击[!UICONTROL ACTIONS]下的![加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)“添加”。 在[!UICONTROL 操作配置]对话框中：
+   - 单击[!UICONTROL ACTIONS]下的![加](/help/assets/icons/AddCircle.svg)“添加”。 在[!UICONTROL 操作配置]对话框中：
 
      - 从[!UICONTROL 扩展]列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**。
 
@@ -447,9 +447,9 @@ Adobe Experience Platform标记支持从简单到复杂的发布工作流程，�
 
 1. 选择左边栏中的&#x200B;**[!UICONTROL 环境]**。
 
-2. 从环境列表中选择正确的安装![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg)按钮。
+2. 从环境列表中选择正确的安装![Box](/help/assets/icons/Box.svg)按钮。
 
-   在[!UICONTROL 移动设备安装说明]对话框中，选择适当的平台([!UICONTROL iOS]，[!UICONTROL Android])。 然后，使用要用于设置和初始化移动设备应用程序的每个相关代码片段旁边的复制![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)按钮：
+   在[!UICONTROL 移动设备安装说明]对话框中，选择适当的平台([!UICONTROL iOS]，[!UICONTROL Android])。 然后，使用要用于设置和初始化移动设备应用程序的每个相关代码片段旁边的复制![复制](/help/assets/icons/Copy.svg)按钮：
 
    ![环境](./assets/environment-mobile.png)
 

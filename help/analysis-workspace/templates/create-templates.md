@@ -7,26 +7,34 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 TQID: https://experienceleague.adobe.com/xTwvC1oPjibPO1fMs1ig4CTqonTwEq20gY-FxlWgHSM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 1888
+source-wordcount: '1882'
 ht-degree: 100%
-
 ---
-
 # 创建和管理模板
 
 管理员可以创建并保存模板，供登录公司的其他人使用。
@@ -39,14 +47,14 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="use-case-ajo-template"
->title="使用 Journey Optimizer 中的模板"
+>title="在 Journey Optimizer 中使用模板"
 >abstract="当您在 Journey Optimizer 中使用此模板时，无论在 Customer Journey Analytics 中使用此模板时选择哪个数据视图，实际使用的数据视图是 Adobe Journey Optimizer 中设置的默认数据视图。"
 
 <!-- markdownlint-enable MD034 -->
 
-要创建可供您登录公司中的人员使用的新模板：
+要创建可供您的登录公司中的人员使用的新模板：
 
-1. 在 Analysis Workspace 中，按照所需状态生成项目。
+1. 在 Analysis Workspace 中，将项目构建到所需状态。
 
 1. 选择&#x200B;[!UICONTROL **项目**] > **[!UICONTROL 另存为模板……]**。
 
@@ -59,8 +67,8 @@ ht-degree: 100%
    | **[!UICONTROL 名称]** | 为模板提供一个描述性名称。 |
    | **[!UICONTROL 描述]** | 为模板提供简短描述，说明其预期用途。 |
    | **[!UICONTROL 为什么使用此模板]** | 提供简短的说明，告知组织中的人员如何使用该模板。 此说明显示在模板的预览页面上。 |
-   | **[!UICONTROL 渠道]** | 选择适用于此模板的任何适用渠道。 您可以选择多个渠道：**[!UICONTROL 网页]**、**[!UICONTROL 移动设备]**、**[!UICONTROL 跨渠道]**、**[!UICONTROL 呼叫中心]**&#x200B;和&#x200B;**[!UICONTROL 店内]**。<p>您的选择将决定模板的显示位置，以及用户从组织模板页面访问该模板时应用的区段。</p> |
-   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与度]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**、**[!UICONTROL 客户获取]**&#x200B;和 **[!UICONTROL Journey Optimizer]**。 <p>您的选择决定了模板在“组织模板”页面上的位置。 用户可以导航到模板，也可以按用例过滤列表。 </p><p>**注意：**&#x200B;如果您选择 **[!UICONTROL Journey Optimizer]** 选项，该模板可在 Adobe Journey Optimizer 中使用。 在 Journey Optimizer 中，**[!UICONTROL 报告]**&#x200B;页面有一个下拉菜单，以便用户选择该模板或者默认模板。 有关详细信息，请参阅 Journey Optimizer 文档中的[开始体验更新后的报告体验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)。</p><p>选择 Journey Optimizer 选项时考虑以下方面：</p><ul><li>只有当您在 Customer Journey Analytics 中使用的数据视图中存在 Journey Optimizer 数据时，此选项才可用。</li><li>当您在 Journey Optimizer 中使用此模板时，无论在 Customer Journey Analytics 中使用此模板时选择哪个数据视图，实际使用的数据视图是 Adobe Journey Optimizer 中设置的默认数据视图。 <br/>有关在 Journey Optimizer 中将数据视图设置为默认数据视图的更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)。</li></ul> |
+   | **[!UICONTROL 渠道]** | 选择适用于此模板的任何渠道。 您可以选择多个渠道：**[!UICONTROL 网页]**、**[!UICONTROL 移动设备]**、**[!UICONTROL 跨渠道]**、**[!UICONTROL 呼叫中心]**&#x200B;和&#x200B;**[!UICONTROL 店内]**。<p>您的选择将决定模板的显示位置，以及用户从组织模板页面访问该模板时应用的区段。</p> |
+   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与度]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**、**[!UICONTROL 客户获取]**&#x200B;和 **[!UICONTROL Journey Optimizer]**。 <p>您的选择决定了模板在“组织模板”页面上的位置。 用户可以转到该模板，也可以按用例筛选列表。 </p><p>**注意：**&#x200B;如果您选择 **[!UICONTROL Journey Optimizer]** 选项，该模板可在 Adobe Journey Optimizer 中使用。 在 Journey Optimizer 中，**[!UICONTROL 报告]**&#x200B;页面有一个下拉菜单，以便用户选择该模板或者默认模板。 有关详细信息，请参阅 Journey Optimizer 文档中的[开始体验更新后的报告体验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)。</p><p>选择 Journey Optimizer 选项时考虑以下方面：</p><ul><li>只有当您在 Customer Journey Analytics 中使用的数据视图中存在 Journey Optimizer 数据时，此选项才可用。</li><li>当您在 Journey Optimizer 中使用此模板时，无论在 Customer Journey Analytics 中使用此模板时选择哪个数据视图，实际使用的数据视图是 Adobe Journey Optimizer 中设置的默认数据视图。 <br/>有关在 Journey Optimizer 中将数据视图设置为默认数据视图的更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)。</li></ul> |
    | **[!UICONTROL Journey Optimizer 活动类型]** | 选择要与此模板关联的 Journey Optimizer 活动类型：**[!UICONTROL 营销活动]**、**[!UICONTROL 历程]**、**[!UICONTROL 登陆页面]**、**[!UICONTROL 报告]**，或者&#x200B;**[!UICONTROL 订阅]**。 <p>如果您希望将此模板与所有活动类型关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择 **[!UICONTROL Journey Optimizer]** 时，该字段才会显示。</p> |
    | **[!UICONTROL Journey Optimizer 活动]** | 选择要与此模板关联的 Journey Optimizer 活动。 <p>如果希望将此模板与所选活动类型的所有活动相关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择 **[!UICONTROL Journey Optimizer]** 时，该字段才会显示。</p> |
    | **[!UICONTROL 标记]** | 指定您想要应用于模板的任何标记。 人们可以根据您添加的标记来过滤模板列表。 |
@@ -89,7 +97,7 @@ ht-degree: 100%
 
 1. 如果您正在卡片视图![卡片视图图标](assets/card-view-icon.png)中查看模板：
 
-   1. 找到您要编辑或删除模板的位置。
+   1. 找到您要编辑或删除的模板。
 
       ![公司模板卡片视图](assets/company-template-cards.png)
 
@@ -110,8 +118,8 @@ ht-degree: 100%
    | **[!UICONTROL 名称]** | 为模板提供一个描述性名称。 |
    | **[!UICONTROL 描述]** | 为模板提供简短描述，说明其预期用途。 |
    | **[!UICONTROL 为什么使用此模板]** | 提供简短的说明，告知组织中的人员如何使用该模板。 此说明显示在模板的预览页面上。 |
-   | **[!UICONTROL 渠道]** | 选择适用于此模板的任何适用渠道。 您可以选择多个渠道：**[!UICONTROL 网页]**、**[!UICONTROL 移动设备]**、**[!UICONTROL 跨渠道]**、**[!UICONTROL 呼叫中心]**&#x200B;和&#x200B;**[!UICONTROL 店内]**。 如果未选择任何渠道，则所有渠道内都会包含该模板。<p>您选择的选项将决定模板的显示位置，以及用户从组织模板页面访问模板时适用的过滤器。</p> |
-   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与度]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**、**[!UICONTROL 客户获取]**&#x200B;和 **[!UICONTROL Journey Optimizer]**。 <p>您的选择决定了模板在“组织模板”页面上的位置。 用户可以导航到模板，也可以按用例过滤列表。 </p><p>**注意：**&#x200B;如果您选择 **[!UICONTROL Journey Optimizer]** 选项，该模板可在 Adobe Journey Optimizer 中使用。 在 Journey Optimizer 中，**[!UICONTROL 报告]**&#x200B;页面有一个下拉菜单，以便用户选择该模板或者默认模板。 有关详细信息，请参阅 Journey Optimizer 文档中的[开始体验更新后的报告体验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)。</p><p>选择 Journey Optimizer 选项时考虑以下方面：</p><ul><li>只有当您在 Customer Journey Analytics 中使用的数据视图中存在 Journey Optimizer 数据时，此选项才可用。</li><li>当您在 Journey Optimizer 中使用此模板时，无论在 Customer Journey Analytics 中使用此模板时选择哪个数据视图，实际使用的数据视图是 Adobe Journey Optimizer 中设置的默认数据视图。 <br/>有关在 Journey Optimizer 中将数据视图设置为默认数据视图的更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)。</li></ul> |
+   | **[!UICONTROL 渠道]** | 选择适用于此模板的渠道。 您可以选择多个渠道：**[!UICONTROL 网页]**、**[!UICONTROL 移动设备]**、**[!UICONTROL 跨渠道]**、**[!UICONTROL 呼叫中心]**&#x200B;和&#x200B;**[!UICONTROL 店内]**。 如果未选择任何渠道，则所有渠道内都会包含该模板。<p>您选择的选项将决定模板的显示位置，以及用户从组织模板页面访问模板时适用的过滤器。</p> |
+   | **[!UICONTROL 用例]** | 选择适用于此模板的任何用例。 您可以选择多个用例：**[!UICONTROL 参与度]**、**[!UICONTROL 转化]**、**[!UICONTROL 受众]**、**[!UICONTROL 客户获取]**&#x200B;和 **[!UICONTROL Journey Optimizer]**。 <p>您的选择决定了模板在“组织模板”页面上的位置。 用户可以转到该模板，也可以按用例筛选列表。 </p><p>**注意：**&#x200B;如果您选择 **[!UICONTROL Journey Optimizer]** 选项，该模板可在 Adobe Journey Optimizer 中使用。 在 Journey Optimizer 中，**[!UICONTROL 报告]**&#x200B;页面有一个下拉菜单，以便用户选择该模板或者默认模板。 有关详细信息，请参阅 Journey Optimizer 文档中的[开始体验更新后的报告体验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja)。</p><p>选择 Journey Optimizer 选项时考虑以下方面：</p><ul><li>只有当您在 Customer Journey Analytics 中使用的数据视图中存在 Journey Optimizer 数据时，此选项才可用。</li><li>当您在 Journey Optimizer 中使用此模板时，无论在 Customer Journey Analytics 中使用此模板时选择哪个数据视图，实际使用的数据视图是 Adobe Journey Optimizer 中设置的默认数据视图。 <br/>有关在 Journey Optimizer 中将数据视图设置为默认数据视图的更多信息，请参阅[创建或编辑数据视图](/help/data-views/create-dataview.md)中的[兼容性](/help/data-views/create-dataview.md#compatibility)。</li></ul> |
    | **[!UICONTROL Journey Optimizer 活动类型]** | 选择要与此模板关联的 Journey Optimizer 活动类型：**[!UICONTROL 营销活动]**、**[!UICONTROL 历程]**、**[!UICONTROL 登陆页面]**、**[!UICONTROL 报告]**，或者&#x200B;**[!UICONTROL 订阅]**。 <p>如果您希望将此模板与所有活动类型关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择 **[!UICONTROL Journey Optimizer]** 时，该字段才会显示。</p> |
    | **[!UICONTROL Journey Optimizer 活动]** | 选择要与此模板关联的 Journey Optimizer 活动。 <p>如果希望将此模板与所选活动类型的所有活动相关联，请将此字段留空。</p><p>仅当在&#x200B;**[!UICONTROL 用例]**&#x200B;字段中选择 **[!UICONTROL Journey Optimizer]** 时，该字段才会显示。</p> |
    | **[!UICONTROL 标记]** | 指定您想要应用于模板的任何标记。 人们可以根据您添加的标记来过滤模板列表。 |
@@ -128,9 +136,9 @@ ht-degree: 100%
 
 1. 在过滤器边栏中，选择&#x200B;**[!UICONTROL 其他过滤器]**，然后选择&#x200B;**[!UICONTROL 公司模板]**。
 
-   显示公司模板的列表。 不会显示所有常规项目（除非已固定）。
+   显示公司模板的列表。 所有常规项目都不会显示，除非这些项目已固定。
 
-   公司模板可通过模板名称前的![模板图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg)识别。
+   公司模板可通过模板名称前的![模板图标](/help/assets/icons/FileTemplate.svg)识别。
 
    ![显示公司模板过滤器](assets/company-templates-filter.png)
 
@@ -160,29 +168,29 @@ ht-degree: 100%
 
    ![使用缺少组件的模板](assets/template-not-ready.png)
 
-1. 找到尚未准备好用于数据视图的模板。
+1. 找到尚未准备好与您的数据视图配合使用的模板。
 
 1. 执行以下其中一项操作：
 
    * **如果您正在列视图** ![列视图图标](assets/column-view-icon.png) 中查看模板：
 
-      1. 转到尚未准备好用于数据视图的模板，然后选择模板名称旁边的信息图标。
+     1. 转到尚未准备好用于数据视图的模板，然后选择模板名称旁边的信息图标。
 
-         ![公司模板信息](assets/company-template-info.png)
+        ![公司模板信息](assets/company-template-info.png)
 
-      1. 选择&#x200B;**[!UICONTROL 预览]**。
+     1. 选择&#x200B;**[!UICONTROL 预览]**。
 
-         ![模板预览页面](assets/template-preview.png)
+        ![模板预览页面](assets/template-preview.png)
 
    * **如果您正在卡片视图** ![卡片视图图标](assets/card-view-icon.png) 中查看模板：
 
-      1. 找到尚未准备好用于数据视图的模板。
+     1. 找到尚未准备好与您的数据视图配合使用的模板。
 
-         ![公司模板卡片视图](assets/company-template-cards.png)
+        ![公司模板卡片视图](assets/company-template-cards.png)
 
-      1. 将鼠标悬停在该模板上，然后选择&#x200B;**[!UICONTROL 预览]**。
+     1. 将鼠标悬停在该模板上，然后选择&#x200B;**[!UICONTROL 预览]**。
 
-         ![模板预览页面](assets/template-preview.png)
+        ![模板预览页面](assets/template-preview.png)
 
 1. 在&#x200B;**[!UICONTROL 缺失的组件]**&#x200B;部分，会显示数据视图中缺失的组件列表。 选择&#x200B;**[!UICONTROL 将这些组件添加到您的数据视图]**。
 
@@ -196,7 +204,7 @@ ht-degree: 100%
 
    * 在&#x200B;**[!UICONTROL 包含的组件]**&#x200B;部分中，选择一个已经包含在数据视图中的组件，用于替代缺失的组件。
 
-   * 在数据视图中添加一个新组件，用于替换缺失的组件，然后选择该组件。
+   * 在数据视图中添加一个要用于该缺失组件的新组件，然后选择该组件。
 
      要向数据视图添加新组件，请搜索架构字段列表，然后将其拖到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;部分。
 

@@ -21,10 +21,10 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 5%
+source-wordcount: '437'
+ht-degree: 2%
 ---
 # 管理同意报告和筛选配置
 
@@ -56,9 +56,9 @@ ht-degree: 5%
 
    * **[!UICONTROL 状态]**：配置的状态。
 
-   通过选择“列”图标![列图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，取消选择要隐藏的任何列，然后选择&#x200B;**[!UICONTROL 应用]**，可以隐藏任何列。
+   通过选择“列”图标![列图标](/help/assets/icons2/ColumnSettings.svg)，取消选择要隐藏的任何列，然后选择&#x200B;**[!UICONTROL 应用]**，可以隐藏任何列。
 
-1. （可选）要筛选配置列表，请选择&#x200B;**筛选器** ![筛选器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)，然后按以下任意条件进行筛选：
+1. （可选）要筛选配置列表，请选择&#x200B;**筛选器** ![筛选器图标](/help/assets/icons/Filter.svg)，然后按以下任意条件进行筛选：
 
    * **[!UICONTROL 连接]**
 

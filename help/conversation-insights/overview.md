@@ -4,7 +4,6 @@ description: 了解“对话见解”的价值及术语，并了解“对话见�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,9 +17,9 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 3acb31df785d038def3432a9734b499810636860
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1117'
 ht-degree: 1%
 ---
 # 对话分析
@@ -69,7 +68,7 @@ ht-degree: 1%
 * 在对话中，情绪发生了什么变化？
 * 哪些对话最终导致转化？
 
-有关实现详细信息，请参阅[实现对话见解](./conversation-insights-implement.md)文档中的[对话](./conversation-insights-implement.md#conversation)对象。
+有关实现详细信息，请参阅[实现对话见解](./implement.md)文档中的[对话](./implement.md#conversation)对象。
 
 ### 翻转
 
@@ -83,7 +82,7 @@ ht-degree: 1%
 
 转弯是报告用途的主要分析对象。 所述对话混合器服务将可用的提示、响应、反馈和信号信息组合成转级记录。
 
-有关实施详细信息，请参阅[实施对话分析](./conversation-insights-implement.md)文档中的[turn](./conversation-insights-implement.md#turn)对象。
+有关实施详细信息，请参阅[实施对话分析](./implement.md)文档中的[turn](./implement.md#turn)对象。
 
 ### 提示
 
@@ -103,7 +102,7 @@ ht-degree: 1%
 * 用户的情绪
 * 其他支持的信号
 
-有关实施详细信息，请参阅[实施对话分析](./conversation-insights-implement.md)文档中的[prompt](./conversation-insights-implement.md#prompt)对象。
+有关实施详细信息，请参阅[实施对话分析](./implement.md)文档中的[prompt](./implement.md#prompt)对象。
 
 ### 响应
 
@@ -119,7 +118,7 @@ ht-degree: 1%
 
 这种区分非常有用，因为分析需要将主要答案与支持链接、引文、广告或其他响应组件分开。
 
-有关实现详细信息，请参阅[实现对话分析](./conversation-insights-implement.md)文档中的[响应](./conversation-insights-implement.md#response)对象。
+有关实现详细信息，请参阅[实现对话分析](./implement.md)文档中的[响应](./implement.md#response)对象。
 
 ### 反馈
 
@@ -134,13 +133,13 @@ ht-degree: 1%
 
 反馈不一定与提示或响应同时提供。 用户评估完答案后，您可以稍后从代理应用程序或服务发送反馈。
 
-有关实施详细信息，请参阅[实施对话见解](./conversation-insights-implement.md)文档中的[反馈](./conversation-insights-implement.md#feedback)对象。
+有关实施详细信息，请参阅[实施对话见解](./implement.md)文档中的[反馈](./implement.md#feedback)对象。
 
 ### 信号
 
 信号是对会话内容的结构化分析观察。 信号提取服务提取信号。
 
-有关实施详细信息，请参阅[实施对话分析](./conversation-insights-implement.md)文档中的[信号](./conversation-insights-implement.md#signal)对象。
+有关实施详细信息，请参阅[实施对话分析](./implement.md)文档中的[信号](./implement.md#signal)对象。
 
 
 ### 代理
@@ -151,7 +150,8 @@ ht-degree: 1%
 
 如果您的座席体验应用程序支持对表示在处理期间调用的功能的技能的调用，则可以将这些技能调用添加为座席信息字段组的一部分。
 
-有关实施详细信息，请参阅[实施对话见解](./conversation-insights-implement.md)文档中的[代理信息](./conversation-insights-implement.md#agentic-information-field-group)字段组。
+有关实施详细信息，请参阅[实施对话见解](./implement.md)文档中的[代理信息](./implement.md#agentic-information-field-group)字段组。
+
 
 ## 工作原理
 
@@ -167,8 +167,8 @@ ht-degree: 1%
 
 | | 描述 |
 |---|---|
-| 1 | 您可以检测代理应用程序或服务，以创建包含提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈![反馈](/help/assets/icons2/Feedback.svg)数据集的事件。<br/>有关如何检测代理应用程序或服务的详细信息，请参阅[实施文档](./conversation-insights-implement.md)。 |
-| 2 | 信号提取服务从提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈数据集![Feedback](/help/assets/icons2/Feedback.svg)中提取信号作为信号事件![OnAir](/help/assets/icons/OnAir.svg)，并将这些信号事件存储在新的数据集中。<br>此步骤作为定义[对话分析配置](./conversation-insights-configure.md)的一部分实施。 |
-| 3 | 对话混合器服务将来自提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)、反馈![Feedback](/help/assets/icons2/Feedback.svg)和信号![OnAir](/help/assets/icons/OnAir.svg)事件数据集的事件混合，并将混合的![Merge](/help/assets/icons/Merge.svg)事件输出到新数据集中。<br>此步骤作为定义[对话分析配置](./conversation-insights-configure.md)的一部分实施。 |
-| 4 | 混合![Merge](/help/assets/icons/Merge.svg)数据集成为连接的一部分，并且在用于混合数据集的架构中定义的组件成为数据视图的一部分。<br>此步骤作为定义[对话分析配置](./conversation-insights-configure.md)的一部分实施。 |
+| 1 | 您可以检测代理应用程序或服务，以创建包含提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈![反馈](/help/assets/icons2/Feedback.svg)数据集的事件。<br/>有关如何检测代理应用程序或服务的详细信息，请参阅[实施文档](./implement.md)。 |
+| 2 | 信号提取服务从提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)和反馈数据集![Feedback](/help/assets/icons2/Feedback.svg)中提取信号作为信号事件![OnAir](/help/assets/icons/OnAir.svg)，并将这些信号事件存储在新的数据集中。<br>此步骤作为[对话分析配置](./configure.md)的定义的一部分实施。 |
+| 3 | 对话混合器服务将来自提示![CommentText](/help/assets/icons2/CommentText.svg)、响应![CommentReply](/help/assets/icons2/CommentReply.svg)、反馈![Feedback](/help/assets/icons2/Feedback.svg)和信号![OnAir](/help/assets/icons/OnAir.svg)事件数据集的事件混合，并将混合的![Merge](/help/assets/icons/Merge.svg)事件输出到新数据集中。<br>此步骤作为[对话分析配置](./configure.md)的定义的一部分实施。 |
+| 4 | 混合![Merge](/help/assets/icons/Merge.svg)数据集成为连接的一部分，并且在用于混合数据集的架构中定义的组件成为数据视图的一部分。<br>此步骤作为[对话分析配置](./configure.md)的定义的一部分实施。 |
 

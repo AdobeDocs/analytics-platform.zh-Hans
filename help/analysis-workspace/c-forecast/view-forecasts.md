@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 2%
 ---
 # 查看预测
 
@@ -32,7 +32,7 @@ ht-degree: 5%
 
 您可以在时间序列自由格式表中查看预测。 在[用户首选项](../user-preferences.md)中为自由格式表启用[!UICONTROL 显示预测]时，将自动显示添加到该表的第一个量度列的预测。 对于任何其他列：
 
-1. 在列标题中选择列设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)，然后确保在选项列表中选择&#x200B;**[!UICONTROL 显示预测]**。 有关更多信息，请参阅[列设置](../visualizations/freeform-table/column-row-settings/column-settings.md)。
+1. 在列标题中选择列设置图标![列设置](/help/assets/icons2/Settings.svg)，然后确保在选项列表中选择&#x200B;**[!UICONTROL 显示预测]**。 有关更多信息，请参阅[列设置](../visualizations/freeform-table/column-row-settings/column-settings.md)。
 
 1. 单击&#x200B;**[!UICONTROL 列设置]**&#x200B;菜单外部以保存设置并查看更新的表。
 
@@ -48,7 +48,7 @@ ht-degree: 5%
 
 折线图是唯一允许您查看预测的可视化图表。
 
-1. 在可视化图表标题中选择设置图标![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg)，然后确保在选项列表中选择&#x200B;**[!UICONTROL 显示预测]**。
+1. 在可视化图表标题中选择设置图标![列设置](/help/assets/icons2/Settings.svg)，然后确保在选项列表中选择&#x200B;**[!UICONTROL 显示预测]**。
 
 1. （可选）要允许预测正确缩放图表，请选择&#x200B;**[!UICONTROL 允许预测缩放Y轴]**。 默认情况下不选中此选项，因为它有时可能会呈现较不清晰的图表。
 

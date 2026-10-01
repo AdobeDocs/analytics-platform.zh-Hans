@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4250'
+source-wordcount: '4244'
 ht-degree: 30%
 ---
 # 创建数据馈送
@@ -129,7 +129,7 @@ ht-degree: 30%
 
    您在此处应用的区段是对可能已应用于数据视图的任何区段之外的区段。
 
-1. （可选）在左边栏中，使用&#x200B;**搜索**&#x200B;字段来查找特定组件。 或者，选择&#x200B;**排序**&#x200B;图标![排序组件图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)以应用以下任何排序选项：
+1. （可选）在左边栏中，使用&#x200B;**搜索**&#x200B;字段来查找特定组件。 或者，选择&#x200B;**排序**&#x200B;图标![排序组件图标](/help/assets/icons/SortOrderDown.svg)以应用以下任何排序选项：
 
    | 选项 | 功能 |
    | --------- | ---------- |

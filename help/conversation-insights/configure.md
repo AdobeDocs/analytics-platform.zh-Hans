@@ -4,7 +4,6 @@ description: 了解如何配置对话分析配置。
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 20%
+source-wordcount: '810'
+ht-degree: 16%
 ---
 # 创建或编辑配置
 
@@ -34,7 +33,7 @@ ht-degree: 20%
 
 只有系统管理员才能创建或编辑对话分析配置。
 
-您可以从[对话见解配置界面](./conversation-insights-manage.md)创建或编辑配置。
+您可以从[对话见解配置界面](./manage.md)创建或编辑配置。
 
 ## 恢复缺少的混合数据集
 
@@ -80,7 +79,7 @@ ht-degree: 20%
    1. 选择&#x200B;**[!UICONTROL 使用连接]**。
 
    * 若要在要从中进行选择的连接列表中搜索，请使用![搜索](/help/assets/icons/Search.svg)字段。
-   * 要配置在表格中显示哪些列，请选择![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
+   * 要配置要在表中显示的列，请选择![ColumnSetting](/help/assets/icons/ColumnSetting.svg)。 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
 
 1. 在&#x200B;**[!UICONTROL 数据视图]**&#x200B;部分中，如果尚未配置任何数据视图，请选择&#x200B;**[!UICONTROL 选择数据视图]**&#x200B;以选择数据视图。
 
@@ -95,7 +94,7 @@ ht-degree: 20%
    1. 选择&#x200B;**[!UICONTROL 使用数据视图]**&#x200B;以使用数据视图。 选择“取消”即可取消。
 
    * 若要在要从中进行选择的数据视图列表中搜索，请使用![搜索](/help/assets/icons/Search.svg)字段。
-   * 要配置在表格中显示哪些列，请选择![列设置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)。 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
+   * 要配置要在表中显示的列，请选择![ColumnSetting](/help/assets/icons/ColumnSetting.svg)。 在&#x200B;**[!UICONTROL 自定义表]**&#x200B;对话框中，选择要显示的列。 然后选择&#x200B;**[!UICONTROL 应用]**。
 
 1. 要完成配置，请执行以下操作：
 
@@ -173,7 +172,6 @@ ht-degree: 20%
 1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
 
 
- 
 ## View audience dimensions in the data view
 
 After you [create an audience analysis configuration](#create-an-audience-analysis-configuration), you can verify that audience dimensions were added to the data views that you selected during the configuration.

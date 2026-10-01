@@ -4,7 +4,6 @@ description: 了解如何检测代理应用程序或服务以进行对话分析�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,12 +12,11 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -39,7 +37,7 @@ ht-degree: 5%
 
 为主要对话事件配置数据集：提示、响应、反馈。 提示、响应和反馈数据集必须使用[对话事件字段组](#conversation-event-field-group)扩展XDM体验事件基本架构，并且可以选择包含[代理信息字段组](#agentic-information-field-group)和其他[其他字段组](#additional-field-groups)。
 
-您可以为提示、响应和反馈定义单独的数据集，也可以将数据合并到数据集中。 例如，使用一个数据集进行提示和响应，使用另一个数据集进行反馈。 或者，为每种类型的对话事件使用单独的数据集，如[工作方式](/help/conversation-insights/conversation-insights-overview.md#how-it-works)中所述。
+您可以为提示、响应和反馈定义单独的数据集，也可以将数据合并到数据集中。 例如，使用一个数据集进行提示和响应，使用另一个数据集进行反馈。 或者，为每种类型的对话事件使用单独的数据集，如[工作方式](/help/conversation-insights/overview.md#how-it-works)中所述。
 
 举例说明，请使用：
 
@@ -625,7 +623,6 @@ ht-degree: 5%
 ## 数据收集
 
 为对话分析使用以下数据收集策略。
-
 
 ### 事件类型
 

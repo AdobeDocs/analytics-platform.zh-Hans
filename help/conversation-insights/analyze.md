@@ -4,7 +4,6 @@ description: 了解如何分析对话见解。
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,11 +17,12 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
 ---
+
 # 分析对话见解
 
 ## 简单分析
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 * 将您的对话见解事件与其他事件数据集以及其他配置文件和查找数据集相结合。 将这些数据集添加到您为对话分析配置选择的连接中。
 * 将其他组件（量度和维度）添加到您为对话分析配置选择的数据视图中。
-* ...
+
 
 +++ 示例项目
 

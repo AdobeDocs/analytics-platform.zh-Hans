@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3122'
 ht-degree: 77%
 ---
 # 创建或编辑数据视图
@@ -112,7 +112,7 @@ ht-degree: 77%
 
 | 设置 | 描述 |
 | --- | --- |
-| [!UICONTROL **在 Adobe Journey Optimizer 中设置为默认数据视图**] | 此配置选项使 Journey Optimizer 和 Customer Journey Analytics 的报告标准化。 此外，它还允许您在 Customer Journey Analytics 中对 Adobe Journey Optimizer 的数据进行高级分析（在 Journey Optimizer 中选择![打开](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **在 CJA 中分析**]）。<p>进行此类分析时，Journey Optimizer 需要具有 Customer Journey Analytics 数据视图的访问权限。<p>启用此选项可使其成为您的沙盒 Journey Optimizer 报告中使用的默认数据视图。</p><p>此配置选项将自动执行以下操作：</p><ul><li>在 Customer Journey Analytics 的相关连接中配置所有必需的 Journey Optimizer 数据集，以便与 Journey Optimizer 配合使用。</li><li>在数据视图中创建一组 Journey Optimizer 量度和维度（包括派生字段和计算量度）。 在所有这些量度和维度上自动设置上下文标签。</li><li>自动启用与此数据视图相关联的连接中的&#x200B;**[!UICONTROL 在 CJA 中使用]**&#x200B;选项。 （要了解有关此选项的更多信息，请参阅[在 Customer Journey Analytics 中使用 Journey Optimizer 连接](/help/connections/manage-connections.md)。）<p>如果在启用此设置后手动禁用此设置，连接和任何相关联的数据视图都会重置为其默认状态。 这可能会导致报告中的数据变化。</p></li></ul><p><p>启用此选项时，请考虑以下事项： <ul><li>您可以稍后更改默认数据视图，但这样做可能会更改您的 Journey Optimizer 报告数据。 如果启用此选项后选择禁用，系统将提示您选择新的默认数据视图。</li><li>如果您已经对 Customer Journey Analytics 数据视图中的数据集、维度或量度进行了手动自定义，则启用此配置选项时，您的手动自定义将保持不变。 此选项可以进行额外的自定义，以进一步标准化 Journey Optimizer 和 Customer Journey Analytics 之间的报告。 启用此选项后，您还可以进行手动自定义。</li><li>选择此选项时，无法删除与数据视图关联的连接。</li></ul>请参阅[将 Adobe Journey Optimizer 与 Adobe Customer Journey Analytics 集成](/help/integrations/ajo.md)，以了解详细信息。 |
+| [!UICONTROL **在 Adobe Journey Optimizer 中设置为默认数据视图**] | 此配置选项使 Journey Optimizer 和 Customer Journey Analytics 的报告标准化。 此外，它还允许您在 Customer Journey Analytics 中对 Adobe Journey Optimizer 的数据进行高级分析（在 Journey Optimizer 中选择![打开](/help/assets/icons/OpenInLight.svg) [!UICONTROL **在 CJA 中分析**]）。<p>进行此类分析时，Journey Optimizer 需要具有 Customer Journey Analytics 数据视图的访问权限。<p>启用此选项可使其成为您的沙盒 Journey Optimizer 报告中使用的默认数据视图。</p><p>此配置选项将自动执行以下操作：</p><ul><li>在 Customer Journey Analytics 的相关连接中配置所有必需的 Journey Optimizer 数据集，以便与 Journey Optimizer 配合使用。</li><li>在数据视图中创建一组 Journey Optimizer 量度和维度（包括派生字段和计算量度）。 在所有这些量度和维度上自动设置上下文标签。</li><li>自动启用与此数据视图相关联的连接中的&#x200B;**[!UICONTROL 在 CJA 中使用]**&#x200B;选项。 （要了解有关此选项的更多信息，请参阅[在 Customer Journey Analytics 中使用 Journey Optimizer 连接](/help/connections/manage-connections.md)。）<p>如果在启用此设置后手动禁用此设置，连接和任何相关联的数据视图都会重置为其默认状态。 这可能会导致报告中的数据变化。</p></li></ul><p><p>启用此选项时，请考虑以下事项： <ul><li>您可以稍后更改默认数据视图，但这样做可能会更改您的 Journey Optimizer 报告数据。 如果启用此选项后选择禁用，系统将提示您选择新的默认数据视图。</li><li>如果您已经对 Customer Journey Analytics 数据视图中的数据集、维度或量度进行了手动自定义，则启用此配置选项时，您的手动自定义将保持不变。 此选项可以进行额外的自定义，以进一步标准化 Journey Optimizer 和 Customer Journey Analytics 之间的报告。 启用此选项后，您还可以进行手动自定义。</li><li>选择此选项时，无法删除与数据视图关联的连接。</li></ul>请参阅[将 Adobe Journey Optimizer 与 Adobe Customer Journey Analytics 集成](/help/integrations/ajo.md)，以了解详细信息。 |
 
 {style="table-layout:auto"}
 
@@ -233,9 +233,9 @@ ht-degree: 77%
 
    可在左上角看到[!UICONTROL 连接]（其中包含数据集），并可在下方看到其[!UICONTROL 架构字段]。  所有数据视图都包含标准组件，如事件、人员、会话量度和时间维度。<ul><li>定义[自定义容器](#containers-1)时，量度会自动添加为![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _自定义容器名称&#x200B;_发生次数]**。</li><li>默认情况下，系统应用&#x200B;**[!UICONTROL 不弃用]**&#x200B;筛选器，因此只显示未弃用的架构字段。</li></ul>
 
-1. 使用![搜索图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
+1. 使用![搜索图标](/help/assets/icons/Search.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](/help/assets/icons/Data.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](/help/assets/icons/DragHandle.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
 可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，从pageName字段，使用右侧不同的[组件设置](component-settings/overview.md)创建`Product Pages`和`Error pages`维度。
 如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 
@@ -262,7 +262,7 @@ ht-degree: 77%
 
 ### 筛选架构字段或数据集
 
-您可以根据[!UICONTROL 数据类型]、[!UICONTROL 数据集]、[!UICONTROL 数据治理]和[!UICONTROL 其他]标准（[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]和[!UICONTROL 未弃用]），筛选左栏内的![“筛选条件”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)架构字段：
+您可以根据[!UICONTROL 数据类型]、[!UICONTROL 数据集]、[!UICONTROL 数据治理]和[!UICONTROL 其他]标准（[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]和[!UICONTROL 未弃用]），筛选左栏内的![“筛选条件”图标](/help/assets/icons/Filter.svg)架构字段：
 
 ![筛选字段](assets/dataview-components-filter.png)
 

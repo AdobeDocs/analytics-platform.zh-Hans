@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '899'
 ht-degree: 100%
 ---
 # 将 Analytics 源连接器数据集添加到连接 {#upgrade-source-connector-dataset}
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**[!UICONTROL 数据集回填]**&#x200B;部分，选择&#x200B;**[!UICONTROL 请求回填]**。
 
-1. 通过输入开始日期和结束日期或选择日程表图标 ![日程表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg)，定义您希望连接回填到 Customer Journey Analytics 中的时间段。
+1. 通过输入开始日期和结束日期或选择日程表图标 ![日程表](/help/assets/icons/Calendar.svg)，定义您希望连接回填到 Customer Journey Analytics 中的时间段。
 
    在指定您要求回填的日期时要明确。 根据多种因素，您可能需要执行以下任一操作：
 
