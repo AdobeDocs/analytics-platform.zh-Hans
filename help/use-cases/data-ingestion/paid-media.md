@@ -110,7 +110,7 @@ ht-degree: 0%
 
 1. 确认您具有所需的Experience Platform源权限和ad-platform访问权限。
 1. 在Experience Platform中，转到&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 目录]** > **[!UICONTROL Advertising]**。
-1. 
+1. &#x200B;
    1. 确保您位于包含付费媒体数据集的沙盒中。
 1. 选择要使用的连接器，如&#x200B;**[!DNL Meta Ads]**。 选择&#x200B;**[!UICONTROL 设置]**&#x200B;以创建新连接，或选择&#x200B;**[!UICONTROL 添加数据]**&#x200B;以将更多数据添加到现有连接。
 1. 通过登录具有所需广告商级别访问权限的用户，向[!DNL OAuth 2.0]进行身份验证。
