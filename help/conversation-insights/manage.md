@@ -16,7 +16,7 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
@@ -28,6 +28,7 @@ ht-degree: 6%
 只有系统管理员可以管理对话分析配置。
 
 有关对话分析的信息，请参阅[对话分析概述](/help/conversation-insights/overview.md)。
+
 
 ## 查看和筛选现有配置
 

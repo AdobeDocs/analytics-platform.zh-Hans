@@ -17,7 +17,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 1%
@@ -151,6 +151,7 @@ ht-degree: 1%
 如果您的座席体验应用程序支持对表示在处理期间调用的功能的技能的调用，则可以将这些技能调用添加为座席信息字段组的一部分。
 
 有关实施详细信息，请参阅[实施对话见解](./implement.md)文档中的[代理信息](./implement.md#agentic-information-field-group)字段组。
+
 
 ## 工作原理
 
