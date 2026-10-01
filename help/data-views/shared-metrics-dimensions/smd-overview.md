@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
+source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 2%
@@ -38,7 +38,8 @@ ht-degree: 2%
 虽然共享维度和量度允许跨多个数据视图使用通用组件，但它们不能跨连接共享。
 
 ## 权限
-* [产品管理员](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
+
+* [产品管理员](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
 
 ## 工作流
 

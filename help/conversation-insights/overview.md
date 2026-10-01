@@ -17,12 +17,14 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3acb31df785d038def3432a9734b499810636860
+source-git-commit: e550b7005c12bc5e2fb92bea44767bae0d7db3dc
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 1%
 ---
 # 对话分析
+
+{{release-limited-testing}}
 
 对话分析允许您从提供给客户的座席体验分析对话。 这些代理体验可以基于大型语言模型(LLM)或基于人类对话。 例如，与客户或呼叫中心进行交互的聊天机器人成绩单。
 
