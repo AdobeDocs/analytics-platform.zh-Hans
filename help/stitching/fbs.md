@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1926'
 ht-degree: 82%
 ---
 # 基于字段的拼接
@@ -151,7 +151,7 @@ ht-degree: 82%
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 3 | 2023-05-12 12:03 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` ![下箭头](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` ![下箭头](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` ![下箭头](/help/assets/icons/ArrowDown.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
 | 7 | 2023-05-12 12:07 | `246` | `Bob` ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` |
 | 8 | 2023-05-12 12:03 | `3579` ![右箭头](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
@@ -214,7 +214,7 @@ ht-degree: 82%
 | 事件 | 时间戳 | 永久 ID（Cookie ID） | 人员 ID | 结果ID（实时拼接后） | 生成的ID（重播后） | 人员 ID | 结果ID（隐私请求后） |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | Bob ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上箭头](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![上箭头](/help/assets/icons/ArrowUp.svg) | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 3 | 2023-05-12 12:03 | `246` | Bob ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` ![下箭头](/help/assets/icons/ArrowDown.svg) | `Bob` | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
 | 5 | 2023-05-12 12:05 | `246` | Bob ![右箭头](/help/assets/icons/ArrowRight.svg) | `Bob` ![下箭头](/help/assets/icons/ArrowDown.svg) | `Bob` | ![移除圆圈](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -239,7 +239,7 @@ ht-degree: 82%
   - **人员 ID**，这是仅在某些行中可用的标识符。 例如，轮廓经过身份验证后，经过哈希处理的用户名或电子邮件地址。 实际上您可以使用任何标识符。 拼接会将此字段视为包含实际人员 ID 信息。 为获得最佳拼接结果，应在数据集的事件中为每个永久 ID 至少发送一次人员 ID。 如果您计划在 Customer Journey Analytics 连接中包含此数据集，那么其他数据集最好也有一个类似的常见标识符。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

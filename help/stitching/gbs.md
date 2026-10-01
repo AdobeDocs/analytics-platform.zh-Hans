@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '1999'
 ht-degree: 64%
 ---
 # 基于图形的拼接
@@ -43,7 +43,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)是核心Experience Platform服务，不需要额外许可。 有关详细信息，请参阅[了解Identity Service在Experience Platform基础结构中的角色](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)。
+>[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)是核心Experience Platform服务，不需要额外许可。 有关详细信息，请参阅[了解Identity Service在Experience Platform基础结构中的角色](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure)。
 >
 
 如果无法检索某个事件的人员ID信息，则将改用永久ID用于该&#x200B;*未拼合*&#x200B;事件。 因此，在与包含启用拼合的数据集的[连接](/help/connections/overview.md)关联的[数据视图](/help/data-views/data-views.md)中，人员ID数据视图组件包含事件级别的人员ID值或永久ID值。
@@ -181,9 +181,9 @@ ht-degree: 64%
 |---|---|---|---|---|---|
 | 2 | 2023-05-12 14:00 | `246` | `246` ![分支 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 2023-05-12 15:00 | `246` | `246` ![分支 1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![重播](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![链接](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![重播](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![链接](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![重播](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![链接](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![重播](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![链接](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![重播](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![链接](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![重播](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![链接](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
 | ![重播](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![分支 1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![分支 1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
@@ -236,10 +236,10 @@ ht-degree: 64%
 - 在启用基于图形的拼合之前，必须在沙盒级别设置Experience Platform Identity Service中的身份图形。
   - 身份图形必须具有要在拼接期间用于解析人员ID的命名空间（例如`Email`或`Phone`）。
   - 必须使用来自任何相关数据集（类型为&#x200B;*event*&#x200B;或&#x200B;*profile*&#x200B;且至少包含两个具有ID值的有用命名空间）的标识信息填充标识图。
-  - 所有包含此类相关标识的数据集都必须为标识图数据摄取[&#128279;](faq.md#enable-a-dataset-for-the-identity-service)启用。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
+  - 所有包含此类相关标识的数据集都必须为标识图数据摄取](faq.md#enable-a-dataset-for-the-identity-service)启用[。 此支持可确保随着时间的推移，将来自所有所需来源的传入身份添加到图表中。
   - 如果一段时间内已在使用实时客户数据配置文件或Adobe Journey Optimizer，则应已在一定程度上设置此图表。<br/>如果启用基于图形的拼合的数据集也需要历史拼合回填，则图形应已包含整个时段的历史标识，以获取所需的拼合结果。
 - 如果要使用基于图形的拼合，并且预期事件数据集将参与身份图形，则应[为身份服务启用该数据集](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service)。
-- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
+- 永久性ID和人员ID可以与[identityMap](#identitymap)一起使用。 或者，持久ID和人员ID可以是XDM架构中的字段，在这种情况下，这些字段必须是[在架构中定义为标识](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en)。
 
 >[!NOTE]
 >

@@ -9,29 +9,40 @@ autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+    internal-label: Mobile experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+    internal-label: Privacy
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 4806
+source-wordcount: '4800'
 ht-degree: 56%
-
 ---
-
 
 # Content Analytics 引导式配置
 
@@ -245,7 +256,7 @@ ht-degree: 56%
 
 然后，您可以更详细地配置渠道。 根据您是启用[移动设备](#mobile)、[Web](#web)还是[付费媒体](#paid-media)渠道的配置，该配置会有所不同。
 
-#### 移动
+#### 移动设备
 
 +++ 详细信息
 
@@ -371,7 +382,7 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="体验捕捉和定义"
->abstract="启用后，将收集体验数据，生成体验属性，并提供体验报告。 <br><br/>使用 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**&#x200B;功能，可修改与当前配置相关联的“标记”属性中体验的数据收集配置。"
+>abstract="启用后，将收集体验数据，生成体验属性，并提供体验报告。 <br><br/>使用 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;功能，可修改与当前配置相关联的“标记”属性中体验的数据收集配置。"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"

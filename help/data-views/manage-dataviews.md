@@ -9,24 +9,30 @@ autotag-review: '2026-05-19T10:45:24.919Z'
 TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 933
-ht-degree: 12%
-
+source-wordcount: '915'
+ht-degree: 10%
 ---
-
 # 管理数据视图
 
 
@@ -43,8 +49,8 @@ ht-degree: 12%
 | 列或图标 | 描述 |
 | --- | --- |
 | **[!UICONTROL 名称]** | 数据视图的名称。 |
-| ![信息](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | 要查看有关数据视图的信息，请选择数据视图名称旁边的![信息大纲](/help/assets/icons/InfoOutline.svg)。<br/>弹出窗口显示有关数据视图的详细信息。 |
-| ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | 选择![更多](/help/assets/icons/More.svg)，打开上下文菜单。 您可以选择：<br/>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;到[编辑](#edit-data-views)数据视图。<br/>![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制]**&#x200B;到[复制数据视图](#copy-data-views)。<br/>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**&#x200B;到[删除](#delete-data-views)数据视图。<br/>![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]**&#x200B;到[将数据视图的详细信息导出到CSV文件](#export-data-views-to-csv)。<br/>![项目添加](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL 创建项目]**&#x200B;到[为数据视图创建新的Workspace项目](#create-project-from-data-views)。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 为Data Insights Agent启用]**&#x200B;以启用数据Data Insights Agent视图。<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 禁用Data Insights Agent]**&#x200B;以禁用Data Insights Agent的数据视图。 |
+| ![信息](/help/assets/icons/InfoOutline.svg) | 要查看有关数据视图的信息，请选择数据视图名称旁边的![信息大纲](/help/assets/icons/InfoOutline.svg)。<br/>弹出窗口显示有关数据视图的详细信息。 |
+| ![更多](/help/assets/icons/More.svg) | 选择![更多](/help/assets/icons/More.svg)，打开上下文菜单。 您可以选择：<br/>![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]**&#x200B;到[编辑](#edit-data-views)数据视图。<br/>![复制](/help/assets/icons/Copy.svg) **[!UICONTROL 复制]**&#x200B;到[复制数据视图](#copy-data-views)。<br/>![删除](/help/assets/icons/Delete.svg) **[!UICONTROL 删除]**&#x200B;到[删除](#delete-data-views)数据视图。<br/>![文件CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL 导出到CSV]**&#x200B;到[将数据视图的详细信息导出到CSV文件](#export-data-views-to-csv)。<br/>![项目添加](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL 创建项目]**&#x200B;到[为数据视图创建新的Workspace项目](#create-project-from-data-views)。<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 为Data Insights Agent启用]**&#x200B;以启用数据Data Insights Agent视图。<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 禁用Data Insights Agent]**&#x200B;以禁用Data Insights Agent的数据视图。 |
 | **[!UICONTROL 连接]** | 与数据视图关联的连接的名称。 |
 | **[!UICONTROL 沙盒]** | 与数据视图关联的沙盒的名称。 |
 | **[!UICONTROL 所有者]** | 数据视图的所有者。 |
@@ -59,7 +65,7 @@ ht-degree: 12%
 
 ## 搜索数据视图
 
-您可以使用![搜索](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)框快速搜索数据视图。
+您可以使用![搜索](/help/assets/icons/Search.svg)框快速搜索数据视图。
 
 ## 筛选数据视图
 

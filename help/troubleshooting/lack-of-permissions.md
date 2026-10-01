@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 94%
+source-wordcount: '212'
+ht-degree: 93%
 ---
 # 缺乏权限
 
@@ -51,9 +51,9 @@ ht-degree: 94%
 
 1. 确保您拥有正确的访问控制：
 
-   * 您必须拥有拥有 Experience Platform 产品的组织的系统或产品管理员权限。 请参阅 [Access 控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#platform-permissions) 了解更多信息。
+   * 您必须拥有拥有 Experience Platform 产品的组织的系统或产品管理员权限。 请参阅 [Access 控制概述](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions) 了解更多信息。
 
-   * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。 如果您没有权限将自己添加到该轮廓中，请询问您的管理员。 请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#access-control-hierarchy-and-workflow) 了解更多信息。
+   * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。 如果您没有权限将自己添加到该轮廓中，请询问您的管理员。 请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow) 了解更多信息。
 
 
 1. 导航到 Adobe Experience Platfom UI。
@@ -64,7 +64,7 @@ ht-degree: 94%
 
 1. 导航到相关角色。
 
-1. 选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 以编辑角色。
+1. 选择 ![编辑](/help/assets/icons/Edit.svg) **[!UICONTROL 编辑]** 以编辑角色。
 
 1. 确保 **[!UICONTROL 管理数据使用策略]** 和 **[!UICONTROL 查看数据使用策略]** 被添加到 **[!UICONTROL 数据治理]** 容器中。
 

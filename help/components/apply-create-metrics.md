@@ -7,23 +7,29 @@ role: User
 TQID: https://experienceleague.adobe.com/e0vvc9JN5k-KPI2zVAezIjdgViKdAcLJEAx0QUV-tAA
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 885
+source-wordcount: '870'
 ht-degree: 9%
-
 ---
-
 # 量度
 
 指标允许您量化 Analysis Workspace 中的数据点。 它们最常用作可视化中的列，并与维度相关联。
@@ -44,9 +50,9 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
   与Adobe Analytics相反，Customer Journey Analytics允许您在连接和数据视图范围内灵活定义标准指标。
 
-   * **人员**： Customer Journey Analytics中的人员指标是与人员ID不同的计数。 根据您在连接中配置数据集时选择作为人员ID，人员量度可能具有不同的含义。
-   * **会话**：您将Customer Journey Analytics中的“会话”量度定义为数据视图中会话设置配置的一部分。 查看[会话设置](/help/data-views/session-settings.md)。
-   * **事件**： Customer Journey Analytics中的Events量度由事件组成，这些事件是您已配置为连接一部分的任何事件数据集的一部分。
+  * **人员**： Customer Journey Analytics中的人员指标是与人员ID不同的计数。 根据您在连接中配置数据集时选择作为人员ID，人员量度可能具有不同的含义。
+  * **会话**：您将Customer Journey Analytics中的“会话”量度定义为数据视图中会话设置配置的一部分。 查看[会话设置](/help/data-views/session-settings.md)。
+  * **事件**： Customer Journey Analytics中的Events量度由事件组成，这些事件是您已配置为连接一部分的任何事件数据集的一部分。
 
   请参阅[标准指标](#standard-metrics)以获取标准指标的完整列表。
 
@@ -54,7 +60,7 @@ Adobe 提供了多种类型的指标，可供在 Analysis Workspace 中使用：
 
 * **计算量度模板** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) ：Adobe定义的与计算量度行为相似的量度。 您可以在Workspace项目中按原样使用它们，也可以保存副本以自定义逻辑。 查看[默认的计算指标](calc-metrics/cm-workflow/../default-calcmetrics.md)。
 
-您可以查看某个量度是否获得批准![批准图标](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)。 如果您想了解有关某个量度的更多详细信息，请将鼠标悬停在该量度上，然后选择![信息图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg)。 有关详细信息，请参阅[组件信息](use-components-in-workspace.md#component-info)。
+您可以查看某个量度是否已被批准![复选标记](/help/assets/icons/Checkmark.svg)。 如果您想了解有关某个量度的更多详细信息，请将鼠标悬停在该量度上，然后选择![信息大纲](/help/assets/icons/InfoOutline.svg)。 有关详细信息，请参阅[组件信息](use-components-in-workspace.md#component-info)。
 
 
 ## 标准量度

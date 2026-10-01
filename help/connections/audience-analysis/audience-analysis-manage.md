@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 5%
+source-wordcount: '296'
+ht-degree: 2%
 ---
 # 管理受众分析配置{#manage-audience-analysis}
 
@@ -65,9 +65,9 @@ ht-degree: 5%
 
    * **[!UICONTROL 状态]**：配置的状态。 可能的状态包括“完成”、“进行中”或“失败”。<!--true?-->
 
-   通过选择“列”图标![列图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg)，取消选择要隐藏的任何列，然后选择&#x200B;**[!UICONTROL 应用]**，可以隐藏任何列。
+   通过选择“列”图标![列图标](/help/assets/icons2/ColumnSettings.svg)，取消选择要隐藏的任何列，然后选择&#x200B;**[!UICONTROL 应用]**，可以隐藏任何列。
 
-1. （可选）要筛选配置列表，请选择&#x200B;**筛选器** ![受众分析筛选器图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)，然后按以下任意条件进行筛选：
+1. （可选）要筛选配置列表，请选择&#x200B;**筛选器** ![受众分析筛选器图标](/help/assets/icons/Filter.svg)，然后按以下任意条件进行筛选：
 
    * **[!UICONTROL 连接]**
 

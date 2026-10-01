@@ -8,31 +8,44 @@ role: User
 TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share, Curate and share (CJA)
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Privacy
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 2183
+source-wordcount: '2177'
 ht-degree: 90%
-
 ---
-
 # 共享项目 {#share-projects}
 
 >[!CONTEXTUALHELP]
@@ -61,7 +74,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis Workspace 中的项目共享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -176,11 +189,11 @@ ht-degree: 90%
 >
 >* 如果许多用户尝试同时访问给定的链接，则项目可能会变得无法访问。 默认情况下，每 5 分钟可有超过 190 人访问单个链接。 如果您的组织达到此限制，请等待 5 分钟，然后再重试访问链接。
 >
->* 对于[!DNL Healthcare Shield]和[!DNL Privacy & Security Shield]许可证，[!UICONTROL 与任何人共享]功能需要CX Enterprise身份验证。 对于[!DNL Healthcare Shield]客户，会显示“符合HIPAA标准”警告，但您仍可以在对CX Enterprise进行身份验证后使用此功能。
+>* 对于[!DNL Healthcare Shield]和[!DNL Privacy & Security Shield]许可证，[!UICONTROL 与任何人共享]功能需要CX Enterprise身份验证。 对于[!DNL Healthcare Shield]客户，会显示“HIPAA合规性”警告，但您仍然可以在对CX Enterprise进行身份验证后使用此功能。
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [与任何人分享](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}，观看演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -205,13 +218,13 @@ ht-degree: 90%
 
    * **[!UICONTROL 要求进行 Experience Cloud 身份验证]：**
 
-     启用此选项后，只有那些能够访问项目的用户才能登录到创建了共享项目的CX Enterprise (Experience Cloud)组织。 但是，您与其共享的用户无需具有访问 Customer Journey Analytics 的权限。
+     启用此选项后，唯一能够访问项目的用户是那些能够登录到您共享的项目所在的CX Enterprise (Experience Cloud)组织的用户。 但是，您与其共享的用户无需具有访问 Customer Journey Analytics 的权限。
 
      Customer Journey Analytics 管理员可为公司配置此偏好设置，如[偏好设置](/help/analysis-workspace/user-preferences.md)所述。 根据管理员如何配置此选项，您可能会遇到以下情况：
 
      * 如果此选项不可见，则您的 Customer Journey Analytics 管理员未启用此功能。
 
-     * 如果启用了此选项，但无法禁用它，则锁定选项意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行CX企业身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
+     * 如果启用了此选项，但无法禁用它，则锁定选项意味着您的Customer Journey Analytics管理员要求对访问Analysis Workspace项目的任何人进行CX Enterprise身份验证。 对于具有 Healthcare Shield 许可证的组织来说，情况总是如此。
 
 1. 在&#x200B;**[!UICONTROL 与任何人共享（无需登录）]**&#x200B;字段旁边，选择![链接](/help/assets/icons/Link.svg)将链接复制到系统剪贴板。
 
@@ -219,7 +232,7 @@ ht-degree: 90%
 
    您与其共享该链接的任何人均可查看该 Analysis Workspace 项目。
 
-1. （可选）您可以选择 ![生成新链接图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) 来移除以前收到该项目链接的用户的访问权限。 随后将生成一个可与您希望其访问该项目的用户共享的新链接。
+1. （可选）您可以选择 ![生成新链接图标](/help/assets/icons/Refresh.svg) 来移除以前收到该项目链接的用户的访问权限。 随后将生成一个可与您希望其访问该项目的用户共享的新链接。
 
 1. 选择&#x200B;**[!UICONTROL 关闭]**&#x200B;以关闭共享对话框。 随后自动保存您的更改。
 
@@ -235,7 +248,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Analysis Workspace 中共享嵌入的组件](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"}以观看演示视频。
 
 >[!ENDSHADEBOX]
 
