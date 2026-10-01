@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 7cd3764ebbab83530ebb42f2041aee4bd390d168
+source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1710'
 ht-degree: 0%
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 确保您在Experience Platform中具有以下访问权限：
 
 * 查看和管理源的权限。
-* 可在其中工作的沙盒。
 * 创建架构、数据集和数据流的权限。
+* 选定要在其中工作的沙盒。 在继续设置步骤之前，您必须选择沙盒。
 
 如果您使用[!DNL Meta Ads]作为源，请确保您还具有以下先决条件：
 
@@ -75,23 +75,33 @@ ht-degree: 0%
 * **社交参与**：赞、评论和关注。
 * **归因和路径**：归因模型详细信息、置信度、权重、路径量度和渠道贡献。
 * **质量和欺诈**：质量分数、欺诈指标、无效流量率和品牌安全量度。
-* **维度细分**：渠道、广告网络、设备类型、年龄组、性别、国家/地区、城市、语言、每周时间、受众类别、创意格式和细分类型。
+* **维度细分**：数据可以按渠道、广告网络、设备类型、年龄组、性别、国家/地区、城市、语言、每周时间、受众类别、创意格式和其他维度进行细分，具体取决于源平台。
 
 ### 标准数据集
 
-当您连接付费媒体源时，Adobe会根据全局付费媒体架构类和字段组设置12个标准付费媒体数据集。 这些数据集包括六个查找数据集、摘要量度数据集和支持数据集。 必须存在所有12个数据集，才能正确解析下游付费媒体数据。
+当您连接付费媒体源时，Adobe会根据全局付费媒体架构类和字段组设置12个标准付费媒体数据集。 这些数据集包括六个摘要指标数据集、六个查找数据集和支持数据集。 必须存在所有12个摘要和查找数据集，才能正确解析下游付费媒体数据。
 
-* 付费媒体营销活动查找
-* 付费媒体资产查找
-* 付费媒体体验查找
-* 付费媒体广告查找
-* 付费媒体广告组查找
+必需的数据集：
+
+* 付费媒体帐户摘要
+* 付费媒体营销活动摘要
+* 付费媒体广告组摘要
+* 付费媒体广告摘要
+* 付费媒体体验摘要
+* 付费媒体资产摘要
 * 付费媒体帐户查找
+* 付费媒体营销活动查找
+* 付费媒体广告组查找
+* 付费媒体广告查找
+* 付费媒体体验查找
+* 付费媒体资产查找
+
+支持的数据集，例如：
+
 * 付费媒体广告人口统计查找
 * 付费媒体体验置入摘要
 * 付费媒体广告地理摘要
 * 付费媒体广告摘要（摘要量度）
-* 付费媒体资产摘要
 * 付费媒体资产人口统计摘要
 
 ## 在Adobe Experience Platform中摄取付费媒体数据
@@ -100,10 +110,12 @@ ht-degree: 0%
 
 1. 确认您具有所需的Experience Platform源权限和ad-platform访问权限。
 1. 在Experience Platform中，转到&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 目录]** > **[!UICONTROL Advertising]**。
-1. 选择要使用的连接器，如&#x200B;**[!DNL Meta Ads]**，然后选择&#x200B;**[!UICONTROL 设置]**。
+1. 
+   1. 确保您位于包含付费媒体数据集的沙盒中。
+1. 选择要使用的连接器，如&#x200B;**[!DNL Meta Ads]**。 选择&#x200B;**[!UICONTROL 设置]**&#x200B;以创建新连接，或选择&#x200B;**[!UICONTROL 添加数据]**&#x200B;以将更多数据添加到现有连接。
 1. 通过登录具有所需广告商级别访问权限的用户，向[!DNL OAuth 2.0]进行身份验证。
 1. 选择要提取的广告帐户、实体和insight数据。
-1. 确认指向全局付费媒体架构的目标映射，并验证是否正确配置了查找数据集和摘要量度数据集。
+1. 验证查找数据集和摘要量度数据集是否已正确配置。
 1. 输入数据流设置，确认目标数据集，并配置摄取计划。
 1. 保存数据流并监视&#x200B;**[!UICONTROL 源]** > **[!UICONTROL 数据流]**&#x200B;中的运行。
 1. 验证标准付费媒体数据集是否存在并包含数据。
@@ -112,7 +124,7 @@ ht-degree: 0%
 
 * 确认实体`GUID`和本机ID值在摘要量度和查找数据集中填充一致。
 * 确认每个概要量度行都包含一个时间戳。
-* 确认关键报表字段（如促销活动、渠道、广告网络、展示次数、点击次数、支出、区域和设备类型）包含值。
+* 确认关键报表字段，例如维度（例如： `channel`， `adNetwork`）和量度（例如： `impressions`， `clicks`， `spend`）包含值。 请注意，某些字段（如`region`）可能并非由所有源平台填充。
 * 确认相关帐户中的货币和时区值一致。
 
 ## 将付费媒体数据引入Customer Journey Analytics
@@ -124,9 +136,9 @@ Customer Journey Analytics不会直接报告Experience Platform数据集。 实�
 请使用以下流程创建或更新连接：
 
 1. 在Customer Journey Analytics中，[创建或编辑现有连接](/help/connections/create-connection.md)。
-1. 确保选择包含付费媒体数据集的沙盒。
-1. 将摘要量度数据集添加为摘要数据。
-1. 将每个查找数据集添加为查找数据集，并通过帐户、营销活动、广告组、广告、资产和体验的相应实体标识符将该数据集与摘要数据联接。
+1. 确保选择包含付费媒体数据集的沙盒作为连接配置的一部分。
+1. 将摘要量度数据集添加为摘要数据。 如果有多个摘要度量数据集可用，请使用[搜索](/help/connections/create-connection.md#add-datasets)按`Paid Media`类进行筛选，以识别正确的数据集。
+1. 将每个查询数据集添加为查询数据集。 使用帐户、促销活动、广告组、广告、资源和体验的相应实体GUID标识符（Adobe生成的全局键），将查找数据集与摘要数据联接。 某些源平台可能还支持对本机ID值进行联接。
 1. 如果要将聚合的付费媒体数据与共享元数据（如ID、跟踪代码或`UTM`参数）相关联，则可以选择添加点击流事件数据。
 1. 查看每个数据集的[数据集特定的设置](/help/connections/create-connection.md#dataset-settings)。
 1. 保存连接并确认连接开始回填数据。
@@ -174,5 +186,5 @@ Customer Journey Analytics不会直接报告Experience Platform数据集。 实�
 
 >[!MORELIKETHIS]
 >
->[Meta Ads源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Meta Ads源连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
