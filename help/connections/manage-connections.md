@@ -71,7 +71,7 @@ ht-degree: 87%
 
 **[!UICONTROL 列表]**&#x200B;界面是“连接”的默认界面。 如果未选择，请选择&#x200B;**[!UICONTROL 列表]**&#x200B;选项卡以访问该界面。
 
-**[!UICONTROL 列表]**界面会显示所有可用连接的表格。
+**[!UICONTROL 列表]**&#x200B;界面会显示所有可用连接的表格。
 △
 ![列表视图](assets/list-view.png)
 
@@ -346,8 +346,8 @@ ht-degree: 87%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您为该连接指定为人员 ID 的身份标识。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
