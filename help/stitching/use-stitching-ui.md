@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
+source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1929'
 ht-degree: 18%
 ---
 # 启用拼接
@@ -244,13 +244,17 @@ ht-degree: 18%
 
 ### 保存
 
-保存连接后，一旦开始为这些数据集摄取数据，就会开始拼合已启用数据集的拼合过程。
 
-保存连接后，将触发对配置的数据集启用拼合的过程。 设置拼合后，拼合服务会处理任何实时流式传输的数据，并开始从Experience Platform中的事件数据集回填，随后将它们摄取到Customer Journey Analytics连接中。
 
-流程的每个部分都会增加一定的延迟。 以下处理时间是护栏，而不是针对已保存并包含已启用拼合的数据集的有效初始连接设置的合同服务级别协议(SLA)：
+保存连接后，将触发对配置的数据集启用拼合的过程。 设置拼合后，拼合服务会处理任何实时流式传输的数据，并从Experience Platform中的事件数据集开始回填，随后将数据摄取到Customer Journey Analytics连接中。
 
-* 经过若干小时（不到17小时）后，实时数据最初会显示在Customer Journey Analytics中。 实时数据从事件时间戳值开始，这些值与拼合启用完成时的实际时间相匹配。 为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。 这可确保实时数据开始流入。
+流程的每个部分都会增加一定的延迟。 以下处理时间是护栏，而不是合同服务级别协议(SLA)。
+
+对于已保存并包含已启用拼合的数据集的有效初始连接设置：
+
+* 经过若干小时（不到17小时）后，实时数据最初会显示在Customer Journey Analytics中。 实时数据从事件时间戳值开始，这些值与拼合启用完成时的实际时间相匹配。
+
+  要确保实时数据开始流入，请为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。
 
   在Experience Platform中，任何引入到源事件数据集中的新数据都会在四小时内出现在Customer Journey Analytics中。
 
