@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 96%
+source-wordcount: '1764'
+ht-degree: 74%
 ---
 # 访问控制
 
@@ -112,10 +112,10 @@ ht-degree: 96%
 
 除了在 [Admin Console](https://adminconsole.adobe.com/enterprise/) 的 **Customer Journey Analytics 产品配置文件**&#x200B;中添加为产品管理员外，还需要有额外的权限才能在 Customer Journey Analytics 中完成以下任务：
 
-* 创建、更新和删除[数据视图](/help/data-views/data-views.md)。
+* 创建、更新和删除[数据视图](/help/data-views/data-views.md)
 * 创建、更新和删除[连接](/help/connections/overview.md)
 
-  要执行此任务，用户必须是提供以下权限的 **Experience Platform 产品配置文件**&#x200B;的一部分：
+  要执行此任务，用户必须是提供以下权限的&#x200B;**Experience Platform角色**&#x200B;的一部分：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
@@ -125,10 +125,21 @@ ht-degree: 96%
   | [!UICONTROL 数据管理] | [!UICONTROL 查看数据集] | 数据集和架构的只读访问权限。 |
   | [!UICONTROL 身份标识管理] | [!UICONTROL 查看身份标识命名空间] | 身份标识命名空间的只读访问权限。 |
 
-  关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+  有关Experience Platform角色的详细信息，请参阅[访问控制概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。
 
+* 管理[共享量度和维度](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
-* 如果 Journey Optimizer 与存在 Journey Optimizer 连接的 Customer Journey Analytics 集成，就必须添加历程权限才能访问连接：
+  要访问&#x200B;**共享量度和维度**&#x200B;管理器，用户必须是提供以下权限的&#x200B;**Experience Platform角色**&#x200B;的一部分：
+
+  | 类别 | 权限 | 描述 |
+  |---|---|---|
+  | [!UICONTROL 沙盒] | [!UICONTROL 全部] | 访问所有沙盒。 |
+  | [!UICONTROL 数据治理] | [!UICONTROL 查看数据使用策略] | 对属于您组织的数据使用策略的只读访问权限。 |
+  | [!UICONTROL 数据治理] | [!UICONTROL 管理数据使用策略] | 有权读取、创建、编辑和删除数据使用策略。 |
+
+  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
+
+* 如果Journey Optimizer与存在Journey Optimizer连接的Customer Journey Analytics集成，则还必须添加[历程权限](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)才能访问连接：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
@@ -139,20 +150,21 @@ ht-degree: 96%
 
 * 将数据集导出到[目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  要执行此任务，用户必须是提供以下权限的 **Experience Platform 产品配置文件**&#x200B;的一部分：
+  要执行此任务，用户必须属于提供以下[目标权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/home#access-controls)的&#x200B;**Experience Platform角色**：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
   | [!UICONTROL 目标] | [!UICONTROL 管理目标] | 读取、创建和删除目标连接和目标帐户的访问权限。 |
   | [!UICONTROL 目标] | [!UICONTROL 激活目标] | 允许用户将区段激活到现有目标。 在激活工作流中启用映射步骤。 此权限还要求给想要将数据激活到目标的用户授予“查看目标”权限。 |
 
-  关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
+
 
 * 使用 [BI 扩展](../data-views/bi-extension.md)
 
   要让用户使用 BI 扩展，产品管理员
 
-  * 必须确保用户的 Experience Platform 权限包括一个有查询服务资源的角色，并且有“管理查询”和“管理查询服务集成”选项。 关于 Experience Platform 权限的详细信息请参阅[管理产品配置文件的权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/permissions)。
+  * 必须确保用户的Experience Platform权限包括具有查询服务资源的角色，该资源具有管理查询和管理查询服务集成选项。 有关Experience Platform权限的详细信息，请参阅[访问控制概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。
 
     | 类别 | 权限 | 描述 |
     |---|---|---|
@@ -160,20 +172,20 @@ ht-degree: 96%
     | [!UICONTROL 查询服务] | [!UICONTROL 管理查询服务集成] | 创建、更新和删除未过期的查询服务访问凭据的访问权限。 |
 
   * 必须确保用户有适当的 Customer Journey Analytics 权限：
-    * 相关数据视图的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图]。
+    * 访问相关数据视图的权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图]。
     * Customer Journey Analytics BI 扩展的访问权限。 查看[用户级别的访问](#user-level-access)中的[!UICONTROL 数据视图工具]。
 
 ### 产品配置文件管理员角色
 
 产品配置文件是一组权限。 产品管理员可以创建产品配置文件，可以分配产品配置文件管理员以管理一个或多个产品配置文件。 分配后，产品配置文件管理员可以：
 
-* 管理所分配的产品配置文件。 例如，添加或移除用户或用户组，以及更改产品配置文件的权限。
+* 通过添加或删除用户或用户组并修改产品配置文件的权限来管理分配的产品配置文件。
 
 * 在 Customer Journey Analytics 中，编辑属于所分配产品配置文件的数据视图。 产品配置文件管理员无法创建新的数据视图。
 
 ### 用户级别访问
 
-下表概述了您可以为相关用户配置的各种 Customer Journey Analytics 功能的主要访问权限。 您可以通过产品配置文件管理不同级别的用户访问权限。 产品配置文件将大量权限组合在一起，您可以将这些权限分配给单个用户或用户组。
+下表概述了您可以为相关用户配置的各种 Customer Journey Analytics 功能的主要访问权限。 您可以通过产品配置文件管理不同级别的用户访问。 产品配置文件将大量权限组合在一起，您可以将这些权限分配给单个用户或用户组。
 
 **[!UICONTROL 权限]**&#x200B;选项卡是 [Admin Console](https://adminconsole.adobe.com/enterprise/) 中每个产品配置文件的一部分。
 
@@ -216,7 +228,7 @@ ht-degree: 96%
 
 ### 第三方访问
 
-您可以向与贵公司合作的第三方团队负责人提供产品配置文件管理访问权限。 然后，这位管理员可以将公司团队的用户添加到这个产品配置文件。 这位产品配置文件管理员可以授予对特定数据视图的访问权限，并将第三方的其他用户添加到这个产品配置文件。 产品配置文件管理员可以更改数据视图，以满足第三方团队的要求。
+您可以向与贵公司合作的第三方的团队负责人提供产品配置文件管理访问权限。 然后，这位管理员可以将公司团队的用户添加到这个产品配置文件。 这位产品配置文件管理员可以授予对特定数据视图的访问权限，并将第三方的其他用户添加到这个产品配置文件。 产品配置文件管理员可以更改数据视图，以满足第三方团队的要求。
 
 ### 行级访问控制
 
@@ -224,10 +236,10 @@ ht-degree: 96%
 
 1. 在特定数据视图的[!UICONTROL 设置]中创建一个区段，其中的[!UICONTROL 天]就是您希望允许他们访问数据的那个日期。 更多信息请参阅[创建数据视图](/help/data-views/create-dataview.md#settings-filters)。
 1. 保存数据视图，这会将这个区段应用于基础连接中数据集的数据部分。 任何不符合区段定义的行都会自动从数据视图中排除，在 Analysis Workspace 中使用这个数据视图时，这些行都不可用。
-1. 在 Admin Console 中创建一个新的[产品配置文件](#product-profile-admin-role)，将用户添加到产品配置文件，并且仅将这个特定的数据视图添加到产品配置文件。
+1. 在Admin Console中创建新的[产品配置文件](#product-profile-admin-role)，将用户添加到产品配置文件，并在产品配置文件中仅包含此特定数据视图。
 
 ### 值级访问控制
 
-有权访问数据视图的用户只能使用管理员在这个数据视图中包含的量度和维度。 管理员可以在数据视图中使用[包含/排除功能](/help/data-views/component-settings/include-exclude-values.md)或[值分段](../data-views/component-settings/value-bucketing.md)组件设置，从数据视图中排除或聚合特定的维度值。
+有权访问数据视图的用户只能使用管理员在这个数据视图中包含的量度和维度。 管理员可以在数据视图中使用[包含/排除功能](/help/data-views/component-settings/include-exclude-values.md)或[值分段](../data-views/component-settings/value-bucketing.md)组件设置从数据视图中排除或聚合某些维度值。
 
-例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。 您使用值分桶仅提供对分桶值的访问权限，这样数据用户就看不到单个患者的数据。
+例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。 您使用值分段来仅提供对分段值的访问权限，以便数据的用户不会看到各个患者的数据。

@@ -5,36 +5,47 @@ exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Governance
+source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
 workflow-type: tm+mt
-source-wordcount: 1292
-ht-degree: 3%
-
+source-wordcount: '1337'
+ht-degree: 2%
 ---
-
 # 共享量度和维度概述
 
-共享量度和维度提供了一个管理可用于任意数量数据视图的维度和量度的中心位置。 这些组件对于使用多个数据视图的组织来说特别有用，尤其是在这些数据视图共享通用组件设置的情况下。 对共享量度和维度所做的更改会立即应用于它共享到的每个数据视图。 在编辑单个数据视图时，共享维度和量度可通过组件名称旁边的![共享组件图标](/help/assets/icons/CCLibrary.svg)图标来标识。
+共享量度和维度提供了一个管理可用于任意数量数据视图的维度和量度的中心位置。 这些组件对于使用多个数据视图的组织来说特别有用，尤其是在这些数据视图共享通用组件设置的情况下。 对共享量度和维度所做的更改会立即应用于它们共享到的每个数据视图。 在编辑单个数据视图时，您可以通过组件名称旁边的![共享组件图标](/help/assets/icons/CCLibrary.svg)图标来标识共享维度和量度。
 
 虽然共享维度和量度允许跨多个数据视图使用通用组件，但它们不能跨连接共享。
+
+## 权限
+
+* [产品管理员](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
 
 ## 工作流
 
 大多数组织都使用以下总体工作流来随时间推移删除重复维度和量度并维护它们：
 
-1. 从每个数据视图导入可能在多个数据视图之间共享的组件。 如果多个数据视图中存在相同的维度或量度，Adobe建议导入该组件的所有实例。 虽然此最佳实践会导入重复项，但也会导入这些重复项，以便可以对这些重复项进行重复数据删除并保留其对Workspace项目的引用。
+1. 从多个数据视图共享的每个数据视图导入组件。 如果多个数据视图中存在相同的维度或量度，Adobe建议导入该组件的所有实例。 虽然此最佳实践会导入重复项，但也会导入这些重复项，以便可以对这些重复项进行重复数据删除并保留其对Workspace项目的引用。
 1. 查看使用相同组件ID但具有不同组件设置的所有组件。 对于每个重复组件组，选择所需的组件设置，以将其应用于共享该组件ID的所有其他组件。
 1. 查看使用相同组件ID并具有相同组件设置的所有组件。 可以轻松安全地合并这些维度或量度。
 
