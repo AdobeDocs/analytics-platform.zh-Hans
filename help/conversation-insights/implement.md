@@ -16,9 +16,9 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+source-git-commit: 7bd10643bc54f5923f590f849d05890bffd77a2e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # 实施对话分析
@@ -275,7 +275,7 @@ ht-degree: 5%
 | `agents[].name` | 字符串 | `"Chatbot Assistant"` | 代理名称 |
 | `agents[].version` | 字符串 | `"2.1.3"` | 代理版本 |
 | `agents[].score` | 数字 | `0.92` | 在其返回值中的代理置信度分数 |
-| `agents[].skills[]` | 数组 | 查看下面的技能对象 | **已弃用** — 请改用下面的顶级`skills[]`数组，该数组拥有技能调用的完整排序列表，并通过`agentID`将每个调用链接到其代理 |
+| `agents[].skills[]` | 数组 | 查看下面的技能对象 | **已弃用**。 请改用下面的顶级`skills[]`数组，该数组拥有技能调用的完整排序列表，并通过`agentID`将每个调用链接到其代理 |
 | `agents[].skills[].name` | 字符串 | `"Intent Recognition"` | 技能名称（已弃用的数组） |
 | `agents[].skills[].version` | 字符串 | `"1.0.0"` | 技能版本（已弃用的数组） |
 | `agents[].skills[].score` | 数字 | `0.95` | 技能置信度分数(0-1)（已弃用的数组） |
@@ -429,11 +429,7 @@ ht-degree: 5%
 * **Web详细信息**&#x200B;字段组。 用于捕获对话嵌入到的网页的详细信息。
 * **Commerce详细信息**&#x200B;字段组。 用于捕获对话中提到的推荐产品的产品详细信息。
 
-
-
-客户负责制作源对话事件。 Adobe平台随后执行信号提取和数据混合。 客户不需要执行信号提取或混合服务。
-
-本文档介绍了Conversation Insights MVP输入要求和当前代理模式更新。 它不包括Conversation Insights 1.0功能或更高版本的要求。
+客户负责制作源对话事件。 Adobe执行信号提取和数据混合。 客户不需要执行信号提取或混合服务。
 
 ### 事件类型
 
