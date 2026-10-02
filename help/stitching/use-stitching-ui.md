@@ -4,6 +4,7 @@ description: 在Customer Journey Analytics中为事件数据集启用拼合。 �
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -24,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 20%
+source-wordcount: '1952'
+ht-degree: 18%
 ---
 # 启用拼接
 
@@ -41,16 +42,16 @@ ht-degree: 20%
 
 ## 印前检查检查
 
-如果您满足前提条件，则可能需要在启用身份拼接之前对事件数据集中的数据执行一些预检检查：
+如果您满足前提条件，请在启用身份拼接之前对事件数据集中的数据执行一些预检检查：
 
-* 如果您要为永久ID或人员ID使用[体验数据模型(XDM)架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)字段，请确保在架构中为事件数据集正确标记了身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
+* 如果您使用永久ID或人员ID的[体验数据模型(XDM)架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)字段，请确保在事件数据集的架构中正确标记身份。 [请参阅身份命名空间概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/namespaces)。
 * 验证持久ID和人员ID的标识覆盖范围：
 
   * **[!UICONTROL 永久ID]**
 
     查询7天的数据，其中您的永久ID字段不为null，并除以针对数据集中所有事件的7天数据查询。 该百分比应高于95%。
 
-    可用于验证的查询示例：
+    用于验证的查询示例：
 
     ```sql
     SELECT
@@ -74,10 +75,10 @@ ht-degree: 20%
 
 
   * **[!UICONTROL 人员 ID]**
-    * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 您可以通过转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}运行测试，并通过一些示例永久ID值查询该图形。 验证这些永久ID值是否与图表中的人员ID值相关联。
+    * 对于基于图形的拼接，请确保身份图形包含一些片段，这些片段关联来自您选择的永久ID命名空间和人员ID命名空间的ID值。 转到[Experience Platform身份图形查看器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"}，并通过一些示例永久ID值查询该图形。 要验证，请检查这些持久ID值是否与图表中的人员ID值相关联。
     * 对于基于字段的拼合，请查询7天的数据，其中人员ID字段不为null，然后除以针对数据集中所有事件的7天数据查询。 理想情况下，该百分比应高于5%。
 
-      可用于验证的查询示例：
+      用于验证的查询示例：
 
       ```sql
       SELECT
@@ -146,7 +147,7 @@ ht-degree: 20%
 
 ### 数据集设置
 
-若要启用拼接，请在&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集&#x200B;**[!UICONTROL 数据集设置]**&#x200B;部分中。
+若要启用拼接，请使用&#x200B;**[!UICONTROL 添加数据集]**&#x200B;或&#x200B;**[!UICONTROL 编辑数据集]**&#x200B;对话框的事件数据集&#x200B;**[!UICONTROL 数据集设置]**&#x200B;部分。
 
 启用该功能时![身份拼接选项](assets/identity-stitching-ui.png)
 
@@ -226,14 +227,14 @@ ht-degree: 20%
 在Customer Journey Analytics中，错误ID是一个标识符：
 
 * 具有特定ID值，该值来自启用拼接的数据集中的永久ID或人员ID字段，**和**
-* 在一个月内处理连接数据中的超过100万(1,000,000)个事件。
+* 每月出现在连接数据中的一百多万(1,000,000)个事件中。
 
 当某个ID值被标记为错误ID时，任何包含该ID值的未来事件都将从连接数据中舍弃，并且不会在报表中显示。
 
 错误ID用例示例：
 
 * 人员ID字段中有自定义值或占位符值（例如，`undefined`）。 此类值还会影响[拼接和报告数据质量](/help/stitching/faq.md#undefined-person-id-values)。
-* 在基于字段的拼合配置中，如果多人共享一台设备，则用户之间的转换总数超过50,000。 在这种情况下，拼接过程将停止为该设备使用人员ID信息，而仅使用永久性ID信息。 因此，来自该设备的所有数据集事件都将被发送到具有永久ID身份的连接数据中，这极有可能导致“ID错误”情况。
+* 在基于字段的拼合配置中，如果多人共享一台设备，则用户之间的转换总数超过50,000。 在这种情况下，拼接过程将停止使用该设备的人员ID信息，而仅使用永久性ID信息。 因此，来自该设备的所有数据集事件都将发送到具有永久ID身份的连接数据中，这可能会导致出现“ID错误”情况。
 
 
 >[!NOTE]
@@ -243,11 +244,21 @@ ht-degree: 20%
 
 ### 保存
 
-保存连接后，一旦开始为这些数据集摄取数据，就会启动用于拼合已启用数据集的拼合过程。
+保存连接后，一旦开始为这些数据集摄取数据，就会开始拼合已启用数据集的拼合过程。
+
+保存连接后，将触发对配置的数据集启用拼合的过程。 设置拼合后，拼合服务会处理任何实时流式传输的数据，并开始从Experience Platform中的事件数据集回填，随后将它们摄取到Customer Journey Analytics连接中。
+
+流程的每个部分都会增加一定的延迟。 以下处理时间是护栏，而不是针对已保存并包含已启用拼合的数据集的有效初始连接设置的合同服务级别协议(SLA)：
+
+* 经过若干小时（不到17小时）后，实时数据最初会显示在Customer Journey Analytics中。 实时数据从事件时间戳值开始，这些值与拼合启用完成时的实际时间相匹配。 为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。 这可确保实时数据开始流入。
+
+  在Experience Platform中，任何引入到源事件数据集中的新数据都会在四小时内出现在Customer Journey Analytics中。
+
+* 回填数据（如果最初请求）与实时数据大约在同一时间出现在Customer Journey Analytics中，但需要几天或几周时间（少于4周）才能处理，具体取决于所涉及的卷。 回填数据从最早的事件时间戳值开始。
 
 >[!CAUTION]
 >
->对于在Connections界面中启用拼合的数据集，回填状态会立即错误地报告为![状态绿色](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _回填已完成]**（对于已完成的回填数）。 使用其他方法验证是否回填了来自拼接数据集的数据。
+>对于在“连接”界面中启用拼合的数据集，由于已知限制，当前无法报告回填状态。 使用其他方法验证是否回填了来自拼接数据集的数据。
 >
 
 
@@ -264,5 +275,5 @@ ht-degree: 20%
 
 例如，由于较早或当前的拼接请求，您在数据湖中有基于Web的拼接数据集。 您可以使用Connections界面从呼叫中心数据集添加拼合数据，以将该数据与基于Web的数据相结合。
 
-最终，Adobe会将您的基于请求的拼合数据集迁移到连接中的新拼合体验。
+最终，Adobe会将您的基于请求的拼接数据集迁移到连接中的新拼接体验。
 
