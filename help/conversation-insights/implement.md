@@ -4,21 +4,35 @@ description: 了解如何检测代理应用程序或服务以进行对话分析�
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
+autotag-review: '2026-10-02T07:03:13.165Z'
+TQID: 'https://experienceleague.adobe.com/tjjZwA5Ayvtz35ffQAkcCwhCzBUB6X4puMjFsiJ0HUY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-    internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: Conversation Insights
+role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+source-git-commit: ebc2d1d9992150683fb642862e0ea29b7f70ddb0
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # 实施对话分析
@@ -275,7 +289,7 @@ ht-degree: 5%
 | `agents[].name` | 字符串 | `"Chatbot Assistant"` | 代理名称 |
 | `agents[].version` | 字符串 | `"2.1.3"` | 代理版本 |
 | `agents[].score` | 数字 | `0.92` | 在其返回值中的代理置信度分数 |
-| `agents[].skills[]` | 数组 | 查看下面的技能对象 | **已弃用** — 请改用下面的顶级`skills[]`数组，该数组拥有技能调用的完整排序列表，并通过`agentID`将每个调用链接到其代理 |
+| `agents[].skills[]` | 数组 | 查看下面的技能对象 | **已弃用**。 请改用下面的顶级`skills[]`数组，该数组拥有技能调用的完整排序列表，并通过`agentID`将每个调用链接到其代理 |
 | `agents[].skills[].name` | 字符串 | `"Intent Recognition"` | 技能名称（已弃用的数组） |
 | `agents[].skills[].version` | 字符串 | `"1.0.0"` | 技能版本（已弃用的数组） |
 | `agents[].skills[].score` | 数字 | `0.95` | 技能置信度分数(0-1)（已弃用的数组） |
@@ -429,11 +443,7 @@ ht-degree: 5%
 * **Web详细信息**&#x200B;字段组。 用于捕获对话嵌入到的网页的详细信息。
 * **Commerce详细信息**&#x200B;字段组。 用于捕获对话中提到的推荐产品的产品详细信息。
 
-
-
-客户负责制作源对话事件。 Adobe平台随后执行信号提取和数据混合。 客户不需要执行信号提取或混合服务。
-
-本文档介绍了Conversation Insights MVP输入要求和当前代理模式更新。 它不包括Conversation Insights 1.0功能或更高版本的要求。
+客户负责制作源对话事件。 Adobe执行信号提取和数据混合。 客户不需要执行信号提取或混合服务。
 
 ### 事件类型
 
