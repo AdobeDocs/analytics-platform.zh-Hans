@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
+source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
 ht-degree: 89%
@@ -732,7 +732,7 @@ ht-degree: 89%
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="启用行筛选"
+>title="启用行过滤"
 >abstract="行过滤器可确定哪些事件被摄取到Customer Journey Analytics中。 仅摄取与包含规则匹配的事件。 所有其他事件将被永久排除，并且无法用于Customer Journey Analytics中的报表、分段或分析。<ul><li>您最多可以创建10个过滤器。</li><li> 对过滤器的更改仅适用于更改后摄取的新数据，不会追溯影响之前摄取的数据或触发历史回填。</li></ul>"
 
 >[!CONTEXTUALHELP]
