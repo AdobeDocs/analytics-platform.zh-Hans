@@ -187,5 +187,5 @@ Customer Journey Analytics不会直接报告Experience Platform数据集。 实�
 
 >[!MORELIKETHIS]
 >
->[Meta Ads源连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Meta Ads源连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
