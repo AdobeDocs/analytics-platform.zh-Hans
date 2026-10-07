@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
+source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1979'
 ht-degree: 18%
 ---
 # 启用拼接
@@ -244,9 +244,7 @@ ht-degree: 18%
 
 ### 保存
 
-
-
-保存连接后，将触发对配置的数据集启用拼合的过程。 设置拼合后，拼合服务会处理任何实时流式传输的数据，并从Experience Platform中的事件数据集开始回填，随后将数据摄取到Customer Journey Analytics连接中。
+保存连接后，将触发对配置的数据集启用拼合的过程。 设置拼合服务后，该服务会处理实时流式传输的数据以及来自Experience Platform中的事件数据集的任何请求的回填。 随后，数据被摄取到Customer Journey Analytics连接中。
 
 流程的每个部分都会增加一定的延迟。 以下处理时间是护栏，而不是合同服务级别协议(SLA)。
 
@@ -256,15 +254,16 @@ ht-degree: 18%
 
   要确保实时数据开始流入，请为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。
 
-  在Experience Platform中，任何引入到源事件数据集中的新数据都会在四小时内出现在Customer Journey Analytics中。
+  摄取到Experience Platform源事件数据集的新数据将在四个小时内显示在Customer Journey Analytics中。
 
-* 回填数据（如果最初请求）与实时数据大约在同一时间出现在Customer Journey Analytics中，但需要几天或几周时间（少于4周）才能处理，具体取决于所涉及的卷。 回填数据从最早的事件时间戳值开始。
+* 回填数据（如果最初请求）与实时数据大约在同一时间出现在Customer Journey Analytics中，但可能需要几天才能完全处理，具体取决于所涉及的卷。 回填数据从最早的事件时间戳值开始。
 
->[!CAUTION]
->
->对于在“连接”界面中启用拼合的数据集，由于已知限制，当前无法报告回填状态。 使用其他方法验证是否回填了来自拼接数据集的数据。
->
+  >[!CAUTION]
+  >
+  >对于在“连接”界面中启用拼合的数据集，由于已知限制，当前无法报告回填状态。
+  >
 
+  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的事件数量度。 如果这些数字匹配，则回填已完成。
 
 ## 限制
 
