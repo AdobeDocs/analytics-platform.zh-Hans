@@ -1,7 +1,6 @@
 ---
 title: 当前的Customer Journey Analytics发行说明
 description: 查看最新的Customer Journey Analytics发行说明，包括当前时期的新增功能、修复的问题和延迟的版本。
-hold: true
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
@@ -50,51 +49,52 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 4f62a406436915d581ab30f26b82544388957782
+source-git-commit: 0a83f4d08806b4d9b97265989f9d687011b232c3
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 29%
+source-wordcount: '855'
+ht-degree: 28%
 ---
-# 当前Customer Journey Analytics发行说明（2026年9月）
+# 当前Customer Journey Analytics发行说明（2026年10月）
 
-**上次更新日期**：2026年9月9日
+**上次更新时间**：2026年10月7日
 
-这些发行说明涵盖2026年9月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
+这些发行说明涵盖2026年10月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
 ## 新增功能或更新后的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
-| **在Analysis Workspace中使用对话见解分析LLM客户体验**<br/> Customer Journey Analytics现在将非结构化聊天数据引入Analysis Workspace，允许您报告资产中利用LLM进行的浏览和购买体验。<p>利用此功能，您可以：</p><ul><li>通过Web SDK从对话代理（贵组织的自定义代理或Adobe Brand Concierge）收集提示、响应和代理元数据。</li><li>分析意图、语气和情绪，以便您了解客户提出的问题、您的座席如何回应以及客户对其交互的感受。</li><li>使用现有架构、数据集和数据视图进行大规模分析，然后在Analysis Workspace中显示见解。</li><li>通过将代理互动与更广泛的客户历程联系起来，将对话与成果联系起来，以便您衡量对转化、参与度等工作的实际影响。</li></ul><p>以前，由LLM提供支持的体验难以测量，并且几乎无法连接到您现有的客户历程。</p><p>有关详细信息，请参阅[对话分析](/help/conversation-insights/overview.md)</p> | | 2026年10月8<p>（原计划于2026年9月22日）</p> |
+| **Customer Journey Analytics MCP服务器的只读权限**<br/>&#x200B;管理员现在可以授予用户对Customer Journey Analytics MCP服务器的只读访问权限。 新的[!UICONTROL MCP只读]权限项允许用户访问所有只读工具，而不允许用户创建项目、区段或计算量度。<p>现有的[!UICONTROL MCP访问]权限项已重命名为[!UICONTROL MCP完全访问]。 具有此权限的用户可保留对所有工具的访问权限，包括创建、更改或删除组件的工具。</p><p>有关详细信息，请参阅[Customer Journey Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/cja/)。</p> | | 2026年10月6日 |
+| **在Analysis Workspace中使用对话见解分析LLM客户体验**<br/> Customer Journey Analytics现在将非结构化聊天数据引入Analysis Workspace，允许您报告资产中利用LLM进行的浏览和购买体验。<p>利用此功能，您可以：</p><ul><li>通过Web SDK从对话代理（贵组织的自定义代理或Adobe Brand Concierge）收集提示、响应和代理元数据。</li><li>分析意图、语气和情绪，以便您了解客户提出的问题、您的座席如何回应以及客户对其交互的感受。</li><li>使用现有架构、数据集和数据视图进行大规模分析，然后在Analysis Workspace中显示见解。</li><li>通过将代理互动与更广泛的客户历程联系起来，将对话与成果联系起来，以便您衡量对转化、参与度等工作的实际影响。</li></ul><p>以前，由LLM提供支持的体验难以测量，并且几乎无法连接到您现有的客户历程。</p><p>有关详细信息，请参阅[对话分析](/help/conversation-insights/overview.md)。</p> | | 2026年10月8<p>（原计划于2026年9月22日）</p> |
 | **自动生成组件描述** <br/>您现在可以自动生成维度、量度、计算量度、区段和日期范围的描述。 这使得Workspace用户能够了解要使用的组件，尤其是在具有大型组件库的组织中。 <p>您可以为单个组件生成描述，或同时为多个组件生成描述。</p> <p>（文档链接见下文。）<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 2026年10月28日 |
-| **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Adobe Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接将随后提供。）</p> | | 2026年10</p> |
+| **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>（文档链接将随后提供。）</p> | | 2026年10 |
 
 
 ### Customer Journey Analytics 中的修复
 
-**Analysis Workspace**： AN-487374、AN-487119、AN-468907、AN-468810、AN-468363、AN-468096、AN-467414、AN-466986、AN-466982、AN-465073、AN-463571、AN-462373、AN-492801、AN-488821、AN-488452、AN-486517、AN-478930、AN-468325
-**组件**：
-**连接**： AN-451458、AN-365942
+**Analysis Workspace**： AN-495340、AN-494789、AN-493307、AN-468900
+**组件**： AN-492523
+**连接**： AN-492236
 **Content Analytics**：
-**引导式分析**： AN-485600
-**导出**： AN-489161、AN-467131、AN-464746、AN-469034、AN-447252、AN-437803、AN-394444
-**数据视图**： AN-478732、AN-468836、AN-467851、AN-487651、AN-423592
-**数据摄取**： AN-489829、AN-489722、AN-469451、AN-467436、AN-467049、AN-466087、AN-465049、AN-463524、AN-457433、AN-490288、AN-487500、AN-390916、AN-342311
+**引导式分析**： AN-495592
+**导出**： AN-495077、AN-494337、AN-486563、AN-469919、AN-462560、AN-462372
+**数据视图**： AN-492093、AN-467770、AN-455367、AN-444467
+**数据摄取**： AN-496439、AN-495339、AN-493456、AN-491984、AN-490515、AN-490479、AN-470065
 **实施**：
-**Report Builder**： AN-487486、AN-478944、AN-470036、AN-468589、AN-468436、AN-456747、AN-456700、AN-442695、AN-492330、AN-490564、AN-468293、AN-460921
-**报告**： AN-479145、AN-469095、AN-468070、AN-467786、AN-456684、AN-465257、AN-422685、AN-406114、AN-356706、AN-322733
-**分段**： AN-486561， AN-278260
-**计划报告**： AN-479157
-**共享的量度和维度**：
-**受众分析**： AN-468237、AN-462553
-**Other**： AN-469601、AN-462817、AN-362308、AN-349757、AN-326432、AN-326345、AN-324341、AN-309317
+**Report Builder**： AN-496602、AN-494224、AN-493737、AN-493508、AN-493505、AN-492806、AN-468981、AN-454376
+**报告**： AN-495661、AN-493562、AN-487058、AN-478768
+**分段**：
+**计划报告**： AN-491103、AN-468049
+**共享量度和维度**： AN-493722
+**受众分析**： AN-469101
+**其他**： AN-493865
 
 ## 延迟的功能
 
 | 功能和描述 | [开始推出](releases.md) | [正式发布](releases.md) |
 | -----------|-----------|-----------|
 | **总人口报告**<br/>&#x200B;您现在可以分析和报告在Customer Journey Analytics连接中存在的配置文件和查找数据集中定义的实体。 这种分析和报告不仅仅是来自事件数据集的基于时间的事件系列。 <p>此功能支持新类别的查询、量度和受众定义，它们反映了企业客户群的整个范围。</p><p>（文档链接将随后提供。）</p> | | 待定<p>（原计划于2026年9月22日）</p> |
-| **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是计划数据上传支持的实时内容示例：</p><ul><li>FAST（免费广告支持的电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>有关详细信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)。</p> | 2025 年 10 月 29 日 | 待定<p>（原计划于2025年10月29日）</p> |
+| **流媒体服务：支持计划数据** <br/>您现在可以上传过去直播流媒体服务内容的计划数据，以便更轻松、更准确地跟踪观看人数。<p>以下是计划数据上传支持的实时内容示例：</p><ul><li>FAST（免费广告支持电视）平台</li><li>本地流</li><li>直播体育赛事</li></ul><p>上传计划数据允许您跟踪在上传文件中指定的时间内运行的各个节目的观看人数数据。 您甚至可以收集特定主题或节目片段的观看人数数据。</p><p>无论您如何实现流媒体收集，这些功能都是可用的。</p><p>以前，在分析直播内容时很难准确地将特定场次与特定节目联系起来，也不可能将特定场次与单个主题或节目片段联系起来。</p><p>有关详细信息，请参阅[上传计划数据以跟踪实时内容](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-use-cases/track-schedule-data)。</p> | 2025 年 10 月 29 日 | 待定<p>（原计划于2025年10月29日）</p> |
 
 >[!MORELIKETHIS]
 >
