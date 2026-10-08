@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 684fef6a5e007d6dabe6518d7c7ec93a41dc6cdd
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1513'
 ht-degree: 92%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
@@ -313,6 +313,7 @@ ht-degree: 92%
     + [引导配置](/help/content-analytics/config/guided.md)
     + [手动配置](/help/content-analytics/config/manual.md)
     + [独立配置](/help/content-analytics/config/standalone.md)
+    + {hide-from-toc}[付费媒体配置](/help/content-analytics/config/paid-media.md)
     + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [数据收集](/help/content-analytics/config/datacollection.md)
 
@@ -436,7 +437,7 @@ ht-degree: 92%
       + {hide-from-toc}[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[应用数据转换](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[数据馈送中的子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + 数据馈送中的{hide-from-toc}[子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
