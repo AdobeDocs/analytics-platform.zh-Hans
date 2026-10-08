@@ -4,12 +4,11 @@ description: 了解数据集、连接、数据视图等的自动配置。
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: f83d40d33e90ba73f26129ab416f063f361edca7
+source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 4%
 ---
-
 # 付费媒体自动配置
 
 当您在Content Analytics中启用付费媒体渠道并保存配置时，Adobe会使用付费媒体数据集的报表配置更新选定的连接和数据视图。 您无需自己重新创建默认维度、量度、查找逻辑或摘要数据组。
@@ -65,7 +64,6 @@ ht-degree: 4%
 单独的查找数据集描述了帐户、促销活动、广告组、广告、体验和资产。 它们使用实体GUID提供名称和元数据。 摘要数据集和六个查找数据集之间不存在一对一的配对。
 
 摘要数据分组将等效维度汇总在一起；分组不会汇总六个性能量度总计。
-
 
 ## 组件
 
