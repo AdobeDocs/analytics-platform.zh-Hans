@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
 workflow-type: tm+mt
 source-wordcount: '4800'
 ht-degree: 56%
@@ -669,7 +669,7 @@ ht-degree: 56%
 
 1. 在向导的➋ **[!UICONTROL 选择帐户]**&#x200B;步骤中，选择要配置的帐户。
 
-   ![Meta Ads源连接器选择帐户](paid-media-meta-select-account.png)
+   ![Meta Ads源连接器选择帐户](../assets/paid-media-meta-select-account.png)
 
    选择&#x200B;**[!UICONTROL 下一步]**。
 
