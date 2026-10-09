@@ -5,31 +5,41 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/7K973UjBfK9BFYOQUia-JDb5yc4uZWMOzqHXXRR1nwc
+TQID: 'https://experienceleague.adobe.com/7K973UjBfK9BFYOQUia-JDb5yc4uZWMOzqHXXRR1nwc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 2770
+source-wordcount: '2770'
 ht-degree: 95%
-
 ---
-
 # 创建移动记分卡 {#create-a-mobile-scorecard}
 
 <!-- markdownlint-disable MD034 -->
@@ -60,7 +70,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 ![Analytics 记分卡示例，其中显示了对移动记分卡的演示](assets/intro_scorecard.png)
 
-作为此记分卡的策划人，您可以使用记分卡生成器来配置要在执行用户的记分卡上显示的磁贴。 您还可以配置在点按图块后，如何调整详细视图或细分。 记分卡生成器界面如下所示：
+作为此记分卡的策划人，您可以使用记分卡生成器来配置要在执行消费者的记分卡上显示的磁贴。 您还可以配置在点按图块后，如何调整详细视图或细分。 记分卡生成器界面如下所示：
 
 ![记分卡生成器，其中显示新的移动记分卡窗口。](assets/scorecard_builder.png)
 
@@ -100,7 +110,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
    ![新的移动记分卡窗口，其中有一个箭头指向记分卡中的量度（新 KPI）。](assets/build_list.png)
 
 
-1. 从每个磁贴中，您可以访问一个详细视图，该视图显示有关量度的其他信息，例如，相关维度列表的排名最前的项目。
+1. 在每个磁贴中，您都可以访问详细视图，其中显示有关量度的其他信息，例如相关维度列表中的热门项目。
 
 ## 添加维度或量度 {#dimsmetrics}
 
@@ -136,7 +146,7 @@ Analytics 记分卡以平铺版面为执行用户显示关键数据可视化图�
 
 ![新的移动记分卡，其中突出显示了日期范围，并将比较日期设置为所选的上周的同一天](assets/new_score_card4.png)
 
-如果尚未创建您所需的日期范围，您可以单击日程表图标以创建一个新的日期范围。
+如果尚未创建您所需的日期范围，您可以单击日历图标以创建一个新的日期范围。
 
 ![日程表图标](assets/new_score_card5.png)
 
@@ -164,19 +174,19 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
 
 ### [!UICONTROL 摘要数字]
 
-使用摘要数字可视化图表来突出显示项目中的大型重要数字。
+使用摘要数字可视化图表来突出显示项目中的重要数字。
 
 ![新的移动记分卡，其中具有摘要数字可视化图表，并突出显示了 13.3K 次访问](assets/summary-number.png)
 
 ### [!UICONTROL 环形图]
 
-此可视化与饼图类似，将数据显示为整体的一部分。 在比较总数的百分比时使用环形图。 例如，您想查看哪个广告平台对独特访客总数做出了贡献：
+此可视化与饼图类似，将数据显示为整体的一部分。 在比较总数的百分比时使用环形图。 例如，您想查看哪个广告平台对唯一人数总数做出了贡献：
 
 ![新的移动记分卡，其中显示环形图可视化](assets/donut-viz.png)
 
 ### [!UICONTROL 折线图]
 
-此线形图可视化图表使用线条来表示指标，以显示一段时间内值的变化情况。 线形图显示随时间变化的维度，但适用于任何可视化图表。 在此示例中，您将对产品类别维度进行可视化。
+此线形图可视化图表使用线条来表示指标，以显示一段时间内值的变化情况。 折线图显示随时间变化的维度，但适用于任何可视化图表。 在此示例中，您将对产品类别维度进行可视化。
 
 ![新的移动记分卡，其中显示线形图可视化](assets/line.png)
 
@@ -252,7 +262,7 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
 
 ### 将描述性文本添加到幻灯片
 
-可添加文本以提供关于图表中包含的内容的有意义信息或关于数据的细微差别。
+可添加文本，提供有关图表内容或数据细微差异的有意义信息。
 
 要将文本添加到详细信息幻灯片，请选择显示 `T` 符号的布局，或将文本可视化图表组件从左侧边栏拖放过来。 在添加新的文本可视化图表或选择带有文本的幻灯片布局时，将自动打开文本编辑器。 文本编辑器提供用于设置文本格式的所有标准选项。 可应用段落、标题和副标题等文本样式，并可应用粗体和斜体字体。 可两端对齐文本、添加带项目符号和编号的列表以及添加链接。 编辑完毕后，选择文本编辑器右上角的最小化按钮以关闭它。 要编辑已添加的文本，请选择铅笔图标以再次打开文本编辑器。
 
@@ -266,7 +276,7 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
 
 ## 创建数据故事 {#create-data-story}
 
-数据故事是围绕中心主题或量度生成的辅助数据点、业务背景和相关量度的集合。
+数据故事是围绕中心主题或量度构建的辅助数据点、业务背景和相关量度的集合。
 
 例如，如果您关注 Web 流量，则对您最重要的量度可能是访问量，但您也可能对新访客和独特访客感兴趣，并且您可能要查看按网页或流量来源设备类型细分的数据。 通过移动记分卡项目中的数据故事，可重点介绍对您最重要的量度，同时用多张详细信息幻灯片讲述这些量度背后的整个故事。
 
@@ -287,7 +297,7 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
 通过将多张详细信息幻灯片添加到磁贴而生成您的数据故事。
 
 1. 从移动记分卡项目开始。
-1. 选择要从其创建故事的磁贴。
+1. 选择要基于其创建故事的磁贴。
    ![创建数据故事](assets/data-story1.png)
    ![创建数据故事图标](assets/create-data-story.png){width=".50%"}
 1. 添加幻灯片以构建您的数据故事。 默认生成您的第一张幻灯片。
@@ -296,7 +306,7 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
    * 点按复制图标以复制现有幻灯片。
 1. 如果创建空白的幻灯片，请从左边栏拖放组件，或选择一种版面以自动为该幻灯片填入磁贴中的数据。
    ![创建数据故事](assets/data-story2.png)
-要删除幻灯片，请点按垃圾桶图标。
+   要删除幻灯片，请点按垃圾桶图标。
 
 ### 自定义数据故事 {#customize-data-story}
 
@@ -304,11 +314,11 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
 
 **自定义磁贴**
 
-1. 点按磁贴。 所选磁贴加入蓝色轮廓，并且右侧面板显示该磁贴属性。
+1. 点按磁贴。 所选磁贴以蓝色轮廓显示，并且右侧面板显示该磁贴的属性。
 1. 更改标题、图表类型和其他磁贴选项。
 1. 将组件拖动到磁贴上。
    ![创建数据故事](assets/data-story3.png)
-将组件（例如可视化图表）拖放到图块上时，该组件将应用于所有数据故事幻灯片。
+   将组件（例如可视化图表）拖放到图块上时，该组件将应用于所有数据故事幻灯片。
 1. 要仅对标题应用更改，请按住 Shift 键以应用更改。
    ![创建数据故事](assets/data-story4.png)
 
@@ -388,7 +398,7 @@ Analytics 功能板提供了四种可视化图表，可让您洞察维度项和�
 
    当收件人使用桌面应用程序或浏览器打开链接时，移动记分卡项目将在工作区中打开。
 
-   当收件人在移动设备上打开链接时，记分卡将直接在 Adobe Analytics 仪表板应用程序中打开。
+   当收件人在移动设备上打开链接时，记分卡将直接在 Adobe Analytics 功能板应用程序中打开。
 
    如果收件人尚未下载移动应用程序，他们将被引向 App Store 或 Google Play Store 中的应用程序列表，然后可以在那里下载。
 

@@ -5,30 +5,39 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
+TQID: 'https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+    internal-label: Insights
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1643
-ht-degree: 41%
-
+source-wordcount: '1643'
+ht-degree: 43%
 ---
-
 
 # Content Analytics 报告概述
 
@@ -202,7 +211,7 @@ Content Analytics使用AI和GenAI自动将元数据和属性（如主题、场�
 
 ### 付费媒体Content Analytics模板
 
-付费媒体Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些付费媒体内容和内容属性的表现最佳。 该模板是[Web渠道和参与用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，可帮助您了解付费媒体内容在细粒度级别的表现如何。 您可以跨网络、帐户、营销活动、体验和资产查看付费媒体覆盖率、参与度、支出和效率。 此面板中的量度和维度会刻意保留在付费媒体资产摘要粒度中。 请勿将此模板中面板的摘要数据集与事件数据相结合。
+付费媒体Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)可帮助您了解哪些付费媒体内容和内容属性的表现最佳。 该模板是[Web渠道和参与用例](/help/analysis-workspace/templates/use-templates.md#web-engagement)的一部分，可帮助您了解付费媒体内容在细粒度级别的表现如何。 您可以查看不同网络、帐户、营销活动、体验和资产的付费媒体触达率、参与度、支出和效率。 此面板中的量度和维度特意保持在付费媒体资产摘要粒度。 请勿将此模板中面板的摘要数据集与事件数据相结合。
 
 根据您了解的情况，您可能会执行任意数量的操作，例如，重新关注您如何在付费媒体渠道上支出、如何在性能不佳的营销活动上支出更多资金，或者如何在性能良好的资产营销活动上支出更多资金。
 

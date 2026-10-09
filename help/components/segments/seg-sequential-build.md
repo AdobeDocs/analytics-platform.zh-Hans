@@ -3,28 +3,35 @@ description: 了解使用THEN运算符定义区段条件序列的顺序区段。
 title: 顺序区段
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
+TQID: 'https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 2496
+source-wordcount: '2496'
 ht-degree: 4%
-
 ---
-
 # 顺序区段
 
 在组件、容器和组件或容器之间使用[!UICONTROL Then]逻辑运算符创建顺序区段。 [!UICONTROL Then]逻辑运算符表示出现一个区段条件，然后是另一个区段条件。

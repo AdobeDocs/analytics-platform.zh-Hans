@@ -4,24 +4,27 @@ title: 异常检测中使用的统计技术
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-TQID: https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE
+TQID: 'https://experienceleague.adobe.com/hYbiTS7DEatmCon2w0Y6QvGOAYZChPeW5nb6TCQE5AE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 830
+source-wordcount: '830'
 ht-degree: 29%
-
 ---
-
 # 统计技术
 
 Analysis Workspace 中的异常检测使用一系列高级统计技术来确定是否应将观测到的情况视为异常。
@@ -53,7 +56,7 @@ Analysis Workspace 中的异常检测使用一系列高级统计技术来确定�
 * 1 月 1 日
 * 12 月 31 日
 
-这些假日的选择基于对许多客户数据点的广泛统计分析，旨在确定对客户最高值趋势影响最大的假日。 虽然此列表当然不是对所有客户或业务周期都详尽无遗，但应用假日可以显着提升几乎所有客户数据集的整体算法性能。
+这些假日是基于对许多客户数据点进行的广泛统计分析而选出的，旨在识别对最多客户趋势影响最大的假日。 虽然此列表当然不是对所有客户或业务周期都详尽无遗，但应用假日可以显着提升几乎所有客户数据集的整体算法性能。
 
 选择了模型并确定了报告日期范围内的假日后，算法即会按照以下方式继续进行下一步：
 
@@ -69,7 +72,7 @@ Analysis Workspace 中的异常检测使用一系列高级统计技术来确定�
 
 ![两个折线图显示有或没有假日性能的性能变化。](assets/anomaly_statistics.png)
 
-## 针对每小时粒度的异常分析
+## 针对每小时粒度的异常检测
 
 每小时数据依赖的时间序列算法与每日粒度算法相同。 但是，它严重依赖于两种趋势模式：24小时周期以及周末/工作日周期。 为了捕捉这两个季节性影响，每小时算法使用上述相同方法，构建两个单独的模型，分别用于周末和工作日。
 
@@ -82,4 +85,4 @@ Analysis Workspace 中的异常检测使用一系列高级统计技术来确定�
 1. 调整盒形图函数：此函数确定给定输入数据的最大异常数。
 1. GESD函数：使用步骤1的输出应用于输入数据。
 
-然后，假日和按年季节性异常检测步骤会从今年的数据中减去去年的数据。 然后使用上述两步流程再次遍历数据，以验证异常的发生是否存在季节性。 上述每种日期粒度均使用 15 个回顾周期作为参照，其中包含选择的报告日期范围（15 个月或 15 周）及 1 年前的相应日期范围。
+然后，假日和按年季节性异常检测步骤会从今年的数据中减去去年的数据。 然后使用上述两步流程再次遍历数据，以验证异常的发生是否存在季节性。 上述每种日期粒度均使用 15 个回顾周期作为参照，其中包含所选报告日期范围（15 个月或 15 周）以及 1 年前用于训练的相应日期范围。

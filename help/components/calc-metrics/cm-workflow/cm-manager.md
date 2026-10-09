@@ -3,30 +3,40 @@ description: 了解如何共享、筛选、标记、批准、复制、删除计�
 title: 管理计算量度
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-TQID: https://experienceleague.adobe.com/lyXPyn6sObLNBvD8O-bULf1dDoQO80IIOokU8Dy1Vno
+TQID: 'https://experienceleague.adobe.com/lyXPyn6sObLNBvD8O-bULf1dDoQO80IIOokU8Dy1Vno'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
   - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+    internal-label: Report Builder
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 903
+source-wordcount: '903'
 ht-degree: 32%
-
 ---
-
 # 管理计算量度
 
 您可以从中心[!UICONTROL 计算量度]管理界面共享、筛选、标记、批准、重命名、复制、删除、导出计算量度以及将计算量度标记为收藏。 要管理计算量度，请执行以下操作：

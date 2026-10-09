@@ -5,32 +5,40 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/78Bp5YSZg7Qs-qBnCfIoS6mjxda7CAglDG19Qq07Fw4
+TQID: 'https://experienceleague.adobe.com/78Bp5YSZg7Qs-qBnCfIoS6mjxda7CAglDG19Qq07Fw4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+    internal-label: Troubleshooting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: '720'
 ht-degree: 65%
-
 ---
-
 # 设置执行用户以使用功能板
 
-在某些情况下，执行用户可能需要一些其他帮助才能访问和使用应用程序。 此部分提供了帮助策划人提供该协助的信息。
+在某些情况下，执行用户可能需要一些额外帮助才能访问和使用应用程序。 此部分提供了帮助策划人提供该协助的信息。
 
 ## 确保应用程序用户具有 Adobe Analytics 访问权限
 
@@ -75,7 +83,7 @@ ht-degree: 65%
 
    这将显示&#x200B;**[!UICONTROL 选择公司]**&#x200B;屏幕。 该屏幕列出了执行用户所属的登录公司。
 
-1. 让他们点按应用于您共享的记分卡的登录公司或CX Enterprise Org的名称。
+1. 让他们点按应用于您共享的记分卡的登录公司或CX Enterprise组织的名称。
 
    然后，记分卡列表会显示与该登录公司下的执行用户共享的所有记分卡。
 
@@ -98,21 +106,21 @@ ht-degree: 65%
 
 * 线形图的粒度取决于日期范围的长度：
 * 一天会显示每小时的趋势
-   * 超过一天且不足一年会显示每日的趋势
-   * 一年及以上会显示每周的趋势
-   * 百分比值更改公式为：量度总计（当前日期范围）- 量度总计（比较日期范围）/ 量度总计（比较日期范围）。
-   * 您可以通过下拉屏幕来刷新记分卡。
+  * 超过一天且不足一年会显示每日的趋势
+  * 一年及以上会显示每周的趋势
+  * 百分比值更改公式为：量度总计（当前日期范围）- 量度总计（比较日期范围）/ 量度总计（比较日期范围）。
+  * 您可以通过下拉屏幕来刷新记分卡。
 
 
-1. 点按图块以显示图块的详细划分方式。
+1. 点按图块以显示图块的详细细分方式。
 
    ![“划分”视图](assets/sparkline.png)
 
    * 点按线形图上的任一点，可查看与线上的这个点相关联的数据。
 
-   * 将包含一个表以显示已添加到图块的各维度的数据。 点按向下箭头以选择维度。 如果未将维度添加到图块，则表将显示图表数据。
+   * 包含一个表格，用于显示已添加到图块的各维度的数据。 点按向下箭头以选择维度。 如果未将维度添加到图块，则表将显示图表数据。
 
-1. 要更改记分卡的日期范围，请单击“日期”标题，然后选择要查看的主要和比较日期范围组合。
+1. 要更改记分卡的日期范围，请点按“日期”标头，然后选择要查看的主要和比较日期范围组合。
 
    ![更改日期](assets/changedate.png)
 

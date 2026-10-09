@@ -3,29 +3,37 @@ description: 了解如何创建计算量度。
 title: 创建计算指标
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-TQID: https://experienceleague.adobe.com/8xHrnqI8ZUf3qwy4Im3Qa-ESAokGMs3XPOYmpFF6Dx0
+TQID: 'https://experienceleague.adobe.com/8xHrnqI8ZUf3qwy4Im3Qa-ESAokGMs3XPOYmpFF6Dx0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: '384'
 ht-degree: 12%
-
 ---
-
 # 创建计算量度
 
 默认情况下，只有管理员才能创建计算指标。 用户有权查看计算量度，这与用户查看其他组件（如区段、注释等）的方式类似。
@@ -59,5 +67,5 @@ ht-degree: 12%
 | 使用计算量度 | 在项目中使用计算量度。 |
 | [共享](cm-sharing.md)计算量度 | 与其他个人、组或组织共享您的计算指标。 |
 | [筛选器](cm-filter.md)计算量度 | 按标记、所有者和其他过滤器（“全部显示”、“我的”、“已与我共享”、“收藏”和“已批准”）过滤计算量度。 |
-| 将计算量度标记为[收藏夹](cm-finding.md) | 将量度标记为收藏是另一种组织量度以便进行使用的方式。 |
+| 将计算量度标记为[收藏夹](cm-finding.md) | 将量度标记为收藏是另一种组织量度以便于使用的方式。 |
 
