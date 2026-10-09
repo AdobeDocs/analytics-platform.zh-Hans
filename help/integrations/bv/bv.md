@@ -94,4 +94,4 @@ LLM流量可通过两种方式访问您的网站。 Customer Journey Analytics�
 
 ## 出站集成
 
-有关出站集成的信息，请参阅Adobe Brand Visibility文档中的[Customer Journey Analytics集成](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。
+有关出站集成的信息，请参阅Adobe Brand Visibility文档中的[Customer Journey Analytics集成](https://experienceleague.adobe.com/zh-hans/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。
