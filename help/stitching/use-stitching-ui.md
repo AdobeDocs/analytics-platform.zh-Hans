@@ -263,7 +263,7 @@ ht-degree: 18%
   >对于在连接界面中启用[拼接功能](#enable-stitching)的数据集，由于已知限制，无法报告回填状态。
   >
 
-  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的&#x200B;**[!UICONTROL 事件]**&#x200B;度量值。 如果这些数字匹配，则回填已完成。
+  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的&#x200B;**[!UICONTROL 事件]**&#x200B;度量值。 如果这些数字匹配，则回填已完成。
 
 
 ## 限制
