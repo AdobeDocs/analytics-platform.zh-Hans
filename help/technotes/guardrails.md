@@ -122,7 +122,7 @@ ht-degree: 9%
 | 受众刷新频率 | 4 | 系统强制的护栏 | 可以刷新[受众](../components/audiences/audiences-overview.md)的最大频率（小时）。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
-| 刷新受众的数量 | 75 - 150 | 系统强制的护栏 | 配置为按计划频率刷新](/help/components/audiences/publish.md#audience-builder)的[受众的最大数目（一次性刷新不计入此限制）。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 刷新受众的数量 | 75 - 150 | 系统强制的护栏 | 配置为按计划频率刷新[&#128279;](/help/components/audiences/publish.md#audience-builder)的受众的最大数目（一次性刷新不计入此限制）。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 

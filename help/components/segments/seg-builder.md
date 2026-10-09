@@ -99,7 +99,7 @@ ht-degree: 76%
 
 1. 将一个组件从组件面板拖放到 **[!UICONTROL 将量度、区段和/或维度拖放到此处]**。
    * 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   * 您可以在组件栏中使用![筛选器](/help/assets/icons/Filter.svg)按![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL 已批准]**、![星级](/help/assets/icons/Star.svg) **[!UICONTROL 收藏夹]**、![数据维度](/help/assets/icons2/DataDimension.svg) **[!UICONTROL 维度]**、![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**、![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**、![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;进行筛选![层](/help/assets/icons/Layer.svg) **[!UICONTROL *容器&#x200B;*]**组件（如产品、Content Assets）。 您还可以按![标签](/help/assets/icons/Label.svg)标记进行筛选。
+   * 您可以在组件栏中使用![筛选器](/help/assets/icons/Filter.svg)按![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL 已批准]**、![星级](/help/assets/icons/Star.svg) **[!UICONTROL 收藏夹]**、![数据维度](/help/assets/icons2/DataDimension.svg) **[!UICONTROL 维度]**、![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**、![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**、![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;进行筛选![层](/help/assets/icons/Layer.svg) **[!UICONTROL *容器&#x200B;*]**&#x200B;组件（如产品、Content Assets）。 您还可以按![标签](/help/assets/icons/Label.svg)标记进行筛选。
 
 1. 指定组件的详细信息。 例如，从&#x200B;**[!UICONTROL 选择值]**&#x200B;中选择一个值。 或输入一个值。 指定一个或多个值的内容和方式取决于组件和运算符。
 

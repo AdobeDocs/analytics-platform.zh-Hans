@@ -47,7 +47,7 @@ ht-degree: 7%
 
    1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以共享区段。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
 
-如果您有权限访问共享区段，则可以在项目中使用它们，或作为数据视图](/help/data-views/session-settings.md)的[设置的一部分使用它们。
+如果您有权限访问共享区段，则可以在项目中使用它们，或作为数据视图[&#128279;](/help/data-views/session-settings.md)的设置的一部分使用它们。
 
 ## 最佳实践
 

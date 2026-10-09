@@ -93,7 +93,7 @@ ht-degree: 3%
 
 ### 流服务API
 
-或者，您可以使用API导出和计划数据集的导出。 使用流服务API](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在[导出数据集中记录了所涉及的步骤。
+或者，您可以使用API导出和计划数据集的导出。 使用流服务API[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets)在导出数据集中记录了所涉及的步骤。
 
 #### 快速入门
 
@@ -110,16 +110,16 @@ ht-degree: 3%
 
 #### 向目标进行身份验证（创建基本连接）
 
-要验证凭据并安全地存储到您的云存储目标，[使用[`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection) API创建基本连接](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection)。
+要验证凭据并安全地存储到您的云存储目标，[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-base-connection)使用[`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection) API创建基本连接。
 
 
 #### 提供导出参数
 
-接下来，您必须[创建其他目标连接，以便使用[`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection) API存储数据集的导出参数](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)。 这些导出参数包括位置、文件格式、压缩等。
+接下来，您必须[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection)创建其他目标连接，以便使用[`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection) API存储数据集的导出参数。 这些导出参数包括位置、文件格式、压缩等。
 
 #### 设置数据流
 
-为确保您的数据集导出到云存储目标，请[使用[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postFlow) API设置数据流](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow)。 在此步骤中，您可以使用`scheduleParams`参数定义导出的计划。
+为确保您的数据集导出到云存储目标，请[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-dataflow)使用[`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postFlow) API设置数据流。 在此步骤中，您可以使用`scheduleParams`参数定义导出的计划。
 
 #### 验证数据流
 
