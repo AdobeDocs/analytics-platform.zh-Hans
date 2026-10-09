@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Data management
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
   - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
     internal-label: Cross channel analysis
 role_v2:
@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 100%
@@ -55,8 +55,8 @@ ht-degree: 100%
 ![本节所述的实施步骤流程。](../assets/cca-architecture.png)
 
 1. 为要引入的数据[创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans)。
-1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hans)。
-1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=zh-Hans)：
+1. 为要引入的数据[创建数据集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)。
+1. [将数据引入 Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)：
    1. 通过 Edge Network 或 Analytics 源连接器从网站或移动应用程序获取的基于事件的数据 ![event](/help/assets/icons/Events.svg)。
    2. 轮廓数据 ![轮廓](/help/assets/icons/User.svg)（例如来自 CRM 系统、呼叫中心应用程序、忠诚度应用程序）。
    3. 查找数据 ![查找](/help/assets/icons/Search.svg)（例如来自产品信息系统的产品名称、类别）。

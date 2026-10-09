@@ -4,24 +4,28 @@ title: 共享区段
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-TQID: https://experienceleague.adobe.com/09XWXerXKRJ1QMPXdULk2kzHaqbAykkqEUMUvUbomh4
+TQID: 'https://experienceleague.adobe.com/09XWXerXKRJ1QMPXdULk2kzHaqbAykkqEUMUvUbomh4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: '327'
 ht-degree: 7%
-
 ---
-
 # 共享区段
 
 在[区段管理器](seg-manage.md)中，您可以共享区段。 根据您的权限，可以与整个组织、组或个人用户共享区段：
@@ -43,7 +47,7 @@ ht-degree: 7%
 
    1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以共享区段。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;即可取消。
 
-如果您有权限访问共享区段，则可以在项目中使用它们，或作为数据视图[&#128279;](/help/data-views/session-settings.md)的设置的一部分使用它们。
+如果您有权限访问共享区段，则可以在项目中使用它们，或作为数据视图](/help/data-views/session-settings.md)的[设置的一部分使用它们。
 
 ## 最佳实践
 

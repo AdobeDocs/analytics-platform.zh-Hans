@@ -6,27 +6,34 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/MdIYz3KjKm6YUCTNT31LGIvEvfezHyOpemy7xg1FCvE
+TQID: 'https://experienceleague.adobe.com/MdIYz3KjKm6YUCTNT31LGIvEvfezHyOpemy7xg1FCvE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+    internal-label: Report Builder
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 773
+source-wordcount: '774'
 ht-degree: 25%
-
 ---
-
 # 创建一个数据块
 
 *数据块*&#x200B;是由单个数据请求创建的数据的表。 Report Builder 工作簿可以包含多个数据块。 创建数据块时，首先配置数据块，然后构建数据块。
@@ -89,7 +96,7 @@ ht-degree: 25%
 
    拖放“表”窗格中每个列表中的组件以重新排列组件，或者选择![MoreSmall](/help/assets/icons/MoreSmall.svg)并选择![向上箭头](/help/assets/icons/ArrowUp.svg)上移、![向下箭头](/help/assets/icons/ArrowDown.svg)下移等等，以在列表中移动组件。
 
-   将组件添加到表时，数据块的预览显示在工作表中的“数据块”位置。 在表中添加、移动或删除项目时，数据块版面的预览自动更新。
+   将组件添加到表时，数据块预览会显示在工作表中的“数据块位置”。 在表中添加、移动或删除项目时，数据块版面的预览自动更新。
 
    ![显示已添加组件和已更新工作表的屏幕截图。](./assets/image10.png)
 

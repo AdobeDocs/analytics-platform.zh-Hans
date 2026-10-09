@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
@@ -26,7 +28,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '3202'
 ht-degree: 0%
@@ -119,7 +121,7 @@ GA4的登陆页面报告显示了用户在开始会话时到达的页面。
 
 +++
 
-+++活动
++++事件
 
 GA4的事件报表通过事件级别的量度显示每个事件触发的次数。
 
@@ -242,7 +244,7 @@ GA4的技术报告显示了浏览器、操作系统、屏幕分辨率和设备�
 
 >[!NOTE]
 >
->由于现代浏览器减少了用户代理字符串中的详细信息，因此完整而准确的值取决于在Web SDK配置中收集[用户代理客户端提示](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/use-cases/client-hints)。
+>由于现代浏览器减少了用户代理字符串中的详细信息，因此完整而准确的值取决于在Web SDK配置中收集[用户代理客户端提示](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints)。
 
 +++
 
