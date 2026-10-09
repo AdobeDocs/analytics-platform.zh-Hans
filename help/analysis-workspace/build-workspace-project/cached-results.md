@@ -20,15 +20,15 @@ role_v2:
 source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 0%
+ht-degree: 5%
 ---
 
-# 在Workspace项目中使用缓存的结果
+# 在 Workspace 项目中使用缓存的结果
 
 >[!CONTEXTUALHELP]
 >id="project_cached_results"
->title="使用缓存的结果加快加载速度"
->abstract="启用后，结果会在用户首次打开项目或按计划交付项目后12小时内即时加载。 在此期间，任何打开项目的人都会看到相同的结果，即使数据继续在后台流动。 要加载最新结果，请刷新各个面板或整个项目。"
+>title="使用缓存的结果以加快加载速度"
+>abstract="启用后，在用户首次打开项目或按计划交付项目后的 12 小时内，结果会即时加载。 在此期间打开项目的任何用户都会看到相同的结果，即使数据仍在后台持续流入。 要加载最新结果，请刷新单个面板或整个项目。"
 
 {{release-limited-testing}}
 

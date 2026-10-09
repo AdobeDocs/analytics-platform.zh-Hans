@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
-ht-degree: 89%
+ht-degree: 90%
 ---
 # 创建或编辑连接 {#create-or-edit-a-connection}
 
@@ -732,23 +732,23 @@ ht-degree: 89%
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="启用行过滤"
->abstract="行过滤器可确定哪些事件被摄取到Customer Journey Analytics中。 仅摄取与包含规则匹配的事件。 所有其他事件将被永久排除，并且无法用于Customer Journey Analytics中的报表、分段或分析。<ul><li>您最多可以创建10个过滤器。</li><li> 对过滤器的更改仅适用于更改后摄取的新数据，不会追溯影响之前摄取的数据或触发历史回填。</li></ul>"
+>title="启用行筛选"
+>abstract="行过滤器用于确定要将哪些事件摄取到 Customer Journey Analytics 中。 仅摄取符合包含规则的事件。 所有其他事件都将永久排除，无法在 Customer Journey Analytics 中用于报告、分段或分析。<ul><li>最多可以创建 10 个过滤器。</li><li> 对过滤器所做的更改仅适用于更改后摄取的新数据，不会追溯影响之前摄取的数据，也不会触发历史数据回填。</li></ul>"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_field"
 >title="字段"
->abstract="从事件数据集中选择一个字段以用于条件。 您可以使用任何类型的任何字段。"
+>abstract="从事件数据集中选择一个字段作为条件。 您可以使用任意类型的任意字段。"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_operator"
 >title="条件"
->abstract="选择运算符。 运算符用于根据值验证所选字段。"
+>abstract="选择运算符。 运算符用于根据指定值验证所选字段。"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_values"
 >title="值"
->abstract="输入一个或多个值。 使用确切的字符串值。 使用逗号分隔值。 每个逗号分隔的值都被视为不同的值，并包含在条件中。"
+>abstract="输入一个或多个值。 将使用完全匹配的字符串值。 使用逗号分隔各个值。 以逗号分隔的每个值均视为独立值，并包含在条件中。"
 
 事件数据集的具体设置取决于连接的类型。
 

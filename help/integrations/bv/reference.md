@@ -1,6 +1,6 @@
 ---
-title: 品牌可见度集成
-description: 将品牌可见度与Customer Journey Analytics集成
+title: 品牌可见度入站集成数据集参考
+description: 了解用于将Brand Visibility与Customer Journey Analytics集成的数据集的所有详细信息
 feature: Experience Platform Integration
 role: User
 product_v2:
@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2555'
 ht-degree: 2%
 ---
 
@@ -90,11 +90,11 @@ LLM流量可通过两种方式访问您的网站。 Customer Journey Analytics�
 
 Brand Visibility读取服务器端的CDN访问日志，并提取请求方是机器人或自动代理的记录。 由于数据来自CDN层，因此Brand Visibility会捕获来自不会触发任何JavaScript标记的机器人的请求。 标准网站分析工具完全没有显示此流量。
 
-数据集使用&#x200B;**CDN请求摘要**&#x200B;字段组。 每个字段都位于`cdn`对象下，因此下表中的字段名称采用格式`cdn.<name>`，例如`cdn.url`和`cdn.botType`。
+数据集使用&#x200B;**CDN请求摘要**&#x200B;字段组。 每个字段都位于`cdn`对象下，因此下表中的字段名称采用<code>cdn._name_&#x200B;的形式</code>，例如`cdn.url`和`cdn.botType`。
 
 每条记录描述主机、URL路径、机器人类型、CDN提供商、状态代码、反向链接、转发主机以及1小时到第一个字节的时间的组合。 当相同的组合每小时出现一次以上时，Customer Journey Analytics会将这些记录组合为一行，并增加请求计数。 使用&#x200B;**CDN请求计数**&#x200B;度量来度量卷。 不要使用行计数。
 
-### 维度
+## 维度
 
 在设置包含品牌可见度数据集的连接后，以下维度可用作数据视图中的组件。 **字段**&#x200B;列显示CDN请求摘要字段组中的源字段。
 
@@ -165,7 +165,7 @@ Brand Visibility读取服务器端的CDN访问日志，并提取请求方是机�
 | 429 | 请求过多 | CDN速率限制了机器人。 实时获取代理类型持续出现429错误，这意味着向AI助手询问有关您内容的问题时，用户将收到不完整或缺失的响应。 |
 | 504 | 网关超时 | CDN已停止等待源响应。 内容未到达人工智能。 当页面超时时，AI无法访问其内容，也无法将其包含在答案中。 实时获取代理类型上的高504卷存在直接的AI可见性风险。 |
 
-### 量度
+## 量度
 
 在设置包含品牌可见度数据集的连接后，以下量度可用作数据视图中的组件。 **字段**&#x200B;列显示CDN请求摘要字段组中的源字段。
 
@@ -176,16 +176,12 @@ Brand Visibility读取服务器端的CDN访问日志，并提取请求方是机�
 | CDN错误率 | 派生自CDN错误计数 | 错误数占总请求数的百分比。 |
 | CDN到第一个字节的平均时间 | `cdn.timeToFirstByte` | CDN收到响应第一个字节的请求后的平均时间（以毫秒为单位）。 CDN缓存的响应通常不超过50毫秒。 从源提供的响应通常为300毫秒到700毫秒。 AI实时获取代理通常显示更高的值，对应于超时或极慢的原始响应。 实时获取代理类型的高平均值值得调查为AI可见性风险。 |
 
-### 数据集边界
+## 边界
 
 此数据集仅从CDN访问日志中捕获机器人流量。 它不包含下列内容：
 
 * **用户会话、转化或参与数据。** 通过点击人工智能答案的用户会在您的页面上运行JavaScript，因此访问位于您现有的Web数据中，而不是此数据集中。 您可以将两个数据集引入Customer Journey Analytics，并比较它们对于同一URL和主机的效果。
-* **任何人员标识符，如ECID。** 您无法从此数据集进行人员级别联接。 连接在URL和主机级别运行。
+* **任何人员标识符，如ECID。** 您无法从此数据集执行人员级别联接。 连接在URL和主机级别运行。
 * **次秒时间粒度。** 时间戳为每小时。 您无法将一小时内的流量划分为几分钟或几秒钟。
 * **页面内容或渲染的HTML。** 此数据集记录获取及其结果的实际，而不是AI从页面中读取的内容。
 * **转换数据。** 此数据集不会告诉您人工智能答案是否会导致人员访问您的网站或进行转化。 它包含汇总的CDN摘要数据，而不是基于人员的事件数据，因此不会将任何请求关联到个人或会话。
-
-## 出站集成
-
-有关出站集成的信息，请参阅Customer Journey Analytics品牌可见性文档中的[Adobe集成](https://experienceleague.adobe.com/zh-hans/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。

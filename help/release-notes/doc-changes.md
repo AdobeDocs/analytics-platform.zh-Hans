@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '7170'
+source-wordcount: '7183'
 ht-degree: 96%
 ---
 
@@ -71,6 +71,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 |---|---|
 | **2026年10月** | |
 | 对话分析 | [文档](/help/conversation-insights/overview.md)以了解对话见解。 |
+| 2026年10 | |
+| 品牌可见度 | 更新了[品牌可见度入站集成](/help/integrations/bv/bv.md#inbound-integration)的文档，提供了更多详细信息。 |
 | **2026年9月** | |
 | 箭头和流失的历程画布比较 | 更新了[中的“[!UICONTROL 与]”比较设置。配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)以显示历程中的每个节点、箭头和流失上现在显示日期范围之间的百分比变化。 |
 | 已合并的博客帖子 | 合并了以下博客帖子：<ul><li>[在Adobe CJA中处理“无值”的完整行动手册](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=zh-Hans#M598)</li><li>[Adobe Experience Platform和Customer Journey Analytics数据出口用例深入探讨](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=zh-Hans)</li></ul>在我们的[数据导出](/help/use-cases/data-export/overview.md)用例和新的[无值](/help/use-cases/data-views/no-value.md)用例文章中。 |
@@ -78,7 +80,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2026年8月** | |
 | 明确了有关刷新受众的信息 | 当[发布受众](/help/components/audiences/publish.md#audience-builder)时，说明了可以计划刷新的受众数量取决于您的Customer Journey Analytics授权，介于75和150之间。 |
 | **2026年7月** | |
-| 品牌可见度入站集成 | 有关[品牌可见度入站集成](/help/integrations/bv.md#inbound-integration)的文档。 |
+| 品牌可见度 | 有关[品牌可见度入站集成](/help/integrations/bv/bv.md#inbound-integration)的文档。 |
 | 使用界面 | 对连接的[使用接口](/help/connections/manage-connections.md#usage)文档的更新。 |
 | 子事件分析 | [子事件分析](/help/components/segments/sub-event.md)和[自定义容器](/help/data-views/create-dataview.md#custom-containers)的文档。 |
 | 内联分类 | [内联分类](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications)的文档。 |
