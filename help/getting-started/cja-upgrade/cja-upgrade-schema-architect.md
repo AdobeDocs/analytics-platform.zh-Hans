@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # 构建用于 Customer Journey Analytics 的架构 {#upgrade-schema-architect}
@@ -74,7 +74,7 @@ Customer Journey Analytics的数据管道包含单独的区域，可用于数据
 
 ## 比较架构与Adobe Analytics数据收集
 
-Customer Journey Analytics使用的Experience Data Model比大多数其他Analytics解决方案（包括Adobe Analytics）具有更大的灵活性。 建立一个稳固的架构是贵组织避免执行其他Analytics产品中存在的限制的机会。
+与Adobe Analytics不同，Customer Journey Analytics不会自动将传入数据映射到预定义变量。 您的架构定义字段，数据视图确定如何报告这些字段。 Customer Journey Analytics使用的Experience Data Model比大多数其他Analytics解决方案（包括Adobe Analytics）具有更大的灵活性。 建立一个稳固的架构是贵组织避免执行其他Analytics产品中存在的限制的机会。
 
 | Adobe Analytics的常见习惯 | XDM + Customer Journey Analytics中更好的方法 |
 |---|---|
@@ -144,7 +144,7 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 
 1. **使用Adobe Analytics可识别和自动映射的XDM字段路径：**&#x200B;当您通过Edge Network将可识别的XDM字段发送到Adobe Analytics时，这些字段会[自动映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping)，无需额外配置。
 1. **对特定于组织的概念使用自定义XDM字段：**&#x200B;任何未自动映射到Analytics变量的XDM字段在Adobe Analytics中作为[上下文数据变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/contextdata)转发。
-1. **使用Adobe Analytics处理规则将这些上下文数据变量映射到prop/eVars：** [处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)最终使您可以将任何自定义XDM字段映射到任何eVar或prop。 此概念支持Adobe Analytics中的奇偶校验报表，同时保持架构干净并以Customer Journey Analytics为中心。
+1. **使用Adobe Analytics处理规则将这些上下文数据变量映射到prop/eVars：** [处理规则](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)最终使您可以将任何自定义XDM字段映射到任何eVar或prop。 此概念支持Adobe Analytics中的奇偶校验报表，同时保持架构干净并以Customer Journey Analytics为中心。
 
 ## 确定利益相关者并确定所有权
 
@@ -162,7 +162,7 @@ Adobe建议在符合您需求的地方使用标准化的字段组，并使用自
 架构设计应根据贵组织的隐私政策反映隐私和治理期望。 在架构架构时，请考虑以下几点：
 
 * 仅收集支持定义的用例所需的内容。
-* 确保在收集策略中反映同意和数据使用要求。 有关详细信息，请参阅[使用Web SDK处理客户同意数据](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/consent/sdk)。
+* 确保在收集策略中反映同意和数据使用要求。 有关详细信息，请参阅[使用Web SDK处理客户同意数据](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk)。
 * 考虑如何在Adobe Experience Platform治理工具中标记和控制敏感字段。 有关详细信息，请参阅[Adobe Customer Journey Analytics和数据管理](/help/privacy/privacy-overview.md)。
 
 ## 后续步骤

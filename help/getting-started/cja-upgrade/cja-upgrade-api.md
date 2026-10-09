@@ -1,6 +1,6 @@
 ---
-title: 创建标记属性并添加 Web SDK 扩展
-description: 了解如何创建标记属性并添加 Web SDK 扩展
+title: 使用NPM包安装Platform Web SDK
+description: 了解在从Adobe Analytics升级到Customer Journey Analytics时，如何使用NPM包安装Web SDK。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -28,12 +28,12 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 73%
+source-wordcount: '146'
+ht-degree: 47%
 ---
-# 使用 Edge Network API 安装 Platform Web SDK {#upgrade-manual}
+# 使用NPM包安装Platform Web SDK {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -48,7 +48,7 @@ ht-degree: 73%
 
 您可以通过安装 NPM 包来安装 Platform Web SDK，以便控制 Adobe Experience Platform Web SDK JavaScript 的构建过程。
 
-1. 按照Web SDK指南中[安装Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk)的[选项3：使用NPM包](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)部分中的信息操作。
+1. 按照Web SDK指南中[安装Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/installing-the-sdk)的[选项3：使用NPM包](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package)部分中的信息操作。
 
 {{upgrade-final-step}}
 

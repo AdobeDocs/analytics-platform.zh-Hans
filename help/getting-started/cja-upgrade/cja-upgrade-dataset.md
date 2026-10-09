@@ -1,6 +1,6 @@
 ---
-title: 为 Customer Journey Analytics 创建架构
-description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
+title: 创建供 Customer Journey Analytics 使用的数据集
+description: 了解从Experience Platform升级到Adobe Analytics时，如何为数据创建Customer Journey Analytics数据集。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 91%
 ---
 # 创建供 Customer Journey Analytics 使用的数据集 {#upgrade-create-dataset}
 
@@ -88,6 +88,6 @@ ht-degree: 100%
 
    ![为轮廓启用架构](assets/aepwebsdk-dataset-profile.png)
 
-   有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans)。 您还可以了解如何为实时客户轮廓启用数据集。
+   有关如何查看、预览、创建和删除数据集的更多信息，请参阅[数据集 UI 指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html)。 您还可以了解如何为实时客户轮廓启用数据集。
 
 {{upgrade-final-step}}

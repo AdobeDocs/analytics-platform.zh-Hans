@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 100%
+source-wordcount: '898'
+ht-degree: 96%
 ---
 # 将 Analytics 源连接器数据集添加到连接 {#upgrade-source-connector-dataset}
 
@@ -115,7 +115,7 @@ ht-degree: 100%
 
 1. 在&#x200B;**[!UICONTROL 数据集回填]**&#x200B;部分，选择&#x200B;**[!UICONTROL 请求回填]**。
 
-1. 通过输入开始日期和结束日期或选择日程表图标 ![日程表](/help/assets/icons/Calendar.svg)，定义您希望连接回填到 Customer Journey Analytics 中的时间段。
+1. 通过输入开始和结束日期或选择日历图标![日历](/help/assets/icons/Calendar.svg)，定义您希望Customer Journey Analytics中的连接回填包括的时间段。
 
    在指定您要求回填的日期时要明确。 根据多种因素，您可能需要执行以下任一操作：
 

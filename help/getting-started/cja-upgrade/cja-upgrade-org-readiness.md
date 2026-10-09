@@ -1,6 +1,6 @@
 ---
-title: 从 Adobe Analytics 升级到 Customer Journey Analytics
-description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐步骤
+title: 为组织升级到 Customer Journey Analytics 做好准备
+description: 了解如何让您的组织做好从Adobe Analytics升级到Customer Journey Analytics的准备。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 15%
+source-wordcount: '1189'
+ht-degree: 14%
 ---
 # 为组织升级到 Customer Journey Analytics 做好准备
 
@@ -173,7 +173,7 @@ ht-degree: 15%
 
   * [Customer Journey Analytics 教程](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/overview)
 
-  * [Customer Journey Analytics 是什么？](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+  * [Customer Journey Analytics 是什么？](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
   * [Customer Journey Analytics 简介](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
