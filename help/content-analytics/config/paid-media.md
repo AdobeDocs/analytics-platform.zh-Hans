@@ -210,7 +210,7 @@ https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_cam
 
 如果要报告和分析与付费媒体投资相关的资产性能，请考虑在广告网络付费媒体配置中添加特定资产UTM参数。 例如，除了标准动态参数（如s`ite_source_name`、`campaign.id`、`adset.id`或`placement`）之外，还添加静态自定义参数（如`aca_asset_id=999999`）。
 
-此自定义参数将会添加到您的登陆页面URL。 例如： https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
+此自定义参数将会添加到您的登陆页面URL。 例如： https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
 
 现在，页面上的资产与您的付费媒体数据之间存在关联。 在Analysis Workspace中使用该关系查看Content Analytics资源元数据（例如&#x200B;**[!UICONTROL 资源前景色]**）如何有助于付费媒体促销活动取得成功。
 
