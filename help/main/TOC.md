@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1518'
 ht-degree: 92%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
@@ -438,7 +438,7 @@ ht-degree: 92%
       + {hide-from-toc}[组件可用性](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[应用数据转换](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[数据馈送中的子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + 数据馈送中的{hide-from-toc}[子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
@@ -491,7 +491,10 @@ ht-degree: 92%
   + [集成 Journey Optimizer 数据](/help/integrations/ajo.md)
   + [集成决策管理数据](/help/integrations/ajo-od.md)
   + [集成 Customer AI](/help/integrations/customer-ai.md)
-  + [集成品牌可见度](/help/integrations/bv.md)
+  + 集成品牌可见度 {#bv}
+    + [概述](/help/integrations/bv/bv.md)
+    + [配置](/help/integrations/bv/configure.md)
+    + [参考](/help/integrations/bv/reference.md)
   + [集成 Adobe Advertising](/help/integrations/advertising.md)
 
 + 数据管理 {#cja-privacy}
