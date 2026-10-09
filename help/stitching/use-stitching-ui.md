@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
+source-git-commit: e387cf97c6190e4bda66b891e02e8cf8ac05b1f2
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1990'
 ht-degree: 18%
 ---
 # 启用拼接
@@ -238,7 +238,7 @@ ht-degree: 18%
 
 
 >[!NOTE]
->**[!UICONTROL 拼合量度]**（包括&#x200B;**[!UICONTROL 错误的ID]**）是根据有限的数据集计算的。 要识别计划用于拼接的数据集存在错误ID，请参阅[错误ID技术说明](/help/technotes/badids.md)。
+>**[!UICONTROL 拼合量度]**（包括&#x200B;**[!UICONTROL 错误的ID]**）是根据有限的数据集计算的。 要识别计划用于拼合的数据集是否存在错误ID，请参阅[错误ID技术说明](/help/technotes/badids.md)。
 >
 
 
@@ -250,7 +250,7 @@ ht-degree: 18%
 
 对于已保存并包含已启用拼合的数据集的有效初始连接设置：
 
-* 经过若干小时（不到17小时）后，实时数据最初会显示在Customer Journey Analytics中。 实时数据从事件时间戳值开始，这些值与拼合启用完成时的实际时间相匹配。
+* 经过若干小时（少于14小时）后，实时数据最初会显示在Customer Journey Analytics中。 新的实时数据在几个小时内即可提供。 实时数据从事件时间戳值开始，这些值与拼合启用完成时的实际时间相匹配。
 
   要确保实时数据开始流入，请为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。
 
@@ -258,12 +258,14 @@ ht-degree: 18%
 
 * 回填数据（如果最初请求）与实时数据大约在同一时间出现在Customer Journey Analytics中，但可能需要几天才能完全处理，具体取决于所涉及的卷。 回填数据从最早的事件时间戳值开始。
 
+   
+
   >[!CAUTION]
   >
   >对于在“连接”界面中启用拼合的数据集，由于已知限制，当前无法报告回填状态。
   >
 
-  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的事件数量度。 如果这些数字匹配，则回填已完成。
+  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的&#x200B;**[!UICONTROL 事件]**&#x200B;度量值。 如果这些数字匹配，则回填已完成。
 
 ## 限制
 
