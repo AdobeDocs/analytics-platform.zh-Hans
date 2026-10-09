@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 hold: true
 role: Admin
-source-git-commit: e9274ad7899537837723e2eb9cd842c5449530ff
+source-git-commit: 29a21d57b6b50d873a4464d1a705c1b4855dd3ea
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2502'
 ht-degree: 2%
 ---
 # 付费媒体自动配置
@@ -59,12 +59,28 @@ ht-degree: 2%
 | `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | 资源<br/>无 | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | 在其广告/营销活动上下文<br/>中的每日资产级别性能<br/>没有人口统计或地理细分。 |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | 资产<br/>年龄，性别 | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | | | 按年龄和性别细分的广告/营销活动上下文中的每日资产级绩效<br/><br/>。 |
 
-
 此表描述了数据集覆盖范围，并不能保证特定网络会填充每个量度或元数据字段。 检查分析所需的字段。 不可用字段或不受支持的划分与测量出的字段零值不同。
+
+摘要数据分组将等效维度汇总在一起；分组不会汇总六个性能量度总计。
+
+## 查找数据集
 
 单独的查找数据集描述了帐户、促销活动、广告组、广告、体验和资产。 它们使用实体GUID提供名称和元数据。 摘要数据集和六个查找数据集之间不存在一对一的配对。
 
-摘要数据分组将等效维度汇总在一起；分组不会汇总六个性能量度总计。
+查找数据集共享两个常见的构建块：
+
+* **实体ID对象**：存储帐户、广告、广告组、资产、营销活动和体验对象。 每个对象都包含Adobe生成的全局密钥和平台原生ID。
+* **付费媒体核心元数据**：存储常用描述性字段，例如名称、状态、目标、优化目标、竞价策略、预算类型、预算值、货币、时区、服务状态、日期、广告网络、渠道、层次结构路径、网络和项目组合标识符。
+
+| 查找数据集 | 关键内容 |
+|---|---|
+| 帐户查找 | 帐户级别的元数据，例如名称、货币、时区、状态、支出限制和创建日期 |
+| 营销活动查找 | 预算、计划、定位、转化跟踪、归因、投放位置、提升的对象、目标和目录或存储ID的促销活动设置 |
+| 广告组查找 | 广告组元数据，例如营销活动链接、状态、预算、优化目标和定位 |
+| 广告查找 | 广告创意详细信息，例如资源、变体、维度、跟踪URL、call to action、正文文本、标题、目标URL、投放状态和审核状态 |
+| 资产查找 | 资源属性，例如维度、文件详细信息、图像属性、媒体URL、使用情况元数据、视频元数据、描述、子类型、标题和类型 |
+| 体验查找 | 体验级别的创意分组，例如体验ID、资源、标题、描述和call to action |
+
 
 ## 组件
 
@@ -194,7 +210,7 @@ https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_cam
 
 如果要报告和分析与付费媒体投资相关的资产性能，请考虑在广告网络付费媒体配置中添加特定资产UTM参数。 例如，除了标准动态参数（如s`ite_source_name`、`campaign.id`、`adset.id`或`placement`）之外，还添加静态自定义参数（如`aca_asset_id=999999`）。
 
-此自定义参数将会添加到您的登陆页面URL。 例如： https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+此自定义参数将会添加到您的登陆页面URL。 例如： https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
 
 现在，页面上的资产与您的付费媒体数据之间存在关联。 在Analysis Workspace中使用该关系查看Content Analytics资源元数据（例如&#x200B;**[!UICONTROL 资源前景色]**）如何有助于付费媒体促销活动取得成功。
 
