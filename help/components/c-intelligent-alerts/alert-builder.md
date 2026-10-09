@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 59%
+ht-degree: 62%
 ---
 # 创建警报 {#create-alerts}
 
@@ -57,7 +57,7 @@ ht-degree: 59%
 >[!CONTEXTUALHELP]
 >id="components_alerts_delay"
 >title="延迟"
->abstract="在此延迟之后，在您选择的时间粒度时会触发警报。 来自您的连接的数据可能会以不同的延迟到达，时间介于1到24小时之间。 默认延迟会在每个警报窗口后触发9个小时。"
+>abstract="经过此延迟时间后，警报会按照您选择的时间粒度触发。 来自连接的数据可能会有不同的延迟，介于 1 至 24 小时之间。 默认延迟设置为在每个警报时间窗口结束 9 小时后触发。"
 
 <!-- markdownlint-enable MD034 -->
 
