@@ -101,7 +101,7 @@ ht-degree: 56%
 
    1. 通过数据对象以AppMeasurement格式发送所有变量。
 
-      如果您还将此数据发送到Adobe Analytics，Edge Network会自动将这些数据对象字段映射到Adobe Analytics变量。 有关支持的字段列表，请参阅映射到Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)的[数据对象字段。 Customer Journey Analytics不使用这些映射。 在后续步骤中，会将数据对象字段映射到Customer Journey Analytics的XDM架构。
+      如果您还将此数据发送到Adobe Analytics，Edge Network会自动将这些数据对象字段映射到Adobe Analytics变量。 有关支持的字段列表，请参阅映射到Adobe Analytics[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)的数据对象字段。 Customer Journey Analytics不使用这些映射。 在后续步骤中，会将数据对象字段映射到Customer Journey Analytics的XDM架构。
 
    1. 选择您的架构。
 
@@ -127,7 +127,7 @@ ht-degree: 56%
 
    1. 使用数据流映射将数据对象中的所有字段映射到您的XDM架构。
 
-      Customer Journey Analytics只能使用映射到架构的数据对象字段。 有关详细信息，请参阅Experience Platform文档中为数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。[
+      Customer Journey Analytics只能使用映射到架构的数据对象字段。 有关详细信息，请参阅Experience Platform文档中为数据收集[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。
 
 {{upgrade-final-step}}。
 
