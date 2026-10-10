@@ -1,6 +1,6 @@
 ---
-title: 升级到Customer Journey Analytics时的备用方法
-description: 了解升级到Customer Journey Analytics时的替代方法
+title: 升级替代方案：将 AppMeasurement 数据收集与 Experience Platform Web SDK 和 Customer Journey Analytics 结合使用
+description: 了解如何将现有AppMeasurement或Analytics扩展数据收集逻辑与Web SDK结合使用，以将数据发送到Customer Journey Analytics。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 59%
+source-wordcount: '1471'
+ht-degree: 56%
 ---
 # 升级替代方案：将 AppMeasurement 数据收集与 Experience Platform Web SDK 和 Customer Journey Analytics 结合使用 {#data-collection-appmeasurement}
 
@@ -59,7 +59,7 @@ ht-degree: 59%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="更改 AppMeasurement 逻辑以指向 Web SDK"
->abstract="之所以出现这一步骤是因为您选择采取了一条实施捷径。 复制或更改 AppMeasurement 逻辑以填充数据对象，而不是 s 对象。 例如，将 s.eVar1 的赋值更改为 data.__adobe.analytics.eVar1，并对所有 Analytics 变量重复此操作。"
+>abstract="出现此步骤是因为您选择了使用实施快捷方式。 复制或更改 AppMeasurement 逻辑以填充数据对象，而不是 s 对象。 例如，将 s.eVar1 的赋值更改为 data.__adobe.analytics.eVar1，并对所有 Analytics 变量重复此操作。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,7 +71,7 @@ ht-degree: 59%
 
 ## 优点和缺点
 
-此方法与[将整个数据层发送到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)互斥，因为两种方法都完成相同的任务。 (此方法比将整个数据层发送到Adobe更可取。 它更精细，因为prop和evar都通过data.__ adobe.analytics._variable-name_。)
+此方法与[将整个数据层发送到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)互斥，因为两种方法都完成相同的任务。 (此方法比将整个数据层发送到Adobe更可取。 它更精细，因为prop和evar都通过data.__ adobe.analytics._variable-name_。)
 
 请注意使用此升级替代方案的以下优缺点：
 
@@ -101,7 +101,7 @@ ht-degree: 59%
 
    1. 通过数据对象以AppMeasurement格式发送所有变量。
 
-      有关详细信息，请参阅[数据对象变量映射到Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)。
+      如果您还将此数据发送到Adobe Analytics，Edge Network会自动将这些数据对象字段映射到Adobe Analytics变量。 有关支持的字段列表，请参阅映射到Adobe Analytics[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/data-var-mapping)的数据对象字段。 Customer Journey Analytics不使用这些映射。 在后续步骤中，会将数据对象字段映射到Customer Journey Analytics的XDM架构。
 
    1. 选择您的架构。
 
@@ -127,7 +127,7 @@ ht-degree: 59%
 
    1. 使用数据流映射将数据对象中的所有字段映射到您的XDM架构。
 
-      有关详细信息，请参阅Experience Platform文档中为数据收集[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。
+      Customer Journey Analytics只能使用映射到架构的数据对象字段。 有关详细信息，请参阅Experience Platform文档中为数据收集[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)准备数据中的[映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep?lang=en#mapping)。
 
 {{upgrade-final-step}}。
 

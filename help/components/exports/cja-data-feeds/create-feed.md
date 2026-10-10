@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3924'
 ht-degree: 12%
 ---
 # 创建数据馈送
@@ -125,11 +125,11 @@ ht-degree: 12%
    * **加号按钮**：选择左边栏中任何组件旁边的加号![添加](/help/assets/icons/Add.svg)图标以将其添加到画布中。
    * **[!UICONTROL 全部显示]**：选择组件列表底部的&#x200B;**[!UICONTROL 全部显示]**&#x200B;以打开显示所有可用组件的对话框。 选中要添加的每个组件旁边的复选框，然后选择&#x200B;**[!UICONTROL 添加选定项]**。 当搜索词或筛选器标记在左边栏中处于活动状态时，还会显示&#x200B;**[!UICONTROL 全部添加]**&#x200B;按钮，允许您一次添加所有筛选结果。
 
-   添加属于XDM数组字段的组件（例如，Adobe Journey Optimizer建议字段）时，它以可折叠嵌套组的形式出现在画布上，而不是平面项。 该组反映底层数据结构，并在导出的文件中输出为嵌套数组。
+   添加字段时，请考虑以下事项：
 
-   <!--add screenshot-->
+   * 某些组件是必需的、不受支持的，或者在数据馈送中具有限制。 有关详细信息，请参阅数据馈送中的[组件可用性](/help/components/exports/cja-data-feeds/df-components.md)。
 
-   某些组件是必需的、不受支持的，或者在数据馈送中具有限制。 有关详细信息，请参阅数据馈送中的[组件可用性](/help/components/exports/cja-data-feeds/df-components.md)。
+   * 添加属于XDM数组字段（例如，Adobe Journey Optimizer建议字段）或映射字段的组件时，对话框会提示您从同一子容器添加任何其他组件。 在数据馈送输出中，所有这些组件都显示在一列中。 有关详细信息，请参阅数据馈送中的[子容器组件](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. （可选）通过拖动组件对画布上的组件重新排序。 您定义的顺序将保留为导出数据馈送文件中的列顺序。
 
@@ -342,9 +342,11 @@ ht-degree: 12%
 
 #### 阶段2：数据从数据湖摄取到Customer Journey Analytics
 
-这最多可能需要90分钟（请参阅[延迟](/help/technotes/guardrails.md#latencies)）。
+根据数据集是否已启用拼合，数据摄取时间会有所不同。
 
-* **拼接的数据集**：拼接最多可添加4小时（请参阅[延迟](/help/technotes/guardrails.md#latencies)）。 如果为连接启用了拼合，请将延迟设置为至少6小时，可能为8小时。 通过拼合重放更新的数据通常不包含在已处理的数据馈送文件中。
+* **非拼接数据集**：这最多可能需要90分钟（请参阅[延迟](/help/technotes/guardrails.md#latencies)）。
+
+* **拼接的数据集**：在非拼接数据集所需的90分钟基础上，拼接最多可添加4小时（请参阅[延迟](/help/technotes/guardrails.md#latencies)）。 如果为连接启用了拼合，请将延迟设置为至少6小时，可能为8小时。 通过拼合重放更新的数据通常不包含在已处理的数据馈送文件中。
 
   启用拼合后，最小处理延迟从2小时增加到6小时，以处理拼合的数据。
 

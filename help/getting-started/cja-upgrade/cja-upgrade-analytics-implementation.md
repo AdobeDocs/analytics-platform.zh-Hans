@@ -1,6 +1,6 @@
 ---
 title: 了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响
-description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
+description: 了解Adobe Analytics实施方法如何影响Customer Journey Analytics可用的升级路径。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 98%
+source-wordcount: '997'
+ht-degree: 96%
 ---
 # 了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响 {#implementation-affects-upgrade}
 

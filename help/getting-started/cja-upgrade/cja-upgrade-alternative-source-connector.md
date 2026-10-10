@@ -1,6 +1,6 @@
 ---
-title: 仅使用 Analytics 源连接器升级到 Customer Journey Analytics
-description: 学习如何创建 Analytics 源连接器并映射字段
+title: 升级替代方案：仅使用 Analytics 源连接器升级到 Customer Journey Analytics
+description: 了解将Analytics Source Connector用作Customer Journey Analytics唯一实施路径的优缺点，Adobe不建议采用这种方法。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '437'
+ht-degree: 88%
 ---
 # 升级替代方案：仅使用 Analytics 源连接器升级到 Customer Journey Analytics {#use-source-connector-exclusively}
 

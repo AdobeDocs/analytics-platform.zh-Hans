@@ -1,6 +1,6 @@
 ---
-title: 升级到Customer Journey Analytics时的备用方法
-description: 了解升级到Customer Journey Analytics时的替代方法
+title: 升级替代方案：将数据层发送到 Customer Journey Analytics
+description: 了解如何将整个数据层发送到Customer Journey Analytics，而不是使用XDM对象收集数据。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '707'
 ht-degree: 54%
 ---
 # 升级替代方案：将数据层发送到 Customer Journey Analytics {#data-collection-data-layer}

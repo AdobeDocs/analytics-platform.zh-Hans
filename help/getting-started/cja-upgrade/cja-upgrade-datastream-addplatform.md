@@ -1,6 +1,6 @@
 ---
-title: 为 Customer Journey Analytics 创建一个架构
-description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
+title: 将 Platform as a Service 添加到您的数据流
+description: 了解在从Experience Platform升级到Customer Journey Analytics时，如何将Adobe Analytics作为服务添加到数据流。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 100%
+source-wordcount: '288'
+ht-degree: 92%
 ---
 # 将 Platform as a Service 添加到您的数据流 {#upgrade-addplatform-datastream}
 

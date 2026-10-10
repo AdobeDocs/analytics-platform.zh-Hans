@@ -1,6 +1,6 @@
 ---
-title: 将 Analytics 源连接器数据集添加到连接
-description: 了解如何将 Analytics 源连接器数据集添加到连接
+title: 禁用 Adobe Analytics
+description: 了解在升级到Customer Journey Analytics后如何禁用Adobe Analytics数据收集。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 100%
+source-wordcount: '145'
+ht-degree: 85%
 ---
 # 禁用 Adobe Analytics {#disable-appmeasurement}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 
 * **标记：**&#x200B;禁用 Adobe Analytics 扩展
 
-* **AppMeasurment：**&#x200B;替换 AppMeasurement.js 库 s=newobject
+* **AppMeasurement：**&#x200B;替换AppMeasurement.js库s=newobject
 
 >[!NOTE]
 >

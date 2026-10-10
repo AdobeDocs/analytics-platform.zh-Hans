@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # 构建用于 Customer Journey Analytics 的架构 {#upgrade-schema-architect}
@@ -74,7 +74,7 @@ Customer Journey Analytics的数据管道包含单独的区域，可用于数据
 
 ## 比较架构与Adobe Analytics数据收集
 
-Customer Journey Analytics使用的Experience Data Model比大多数其他Analytics解决方案（包括Adobe Analytics）具有更大的灵活性。 建立一个稳固的架构是贵组织避免执行其他Analytics产品中存在的限制的机会。
+与Adobe Analytics不同，Customer Journey Analytics不会自动将传入数据映射到预定义变量。 您的架构定义字段，数据视图确定如何报告这些字段。 Customer Journey Analytics使用的Experience Data Model比大多数其他Analytics解决方案（包括Adobe Analytics）具有更大的灵活性。 建立一个稳固的架构是贵组织避免执行其他Analytics产品中存在的限制的机会。
 
 | Adobe Analytics的常见习惯 | XDM + Customer Journey Analytics中更好的方法 |
 |---|---|

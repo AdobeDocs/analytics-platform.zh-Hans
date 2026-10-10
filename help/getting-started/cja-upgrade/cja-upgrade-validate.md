@@ -1,6 +1,6 @@
 ---
-title: 为 Customer Journey Analytics 创建一个架构
-description: 了解从 Adobe Analytics 升级到 Customer Journey Analytics 时的推荐路径
+title: 验证数据是否流向 Customer Journey Analytics
+description: 了解如何验证从Adobe Analytics升级后数据是否流向Customer Journey Analytics。
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 100%
+source-wordcount: '143'
+ht-degree: 88%
 ---
 # 验证数据是否流向 Customer Journey Analytics {#validate-data}
 
