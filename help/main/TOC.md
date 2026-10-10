@@ -2,10 +2,10 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: f5e2a6604ee1bf2b5a5a393b402da24b66d9b81d
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 92%
+source-wordcount: '1517'
+ht-degree: 91%
 ---
 # Adobe Customer Journey Analytics 指南 {#using}
 
@@ -65,7 +65,7 @@ ht-degree: 92%
       + [为 Web SDK 扩展实施加载器标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [将 XDM 数据收集逻辑添加到您的标记中](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [手动实施 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [使用 API 实施 Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [使用NPM包实施Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [创建连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [创建数据视图](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [创建营销渠道派生字段](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -438,7 +438,7 @@ ht-degree: 92%
       + {hide-from-toc}[组件可用性](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[数据馈送中的分段](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[应用数据转换](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[数据馈送中的子事件](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[子容器组件](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + 数据词典 {#data-dictionary}
     + [概述](../components/data-dictionary/data-dictionary-overview.md)
     + [查看数据字典中的组件信息](../components/data-dictionary/view-data-dictionary.md)
