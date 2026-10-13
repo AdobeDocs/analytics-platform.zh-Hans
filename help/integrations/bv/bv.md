@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->您必须配置品牌可见度付费产品，并通过托管连接器连接到您的Experience Platform配置。
+>您必须拥有品牌可见度付费产品。 然后，在Experience Platform沙盒中[配置并启用](./configure.md)Adobe Brand Visibility源。
+>
 
 
 >[!IMPORTANT]
 >
 >作为这种集成的一部分，美国会对品牌可见度数据进行一些临时处理。 数据最终会存储在您在Customer Journey Analytics合同中配置的指定区域。
+>
 
 
 ## 用例
@@ -68,7 +70,7 @@ LLM流量可通过两种方式访问您的网站。 Customer Journey Analytics�
 
 ### 载入数据集
 
-品牌可见度托管连接器将数据作为摘要数据集交付给Experience Platform。 要在Customer Journey Analytics中测量客户历程，您需要自行完成两个设置步骤：
+可在Experience Platform中启用Adobe Brand Visibility源。 源将数据作为摘要数据集传送到沙盒。 要在Customer Journey Analytics中测量数据，您随后还需要自行完成两个设置步骤：
 
 1. 创建包含品牌可见度数据集的连接。
 2. 在该连接上创建数据视图。 数据视图允许在Analysis Workspace中使用以下维度和量度。
@@ -94,4 +96,4 @@ LLM流量可通过两种方式访问您的网站。 Customer Journey Analytics�
 
 ## 出站集成
 
-有关出站集成的信息，请参阅Adobe Brand Visibility文档中的[Customer Journey Analytics集成](https://experienceleague.adobe.com/zh-hans/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。
+有关出站集成的信息，请参阅Adobe Brand Visibility文档中的[Customer Journey Analytics集成](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"}。
