@@ -40,7 +40,7 @@ ht-degree: 0%
 1. 品牌可见度正在接收和检测相关站点的日志。 然后，便可以在Experience Platform的Adobe Brand Visibility源中选择该站点。
 
 BYOCDN日志转发提供用于自动代理流量分析的服务器端CDN请求数据。 数据并不依赖于浏览器中运行的JavaScript标记。 必需
-CDN日志馈送可确保下游摘要数据集包含预期的品牌可见度代理流量数据。 有关详细信息，请参阅[BYOCDN日志转发引用](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)。
+CDN日志馈送可确保下游摘要数据集包含预期的品牌可见度代理流量数据。 有关详细信息，请参阅[BYOCDN日志转发引用](https://experienceleague.adobe.com/zh-hans/docs/brand-visibility/using/log-forwarding/log-forwarding-overview)。
 
 ### 所需信息
 
