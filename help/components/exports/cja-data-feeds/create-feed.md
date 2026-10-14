@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
 ht-degree: 12%
@@ -129,7 +129,7 @@ ht-degree: 12%
 
    * 某些组件是必需的、不受支持的，或者在数据馈送中具有限制。 有关详细信息，请参阅数据馈送中的[组件可用性](/help/components/exports/cja-data-feeds/df-components.md)。
 
-   * 添加属于XDM数组字段（例如，Adobe Journey Optimizer建议字段）或映射字段的组件时，对话框会提示您从同一子容器添加任何其他组件。 在数据馈送输出中，所有这些组件都显示在一列中。 有关详细信息，请参阅数据馈送中的[子容器组件](/help/components/exports/cja-data-feeds/df-sub-event.md)
+   * 添加属于XDM数组字段（例如，Adobe Journey Optimizer建议字段）或映射字段的组件时，对话框会提示您添加来自同一子事件的任何其他组件。 在数据馈送输出中，所有这些组件都显示在一列中。 有关详细信息，请参阅数据馈送中的[子事件组件](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. （可选）通过拖动组件对画布上的组件重新排序。 您定义的顺序将保留为导出数据馈送文件中的列顺序。
 
