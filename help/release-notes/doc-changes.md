@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '7183'
-ht-degree: 96%
+source-wordcount: '7222'
+ht-degree: 95%
 ---
 
 # Customer Journey Analytics - 文档更新
@@ -70,8 +70,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年10月** | |
+| Content Analytics付费媒体频道 | 有关自动配置数据集和数据视图组件的全面[文档](/help/content-analytics/config/paid-media.md)，这些组件源自使用付费媒体源连接器（如Google Ads或Meta Ads）以及配置和启用Content Analytics付费媒体渠道。 |
 | 对话分析 | [文档](/help/conversation-insights/overview.md)以了解对话见解。 |
-| 2026年10 | |
 | 品牌可见度 | 更新了[品牌可见度入站集成](/help/integrations/bv/bv.md#inbound-integration)的文档，提供了更多详细信息。 |
 | **2026年9月** | |
 | 箭头和流失的历程画布比较 | 更新了[中的“[!UICONTROL 与]”比较设置。配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)以显示历程中的每个节点、箭头和流失上现在显示日期范围之间的百分比变化。 |
