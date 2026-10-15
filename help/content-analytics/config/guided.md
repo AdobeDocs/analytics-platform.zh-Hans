@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '4800'
-ht-degree: 56%
+source-wordcount: '4844'
+ht-degree: 55%
 ---
 
 # Content Analytics 引导式配置
@@ -705,6 +705,11 @@ ht-degree: 56%
 * 更新 Customer Journey Analytics 连接，将来自所有已连接的源连接器的付费媒体数据集包含在这个沙盒中。
 * 在所有选定的数据视图中启用付费媒体维度和量度。
 * 在 Workspace 报告中，将付费媒体渠道作为可筛选维度显示。
+
+请参阅[付费媒体自动配置](./paid-media.md)，以了解详细信息：
+
+* 首次使用付费媒体源连接器导致的付费媒体数据集的自动配置。
+* 在Content Analytics中配置和启用付费媒体渠道时创建的数据视图组件。
 
 ### 保存 {#paidmedia-save}
 
