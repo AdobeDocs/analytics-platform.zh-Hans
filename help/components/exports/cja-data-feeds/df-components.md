@@ -94,7 +94,7 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 | Adobe人事联合会 | | 不可用 |
 | Adobe人员配置文件 | | 不可用 |
 
-## 不能一起使用的维度 {#incompatible-dimensions}
+## 无法同时使用的维度 {#incompatible-dimensions}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -103,7 +103,7 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
->abstract="用户代理数据和设备查找数据不能包含在同一数据馈送配置中。"
+>abstract="用户代理数据和设备查找数据不能存在于同一个数据馈送配置中。"
 
 <!-- markdownlint-enable MD034 -->
 
