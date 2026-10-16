@@ -81,10 +81,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 99%
+source-wordcount: '3102'
+ht-degree: 98%
 ---
 # Customer Journey Analytics 功能支持
 
@@ -94,6 +94,8 @@ ht-degree: 99%
 
 下表列出了 Customer Journey Analytics 中可用但 Adobe Analytics 不支持的功能。
 
+<!-- FOLLOW-UP (Thursday): When the in-app Coworker experience launches, point the Coworker row link to /help/analysis-workspace/coworker.md. FOLLOW-UP (later): When Coworker becomes available in Adobe Analytics, remove the "coming soon" sentence and move the Coworker row to the Fully supported table. -->
+
 | 功能 | 更多详细信息 |
 | --- | --- |
 | **能够组合数据集（例如 Adobe Analytics 报告包）** | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
@@ -102,8 +104,8 @@ ht-degree: 99%
 | **BI 扩展** | 通过 [BI 扩展功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)，您可以将 Customer Journey Analytics 直接连接至主流 BI 可视化工具，例如 Power BI 或 Tableau。 使用此扩展功能，您可以确保 BI 报表与 Analysis Workspace 及其他 Customer Journey Analytics 报表界面中的数据精准一致。 该扩展功能为 Customer Journey Analytics 提供了一种更为简便的 BI 报表获取方式，无需从原始数据重新构建报表或量度。 |
 | **Workspace 项目中的备注** | 您可以通过评论在 [Analysis Workspace 项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=cn)的上下文中分享洞察并提出问题。 这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。 |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics) 帮助营销人员了解内容如何影响企业定义的关键绩效指标。 除了行为数据之外，Content Analytics 还收集关于内容如何被消费以及内容如何产生影响的数据。 |
+| **Coworker** | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)是一个AI队友，可回答有关您的数据的自然语言问题。 它使用来自您的数据视图和实际数据的组件来构建可视化图表、查找见解并解释量度发生更改的原因。 同事即将来到Adobe Analytics。 |
 | **跨设备分析** | Customer Journey Analytics 支持无缝组合来自未经身份验证和经过身份验证会话的设备特定数据集。 Customer Journey Analytics 可以将历史数据回填到已知设备。 在 Adobe Analytics 中，此功能仅限于单个报告包以及使用设备图。 |
-| **Data Insights 代理** | [Data Insights 代理](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=cn)是 Customer Journey Analytics 中 AI 助手的一部分，是一款生成式 AI 对话代理。 它使用来自数据视图和实际数据的组件，通过在 Analysis Workspace 中构建相关的可视化图表来快速有效地回答以数据为中心的问题。 |
 | **维度增强功能** | Customer Journey Analytics 为使用维度提供了更大的灵活性： <ul><li>**自定义基于数值的维度**：[在数据视图中创建您自己的基于数值的维度](/help/data-views/create-dataview.md#components)。</li><li>**对基于字符串的维度进行排序**：[在自由格式表中按字母顺序对基于字符串的维度进行排序。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>在 Adobe Analytics 中，只有少数内置数值维度可用，并且无法按基于字符串的维度进行排序。</p> |
 | **派生字段** | [派生字段](/help/data-views/derived-fields/derived-fields.md)可为数据转换报告时间。 可即时组合、更正或创建数据，并且这些转换可追溯地应用于所有报告。 |
 | **增强了安全和隐私选项** - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供[附加安全选项](/help/privacy/cmk.md)，以确保符合相关法规。 Adobe Analytics 尚未为 HIPAA 做好准备。 |
@@ -156,7 +158,7 @@ ht-degree: 99%
 | **汇总级数据源** | 全面支持 |
 | **虚拟报告包** | 全面支持。 [数据视图](/help/data-views/create-dataview.md)是 Customer Journey Analytics 中对应于 Adobe Analytics 中报表包的概念。 |
 | **虚拟报表包组件管理** | 全面支持。 组件管理是数据视图功能的一部分。 |
-| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。 请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) 如果您使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。 计划在以后提供支持。 要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
+| **设备、浏览器、反向链接、技术维度** | 支持基于 [Analytics Source Connector ](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/analytics)的数据集和 WebSDK 生成的数据集。 请参阅[关于通过 ADC 支持哪些 Analytics 变量的文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) 如果您使用 Experience Platform Web SDK 数据收集，则当前不支持基于设备查找的设备和维度。 计划在以后提供支持。 要将设备和浏览器查找功能添加到 Web SDK 数据流，请参阅[本文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure) |
 
 ## 以新方式支持 {#new-support}
 
@@ -171,7 +173,7 @@ ht-degree: 99%
 | **自定义会话长度** | 可通过数据视图中的[会话设置](../../data-views/create-dataview.md#session-settings)配置会话长度。 有关详细信息，请参阅[会话设置](../../data-views/session-settings.md)。 <br/>通过 Adobe Experience Platform Mobile SDK 支持处理移动后台事件。 有关更多信息，请参阅[边缘网络的生命周期](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)。 |
 | **货币换算** | 在数据视图中[格式化量度组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/format)的过程中支持。 |
 | **客户属性** | 轮廓数据集相当于客户归因功能。 轮廓数据集不会自动从 Experience Cloud 导入，必须先上传至 Experience Platform，才可在 Customer Journey Analytics 中使用。 |
-| **数据馈送** | 数据集的第一代数据导出可通过[&#x200B; Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[&#x200B; Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。 这些选项提供对收集到 Experience Platform 数据湖中或摄入其中的所有数据进行事件/行级别的导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
+| **数据馈送** | 数据集的第一代数据导出可通过[ Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[ Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。 这些选项提供对收集到 Experience Platform 数据湖中或摄入其中的所有数据进行事件/行级别的导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
 | **Data Warehouse 报告** | [Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | **登录、退出和花费时间维度和量度** | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |
 | **eVar 持久性设置** | Customer Journey Analytics 中不再包括 eVar。 但是，持久性设置现在是数据视图的一部分，且可用于所有维度。 请记住，持久性基于报告时处理，而不是数据收集处理。 在数据视图中设置的维度最多只能持久 90 天，不支持无限持久性。 |

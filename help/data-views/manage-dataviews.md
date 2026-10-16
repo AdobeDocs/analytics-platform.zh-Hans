@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 10%
@@ -46,6 +46,8 @@ ht-degree: 10%
 
 表中提供以下列和图标：
 
+<!-- FOLLOW-UP (engineering): The Data views table UI still shows a Data Insights Agent column, a Data Insights Agent Status pop-up, and Enable/Disable for Data Insights Agent context menu options. These presumably should change to Coworker. Log with engineering, then update the labels, descriptions, and the data-views-dia-status.png screenshot. -->
+
 | 列或图标 | 描述 |
 | --- | --- |
 | **[!UICONTROL 名称]** | 数据视图的名称。 |
@@ -54,7 +56,7 @@ ht-degree: 10%
 | **[!UICONTROL 连接]** | 与数据视图关联的连接的名称。 |
 | **[!UICONTROL 沙盒]** | 与数据视图关联的沙盒的名称。 |
 | **[!UICONTROL 所有者]** | 数据视图的所有者。 |
-| **[!UICONTROL Data Insights Agent]** ![信息大纲](/help/assets/icons/InfoOutline.svg) | 指示数据视图的[Data Insights Agent](/help/data-analysis-ai.md)是&#x200B;**[!UICONTROL 已启用]**&#x200B;还是&#x200B;**[!UICONTROL 已禁用]**。 <br/>选择![信息大纲](/help/assets/icons/InfoOutline.svg)以在数据视图中显示包含&#x200B;**[!UICONTROL Data Insights Agent状态]**&#x200B;的弹出窗口。 <br/>![Data Insights Agent使用情况](/help/data-views/assets/data-views-dia-status.png) |
+| **[!UICONTROL Data Insights Agent]** ![信息大纲](/help/assets/icons/InfoOutline.svg) | 指示数据视图的[Data Insights Agent](/help/data-views/create-dataview.md#ai-settings)是&#x200B;**[!UICONTROL 已启用]**&#x200B;还是&#x200B;**[!UICONTROL 已禁用]**。 <br/>选择![信息大纲](/help/assets/icons/InfoOutline.svg)以在数据视图中显示包含&#x200B;**[!UICONTROL Data Insights Agent状态]**&#x200B;的弹出窗口。 <br/>![Data Insights Agent使用情况](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL 集成]** | 列出与其他解决方案的集成。 例如：Adobe Audience Analysis、Content Analytics、Brand Concierge、Journey Optimizer、GenStudio和使用情况分析。 |
 | **[!UICONTROL 在 CJA 中使用]** | 指示是否在Customer Journey Analytics中使用数据视图。 对于在Adobe Journey Optimizer集成中自动生成的数据视图，此值仅为&#x200B;**[!UICONTROL Off]**。 |
 | **[!UICONTROL 创建日期]** | 创建数据视图时的时间戳。 |
@@ -166,7 +168,9 @@ ht-degree: 10%
 
 ## 启用或禁用Data Insights Agent的数据视图
 
-您可以启用或禁用[Data Insights Agent](/help/data-analysis-ai.md)的数据视图。
+<!-- FOLLOW-UP: This setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what the setting does now and whether it will be renamed or removed. This also applies to the Data Insights Agent column above. -->
+
+您可以启用或禁用[Data Insights Agent](/help/data-views/create-dataview.md#ai-settings)的数据视图。
 
 1. 选择数据视图名称旁边的![更多](/help/assets/icons/More.svg)。
 1. 从上下文菜单中选择![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL 为Data Insights Agent启用]**&#x200B;或![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL 为Data Insights Agent禁用]**。

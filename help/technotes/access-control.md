@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 74%
+ht-degree: 73%
 ---
 # 访问控制
 
@@ -137,9 +137,9 @@ ht-degree: 74%
   | [!UICONTROL 数据治理] | [!UICONTROL 查看数据使用策略] | 对属于您组织的数据使用策略的只读访问权限。 |
   | [!UICONTROL 数据治理] | [!UICONTROL 管理数据使用策略] | 有权读取、创建、编辑和删除数据使用策略。 |
 
-  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
+  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
 
-* 如果Journey Optimizer与存在Journey Optimizer连接的Customer Journey Analytics集成，则还必须添加[历程权限](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)才能访问连接：
+* 如果Journey Optimizer与存在Journey Optimizer连接的Customer Journey Analytics集成，则还必须添加[历程权限](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability)才能访问连接：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
@@ -150,14 +150,14 @@ ht-degree: 74%
 
 * 将数据集导出到[目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  要执行此任务，用户必须属于提供以下[目标权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/home#access-controls)的&#x200B;**Experience Platform角色**：
+  要执行此任务，用户必须属于提供以下[目标权限](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls)的&#x200B;**Experience Platform角色**：
 
   | 类别 | 权限 | 描述 |
   |---|---|---|
   | [!UICONTROL 目标] | [!UICONTROL 管理目标] | 读取、创建和删除目标连接和目标帐户的访问权限。 |
   | [!UICONTROL 目标] | [!UICONTROL 激活目标] | 允许用户将区段激活到现有目标。 在激活工作流中启用映射步骤。 此权限还要求给想要将数据激活到目标的用户授予“查看目标”权限。 |
 
-  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
+  有关Experience Platform权限的详细信息，请参阅[沙盒和权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions)。
 
 
 * 使用 [BI 扩展](../data-views/bi-extension.md)
@@ -191,6 +191,8 @@ ht-degree: 74%
 
 ![Admin Console 权限](assets/permissions.png)
 
+<!-- FOLLOW-UP (waiting on PM): The AI Assistant: Product Knowledge and Data Insights Agent permissions haven't been updated in the product yet. When the PM confirms the Coworker permission name and category, update both rows below. Links to the retired AI Assistant and Data Insights Agent pages were removed. -->
+
 | 类别 | 权限 | 描述 |
 | --- | --- | ---|
 | [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。 如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
@@ -205,8 +207,8 @@ ht-degree: 74%
 | [!UICONTROL 报告工具] | [!UICONTROL 审核日志访问] | 强制对 [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) 和审核日志 UI 进行权限检查。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 与任何人共享项目链接] | 允许用户[与任何人共享项目。](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL 报告工具] | [!UICONTROL 预测] | 允许用户访问 Analysis Workspace 中的[预测](../analysis-workspace/c-forecast/forecasting.md)功能 |
-| [!UICONTROL 报告工具] | [!UICONTROL AI 助手：产品知识] | 允许用户访问 [AI 助手](../ai-assistant.md)，了解产品知识。 |
-| [!UICONTROL 报告工具] | [!UICONTROL Data Insights 代理] | 允许用户访问[Data Insights Agent](../data-analysis-ai.md)以进行AI驱动的数据分析。 |
+| [!UICONTROL 报告工具] | [!UICONTROL AI 助手：产品知识] | 允许用户访问AI Assistant以获取产品知识。 |
+| [!UICONTROL 报告工具] | [!UICONTROL Data Insights 代理] | 允许用户访问Data Insights Agent以进行AI驱动的数据分析。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 智能题注] | 允许用户访问[智能题注](/help/analysis-workspace/visualizations/intelligent-captions.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL MCP访问] | 允许用户访问[Customer Journey Analytics MCP服务器](https://developer.adobe.com/analytics-mcp/docs/cja/)。 |
 | [!UICONTROL 数据视图工具] | [!UICONTROL 完整表格导出] | 允许用户[将完整表格导出到云](/help/analysis-workspace/export/export-cloud.md)。 |

@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 8b1f9d95fb38c0fcb1a7f3d9b41bf3cfb9355ed9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1945'
 ht-degree: 0%
 ---
 # 使用同事的产品内体验
@@ -42,13 +42,15 @@ Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 �
 
   如果您无法访问Workspace中的同事，请联系您的管理员。 有关详细信息，请参阅[IMS组织首选项](/help/analysis-workspace/user-preferences.md#ims-organization-preferences)。<!-- need to update this section with the new toggle -->
 
-<!-- **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]** -->
+<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
+
+* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL 辅助进程]**&#x200B;权限决定了辅助进程的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)必须将此权限添加到您的产品配置文件。 有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
 
 * **数据视图访问**：同事使用您现有的Analysis Workspace和数据视图权限。 它无法访问您尚无法访问的数据或组件。
 
 ### 在Workspace中的同事和同事应用程序之间进行选择
 
-同事的产品内体验具有许多与[CX Enterprise Coworker应用程序](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-coworker/content/chat/analytics-chat)相同的功能，包括您有权访问的技能。 但是，在决定何时可以使用一种方式而不是使用另一种方式时，存在一些重要差异：
+同事的产品内体验具有许多与[CX Enterprise Coworker应用程序](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)相同的功能，包括您有权访问的技能。 但是，在决定何时可以使用一种方式而不是使用另一种方式时，存在一些重要差异：
 
 | | 同事的产品内体验 | 同事应用程序 |
 | --- | --- | --- |
@@ -112,7 +114,7 @@ Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 �
 
 1. 在Customer Journey Analytics中，打开现有的Workspace项目或创建新项目。
 
-1. **[PLACEHOLDER：如何打开Co-worker面板，如图标名称和位置。 添加屏幕快照。]**
+1. 选择标题右上角的&#x200B;**同事**&#x200B;图标![询问同事](/help/assets/icons/coworker.svg)以打开同事聊天面板。
 
 1. 在聊天面板中，描述您希望同事做什么。
 
@@ -147,7 +149,7 @@ Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 �
 
 1. 在Customer Journey Analytics中，打开现有的Workspace项目或创建新项目。
 
-1. **[PLACEHOLDER：如何打开Co-worker面板，如图标名称和位置。 添加屏幕快照。]**
+1. 选择标题右上角的&#x200B;**同事**&#x200B;图标![询问同事](/help/assets/icons/coworker.svg)以打开同事聊天面板。
 
 1. 在聊天面板中，描述您希望同事做什么。
 
