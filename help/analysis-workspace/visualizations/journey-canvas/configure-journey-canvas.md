@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4cdf80f86cea6a60e3b098c6efbaab0821a256c7
 workflow-type: tm+mt
 source-wordcount: '7372'
-ht-degree: 82%
+ht-degree: 83%
 ---
 # 配置历程画布可视化图表
 
@@ -150,7 +150,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare_percentages"
 >title="比较百分比"
->abstract="根据主要量度，比较当前日期范围和选定比较日期范围之间旅程中每个节点、箭头和流失的百分比变化。 禁用此选项后，将显示原始值百分比，而不是百分比变化。"
+>abstract="根据主要量度，比较历程中各个节点、箭头和流失点在当前日期范围与所选比较日期范围之间的百分比变化。 禁用此选项时，将显示原始值的百分比，而非百分比变化。"
 
 <!-- markdownlint-enable MD034 -->
 
