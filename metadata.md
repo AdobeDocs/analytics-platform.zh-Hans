@@ -6,7 +6,7 @@ product_v2:
     internal-label: "Customer Journey Analytics"
 usetq: true
 type: Documentation
-git-repo: https://github.com/AdobeDocs/analytics-platform.en
+git-repo: https://github.com/AdobeDocs/analytics-platform.zh-Hans
 description: 此文件包含存储库级别的元数据，这些元数据将传递到存储库中的用户指南TOC.md文件。
 feature-set: Customer Journey Analytics
 landing-page-name: customer-journey-analytics
