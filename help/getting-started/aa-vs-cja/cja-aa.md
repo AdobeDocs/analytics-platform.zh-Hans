@@ -81,10 +81,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 99%
+source-wordcount: '3102'
+ht-degree: 98%
 ---
 # Customer Journey Analytics 功能支持
 
@@ -94,6 +94,8 @@ ht-degree: 99%
 
 下表列出了 Customer Journey Analytics 中可用但 Adobe Analytics 不支持的功能。
 
+<!-- FOLLOW-UP (Thursday): When the in-app Coworker experience launches, point the Coworker row link to /help/analysis-workspace/coworker.md. FOLLOW-UP (later): When Coworker becomes available in Adobe Analytics, remove the "coming soon" sentence and move the Coworker row to the Fully supported table. -->
+
 | 功能 | 更多详细信息 |
 | --- | --- |
 | **能够组合数据集（例如 Adobe Analytics 报告包）** | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
@@ -102,8 +104,8 @@ ht-degree: 99%
 | **BI 扩展** | 通过 [BI 扩展功能](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-export/bi-extension)，您可以将 Customer Journey Analytics 直接连接至主流 BI 可视化工具，例如 Power BI 或 Tableau。 使用此扩展功能，您可以确保 BI 报表与 Analysis Workspace 及其他 Customer Journey Analytics 报表界面中的数据精准一致。 该扩展功能为 Customer Journey Analytics 提供了一种更为简便的 BI 报表获取方式，无需从原始数据重新构建报表或量度。 |
 | **Workspace 项目中的备注** | 您可以通过评论在 [Analysis Workspace 项目](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=cn)的上下文中分享洞察并提出问题。 这可以简化有关数据的讨论，使对话保持在正在讨论的数据范围内。 |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/content-analytics/content-analytics) 帮助营销人员了解内容如何影响企业定义的关键绩效指标。 除了行为数据之外，Content Analytics 还收集关于内容如何被消费以及内容如何产生影响的数据。 |
+| **Coworker** | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)是一个AI队友，可回答有关您的数据的自然语言问题。 它使用来自您的数据视图和实际数据的组件来构建可视化图表、查找见解并解释量度发生更改的原因。 同事即将来到Adobe Analytics。 |
 | **跨设备分析** | Customer Journey Analytics 支持无缝组合来自未经身份验证和经过身份验证会话的设备特定数据集。 Customer Journey Analytics 可以将历史数据回填到已知设备。 在 Adobe Analytics 中，此功能仅限于单个报告包以及使用设备图。 |
-| **Data Insights 代理** | [Data Insights 代理](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=cn)是 Customer Journey Analytics 中 AI 助手的一部分，是一款生成式 AI 对话代理。 它使用来自数据视图和实际数据的组件，通过在 Analysis Workspace 中构建相关的可视化图表来快速有效地回答以数据为中心的问题。 |
 | **维度增强功能** | Customer Journey Analytics 为使用维度提供了更大的灵活性： <ul><li>**自定义基于数值的维度**：[在数据视图中创建您自己的基于数值的维度](/help/data-views/create-dataview.md#components)。</li><li>**对基于字符串的维度进行排序**：[在自由格式表中按字母顺序对基于字符串的维度进行排序。](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>在 Adobe Analytics 中，只有少数内置数值维度可用，并且无法按基于字符串的维度进行排序。</p> |
 | **派生字段** | [派生字段](/help/data-views/derived-fields/derived-fields.md)可为数据转换报告时间。 可即时组合、更正或创建数据，并且这些转换可追溯地应用于所有报告。 |
 | **增强了安全和隐私选项** - HIPAA 就绪 | Customer Journey Analytics 符合 HIPAA 标准，并提供[附加安全选项](/help/privacy/cmk.md)，以确保符合相关法规。 Adobe Analytics 尚未为 HIPAA 做好准备。 |

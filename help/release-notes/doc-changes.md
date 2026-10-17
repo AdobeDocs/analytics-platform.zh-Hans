@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '7222'
+source-wordcount: '7309'
 ht-degree: 95%
 ---
 
@@ -70,6 +70,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年10月** | |
+| AI助手和Data Insights Agent由同事替代 | 删除了AI助手和Data Insights Agent文章。 Adobe CX Enterprise Coworker取代了这两项功能。 有关详细信息，请参阅[使用同事聊天分析数据](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)。 还更新了[Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa)以反映此更改。 |
 | Content Analytics付费媒体频道 | 有关自动配置数据集和数据视图组件的全面[文档](/help/content-analytics/config/paid-media.md)，这些组件源自使用付费媒体源连接器（如Google Ads或Meta Ads）以及配置和启用Content Analytics付费媒体渠道。 |
 | 对话分析 | [文档](/help/conversation-insights/overview.md)以了解对话见解。 |
 | 品牌可见度 | 更新了[品牌可见度入站集成](/help/integrations/bv/bv.md#inbound-integration)的文档，提供了更多详细信息。 |
@@ -116,7 +117,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2025 年 11 月** | |
 | 连接中每日行数的护栏 | 新增了有关连接中每日平均最大行数的[数据传输限制护栏信息](/help/technotes/guardrails.md)。 |
 | **2025 年 10 月** | |
-| 管理对 Data Insights 代理的访问权限 | 更新了[启用数据视图的权限要求和流程](/help/data-analysis-ai.md#manage-access-to-data-insights-agent)。 |
+| 管理对 Data Insights 代理的访问权限 | 更新了[启用数据视图的权限要求和流程](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai)。 |
 | 归因配置 | 其他更新，以反映模型、容器和回顾窗口的新归因配置选项。 |
 | 摄取和使用 Experience Platform 受众 | 更新了关于如何[摄取和使用 Experience Platform 受众](/help/use-cases/data-ingestion/ingest-aep-segments.md)的用例文章。 |
 | 让您的组织做好准备，以升级到 Customer Journey Analytics | 添加了关于如何[准备组织以升级到 Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md) 的信息。 |
@@ -201,7 +202,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2024 年 6 月** | |
 | 更新了涉及流媒体功能的产品名称 | 当引用收集流媒体数据并将其显示在 Analysis Workspace 中的一组流媒体功能时，将“媒体分析”和“流媒体”的实例替换为名称“流媒体收藏集附加组件”和“流媒体收藏集”。 <p>这些更新可在 Customer Journey Analytics 文档以及[流媒体收藏集文档](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/media-overview)中查看。</p> |
 | 基于图形的拼接 | 更新并重组了[拼合文档](/help/stitching/overview.md)，引入了基于图形的拼合。 |
-| AI 助手 | 添加了有关 Customer Journey Analytics 的 AI 助手的[文档](../ai-assistant.md)。 |
+| AI 助手 | 添加了有关 Customer Journey Analytics 的 AI 助手的[文档](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/ai-assistant)。 |
 | 转换数据集以进行 B2B 查找 | 添加了有关如何通过转换 B2B 查找数据集来支持[基于人员的 B2B 数据查找](/help/connections//transform-datasets-b2b-lookups.md)（包括帐户、机会、营销列表和营销活动）的文档。 |
 | 派生字段函数和函数模板 | 添加了有关其他派生字段函数（[Math](/help/data-views/derived-fields/derived-fields.md#math)、[Next 或 Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) 和 [Summarize](/help/data-views/derived-fields/derived-fields.md#summarize)）和[函数模板](/help/data-views/derived-fields/derived-fields.md#function-templates)的文档。 |
 | **2024 年 5 月** | |

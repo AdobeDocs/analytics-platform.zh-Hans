@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '3122'
+source-wordcount: '3165'
 ht-degree: 77%
 ---
 # 创建或编辑数据视图
@@ -117,9 +117,20 @@ ht-degree: 77%
 {style="table-layout:auto"}
 
 
-### AI 设置
+### AI 设置 {#ai-settings}
 
-选择&#x200B;**[!UICONTROL 启用Data Insights Agent]**&#x200B;以启用[Data Insights Agent](/help/data-analysis-ai.md)的数据视图。 Data Insights Agent是一个创新型人工智能会话代理，可从Customer Journey Analytics中的AI助手访问。 它可帮助您通过文本提示词快速分析数据。 代理使用数据视图中的组件并使用实际数据在Analysis Workspace中构建相关可视化图表。
+<!-- FOLLOW-UP: The Enable for Data Insights Agent setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what this setting does now and whether it will be renamed or removed. This contextual help block was moved here from the retired data-analysis-ai.md page; confirm that the in-product help still resolves. -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="为 Data Insights 代理启用"
+>abstract="此选项可启用与 Data Insights 代理一起使用的数据视图。 Data Insights Agent是一款创新型人工智能对话代理，可帮助您通过文本提示快速分析数据。 它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。"
+
+<!-- markdownlint-enable MD034 -->
+
+选择&#x200B;**[!UICONTROL 启用Data Insights Agent]**&#x200B;以启用Data Insights Agent的数据视图。 Data Insights Agent是一款创新型人工智能对话代理，可帮助您通过文本提示快速分析数据。 代理使用数据视图中的组件并使用实际数据在Analysis Workspace中构建相关可视化图表。
 
 
 ### 日程表
