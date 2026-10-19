@@ -34,11 +34,11 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 
 请注意，您的键盘上可能会使用以下符号：
 
-- **⇧** 表示 **[!UICONTROL ** shift **]** 键。
-- **⌘** 表示 **[!UICONTROL ** cmd **]**（命令）。
-- **⌃** 表示 **[!UICONTROL ** ctrl **]**（控制）。
-- **⌥** 表示 **[!UICONTROL ** opt **]**（选项）。
-- **⎇** 表示 **[!UICONTROL ** alt **]**（备选）。
+- **⇧** 表示 **[!UICONTROL **&#x200B; shift &#x200B;**]** 键。
+- **⌘** 表示 **[!UICONTROL **&#x200B; cmd &#x200B;**]**（命令）。
+- **⌃** 表示 **[!UICONTROL **&#x200B; ctrl &#x200B;**]**（控制）。
+- **⌥** 表示 **[!UICONTROL **&#x200B; opt &#x200B;**]**（选项）。
+- **⎇** 表示 **[!UICONTROL **&#x200B; alt &#x200B;**]**（备选）。
 
 ## 导航操作
 
@@ -104,7 +104,7 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 
 ## 表列操作
 
-您可以使用键盘调整表格列的大小和重新排列表格列。 这些操作不是全局热键。 当列大小调整分隔符或列标题的&#x200B;**[!UICONTROL 重新排列]**&#x200B;按钮具有焦点时，它们可用。 请参阅表列](/help/analysis-workspace/workspace-faq/aw-accessibility.md#table-columns)的[键盘导航。
+您可以使用键盘调整表格列的大小和重新排列表格列。 这些操作不是全局热键。 当列大小调整分隔符或列标题的&#x200B;**[!UICONTROL 重新排列]**&#x200B;按钮具有焦点时，它们可用。 请参阅表列[&#128279;](/help/analysis-workspace/workspace-faq/aw-accessibility.md#table-columns)的键盘导航。
 
 ## 民主化操作
 
