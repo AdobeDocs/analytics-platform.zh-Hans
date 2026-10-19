@@ -7,22 +7,26 @@ role: User
 TQID: https://experienceleague.adobe.com/555a8gxm8jBGyatt1Vp6e40Wj2gqgRl95oFiHC4NMhQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Accessibility
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 547
-ht-degree: 100%
-
+source-wordcount: '903'
+ht-degree: 60%
 ---
-
 # Analysis Workspace 中的无障碍功能
 
 了解 Customer Journey Analytics 的首要分析工具 [!UICONTROL Analysis Workspace] 中的无障碍支持。
@@ -63,6 +67,48 @@ ht-degree: 100%
 1. 按&#x200B;**[!UICONTROL 输入]**&#x200B;键选择。
 1. 使用箭头键导航到要放置组件的区域。
 1. 按&#x200B;**[!UICONTROL 输入]**&#x200B;键放置组件。
+
+### 表格列的键盘导航 {#table-columns}
+
+您可以使用键盘调整表格列的大小和重新排列表格列。 相同的密钥在macOS和Windows上同样有效。
+
+#### 调整列大小 {#resize-columns}
+
+您可以使用列大小调整分隔符（两个列标题之间的边界）来调整自由格式表和同类群组表中的列大小。
+
+1. 按&#x200B;**[!UICONTROL Tab]**，直到列大小调整分隔符具有焦点。
+
+   有关在分隔符具有焦点时调整显示大小的说明。 屏幕阅读器会朗读这些说明以及当前列宽百分比。
+
+1. 使用以下键调整列大小。 列的大小不能超过其最小或最大宽度。
+
+   | 键 | 操作 |
+   | --- | --- |
+   | **[!UICONTROL 向左箭头]** | 将分隔符左侧的列缩小10像素。 |
+   | **[!UICONTROL 向右箭头]** | 将分隔符左侧的列加宽10像素。 |
+   | **[!UICONTROL 进入]** | 重置列宽。 |
+
+#### 重新排列列 {#rearrange-columns}
+
+在可以编辑的自由格式表中，可以使用列标题中的&#x200B;**[!UICONTROL 重新排列]**&#x200B;菜单将列左右移动。
+
+1. 按&#x200B;**[!UICONTROL Tab]**&#x200B;直到列标题中的&#x200B;**[!UICONTROL 重新排列]**&#x200B;按钮成为焦点。
+1. 按&#x200B;**[!UICONTROL Enter]**、**[!UICONTROL 共享空间]**&#x200B;或&#x200B;**[!UICONTROL 向下箭头]**&#x200B;打开菜单。
+1. 选择&#x200B;**[!UICONTROL 向左移动列]**&#x200B;或&#x200B;**[!UICONTROL 向右移动列]**。
+
+   要关闭菜单而不移动列，请按&#x200B;**[!UICONTROL Esc]**。 焦点返回到&#x200B;**[!UICONTROL 重新排列]**&#x200B;按钮。
+
+   移动列后，屏幕阅读器会朗读列名及其在组中的新位置。
+
+使用键盘重新排列列时，请考虑以下事项：
+
+* 列只在其同级列组内移动，这些同级列是位于同一父标题下的同一级别的列。 不能使用键盘将列移动到其他组或复制列。
+* 移动父标题时，其嵌套列和过滤器会随该标题一起移动。
+* **[!UICONTROL 对组中的第一列禁用了向左移动列]**。 已针对组中的最后一列禁用&#x200B;**[!UICONTROL 向右移动列]**。
+* **[!UICONTROL 重新排列]**&#x200B;按钮仅适用于可通过拖动重新排列的列。 它不可用于：
+  * 只读表或禁用交互的表。
+  * 自由格式表具有[多个维度列](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)，不能在其中拖动列。
+  * 同类群组表中的日期列。
 
 ### 键盘快捷键（热键）
 

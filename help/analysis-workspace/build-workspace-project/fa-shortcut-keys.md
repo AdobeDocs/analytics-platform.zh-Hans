@@ -8,33 +8,37 @@ role: User
 TQID: https://experienceleague.adobe.com/YWKW578JfolnUul64XLty6ehTVlsdsdTRAgHQG3wzbY
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
+    internal-label: Insights
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 488
-ht-degree: 78%
-
+source-wordcount: '527'
+ht-degree: 72%
 ---
-
 # 热键
 
 Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导航、分析和民主化。
 
 请注意，您的键盘上可能会使用以下符号：
 
-- **⇧** 表示 **[!UICONTROL **&#x200B; shift &#x200B;**]** 键。
-- **⌘** 表示 **[!UICONTROL **&#x200B; cmd &#x200B;**]**（命令）。
-- **⌃** 表示 **[!UICONTROL **&#x200B; ctrl &#x200B;**]**（控制）。
-- **⌥** 表示 **[!UICONTROL **&#x200B; opt &#x200B;**]**（选项）。
-- **⎇** 表示 **[!UICONTROL **&#x200B; alt &#x200B;**]**（备选）。
+- **⇧** 表示 **[!UICONTROL ** shift **]** 键。
+- **⌘** 表示 **[!UICONTROL ** cmd **]**（命令）。
+- **⌃** 表示 **[!UICONTROL ** ctrl **]**（控制）。
+- **⌥** 表示 **[!UICONTROL ** opt **]**（选项）。
+- **⎇** 表示 **[!UICONTROL ** alt **]**（备选）。
 
 ## 导航操作
 
@@ -97,6 +101,10 @@ Analysis Workspace 中提供了热键（键盘快捷键），以实现无缝导�
 | 调整更短的大小 | **[!UICONTROL *cmd + opt + shift + up *]** | **[!UICONTROL *ctrl + alt + shift + up *]** |
 
 宽度在一个网格列的步长内调整大小，高度在一个网格单元的步长内调整大小（大约25像素）。
+
+## 表列操作
+
+您可以使用键盘调整表格列的大小和重新排列表格列。 这些操作不是全局热键。 当列大小调整分隔符或列标题的&#x200B;**[!UICONTROL 重新排列]**&#x200B;按钮具有焦点时，它们可用。 请参阅表列](/help/analysis-workspace/workspace-faq/aw-accessibility.md#table-columns)的[键盘导航。
 
 ## 民主化操作
 
