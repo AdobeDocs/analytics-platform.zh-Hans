@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
+source-git-commit: 5f5e011198decd41ced888904b643d817959dab3
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1971'
 ht-degree: 18%
 ---
 # 启用拼接
@@ -253,8 +253,6 @@ ht-degree: 18%
 
   要确保实时数据开始流入，请为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。
 
-  摄取到Experience Platform源事件数据集的新数据将在四个小时内显示在Customer Journey Analytics中。
-
 * 回填数据（如果最初请求）与实时数据大约在同一时间出现在Customer Journey Analytics中，但可能需要几天才能完全处理，具体取决于所涉及的卷。 回填数据从最早的事件时间戳值开始。
 
 
@@ -263,7 +261,7 @@ ht-degree: 18%
   >对于在连接界面中启用[拼接功能](#enable-stitching)的数据集，由于已知限制，无法报告回填状态。
   >
 
-  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的&#x200B;**[!UICONTROL 事件]**&#x200B;度量值。 如果这些数字匹配，则回填已完成。
+  使用替代方法验证是否回填了来自拼接数据集的数据。 例如，使用[Experience Platform查询服务UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview)从数据集中提取相关时段的事件计数。 比较同一时间范围内在[Customer Journey Analytics报表](/help/analysis-workspace/home.md)中的&#x200B;**[!UICONTROL 事件]**&#x200B;度量值。 如果这些数字匹配，则回填已完成。
 
 
 ## 限制
