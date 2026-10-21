@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
+source-git-commit: 5f5e011198decd41ced888904b643d817959dab3
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1971'
 ht-degree: 18%
 ---
 # 启用拼接
@@ -252,8 +252,6 @@ ht-degree: 18%
 * 经过若干小时（少于14小时）后，实时数据最初会显示在Customer Journey Analytics中。 新的实时数据在几个小时内即可提供。 实时数据从事件时间戳值开始，这些值与拼合启用完成时的实际时间相匹配。
 
   要确保实时数据开始流入，请为数据集启用&#x200B;**[!UICONTROL 导入所有新数据]**&#x200B;选项。
-
-  摄取到Experience Platform源事件数据集的新数据将在四个小时内显示在Customer Journey Analytics中。
 
 * 回填数据（如果最初请求）与实时数据大约在同一时间出现在Customer Journey Analytics中，但可能需要几天才能完全处理，具体取决于所涉及的卷。 回填数据从最早的事件时间戳值开始。
 
