@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 9e9722a8c5848cba2e657a9c538d61e9453b0d09
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '514'
 ht-degree: 9%
 ---
 # 转换数据集以进行 B2B 查找
@@ -45,10 +45,10 @@ ht-degree: 9%
 
 此转换仅适用于包含B2B查找架构数据的数据集，它基于以下类：
 
-* [XDM 业务帐户人员关系](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM 业务机会人员关系](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM 商业营销列表成员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM 商业营销活动成员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM 业务帐户人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM 业务机会人员关系](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM 商业营销列表成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM 商业营销活动成员](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ ht-degree: 9%
 
 >[!PREREQUISITES]
 >
->要使摄取正常工作，必须验证B2B查找数据集是否已为以下字段（如B2B查找架构中所定义）填充数据：
+>为使引入正常工作，下表中的每个数据集必须包含使用数据填充的指定字段：
 >
->| 包含符合架构的数据集 | 填充了数据的字段 |
+>| 包含符合架构的数据集 | 必填字段已填充数据 |
 >|---|---|
 >| XDM 业务帐户人员关系 | `accountPersonID` |
 >| XDM业务机会人员 | `opportunityPersonID` |
