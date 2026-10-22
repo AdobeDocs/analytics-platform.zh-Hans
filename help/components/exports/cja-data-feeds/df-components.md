@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
+source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 43%
+source-wordcount: '1548'
+ht-degree: 40%
 ---
 # 数据馈送中的组件可用性
 
@@ -98,8 +98,6 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 
 <!-- markdownlint-disable MD034 -->
 
-<!-- pretty sure this isn't being used -->
-
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -107,20 +105,37 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 
 <!-- markdownlint-enable MD034 -->
 
->[!IMPORTANT]
->
->某些维度不能在Experience Platform数据集中一起使用，因此无法包含在同一个数据馈送中。
->
->如果选择在数据馈送中包含&#x200B;**用户代理**&#x200B;或&#x200B;**移动设备ID**&#x200B;维度，则无法将下面列出的维度添加到数据馈送中。
+某些维度不能在Experience Platform数据集中一起使用。 数据馈送可以包含来自以下组之一的维度，但不能同时包含来自这两个组的维度：
+
+* **用户代理**&#x200B;和&#x200B;**移动设备ID**&#x200B;维度。<!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
+
+* 设备查找维度，例如浏览器、移动设备和操作系统维度。 有关完整列表，请参阅[设备查找维度](#device-lookup-dimensions)。
+
+>[!NOTE]
 >
 >如果您使用Web SDK，此限制在数据到达Experience Platform数据集之前在数据流中实施。 有关详细信息，请参阅数据收集指南中的[创建和配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)中的[配置设备查找](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)。
 
-以下维度不能与&#x200B;**用户代理**&#x200B;或&#x200B;**移动设备ID**&#x200B;维度一起使用：
+### 解决维度冲突
+
+添加不能一起使用的维度时，会出现一个对话框，其中列出将添加的维度，以及不会添加或删除的维度。 冲突发生与否取决于冲突发生的地点：
+
+* **您添加的维度与数据馈送中已有的维度冲突**：您添加的维度优先。 该对话框提示您添加选定内容并从数据馈送中删除冲突的维度。
+
+* **您添加的维度相互冲突**： **用户代理**&#x200B;和&#x200B;**移动设备ID**&#x200B;维度优先。 对话框提示您添加这些维度；所选维度中的设备查找维度不会添加。
+
+若要保持数据馈送不变，请选择&#x200B;**[!UICONTROL 取消]**。
+
+<!--Open questions for Danny Carmen: behavior when a batch contains both groups and the feed already has conflicting dimensions; whether "add all" adds the full selection or only the listed dimensions.-->
+
+### 设备查找维度 {#device-lookup-dimensions}
+
+以下维度不能与&#x200B;**用户代理**&#x200B;或&#x200B;**移动设备ID**&#x200B;维度包含在同一数据馈送中。
 
 >[!NOTE]
 >
 >以下列表使用缺省的维名称。 在数据视图中重命名的维度会以其自定义名称显示在数据馈送中。
 
+<!--Engineering lists 30 device lookup fields; this list has 28. Likely missing: environment.operatingSystemIDStr and environment.browserIDStr. Confirm display names with Danny Carmen.-->
 
 * 浏览器类型
 * 浏览器
