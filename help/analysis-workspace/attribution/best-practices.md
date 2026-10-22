@@ -22,17 +22,17 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c6330935bb6b36fab622b7884e9182ebd4bdc610
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 63%
+source-wordcount: '470'
+ht-degree: 60%
 ---
 # 归因最佳实践
 
 为您的组织选择合适的归因模型取决于多种因素。 本文探索了一种方法论和一些常规的最佳实践：
 
 * [探索性分析](#exploratory-analysis)
-* [基于规则的归因](#rule-base-attribution)
+* [基于规则的归因](#rule-based-attribution)
 * [使用算法归因](#use-algorithmic-attribution)
 
 ## 探索性分析
@@ -46,11 +46,11 @@ ht-degree: 63%
 * 这些行为的比例/分布
 
 例如，如果 50% 的客户在转化前接触了 3 个渠道，这 3 个渠道之间有什么互动吗？
-然后，您可以进行漏斗上层和漏斗下层分析，以加深您的理解。
+要扩大您的理解，请执行上层和下层funnel分析。
 
 ### 漏斗上层分析
 
-漏斗上层分析渠道用于创建品牌和产品意识。 例如，大部分电视广告的目标是品牌意识。 您可能使用[时间衰减归因模型](/help/analysis-workspace/attribution/models.md)，因为随着时间的推移，人们会忘记您的电视广告。
+漏斗上层分析渠道用于创建品牌和产品意识。 例如，大部分电视广告的目标是品牌意识。 使用[时间衰减归因模型](/help/analysis-workspace/attribution/models.md)，因为随着时间的推移，人们会忘记您的电视广告。
 
 ### 漏斗下层分析
 
@@ -64,15 +64,19 @@ ht-degree: 63%
 
 假设您的假设是：“*我的首次联系渠道比最后一次联系渠道对转化的影响更大。*”
 
-在这种情况下，您将使用[反向J型归因模型](/help/analysis-workspace/attribution/models.md)来检验这个假设。 此模型将 60% 的点数分配给第一个接触点。
+在这种情况下，请使用[反向J形归因模型](/help/analysis-workspace/attribution/models.md)来检验这个假设。 此模型将 60% 的点数分配给第一个接触点。
 
 **示例 2**
 
-假设您的假设为：*“在特定行业（例如旅游业）中，归因时段为60或90天，而不是30天，因为客户在购买产品之前会进行大量研究。*”
+假设您的假设为：*&quot;在旅游业，归因时段为60或90天，而不是30天，因为客户在购买之前会深入研究很多。&quot;*
 
-在这种情况下，您会将[回溯时段](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/attribution/models)更改为 90 天。
+在这种情况下，请将您的[回顾时间范围](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)更改为90天。
 
 ## 使用算法归因
+
+>[!NOTE]
+>
+>您必须具有Customer Journey Analytics **Ultimate**&#x200B;程序包才能使用算法归因。 如果您不确定您拥有的是哪个 Customer Journey Analytics 包，请联系您的管理员。
 
 如果您还没有归因模型可以为您的所有问题提供令人满意的答案，您可以使用[算法归因](/help/analysis-workspace/attribution/algorithmic.md)。 由于很难验证大量可能的假设和组合，因此算法归因使用内置算法在各个维度项之间分配点数。
 
@@ -80,5 +84,5 @@ ht-degree: 63%
 
 * 您可能需要使用数据科学家的服务，而不是仅仅依靠 Analysis Workspace。
 * 您可以依赖原始数据，就像在 Adobe 数据馈送中一样。
-* 例如，如果您要考虑展示数据，请考虑使用[Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)。
+* 例如，如果您要考虑展示数据，请考虑使用[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)。
 
