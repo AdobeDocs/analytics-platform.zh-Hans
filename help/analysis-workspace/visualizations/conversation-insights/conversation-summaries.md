@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 13%
+ht-degree: 85%
 ---
 # 对话摘要
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_button"
 >title="对话摘要"
->abstract="创建一个可视化图表，该可视化图表汇总了过滤的对话组。"
+>abstract="创建可视化图表，汇总筛选出的一组对话。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="对话摘要"
->abstract="总结过滤的对话组。 控制摘要的长度。 请参阅客户提供的代表性报价以验证提取信号的准确性。 选择一个要跳转到完整对话重播的报价。"
+>abstract="汇总筛选出的一组对话。 控制摘要的长度。 查看具有代表性的客户原话，验证所提取信号的准确性。 选择一条客户原话，跳转至完整对话回放。"
 
 ![信息源](/help/assets/icons/Summarize.svg)
 
