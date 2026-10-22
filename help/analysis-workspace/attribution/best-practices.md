@@ -70,7 +70,7 @@ ht-degree: 60%
 
 假设您的假设为：*&quot;在旅游业，归因时段为60或90天，而不是30天，因为客户在购买之前会深入研究很多。&quot;*
 
-在这种情况下，请将您的[回顾时间范围](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models)更改为90天。
+在这种情况下，请将您的[回顾时间范围](https://experienceleague.adobe.com/zh-hans/docs/analytics/analyze/analysis-workspace/attribution/models)更改为90天。
 
 ## 使用算法归因
 
@@ -84,5 +84,5 @@ ht-degree: 60%
 
 * 您可能需要使用数据科学家的服务，而不是仅仅依靠 Analysis Workspace。
 * 您可以依赖原始数据，就像在 Adobe 数据馈送中一样。
-* 例如，如果您要考虑展示数据，请考虑使用[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)。
+* 例如，如果您要考虑展示数据，请考虑使用[Customer Journey Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview)。
 
