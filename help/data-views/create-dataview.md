@@ -44,7 +44,7 @@ topic_v2:
 source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '3165'
-ht-degree: 77%
+ht-degree: 78%
 ---
 # 创建或编辑数据视图
 
@@ -53,7 +53,7 @@ ht-degree: 77%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -126,7 +126,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="为 Data Insights 代理启用"
->abstract="此选项可启用与 Data Insights 代理一起使用的数据视图。 Data Insights Agent是一款创新型人工智能对话代理，可帮助您通过文本提示快速分析数据。 它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。"
+>abstract="此选项可启用与 Data Insights 代理一起使用的数据视图。 Data Insights 代理是一款生成式 AI 对话代理，可帮助您通过文本提示快速分析数据。 它使用来自数据视图的组件和您的实际数据在 Analysis Workspace 中构建相关的可视化图表。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -246,7 +246,7 @@ ht-degree: 77%
 
 1. 使用![搜索图标](/help/assets/icons/Search.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](/help/assets/icons/Data.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](/help/assets/icons/DragHandle.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](/help/assets/icons/DragHandle.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**部分。
 可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，从pageName字段，使用右侧不同的[组件设置](component-settings/overview.md)创建`Product Pages`和`Error pages`维度。
 如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 

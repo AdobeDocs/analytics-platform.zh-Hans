@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 5%
+ht-degree: 20%
 ---
 # 热门话题
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
 >title="热门话题"
->abstract="创建一个可视化图表，该可视化图表显示启用层级向下钻取的、包含发生次数和百分比的趋势主题细分，以帮助您识别对话中的重要主题。"
+>abstract="创建可视化图表，按层级展示热门话题的细分情况，支持向下钻取，并显示出现次数和百分比，帮助您识别对话中的重要主题。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
 >title="热门话题"
->abstract="根据所选排名指标分析趋势主题。 选择主题以向下钻取至最深的五个级别。 搜索特定主题并将主题与其他日期范围进行比较。"
+>abstract="根据所选的排名量度分析热门话题。 选择话题进行向下钻取，最多可深入五个层级。 搜索特定话题，并与其他日期范围内的话题进行比较。"
 
 ![信息源](/help/assets/icons/Feed.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表允许您浏览和分析趋势主题，作为对话见解的一部分。
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。
 
-要重新配置趋势主题可视化图表，请选择&#x200B;**排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_**。
+要重新配置趋势主题可视化图表，请选择&#x200B;**[!UICONTROL 排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_]**。
 
 ## 使用
 
