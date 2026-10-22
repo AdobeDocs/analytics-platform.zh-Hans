@@ -137,7 +137,7 @@ ht-degree: 12%
 >id="conversationinsights_blend_specification"
 >title="配置混合规格"
 >abstract="完成此对话分析配置后，您只能编辑混合规范，所有数据集均可用，并且您拥有Customer Journey Analytics权限来编辑连接。"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control" text="访问控制"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/access-control" text="访问控制"
 
 
 >[!CONTEXTUALHELP]
