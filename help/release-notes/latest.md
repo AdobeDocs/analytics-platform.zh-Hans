@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 952a54cc63b5d725c40c8f99cb1821e8b8e9f362
+source-git-commit: fbfd8f635d4a861d3d52dc2448ff8ae5d5f5b149
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 22%
 ---
 # 当前Customer Journey Analytics发行说明（2026年10月）
 
-**上次更新时间**：2026年10月20日
+**上次更新时间**：2026年10月22日
 
 这些发行说明涵盖2026年10月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
@@ -69,7 +69,7 @@ ht-degree: 22%
 | **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>有关详细信息，请参阅[Adobe Brand Visibility集成](/help/integrations/bv/bv.md)。</p> | | 2026年10月8 |
 | **历程画布：比较百分比**<br/>&#x200B;将历程与前期进行比较时，现在可启用新的[!UICONTROL 比较百分比]选项，以显示每个节点、箭头和流失的百分比变化。 在比较比率（例如节点之间的维系率或流失率）时，这项功能非常有用，因为即使旅程中的人数在日期范围之间不同，比较仍会保持准确。<p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)中的“比较百分比”。</p> | | 2026年10月19 |
 | **自动生成组件描述** <br/>您现在可以自动生成维度、量度、计算量度、区段和日期范围的描述。 这使得Workspace用户能够了解要使用的组件，尤其是在具有大型组件库的组织中。 <p>您可以为单个组件生成描述，或同时为多个组件生成描述。</p> <p>（文档链接见下文。）<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 2026年10月28日 |
-| 在Analysis Workspace的聊天面板中现在提供了&#x200B;**同事的产品内体验**<br/>&#x200B;同事。 同事使用您已打开的项目作为上下文，因此您可以询问有关分析的问题，而无需解释项目包含的内容。<p>使用同事的产品内体验，您可以：</p><ul><li>汇总打开的项目、查找见解并运行根本原因分析。</li><li>使用自然语言提示构建和编辑项目。 例如，您可以添加面板和表格、划分数据、更改可视化图表类型和日期范围以及创建区段。</li></ul><p>（后续文档更新。）<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 2026年10月22日（原计划于2026年10月15日） | 待定 |
+| 在Analysis Workspace的聊天面板中现在提供了&#x200B;**同事的产品内体验**<br/>&#x200B;同事。 同事使用您已打开的项目作为上下文，因此您可以询问有关分析的问题，而无需解释项目包含的内容。<p>使用同事的产品内体验，您可以：</p><ul><li>汇总打开的项目、查找见解并运行根本原因分析。</li><li>使用自然语言提示构建和编辑项目。 例如，您可以添加面板和表格、划分数据、更改可视化图表类型和日期范围以及创建区段。</li></ul><p>（后续文档更新。）<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 待定（原计划于2026年10月15日） | 待定 |
 
 
 ### Customer Journey Analytics 中的修复
