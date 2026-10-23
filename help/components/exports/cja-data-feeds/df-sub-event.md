@@ -14,10 +14,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 1%
+source-wordcount: '1303'
+ht-degree: 0%
 ---
 # 数据馈送中的子事件组件
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ### XDM架构中的子事件组件
 
-在XDM架构中，数组的每个元素（字符串数组或对象数组）都是子事件。 映射字段中的每个条目也是子事件，如数据馈送[&#128279;](#use-map-fields-in-data-feeds)中的映射字段中所述。 基于子事件内字段的维度和量度是子事件组件。
+在XDM架构中，数组的每个元素（字符串数组或对象数组）都是子事件。 映射字段中的每个条目也是子事件，如数据馈送](#use-map-fields-in-data-feeds)中的[映射字段中所述。 基于子事件内字段的维度和量度是子事件组件。
 
 要在Adobe Experience Platform中查看XDM架构中的子事件，请选择&#x200B;[!UICONTROL **架构**]，然后展开包含子事件的事件。
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 由于子事件数据[在Customer Journey Analytics数据馈送](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics)中的显示方式不同，因此您对其使用的查询与您对Adobe Analytics数据馈送使用的查询不同。
 
-以下示例显示如何查找包含特定产品的事件。 这些示例使用Google BigQuery语法。 其他数据仓库（如Snowflake和Databricks）支持相同的方法，但语法略有差异。
+以下示例显示如何查找包含特定产品的事件。 这些示例使用Google BigQuery语法，其中`UNNEST`将数组展开为行。 其他数据仓库支持对其自己的数组函数使用相同的方法，例如Snowflake中的`FLATTEN`或Databricks中的`explode`。
 
 +++ 在Customer Journey Analytics数据馈送中查询产品数据
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 **每个事件返回一行**
 
-要筛选事件而不更改行数，请在`EXISTS`子查询中使用`UNNEST`：
+要筛选事件而不更改行数，请在`EXISTS`子查询中使用数组函数，如`UNNEST`：
 
 ```sql
 SELECT row_id, timestamp_utc, product_list_items
@@ -149,7 +149,7 @@ WHERE EXISTS (
 
 **每个匹配产品返回一行**
 
-若要为每个匹配的产品返回一行，请将`UNNEST`移到外部`FROM`子句中：
+若要为每个匹配的产品返回一行，请将数组函数移到外部`FROM`子句中：
 
 ```sql
 SELECT f.row_id, f.timestamp_utc, item.product, item.quantity, item.revenue
@@ -220,7 +220,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ### 标识映射
 
-[`identityMap`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/profile/identitymap)字段中的每个标识都导出为一个对象。 对象包含身份命名空间（键），以及标识符、身份验证状态和主标志。 命名空间会为该命名空间中的每个身份重复。
+[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段中的每个标识都导出为一个对象。 对象包含身份命名空间（键），以及标识符、身份验证状态和主标志。 命名空间会为该命名空间中的每个身份重复。
 
 仅导出作为数据视图中的维度存在并且添加到数据馈送中的身份映射属性。
 
