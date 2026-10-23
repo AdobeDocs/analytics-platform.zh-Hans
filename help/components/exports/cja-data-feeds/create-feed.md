@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
+source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 15%
+source-wordcount: '4243'
+ht-degree: 16%
 ---
 # 创建数据馈送
 
@@ -71,24 +71,6 @@ ht-degree: 15%
 >id="cja_datafeed_frequency_granularity"
 >title="频率和粒度"
 >abstract="**传递频率**（实时数据馈送）：数据馈送的传递频率。 每小时传递的数据包含一小时的数据量；每日传递的数据包含一天的数据量。 回顾日期范围和处理延迟也会影响所包含的事件。<p>**粒度**（回填数据馈送）：用于划分历史数据的时间间隔。 每个数据块包含一天的数据，并会尽快传递，而非每天传递一次。 此字段始终设置为“每日”，无法修改。</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name"
->title="路径或文件名"
->abstract="指定路径或文件名（或同时指定两者）以确定在选定位置中发送文件的位置。 要将文件保存到位置的顶级文件夹，请指定`/`。<br/>对于实时馈送，您可以使用变量使路径或文件名动态化。 <br/>例如，如果您指定`${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`，则在2027年1月15日交付的实时馈送将具有以下文件路径和名称： `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>选择以下链接以获取可用变量列表。"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name-override"
->title="覆盖默认路径或文件名"
->abstract="启用此选项以覆盖为此位置设置的默认路径或文件名。 覆盖仅适用于此数据馈送，并确定发送数据馈送文件的位置。"
 
 <!-- markdownlint-enable MD034 -->
 
