@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 6bc56f504e19548e7e1cf0a6b32df54c45240749
+source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
 workflow-type: tm+mt
-source-wordcount: '7362'
+source-wordcount: '7364'
 ht-degree: 94%
 ---
 
@@ -70,7 +70,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年10月** | |
-| 区段运算符区分大小写 | 已阐明[标准运算符](/help/components/segments/seg-operators.md#standard-operators)返回结果时不考虑大小写，但&#x200B;**[!UICONTROL 匹配项]**&#x200B;和&#x200B;**[!UICONTROL 不匹配项]**&#x200B;除外。 |
+| 区段运算符区分大小写 | 阐明了当您使用[标准运算符](/help/components/segments/seg-operators.md#standard-operators)时，结果不区分大小写，但&#x200B;**[!UICONTROL 匹配]**&#x200B;和&#x200B;**[!UICONTROL 不匹配]**&#x200B;除外。 |
 | 表格列的键盘导航 | 记录如何使用键盘（包括屏幕阅读器反馈）在Analysis Workspace中[调整](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns)和[重新排列](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns)表列。 还向热键添加了[表列操作](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions)部分。 |
 | AI助手和Data Insights Agent由同事替代 | 删除了AI助手和Data Insights Agent文章。 Adobe CX Enterprise Coworker取代了这两项功能。 有关详细信息，请参阅[使用同事聊天分析数据](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)。 还更新了[Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa)以反映此更改。 |
 | Content Analytics付费媒体频道 | 有关自动配置数据集和数据视图组件的全面[文档](/help/content-analytics/config/paid-media.md)，这些组件源自使用付费媒体源连接器（如Google Ads或Meta Ads）以及配置和启用Content Analytics付费媒体渠道。 |

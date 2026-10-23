@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
+source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1211'
 ht-degree: 29%
 ---
 # 运算符
@@ -53,7 +53,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->使用标准运算符时，无论大小写如何，您输入的值都会返回结果，但&#x200B;**[!UICONTROL 匹配]**&#x200B;和&#x200B;**[!UICONTROL 除外，这两个值不匹配]**。
+>当您使用标准运算符时，结果不区分大小写，但&#x200B;**[!UICONTROL 匹配]**&#x200B;和&#x200B;**[!UICONTROL 不匹配]**&#x200B;除外。
 >
 >例如，**[!UICONTROL 页面名称]** **[!UICONTROL 等于]** `search results`返回&#x200B;*搜索结果*、*搜索结果*&#x200B;和&#x200B;*搜索结果*。
 
