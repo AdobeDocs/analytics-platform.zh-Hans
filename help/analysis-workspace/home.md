@@ -60,7 +60,7 @@ ht-degree: 97%
 | 位置 | 名称和功能 |
 |:---------:|----------|
 | A | 包含项目名称、用于访问功能的菜单结构、返回项目列表的按钮![“返回”按钮](/help/assets/icons/ChevronLeft.svg)，以及[分享 Workspace 项目](/help/analysis-workspace/curate-share/share-projects.md)的&#x200B;**[!UICONTROL 分享]**&#x200B;按钮。 <br/>随时选择您的项目名称（例如：新项目）即可更改名称。 <br/>选择![取消收藏](/help/assets/icons/StarOutline.svg)将您的项目标记为收藏的项目![收藏](/help/assets/icons/Star.svg)。 |
-| B | **按钮面板：**&#x200B;包含用于访问 Analysis Workspace 的主要[功能](#features)的按钮：<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL 面板]](/help/analysis-workspace/c-panels/panels.md)</li><li>![引导式分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL 引导式分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL 可视化]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![策划](/help/assets/icons/Curate.svg)[[!UICONTROL 组件]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目录]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![书签](/help/assets/icons/Bookmark.svg) [[!UICONTROL 数据字典]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **按钮面板：**&#x200B;包含用于访问 Analysis Workspace 的主要[功能](#features)的按钮：<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL 面板]](/help/analysis-workspace/c-panels/panels.md)</li><li>![引导式分析](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL 引导式分析]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL 可视化]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![策划](/help/assets/icons/Curate.svg) [[!UICONTROL 组件]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL 目录]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![书签](/help/assets/icons/Bookmark.svg) [[!UICONTROL 数据字典]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **左侧面板：**&#x200B;该区域包含单独的面板、可视化内容、组件或列表。 相关内容取决于按钮面板中选择的按钮。 |
 | D | **画布：**&#x200B;从左侧面板拖动内容以构建项目的主要区域。 当您添加面板、向面板添加可视化效果以及向可视化效果添加组件时，项目会动态更新。 您可以创建多个面板，并且在每个面板内可以创建多个可视化效果。<br/>每个面板均基于选定的数据视图。 所选的数据视图决定了可用的组件，例如量度和维度。 请参阅[面板：数据视图](/help/analysis-workspace/c-panels/panels.md#data-view)，了解更多信息。 |
 
@@ -86,7 +86,7 @@ Analysis Workspace 的大部分功能可通过拖放以及面板、可视化内�
 
 请注意，您的键盘上可能会使用以下符号：
 
-- **⇧** 表示 **[!UICONTROL *shift *]**键。
+- **⇧** 表示 **[!UICONTROL *shift *]**&#x200B;键。
 - **⌘** 表示 **[!UICONTROL *cmd *]**（命令）。
 - **⌃** 表示 **[!UICONTROL *ctrl *]**（控制）。
 - **⌥** 表示 **[!UICONTROL *opt *]**（选项）。
