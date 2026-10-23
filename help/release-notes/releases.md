@@ -7,24 +7,30 @@ autotag-review: '2026-05-19T09:19:46.530Z'
 TQID: 'https://experienceleague.adobe.com/nNV-qOa3LVmHUMLf-R2MwNHY0N67hxG2DWbVrpA-ZpI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: ht
-source-wordcount: 402
+workflow-type: tm+mt
+source-wordcount: '402'
 ht-degree: 100%
-
 ---
-
 # Customer Journey Analytics 功能发布策略
 
 Customer Journey Analytics 版本在持续交付模型上运行，该模型允许采用可扩展的分阶段方法进行功能部署。
@@ -39,11 +45,11 @@ Customer Journey Analytics 版本在持续交付模型上运行，该模型允�
 
 * **正式发布 (GA)**：此功能可供 100% 授权的 CX Enterprise 组织使用，且功能发布已完成。
 
-对于每个功能发布，从 RTP 到 GA 的时间表可能会有所不同。 目标是缩短发布时间，以便能够在发布开始 (RTP) 后的 2 个月内，功能将达到 GA 阶段。
+对于每个功能发布，从 RTP 到 GA 的时间表可能会有所不同。 目标是让发布周期保持较短，以便功能可在发布开始 (RTP) 后 2 个月内达到 GA 阶段。
 
 ## 功能标记
 
-功能标记用于在发布过程中控制新功能的可见性。 Adobe 建议允许 `app.launchdarkly.com` 通过您所在组织的防火墙，以便在发布期间获得最佳体验。 在功能向所有人发布后，这些标志会移除。 有关更多信息，请参阅 [Customer Journey Analytics 使用的域](../technotes/domains.md)。
+功能标志用于在发布过程中控制新功能的可见性。 Adobe 建议允许 `app.launchdarkly.com` 通过您所在组织的防火墙，以便在发布期间获得最佳体验。 在功能向所有人发布后，这些标志会移除。 有关更多信息，请参阅 [Customer Journey Analytics 使用的域](../technotes/domains.md)。
 
 您可以随时在&#x200B;**帮助 > 关于 Workspace > 活动功能标记**&#x200B;下查看活动功能标记。
 
