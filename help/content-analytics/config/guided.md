@@ -256,7 +256,7 @@ ht-degree: 55%
 
 然后，您可以更详细地配置渠道。 根据您是启用[移动设备](#mobile)、[Web](#web)还是[付费媒体](#paid-media)渠道的配置，该配置会有所不同。
 
-#### 移动设备
+#### 移动
 
 +++ 详细信息
 
@@ -576,7 +576,7 @@ ht-degree: 55%
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="没有源连接器"
 >abstract="付费媒体需要为您的广告发布平台配置 Experience Platform 源连接器。 此沙盒中没有 Google Ads 或 Meta Ads 连接器可用。 在 **[!UICONTROL Experience Platform]** > **[!UICONTROL 源]**&#x200B;界面中配置一个或多个连接器，然后返回到此步骤，继续配置 Content Analytics 付费媒体。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads 源"
+>additional-url="https://experienceleague.adobe.com/zh-Hans/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads 源"
 
 +++ 详细信息
 
