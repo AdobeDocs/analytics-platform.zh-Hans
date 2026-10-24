@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
+source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
-source-wordcount: '7364'
-ht-degree: 94%
+source-wordcount: '7412'
+ht-degree: 93%
 ---
 
 # Customer Journey Analytics - 文档更新
@@ -70,6 +70,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年10月** | |
+| 锁定可视化图表的选择 | 已重新构建[管理数据源](/help/analysis-workspace/visualizations/t-sync-visualization.md)，以将配置数据源设置与锁定选择分开。 还阐明当可视化图表锁定到自由格式表中的行时，[锁定选择](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection)的工作方式，包括当锁定的划分行不再位于表中时发生的情况。 |
 | 区段运算符区分大小写 | 阐明了当您使用[标准运算符](/help/components/segments/seg-operators.md#standard-operators)时，结果不区分大小写，但&#x200B;**[!UICONTROL 匹配]**&#x200B;和&#x200B;**[!UICONTROL 不匹配]**&#x200B;除外。 |
 | 表格列的键盘导航 | 记录如何使用键盘（包括屏幕阅读器反馈）在Analysis Workspace中[调整](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns)和[重新排列](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns)表列。 还向热键添加了[表列操作](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions)部分。 |
 | AI助手和Data Insights Agent由同事替代 | 删除了AI助手和Data Insights Agent文章。 Adobe CX Enterprise Coworker取代了这两项功能。 有关详细信息，请参阅[使用同事聊天分析数据](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/analytics-overview)。 还更新了[Customer Journey Analytics功能支持](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa)以反映此更改。 |
