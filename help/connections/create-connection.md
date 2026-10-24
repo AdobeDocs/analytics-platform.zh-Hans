@@ -1017,5 +1017,5 @@ Customer Journey Analytics 支持将身份标识图用作其人员 ID。 身份�
 >[!MORELIKETHIS]
 >
 >* [数据摄取概述](/help/data-ingestion/data-ingestion.md)
->* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=zh-Hans&lang=zh_cn)
+>* 博客：[如何利用 Adobe Customer Journey Analytics 中的事件、查找和轮廓数据集](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?lang=zh_cn)
 

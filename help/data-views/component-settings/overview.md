@@ -51,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="组件设置"
->abstract="查看和配置名称、描述以及其他与组件相关的设置。 选中此框可在Analysis Workspace界面中向非管理员用户隐藏此组件。 管理员仍可通过在 Workspace 项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
+>abstract="查看和配置名称、描述以及其他与组件相关的设置。 选中此复选框可在 Analysis Workspace 界面中对非管理员用户隐藏此组件。 管理员仍可通过在 Workspace 项目中选择&#x200B;**[!UICONTROL 显示所有组件]**&#x200B;来访问该组件。"
 
 <!-- markdownlint-enable MD034 -->
 
