@@ -4,10 +4,10 @@ title: 对话摘要
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 19%
+source-wordcount: '351'
+ht-degree: 20%
 ---
 # 对话摘要 {#conversation-summaries}
 
@@ -30,9 +30,14 @@ ht-degree: 19%
 ## 创建和配置 {#conversation-summaries-create-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_conversationsummaries_attribution"
->title="对话摘要归因"
->abstract="为所选量度启用非默认归因模型。"
+>id="workspace_conversationsummaries_usenondefaultattributionmodel"
+>title="使用非默认的属性模型"
+>abstract="为此量度启用非默认归因模型。"
+
+>[!CONTEXTUALHELP]
+>id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
+>title="使用非默认的属性模型"
+>abstract="非默认归因模型不适用于此量度。"
 
 创建和配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表：
 
@@ -41,12 +46,12 @@ ht-degree: 19%
 1. 在&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表配置中：
 
    1. 选择&#x200B;**[!UICONTROL 指标]**。 例如： **[!UICONTROL 对话]**。
-   1. 如果您想在metrix上设置[归因](/help/analysis-workspace/attribution/models.md)，请选择&#x200B;**[!UICONTROL 设置归因]**，然后选择&#x200B;**[!UICONTROL 模型]**、**[!UICONTROL 容器]**&#x200B;和&#x200B;**[!UICONTROL 回顾窗口]**。
+   1. 如果您想要在量度上使用非默认的[归因](/help/analysis-workspace/attribution/models.md)模型，请选择&#x200B;**[!UICONTROL 使用非默认归因模型]**，然后选择&#x200B;**[!UICONTROL 模型]**、**[!UICONTROL 容器]**&#x200B;和&#x200B;**[!UICONTROL 回顾窗口]**。
    1. 或者，您也可以将区段应用于可视化图表。 从&#x200B;**[!UICONTROL 区段]**&#x200B;下拉菜单中选择一个区段。
 
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
-要重新配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 指标： _指标_]**&#x200B;或&#x200B;**[!UICONTROL 指标：_指标_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 区段：_区段_]**。
+要重新配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 指标： _指标_]**或&#x200B;**[!UICONTROL 指标：_指标_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 区段：_区段_]**。
 
 ## 使用
 
