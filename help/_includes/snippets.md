@@ -1,7 +1,7 @@
 ---
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
 workflow-type: tm+mt
-source-wordcount: '5584'
+source-wordcount: '5605'
 ht-degree: 95%
 ---
 # 片段
@@ -129,6 +129,7 @@ ht-degree: 95%
 
 * **会话**：回顾到发生转化的会话开始时间。 会话回顾窗口遵循数据视图中已修改的[会话超时](/help/data-views/create-dataview.md#session-settings)。 如果选择了&#x200B;**[!UICONTROL 会话]**，[归因回顾窗口](#atribution-lookback-window)会自动设置为&#x200B;**[!UICONTROL 报告窗口]**，且无法更改。
 * **人员**：从“人员”容器的范围查看转化情况。
+* **对话**：查看对话容器范围内的转换。 此容器可用于[对话分析](/help/conversation-insights/overview.md)可视化图表和组件。
 * **全局帐户** [!BADGE B2B 版]{type=Informative}：从“全局账户”容器的范围查看转化情况。
 * **帐户** [!BADGE B2B 版本]{type=Informative}：从“人员”容器的范围查看转化情况。
 * **机会** [!BADGE B2B 版本]{type=Informative}：从“机会”容器的范围查看转化情况。
