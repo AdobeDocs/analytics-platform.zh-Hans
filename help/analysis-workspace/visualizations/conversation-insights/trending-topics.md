@@ -4,12 +4,12 @@ title: 趋势主题
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 14%
+source-wordcount: '424'
+ht-degree: 16%
 ---
-# 热门话题
+# 热门话题 {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
@@ -25,24 +25,29 @@ ht-degree: 14%
 
 您可以搜索特定主题，并将每个级别中每个主题的数量和百分比与其他数据范围进行比较。
 
-## 创建和配置
+## 创建和配置 {#trendimg-topics-create-and-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_trendingtopics_attribution"
->title="趋势主题量度归因"
->abstract="为所选量度启用非默认归因模型。"
+>id="workspace_trendingtopics_usenondefaultattributionmodel"
+>title="使用非默认的属性模型"
+>abstract="为此量度启用非默认归因模型。"
 
-创建和配置趋势主题可视化图表：
+>[!CONTEXTUALHELP]
+>id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
+>title="使用非默认的属性模型"
+>abstract="非默认归因模型不适用于此量度。"
+
+创建和配置&#x200B;**[!UICONTROL 趋势主题]**&#x200B;可视化图表：
 
 1. 添加![信息源](/help/assets/icons/Feed.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
 
 1. 在&#x200B;**[!UICONTROL 趋势主题]**&#x200B;可视化图表配置中：
 
    1. 选择&#x200B;**[!UICONTROL 排名指标]**。 例如： **[!UICONTROL 对话]**。
-   1. 如果您要设置量度上的[归因](/help/analysis-workspace/attribution/models.md)，请选择&#x200B;**[!UICONTROL 设置归因]**，然后选择&#x200B;**[!UICONTROL 模型]**、**[!UICONTROL 容器]**&#x200B;和&#x200B;**[!UICONTROL 回顾窗口]**（可选）。
+   1. 如果您想要在量度上使用非默认的[归因](/help/analysis-workspace/attribution/models.md)模型，请选择&#x200B;**[!UICONTROL 使用非默认归因模型]**，然后选择&#x200B;**[!UICONTROL 模型]**、**[!UICONTROL 容器]**&#x200B;和&#x200B;**[!UICONTROL 回顾窗口]**。
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。
 
-要重新配置趋势主题可视化图表，请选择&#x200B;**排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_**。
+要重新配置趋势主题可视化图表，请选择&#x200B;**[!UICONTROL 排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_]**。
 
 ## 使用
 
