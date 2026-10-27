@@ -38,7 +38,7 @@ ht-degree: 18%
 
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
-要重新配置&#x200B;**[!UICONTROL 对话评论]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 对话&#x200B;_对话_]**旁边的![编辑](/help/assets/icons/Edit.svg)。
+要重新配置&#x200B;**[!UICONTROL 对话评论]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 对话&#x200B;_对话_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg)。
 
 ## 使用
 
