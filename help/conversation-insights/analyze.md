@@ -24,23 +24,37 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '190'
 ht-degree: 0%
 ---
 
 # 分析对话见解
 
-## 简单分析
 
 要分析对话见解，请在Analysis Workspace中创建或编辑项目，并将其中一个配置的数据视图用作项目中一个或多个面板的数据视图。
 
+## 简单分析
+
+若要创建自由格式表或可视化图表，请使用对话指标（**[!UICONTROL 轮换]**、**[!UICONTROL 对话]**、**[!UICONTROL 情绪]**、**[!UICONTROL 对话音调]**&#x200B;等）来显示对话的概述。
+
 +++ 示例项目
 
-![对话分析的基本示例项目](assets/conversation-insights-analyze-sample-project-basic.png)
+![对话分析的基本示例项目](assets/conversation-insights-analyze-sample-project-basic.png){zoomable="yes"}
 
 +++
+
+## 详细分析
+
+要执行对话的详细分析，请使用[趋势主题](/help/analysis-workspace/visualizations/conversation-insights/trending-topics.md)、[对话摘要](/help/analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)和[对话评论](/help/analysis-workspace/visualizations/conversation-insights/conversation-review.md)可视化图表。 这些可视化图表从不同的角度呈现对话数据。
+
++++ 示例项目
+
+![详细的对话分析示例项目](assets/conversation-insights-analyze-sample-project-detailed.png){zoomable="yes"}
+
++++
+
 
 ## 在大规模和上下文中分析对话
 
@@ -52,6 +66,6 @@ ht-degree: 0%
 
 +++ 示例项目
 
-待定。
+等待。
 
 +++ 
