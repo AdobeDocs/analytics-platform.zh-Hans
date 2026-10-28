@@ -4,10 +4,10 @@ title: 对话审阅
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: f1f19b229d06a69ae180bff7dc8648a350465aa0
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 18%
+source-wordcount: '188'
+ht-degree: 16%
 ---
 # 对话回顾
 
@@ -22,7 +22,7 @@ ht-degree: 18%
 >abstract="了解各个对话的背景和流程，包括时间戳和信号。 配置要显示的信号。"
 
 
-![聊天](/help/assets/icons/Chat.svg) **[!UICONTROL 对话评论]**&#x200B;可视化图表显示客户与代理之间的完全轮流交流。
+![聊天](/help/assets/icons/Chat.svg) **[!UICONTROL 对话评论]**&#x200B;可视化图表显示了客户与代理之间的完整逐次交换。
 
 该可视化图表可帮助您了解单个会话的上下文和流程，包括时间戳和信号。 您可以配置要显示或不显示哪些信号。
 
@@ -34,15 +34,21 @@ ht-degree: 18%
 
 1. 在&#x200B;**[!UICONTROL 对话审核]**&#x200B;可视化图表配置中：
 
-   1. 选择&#x200B;**[!UICONTROL 对话]**。
+   * 选择&#x200B;**[!UICONTROL 对话]**。
 
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
-要重新配置&#x200B;**[!UICONTROL 对话评论]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 对话&#x200B;_对话_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg)。
+要重新配置&#x200B;**[!UICONTROL 对话评论]**&#x200B;可视化图表，请选择![编辑](/help/assets/icons/Edit.svg)。
 
 ## 使用
 
-要使用可视化图表，请执行以下操作：
+使用垂直分段滚动条在对话中导航。
+
+**[!UICONTROL 会话开始]**&#x200B;表示对话开始。 **[!UICONTROL 会话结束]**&#x200B;表示会话结束。
+
+![对话评论](assets/conversation-review.png)
 
 
-## 设置
+
+
+

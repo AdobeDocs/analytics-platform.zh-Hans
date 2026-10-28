@@ -2,9 +2,9 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 89dc7258649e9c16d6a43c15ced42e1af7c6009a
+source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1522'
 ht-degree: 91%
 ---
 
@@ -336,7 +336,7 @@ ht-degree: 91%
   + [行业用例](../guided-analysis/industry-use-cases.md)
   + [常见问题解答](../guided-analysis/faq.md)
 
-+ 对话分析 {#conversation-insights}
++ 对话洞察 {#conversation-insights}
   + [概述](/help/conversation-insights/overview.md)
   + [配置](/help/conversation-insights/configure.md)
   + [管理](/help/conversation-insights/manage.md)
@@ -524,6 +524,7 @@ ht-degree: 91%
   + 跨渠道数据 {#cross-channel}
     + [跨渠道分析数据](../use-cases/cross-channel/cross-channel.md)
     + [导入呼叫中心数据和网站数据](../use-cases/cross-channel/call-center.md)
+    + {hide-from-toc}[将付费媒体数据与Web数据连接起来](../use-cases/cross-channel/paid-media-web.md)
   + 数据导出 {#data-export}
     + [概述](../use-cases/data-export/overview.md)
     + [BI 扩展](../use-cases/data-export/bi-extension.md)
@@ -536,7 +537,6 @@ ht-degree: 91%
   + 数据摄取 {#data-ingestion}
     + [收录并使用 Marketo Engage 数据](../use-cases/data-ingestion/marketo.md)
     + [摄取和使用 Experience Platform 受众](../use-cases/data-ingestion/ingest-aep-segments.md)
-    + {hide-from-toc}[摄取和使用付费媒体数据](/help/use-cases/data-ingestion/paid-media.md)
   + 数据视图 {#data-views}
     + [数据视图用例](/help/use-cases/data-views/data-views-usecases.md)
     + [使用绑定维度和量度](/help/use-cases/data-views/binding-dimensions-metrics.md)
