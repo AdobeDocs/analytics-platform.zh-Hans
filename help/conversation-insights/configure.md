@@ -33,7 +33,7 @@ topic_v2:
 source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 12%
+ht-degree: 17%
 ---
 # 创建或编辑配置
 
@@ -78,7 +78,7 @@ ht-degree: 12%
 
    当某个数据集同时包含提示和响应时，请为&#x200B;**[!UICONTROL 提示事件数据集]**&#x200B;和&#x200B;**[!UICONTROL 响应事件数据集]**&#x200B;选择相同的数据集。
 
-   [通过&#x200B;**[[!UICONTROL 指定混合会话]](#blend-specification)的选项“配置混合规范”]**&#x200B;仅可用一次：
+   [通过&#x200B;**[!UICONTROL 指定混合会话](#blend-specification)的选项“配置混合规范”]**&#x200B;仅可用一次：
    * 此配置已完成。
    * 所有数据集都可用。
    * 您有Customer Journey Analytics [权限编辑连接](/help/technotes/access-control.md)。
@@ -130,20 +130,20 @@ ht-degree: 12%
 
    * 选择&#x200B;**[!UICONTROL 退出]**&#x200B;以忽略对配置的任何更改。
 
-## 混合规格
+## 混合规范
 
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_blend_specification"
->title="配置混合规格"
->abstract="完成此对话分析配置后，您只能编辑混合规范，所有数据集均可用，并且您拥有Customer Journey Analytics权限来编辑连接。"
->additional-url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/access-control" text="访问控制"
+>title="配置混合规范"
+>abstract="您必须先完成这个对话洞察配置，并且所有数据集均可用，以及您拥有可以编辑连接的 Customer Journey Analytics 权限，这样您才能编辑混合规范。"
+>additional-url="https://experienceleague.adobe.com/zhHans/docs/analytics-platform/using/technotes/access-control" text="访问控制"
 
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_dataset_winner"
->title="数据集获胜者"
->abstract="选择数据集，以确定混合会话数据集中的相应命名字段或字段（如果为容器）的值。"
+>title="优胜数据集"
+>abstract="选择数据集，以确定混合对话数据集中的相应命名的字段（若为容器，则多个字段）的值。"
 
 创建配置后，即可配置[如何混合来自提示、响应、反馈和信号数据集的对话](/help/conversation-insights/overview.md#how-it-works)。
 
@@ -161,7 +161,7 @@ ht-degree: 12%
    * 对于每个容器字段，可以选择选择其他&#x200B;**[!UICONTROL 数据集赢家]**&#x200B;以更新属于该容器的所有字段。 您可以在&#x200B;**[!UICONTROL 提示数据集]**、**[!UICONTROL 响应数据集]**&#x200B;和&#x200B;**[!UICONTROL 反馈数据集]**&#x200B;之间进行选择。
    * 无法为对话数据集（提示、响应、反馈和信号）之间共享的字段选择&#x200B;**[!UICONTROL 数据集入选者]**。 这些字段是以下字段组的一部分：
 
-     | 字段名称 | 字段组 | 数据集获胜者 |
+     | 字段名称 | 字段组 | 优胜数据集 |
      |---|---|---|
      | **[!UICONTROL 提示]** | `conversation.prompt.*` | **[!UICONTROL 提示数据集]** |
      | **[!UICONTROL 响应]** | `conversation.response.*` | **[!UICONTROL 响应数据集]** |
