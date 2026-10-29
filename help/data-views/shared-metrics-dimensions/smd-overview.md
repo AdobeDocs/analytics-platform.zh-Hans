@@ -39,7 +39,7 @@ ht-degree: 2%
 
 ## 权限
 
-* [产品管理员](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
+* [产品管理员](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
 
 ## 工作流
 

@@ -147,4 +147,4 @@ Customer Journey Analytics管理员可以让Adobe同时为多个组件生成描�
 
    确认消息会显示已添加的描述数。
 
-   如果选择了大量组件，则说明将在后台生成。 请求完成后，您会收到应用程序内[通知](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications)，其中显示了生成的描述数量以及失败的描述数量。
+   如果选择了大量组件，则说明将在后台生成。 请求完成后，您会收到应用程序内[通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#view-notifications)，其中显示了生成的描述数量以及失败的描述数量。
