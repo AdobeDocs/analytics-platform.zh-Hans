@@ -63,7 +63,7 @@ ht-degree: 75%
    | **[!UICONTROL 数据视图]** | 您可以为区段选择数据视图。  您定义的区段可用作某个数据视图的[设置](/help/data-views/create-dataview.md#settings-filters)选项卡中的区段。 |
    | **[!UICONTROL “仅用于项目的区段]** | 一个信息框，说明该区段仅在创建它的项目中可见，且不会添加到您的组件列表中。 启用&#x200B;**[!UICONTROL 提供此区段给您的所有项目，并将其添加到组件列表中]**，以更改该设置。 此信息框仅在您创建[快速区段](seg-quick.md)，并通过[!UICONTROL 快速区段]界面中的&#x200B;**[!UICONTROL 打开生成器]**&#x200B;将此快速区段转换为常规区段时可见。 |
    | **[!UICONTROL 标题]**![必填](/help/assets/icons/Required.svg) | 命名该区段，例如，`Last month mobile customers`。 |
-   | **[!UICONTROL 描述]** | <p>提供关于该区段的描述，例如，`Segment to define the mobile customers for the last month`。</p><p>要让Adobe为您生成描述，请选择&#x200B;**[!UICONTROL 生成描述]**。 在创建区段定义之前，此选项不可用。</p><p>生成的描述包括Adobe使用AI ]**生成的文本**[!UICONTROL ，生成后您可以编辑这些描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
+   | **[!UICONTROL 描述]** | <p>提供关于该区段的描述，例如，`Segment to define the mobile customers for the last month`。</p><p>要让Adobe为您生成描述，请选择&#x200B;**[!UICONTROL 生成描述]**。 在创建区段定义之前，此选项不可用。</p><p>生成的描述包括Adobe使用AI **生成的文本**，生成后您可以编辑这些描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
    | **[!UICONTROL 标记]** | 通过创建或应用一个或多个标记来组织区段。 开始键入，以查找您可以选择的现有标记。 或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。 选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
    | **[!UICONTROL 定义]**![必填](/help/assets/icons/Required.svg) | 使用[定义生成器](#definition-builder)来定义区段。 |
 
@@ -99,7 +99,7 @@ ht-degree: 75%
 
 1. 将一个组件从组件面板拖放到 **[!UICONTROL 将量度、区段和/或维度拖放到此处]**。
    * 您可以使用组件栏中的![搜索](/help/assets/icons/Search.svg)来搜索特定组件。
-   * 您可以在组件栏中使用![筛选器](/help/assets/icons/Filter.svg)按![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL 已批准]**、![星级](/help/assets/icons/Star.svg) **[!UICONTROL 收藏夹]**、![数据维度](/help/assets/icons2/DataDimension.svg) **[!UICONTROL 维度]**、![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**、![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**、![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;进行筛选![层](/help/assets/icons/Layer.svg) **[!UICONTROL *容器&#x200B;*]**组件（如产品、Content Assets）。 您还可以按![标签](/help/assets/icons/Label.svg)标记进行筛选。
+   * 您可以在组件栏中使用![筛选器](/help/assets/icons/Filter.svg)按![复选标记](/help/assets/icons/Checkmark.svg) **[!UICONTROL 已批准]**、![星级](/help/assets/icons/Star.svg) **[!UICONTROL 收藏夹]**、![数据维度](/help/assets/icons2/DataDimension.svg) **[!UICONTROL 维度]**、![事件](/help/assets/icons/Event.svg) **[!UICONTROL 量度]**、![分段](/help/assets/icons/Segmentation.svg) **[!UICONTROL 区段]**、![日历](/help/assets/icons/Calendar.svg) **[!UICONTROL 日期范围]**&#x200B;进行筛选![层](/help/assets/icons/Layer.svg) **[!UICONTROL *容器&#x200B;*]**&#x200B;组件（如产品、Content Assets）。 您还可以按![标签](/help/assets/icons/Label.svg)标记进行筛选。
 
 1. 指定组件的详细信息。 例如，从&#x200B;**[!UICONTROL 选择值]**&#x200B;中选择一个值。 或输入一个值。 指定一个或多个值的内容和方式取决于组件和运算符。
 

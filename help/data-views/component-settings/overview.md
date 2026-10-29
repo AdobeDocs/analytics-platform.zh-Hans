@@ -73,7 +73,7 @@ ht-degree: 46%
 | --- | --- |
 | **[!UICONTROL 组件类型]** | 必填。 使您可将组件从“量度”更改为“Dimension”，反之亦然。 更改此下拉列表选择会将该组件移至其各自的已包含组件区域。 |
 | **[!UICONTROL 组件名称]** | 必填。 使您可指定在 Analysis Workspace 中显示的易记名称。 可将组件重命名以给予其一个数据视图专属的名称。 |
-| **[!UICONTROL 描述]** | 可选，但推荐。 向用户描述组件的预期功能，以便他们了解该组件的使用方式。 向[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)和Customer Journey Analytics其他区域中的用户显示描述。 <p>您可以通过以下任一方式添加说明：</p><ul><li>手动键入描述</li><li>选择&#x200B;**[!UICONTROL 生成描述]**&#x200B;以使Adobe为您生成描述 <p>生成的描述包括Adobe使用AI ]**生成的文本**[!UICONTROL ，生成后您可以编辑这些描述。</p><p>您只能为已保存到数据视图的量度和维度生成描述。 对于派生字段，在保存派生字段后在此处生成描述；无法从派生字段生成器生成描述。</p><p>在数据视图中生成共享量度或维度的描述时，该描述适用于共享该描述的所有数据视图。</p></li></ul><p>要同时为多个组件生成说明，请执行以下操作：</p><ol><li>（可选）要保留现有描述，请仅显示没有描述的组件：在&#x200B;**[!UICONTROL 包含的组件]**&#x200B;列表上方选择![筛选器](/help/assets/icons/Filter.svg)，然后在&#x200B;**[!UICONTROL 其他]**&#x200B;下方选择&#x200B;**[!UICONTROL 缺少描述]**，然后选择&#x200B;**[!UICONTROL 应用]**。 生成描述将覆盖任何现有的描述。</li><li>在&#x200B;**[!UICONTROL 包含的组件]**&#x200B;列表中选择组件。</li><li>选择&#x200B;**[!UICONTROL 生成描述]**，然后选择&#x200B;**[!UICONTROL 生成描述]**&#x200B;以进行确认。</li><li>保存数据视图。 描述在您保存时开始生成。</li></ol><p>有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
+| **[!UICONTROL 描述]** | 可选，但推荐。 向用户描述组件的预期功能，以便他们了解该组件的使用方式。 向[数据字典](/help/components/data-dictionary/data-dictionary-overview.md)和Customer Journey Analytics其他区域中的用户显示描述。 <p>您可以通过以下任一方式添加说明：</p><ul><li>手动键入描述</li><li>选择&#x200B;**[!UICONTROL 生成描述]**&#x200B;以使Adobe为您生成描述 <p>生成的描述包括Adobe使用AI **生成的文本**，生成后您可以编辑这些描述。</p><p>您只能为已保存到数据视图的量度和维度生成描述。 对于派生字段，在保存派生字段后在此处生成描述；无法从派生字段生成器生成描述。</p><p>在数据视图中生成共享量度或维度的描述时，该描述适用于共享该描述的所有数据视图。</p></li></ul><p>要同时为多个组件生成说明，请执行以下操作：</p><ol><li>（可选）要保留现有描述，请仅显示没有描述的组件：在&#x200B;**[!UICONTROL 包含的组件]**&#x200B;列表上方选择![筛选器](/help/assets/icons/Filter.svg)，然后在&#x200B;**[!UICONTROL 其他]**&#x200B;下方选择&#x200B;**[!UICONTROL 缺少描述]**，然后选择&#x200B;**[!UICONTROL 应用]**。 生成描述将覆盖任何现有的描述。</li><li>在&#x200B;**[!UICONTROL 包含的组件]**&#x200B;列表中选择组件。</li><li>选择&#x200B;**[!UICONTROL 生成描述]**，然后选择&#x200B;**[!UICONTROL 生成描述]**&#x200B;以进行确认。</li><li>保存数据视图。 描述在您保存时开始生成。</li></ol><p>有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
 | **[!UICONTROL 标记]** | 可选。 可让您使用自定义或现成标记为组件添加标签，以便于在Analysis Workspace UI中搜索/筛选。 |
 | **[!UICONTROL 上下文标签]** | 可选。 可应用于组件的可用系统定义[上下文标签](#context-labels)的下拉菜单。 |
 | **[!UICONTROL 架构字段名]** | 架构字段的名称。 |
@@ -128,7 +128,7 @@ ht-degree: 46%
 
 * 要使用Analysis Workspace项目中的[试验面板](/help/analysis-workspace/c-panels/experimentation.md)定义可在试验报表中使用的一组组件。
 
-  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[ Target 报告](/help/integrations/at.md)。
+  请参阅[与 Journey Optimizer 集成](/help/integrations/ajo.md#data-view)以及[&#x200B; Target 报告](/help/integrations/at.md)。
 
 * 要定义一组可在Analysis Workspace项目的[地图](/help/analysis-workspace/visualizations/map.md)可视化图表中使用的组件。
 
@@ -136,7 +136,7 @@ ht-degree: 46%
 
   **注意**：地图可视化图表处于版本的“有限测试”阶段，可能尚未在环境中可用。
 
-* 显示Adobe](/help/analysis-workspace/templates/use-templates.md)提供的[模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
+* 显示Adobe[&#128279;](/help/analysis-workspace/templates/use-templates.md)提供的模板。 Adobe提供的某些模板可能无法工作，因为某些组件不在数据视图中。
 
   对于每个缺失的组件，数据视图中都会提供一个匹配的上下文标签。 您需要将匹配的上下文标签添加到数据视图中已存在的组件中。 或者，您需要向数据视图添加新组件，并将上下文标签添加到该组件（如果尚未自动提供）。
 
