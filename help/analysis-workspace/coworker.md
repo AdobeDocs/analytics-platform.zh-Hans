@@ -48,13 +48,13 @@ Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 �
 <!--
 FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
 
 -->
 
 ### 在Workspace中的同事和同事应用程序之间进行选择
 
-同事的产品内体验具有许多与[CX Enterprise Coworker应用程序](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)相同的功能，包括您有权访问的技能。 但是，在决定何时可以使用一种方式而不是使用另一种方式时，存在一些重要差异：
+同事的产品内体验具有许多与[CX Enterprise Coworker应用程序](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)相同的功能，包括您有权访问的技能。 但是，在决定何时可以使用一种方式而不是使用另一种方式时，存在一些重要差异：
 
 | | 同事的产品内体验 | 同事应用程序 |
 | --- | --- | --- |
