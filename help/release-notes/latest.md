@@ -49,9 +49,9 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 0a94f32e9c8568f12ae7d788dff7b4106d6f1d67
+source-git-commit: 5aba7dcf73ddd7aee48a945911a8ff4b0f18e2e3
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1182'
 ht-degree: 19%
 ---
 # 当前Customer Journey Analytics发行说明（2026年10月）
@@ -70,7 +70,7 @@ ht-degree: 19%
 | **历程画布：比较百分比**<br/>&#x200B;将历程与前期进行比较时，现在可启用新的[!UICONTROL 比较百分比]选项，以显示每个节点、箭头和流失的百分比变化。 在比较比率（例如节点之间的维系率或流失率）时，这项功能非常有用，因为即使旅程中的人数在日期范围之间不同，比较仍会保持准确。<p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)中的“比较百分比”。</p> | | 2026年10月19 |
 | **可视化中的简洁图例标签**<br/>&#x200B;您现在可以缩短可视化图例标签，以便一目了然地区分它们。 [!UICONTROL 简洁标签]设置通过删除每个标签共享的量度、区段、维度项或日期范围名称，智能地关注区分不同标签的信息。<p>如果没有简洁的标签，则每个图例标签都会重复共享名称，这可能会导致标签变长，其差异仅在悬停时可见。</p><p>默认情况下，简洁的标签处于关闭状态，并且可用于区域、条形图、组合图、圆环图、直方图、水平条形图、折线图和维恩图（包括栈叠版本）可视化图表。</p><p>有关详细信息，请参阅[简洁的标签](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#concise-labels)。</p> | | 2026年10月29日 |
 | **自动为组件和项目生成描述** <br/>您现在可以自动生成维度、量度、计算量度、区段和日期范围的描述。 这使得Workspace用户能够了解要使用的组件，尤其是在具有大型组件库的组织中。 <p>您可以为单个组件生成描述，或同时为多个组件生成描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p><p>在[保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)或从[项目信息和设置](/help/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings)中为Workspace项目生成描述。</p> | 2026年10月29日 | 2026年11月11 |
-| 在Analysis Workspace的聊天面板中现在提供了&#x200B;**同事的产品内体验**<br/>&#x200B;同事。 同事使用您已打开的项目作为上下文，因此您可以询问有关分析的问题，而无需解释项目包含的内容。<p>使用同事的产品内体验，您可以：</p><ul><li>汇总打开的项目、查找见解并运行根本原因分析。</li><li>使用自然语言提示构建和编辑项目。 例如，您可以添加面板和表格、划分数据、更改可视化图表类型和日期范围以及创建区段。</li></ul><p>（后续文档更新。）<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 待定（原计划于2026年10月15日） | 待定 |
+| 在Analysis Workspace的聊天面板中现在提供了&#x200B;**同事的产品内体验**<br/>&#x200B;同事。 同事使用您已打开的项目作为上下文，因此您可以询问有关分析的问题，而无需解释项目包含的内容。<p>使用同事的产品内体验，您可以：</p><ul><li>汇总打开的项目、查找见解并运行根本原因分析。</li><li>使用自然语言提示构建和编辑项目。 例如，您可以添加面板和表格、划分数据、更改可视化图表类型和日期范围以及创建区段。</li></ul><p>有关详细信息，请参阅[使用同事的产品内体验](/help/analysis-workspace/coworker.md)。</p> | | 2026年10月29日 |
 
 
 ### Customer Journey Analytics 中的修复
