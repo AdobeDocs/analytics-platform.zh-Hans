@@ -3,11 +3,10 @@ title: 在Customer Journey Analytics中将付费媒体数据与Web数据连接�
 description: 将付费媒体摘要数据与Adobe Customer Journey Analytics中的网站活动结合使用，比较广告支出、点击次数、订单、收入和广告支出回报率。
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: c5a7403374f26ebc641f3491a88dc14c5f8693c6
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3910'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # 将付费媒体数据与Web数据连接起来
@@ -45,9 +44,14 @@ ht-degree: 3%
 
 ## 了解报表加入
 
-您只能在ID显示在登陆页面URL或现有事件字段中的级别进行连接。 例如，仅营销活动标记支持营销活动报告，但不支持广告级别的报告。 体验级和资产级连接需要其他URL参数，并且不在本指南的范围之内。
+您只能在ID显示在登陆页面URL或现有事件字段中的级别进行连接。 例如，仅营销活动标记支持营销活动报告，但不支持广告级别的报告。
 
-请参阅[摘要数据](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/summary-data)和[摘要数据组组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)以供参考。
+>[!NOTE]
+>
+>Content Analytics体验级和资产级连接需要其他URL参数，并且不在本指南的范围之内。
+
+
+请参阅[摘要数据](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/summary-data)和[摘要数据组组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)以供参考。
 
 ### 选择连接键
 
@@ -81,7 +85,7 @@ GUID结构为`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`。 
 * [!DNL Customer Journey Analytics]选择或更高，可访问此处使用的派生字段函数：[URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse)、[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)、[Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)，对于名称扩充，[Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)。
 * [!DNL Adobe Experience Platform]权限用于管理目标沙盒中的架构、数据集和数据流，以及访问数据集和查询服务以进行验证。
 * [!DNL Customer Journey Analytics]编辑目标连接和数据视图的权限。
-* 付费媒体源连接器在同一沙盒中配置，并摄取摘要和查找数据集。 有关示例连接器，请参阅[Meta广告源](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/meta-ads)。
+* 付费媒体源连接器在同一沙盒中配置，并摄取摘要和查找数据集。 有关示例连接器，请参阅[Meta广告源](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)。
 * 捕获完整登陆页面URL（包括其查询字符串）或包含网络ID的等效字段的网站事件。
 
 
@@ -122,10 +126,10 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 
 | | 起点 | 现有的配置 | 遵循的步骤 |
 |---|---|---|---|
-| A | 带有Web或移动和付费媒体的Content Analytics | 付费媒体数据集和组件，以及Content Analytics事件和查找数据集 | 如果需要，添加您的网站事件数据集，然后配置Web派生字段和报告组 |
-| B | 仅带付费媒体的Content Analytics | 付费媒体数据集和组件；也可以存在共享内容查找数据集 | 添加您的网站事件数据集，然后配置Web派生字段和报告组 |
-| C | 无Content Analytics配置的付费媒体 | Experience Platform中存在付费媒体数据集，但连接和数据视图不包含付费媒体配置 | 添加网站和付费媒体数据集，然后创建付费媒体和Web组件 |
-| D | 不带付费媒体的Content Analytics | 仅限Content Analytics组件 | 在Content Analytics配置中启用付费媒体渠道，然后遵循现有配置路径 |
+| A | 带有Web或移动和付费媒体的Content Analytics | [付费媒体数据集和组件](/help/content-analytics/config/paid-media.md)，以及Content Analytics事件和查找数据集。 | 如果需要，添加您的网站事件数据集，然后配置Web派生字段和报告组。 |
+| B | 仅带付费媒体的Content Analytics | [付费媒体数据集和组件](/help/content-analytics/config/paid-media.md)；也可以存在共享内容查找数据集。 | 添加您的网站事件数据集，然后配置Web派生字段和报表组。 |
+| C | 无Content Analytics配置的付费媒体 | 付费媒体数据集存在于Experience Platform中，但连接和数据视图不包含付费媒体配置。 | 添加网站和付费媒体数据集，然后创建付费媒体和Web组件。 |
+| D | 不带付费媒体的Content Analytics | 仅限Content Analytics组件。 | 在Content Analytics配置中启用付费媒体渠道，然后遵循现有配置路径。 |
 
 在扩展Content Analytics管理的连接时，请勿删除或修改系统配置的数据集或只读组件。
 
@@ -143,10 +147,10 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 
    | 字段组 | 所需数据 |
    |---|---|
-   | AEP Web SDK体验事件 | 页面URL、页面查看次数、反向链接和其他Web上下文 |
-   | Commerce详细信息 | 采购计数、订单值、货币、购买ID和产品详细信息 |
-   | 营销活动详细信息，可选 | 跟踪代码（如果您的实施单独捕获它们） |
-   | IdentityMap （如果尚不存在） | 人员标识符，如ECID |
+   | AEP Web SDK体验事件 | 页面URL、页面查看次数、反向链接和其他Web上下文。 |
+   | Commerce详细信息 | 采购计数、订单值、货币、购买ID和产品详细信息。 |
+   | 营销活动详细信息，可选 | 跟踪代码（如果您的实施单独捕获它们）。 |
+   | IdentityMap （如果尚不存在） | 人员标识符，如ECID。 |
 
 1. 保存架构。 此报告用例不需要启用配置文件。
 1. 转到&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据集]** > **[!UICONTROL 创建数据集]** > **[!UICONTROL 从架构创建数据集]**。
@@ -158,7 +162,7 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 1. 命名数据流并选择您的事件架构作为映射架构。
 1. 保存，然后选择&#x200B;**[!UICONTROL 添加服务]** > **[!UICONTROL Adobe Experience Platform]**。
 1. 选择沙盒和事件数据集，然后&#x200B;**[!UICONTROL 保存]**。
-1. 使用数据流ID配置[Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/js-overview)。
+1. 使用数据流ID配置[Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)。
 
 捕获以下内容：
 
@@ -195,11 +199,11 @@ LIMIT 20;
 
    | 设置 | 数值 |
    |---|---|
-   | 人员 ID | 具有ECID命名空间的`identityMap`或您实施的人员ID字段 |
+   | 人员 ID | 具有ECID命名空间的`identityMap`或您实施的人员ID字段。 |
    | 时间戳 | `timestamp` |
    | 数据源类型 | Web数据 |
    | 导入所有新数据 | 启用 |
-   | 回填所有现有数据 | 为您需要的历史时段启用 |
+   | 回填所有现有数据 | 为您需要的历史时段启用。 |
 
 1. 添加数据集并保存连接。
 
@@ -286,11 +290,11 @@ LIMIT 20;
 
 | 规则 | 功能 | 配置 |
 |---|---|---|
-| 1 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的Meta参数 |
-| 2 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的UTM参数 |
-| 3 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL读取`s_kwcid` |
-| 4 | [正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace) | 将特定于级别的表达式应用于规则3；输出`$1` |
-| 5 | [案例时间](/help/data-views/derived-fields/derived-fields.md#case-when) | 如果设置了规则3，则返回规则4；如果设置了规则1，则返回规则1；否则，返回规则2 |
+| 1 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的Meta参数。 |
+| 2 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的UTM参数。 |
+| 3 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取`s_kwcid`。 |
+| 4 | [正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace) | 将特定于级别的表达式应用于规则3；输出`$1`。 |
+| 5 | [案例时间](/help/data-views/derived-fields/derived-fields.md#case-when) | 如果设置了规则3，则返回规则4；否则，如果设置了规则1，则返回规则1；否则，返回规则2。 |
 
 使用以下值：
 
@@ -363,7 +367,7 @@ LIMIT 20;
 
 保持原始&#x200B;**[!UICONTROL 订单]**&#x200B;和&#x200B;**[!UICONTROL 收入]**&#x200B;量度不变，以保留现有报表。 此设置需要明确启用覆盖，即使显示的默认值似乎匹配。
 
-对于回访中的转化点数，请考虑&#x200B;**[!UICONTROL 人员]**&#x200B;容器和相应的回顾时间范围。 查看[摘要数据用例](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/summary-data)。
+对于回访中的转化点数，请考虑&#x200B;**[!UICONTROL 人员]**&#x200B;容器和相应的回顾时间范围。 查看[摘要数据用例](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data)。
 
 使用量度归因，而不是向Web ID维度添加持久性。 为避免夸大解释为登陆的计数，请勿将ID保留到以后的事件，因为这会更改哪些事件显示在促销活动行下。
 

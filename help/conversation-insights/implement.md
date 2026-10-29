@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
 ---
 # 实施对话分析
+
+{{release-limited-testing}}
 
 要将对话数据生成为XDM体验事件并确保这些对话体验事件最终在Adobe Experience Platform中作为数据集，请检测您的代理应用程序或服务以使用对话分析。
 
@@ -477,7 +479,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/cn", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -517,7 +519,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/cn", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -558,7 +560,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/cn", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "conversation": {
     "conversationID": "conv-001",
@@ -591,7 +593,7 @@ ht-degree: 5%
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com/cn", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-xyz789",
@@ -696,7 +698,7 @@ ht-degree: 5%
     ]
   },
   "web":{
-    "webPageDetails":{ "URL":"https://www.adobe.com/cn", "name":"Home Page" }
+    "webPageDetails":{ "URL":"https://www.adobe.com", "name":"Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",

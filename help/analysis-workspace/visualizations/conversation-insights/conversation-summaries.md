@@ -4,7 +4,7 @@ title: 对话摘要
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 20%
@@ -21,6 +21,7 @@ ht-degree: 20%
 >title="对话摘要"
 >abstract="汇总筛选出的一组对话。 控制摘要的长度。 查看具有代表性的客户原话，验证所提取信号的准确性。 选择报价以打开完整的对话重放。"
 
+{{release-limited-testing}}
 
 ![摘要](/help/assets/icons/Summarize.svg) **[!UICONTROL 对话摘要]**&#x200B;可视化图表允许您摘要经过筛选的对话组。
 
@@ -51,7 +52,7 @@ ht-degree: 20%
 
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
-要重新配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 指标： _指标_]**&#x200B;或&#x200B;**[!UICONTROL 指标：_指标_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 区段：_区段_]**。
+要重新配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 指标： _指标_]**或&#x200B;**[!UICONTROL 指标：_指标_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 区段：_区段_]**。
 
 ## 使用
 

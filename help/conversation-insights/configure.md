@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1187'
 ht-degree: 17%
 ---
 # 创建或编辑配置
+
+{{release-limited-testing}}
 
 对话分析允许您从提供给客户的座席体验分析对话。 这些代理体验可以基于大型语言模型(LLM)或基于人类对话。 例如，与客户或呼叫中心进行交互的聊天机器人成绩单。
 通过对话分析，您可以了解座席对实际用户结果的影响。
@@ -78,7 +80,7 @@ ht-degree: 17%
 
    当某个数据集同时包含提示和响应时，请为&#x200B;**[!UICONTROL 提示事件数据集]**&#x200B;和&#x200B;**[!UICONTROL 响应事件数据集]**&#x200B;选择相同的数据集。
 
-   [通过&#x200B;**[[!UICONTROL 指定混合会话]](#blend-specification)的选项“配置混合规范”]**&#x200B;仅可用一次：
+   [通过&#x200B;**[!UICONTROL 指定混合会话](#blend-specification)的选项“配置混合规范”]**&#x200B;仅可用一次：
    * 此配置已完成。
    * 所有数据集都可用。
    * 您有Customer Journey Analytics [权限编辑连接](/help/technotes/access-control.md)。
@@ -147,7 +149,7 @@ ht-degree: 17%
 
 创建配置后，即可配置[如何混合来自提示、响应、反馈和信号数据集的对话](/help/conversation-insights/overview.md#how-it-works)。
 
-此规范允许您选择数据集，以确定混合对话数据集中的相应命名字段（如果为容器）的值。
+此规范允许您选择数据集，以确定混合对话数据集中的相应命名字段或字段（如果为容器）的值。
 
 例如：如果您希望从反馈数据集中的该类似命名字段中定义混合会话数据集中的&#x200B;**[!UICONTROL 生成者]**&#x200B;字段名称，请从此字段的&#x200B;**[!UICONTROL 数据集获胜者]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 反馈数据集]**。
 

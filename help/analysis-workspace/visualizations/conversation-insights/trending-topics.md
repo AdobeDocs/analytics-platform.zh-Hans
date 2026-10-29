@@ -4,7 +4,7 @@ title: 趋势主题
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 16%
@@ -20,6 +20,8 @@ ht-degree: 16%
 >id="workspace_trendingtopics_panel"
 >title="热门话题"
 >abstract="根据所选的排名量度分析热门话题。 选择话题进行向下钻取，最多可深入五个层级。 搜索特定话题，并与其他日期范围内的话题进行比较。"
+
+{{release-limited-testing}}
 
 ![信息源](/help/assets/icons/Feed.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表允许您浏览和分析趋势主题，作为对话见解的一部分。
 
@@ -37,6 +39,7 @@ ht-degree: 16%
 >title="使用非默认的属性模型"
 >abstract="非默认归因模型不适用于此量度。"
 
+
 创建和配置&#x200B;**[!UICONTROL 趋势主题]**&#x200B;可视化图表：
 
 1. 添加![信息源](/help/assets/icons/Feed.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
@@ -47,7 +50,7 @@ ht-degree: 16%
    1. 如果您想要在量度上使用非默认的[归因](/help/analysis-workspace/attribution/models.md)模型，请选择&#x200B;**[!UICONTROL 使用非默认归因模型]**，然后选择&#x200B;**[!UICONTROL 模型]**、**[!UICONTROL 容器]**&#x200B;和&#x200B;**[!UICONTROL 回顾窗口]**。
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。
 
-要重新配置趋势主题可视化图表，请选择&#x200B;**排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_**。
+要重新配置趋势主题可视化图表，请选择&#x200B;**[!UICONTROL 排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_]**。
 
 ## 使用
 
@@ -57,7 +60,7 @@ ht-degree: 16%
 
 * 将鼠标悬停在主题上可查看包含更多详细信息的弹出窗口。➊
 
-* 要查看较低级别主题的趋势子主题，请选择特定级别的主题。 如果在子级别没有可用的主题，您会看到![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL 找不到_topic >子主题> ...]**&#x200B;的子主题。
+* 要查看较低级别主题的趋势子主题，请选择特定级别的主题。 如果在子级别没有可用的主题，您会看到![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL 找不到&#x200B;_主题>子主题_ > ...]**&#x200B;的子主题。
 
 * 使用![搜索](/help/assets/icons/Search.svg) **[!UICONTROL _搜索主题_]**&#x200B;快速搜索主题。➋
 
