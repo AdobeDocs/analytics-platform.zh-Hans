@@ -1,7 +1,7 @@
 ---
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5607'
 ht-degree: 95%
 ---
 # 片段
@@ -94,7 +94,7 @@ ht-degree: 95%
 
 | 其他过滤器 | 描述 |
 |---|---|
-| ![其他过滤器](/help/assets/filter-other.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 其他过滤器]**&#x200B;部分按其他预定义过滤器进行过滤。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 显示所有]**</li><li>**[!UICONTROL 与我共享]**</li><li>**[!UICONTROL 我的]**</li><li>**[!UICONTROL 已批准]**</li><li>**[!UICONTROL 收藏夹]**</li></ul> 您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**(1)**：选定其他过滤器的数量（如果选择了一个或多个其他过滤器）。</li><li>**5︎⃣**：当前过滤器产生的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定的其他过滤器相关的项目数量。</li></ul></li></ul> |
+| ![其他过滤器](/help/assets/filter-other.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 其他过滤器]**&#x200B;部分按其他预定义过滤器进行过滤。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 显示所有]**</li><li>**[!UICONTROL 与我共享]**</li><li>**[!UICONTROL 我的]**</li><li>**[!UICONTROL 已批准]**</li><li>**[!UICONTROL 收藏夹]**</li><li>**[!UICONTROL 缺少描述]**</li></ul> 您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**(1)**：选定其他过滤器的数量（如果选择了一个或多个其他过滤器）。</li><li>**5︎⃣**：当前过滤器产生的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定的其他过滤器相关的项目数量。</li></ul></li></ul> |
 
 ## 日期范围过滤器部分  {#daterangefiltersection}
 

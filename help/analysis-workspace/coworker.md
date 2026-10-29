@@ -4,7 +4,6 @@ description: 使用同事的产品内体验来汇总打开的项目、查找见�
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -23,14 +22,16 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 88e67c92fc170b340149c9ab73ad5eea2122da2b
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 0%
+source-wordcount: '1960'
+ht-degree: 1%
 ---
 # 使用同事的产品内体验
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>本部分描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。 此外，Co-worker使用生成人工智能，这会产生不准确或意外的结果。 在对其采取行动或共享项目之前，请查看同事的响应以及它对您的项目所做的任何更改。
 
 Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 同事使用打开的项目作为上下文，因此您可以询问有关分析的问题或让同事构建项目，而无需解释其中包含的内容。
 
@@ -42,11 +43,14 @@ Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 �
 
   如果您无法访问Workspace中的同事，请联系您的管理员。 有关详细信息，请参阅[IMS组织首选项](/help/analysis-workspace/user-preferences.md#ims-organization-preferences)。<!-- need to update this section with the new toggle -->
 
-<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
-
-* **权限**：在[!UICONTROL Adobe Admin Console]中，[!UICONTROL 报告工具] **[!UICONTROL 辅助进程]**&#x200B;权限决定了辅助进程的访问权限。 [产品配置文件管理员](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)必须将此权限添加到您的产品配置文件。 有关详细信息，请参阅[访问控制](/help/technotes/access-control.md#access-control)。
-
 * **数据视图访问**：同事使用您现有的Analysis Workspace和数据视图权限。 它无法访问您尚无法访问的数据或组件。
+
+<!--
+FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
+
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+
+-->
 
 ### 在Workspace中的同事和同事应用程序之间进行选择
 

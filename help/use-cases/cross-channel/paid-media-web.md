@@ -3,11 +3,10 @@ title: 在Customer Journey Analytics中将付费媒体数据与Web数据连接�
 description: 将付费媒体摘要数据与Adobe Customer Journey Analytics中的网站活动结合使用，比较广告支出、点击次数、订单、收入和广告支出回报率。
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3907'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # 将付费媒体数据与Web数据连接起来
@@ -45,7 +44,12 @@ ht-degree: 3%
 
 ## 了解报表加入
 
-您只能在ID显示在登陆页面URL或现有事件字段中的级别进行连接。 例如，仅营销活动标记支持营销活动报告，但不支持广告级别的报告。 体验级和资产级连接需要其他URL参数，并且不在本指南的范围之内。
+您只能在ID显示在登陆页面URL或现有事件字段中的级别进行连接。 例如，仅营销活动标记支持营销活动报告，但不支持广告级别的报告。
+
+>[!NOTE]
+>
+>Content Analytics体验级和资产级连接需要其他URL参数，并且不在本指南的范围之内。
+
 
 请参阅[摘要数据](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/summary-data)和[摘要数据组组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)以供参考。
 
@@ -93,7 +97,7 @@ GUID结构为`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`。 
 |---|---|---|---|
 | 网站URL中的Meta ID | <code>campaign_id={{campaign.id}}</code> | <code>adset_id={{adset.id}}</code> | <code>ad_id={{ad.id}}</code> |
 | UTM参数中的Meta ID | <code>utm_campaign={{campaign.id}}</code> | <code>utm_term={{adset.id}}</code> | <code>utm_content={{ad.id}}</code> |
-| UTM参数中的Google广告ID | <code>utm_campaign={campaignid}</code> | <code>utm_term={adgroupid}</code> | <code>utm_content={creative}</code> |
+| UTM参数中的Google广告ID | <code>utm_campaign={{campaignid}}</code> | <code>utm_term={{adgroupid}}</code> | <code>utm_content={{creative}}</code> |
 
 对于Meta UTM标记，源值（如`utm_source=fb`）可以识别网络。 对于Google广告UTM标记，请使用源值，例如`utm_source=google`。
 
@@ -122,10 +126,10 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 
 | | 起点 | 现有的配置 | 遵循的步骤 |
 |---|---|---|---|
-| A | 带有Web或移动和付费媒体的Content Analytics | 付费媒体数据集和组件，以及Content Analytics事件和查找数据集 | 如果需要，添加您的网站事件数据集，然后配置Web派生字段和报告组 |
-| B | 仅带付费媒体的Content Analytics | 付费媒体数据集和组件；也可以存在共享内容查找数据集 | 添加您的网站事件数据集，然后配置Web派生字段和报告组 |
-| C | 无Content Analytics配置的付费媒体 | Experience Platform中存在付费媒体数据集，但连接和数据视图不包含付费媒体配置 | 添加网站和付费媒体数据集，然后创建付费媒体和Web组件 |
-| D | 不带付费媒体的Content Analytics | 仅限Content Analytics组件 | 在Content Analytics配置中启用付费媒体渠道，然后遵循现有配置路径 |
+| A | 带有Web或移动和付费媒体的Content Analytics | [付费媒体数据集和组件](/help/content-analytics/config/paid-media.md)，以及Content Analytics事件和查找数据集。 | 如果需要，添加您的网站事件数据集，然后配置Web派生字段和报告组。 |
+| B | 仅带付费媒体的Content Analytics | [付费媒体数据集和组件](/help/content-analytics/config/paid-media.md)；也可以存在共享内容查找数据集。 | 添加您的网站事件数据集，然后配置Web派生字段和报表组。 |
+| C | 无Content Analytics配置的付费媒体 | 付费媒体数据集存在于Experience Platform中，但连接和数据视图不包含付费媒体配置。 | 添加网站和付费媒体数据集，然后创建付费媒体和Web组件。 |
+| D | 不带付费媒体的Content Analytics | 仅限Content Analytics组件。 | 在Content Analytics配置中启用付费媒体渠道，然后遵循现有配置路径。 |
 
 在扩展Content Analytics管理的连接时，请勿删除或修改系统配置的数据集或只读组件。
 
@@ -143,10 +147,10 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 
    | 字段组 | 所需数据 |
    |---|---|
-   | AEP Web SDK体验事件 | 页面URL、页面查看次数、反向链接和其他Web上下文 |
-   | Commerce详细信息 | 采购计数、订单值、货币、购买ID和产品详细信息 |
-   | 营销活动详细信息，可选 | 跟踪代码（如果您的实施单独捕获它们） |
-   | IdentityMap （如果尚不存在） | 人员标识符，如ECID |
+   | AEP Web SDK体验事件 | 页面URL、页面查看次数、反向链接和其他Web上下文。 |
+   | Commerce详细信息 | 采购计数、订单值、货币、购买ID和产品详细信息。 |
+   | 营销活动详细信息，可选 | 跟踪代码（如果您的实施单独捕获它们）。 |
+   | IdentityMap （如果尚不存在） | 人员标识符，如ECID。 |
 
 1. 保存架构。 此报告用例不需要启用配置文件。
 1. 转到&#x200B;**[!UICONTROL 数据管理]** > **[!UICONTROL 数据集]** > **[!UICONTROL 创建数据集]** > **[!UICONTROL 从架构创建数据集]**。
@@ -195,11 +199,11 @@ LIMIT 20;
 
    | 设置 | 数值 |
    |---|---|
-   | 人员 ID | 具有ECID命名空间的`identityMap`或您实施的人员ID字段 |
+   | 人员 ID | 具有ECID命名空间的`identityMap`或您实施的人员ID字段。 |
    | 时间戳 | `timestamp` |
    | 数据源类型 | Web数据 |
    | 导入所有新数据 | 启用 |
-   | 回填所有现有数据 | 为您需要的历史时段启用 |
+   | 回填所有现有数据 | 为您需要的历史时段启用。 |
 
 1. 添加数据集并保存连接。
 
@@ -215,8 +219,8 @@ LIMIT 20;
 | 数据集 | 类型 | 关键配置 |
 |---|---|---|
 | 付费媒体广告摘要 | 摘要 | 使用架构的每日时间戳配置；启用新数据导入和所需的回填。 |
-| 付费媒体帐户查找 | 查找 | 键： `paidMedia.accountGUID`；广告摘要中的匹配字段： `paidMedia.accountGUID`。 |
-| 付费媒体营销活动查找 | 查找 | 键： `paidMedia.campaignGUID`；广告摘要中的匹配字段： `paidMedia.campaignGUID`。 |
+| 付费媒体帐户查找 | 查询 | 键： `paidMedia.accountGUID`；广告摘要中的匹配字段： `paidMedia.accountGUID`。 |
+| 付费媒体营销活动查找 | 查询 | 键： `paidMedia.campaignGUID`；广告摘要中的匹配字段： `paidMedia.campaignGUID`。 |
 | 付费媒体广告组查找 | 查询 | 键： `paidMedia.adGroupGUID`；广告摘要中的匹配字段： `paidMedia.adGroupGUID`。 |
 | 付费媒体广告查找 | 查询 | 键： `paidMedia.adGUID`；广告摘要中的匹配字段： `paidMedia.adGUID`。 |
 
@@ -286,11 +290,11 @@ LIMIT 20;
 
 | 规则 | 功能 | 配置 |
 |---|---|---|
-| 1 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的Meta参数 |
-| 2 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的UTM参数 |
-| 3 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL读取`s_kwcid` |
-| 4 | [正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace) | 将特定于级别的表达式应用于规则3；输出`$1` |
-| 5 | [案例时间](/help/data-views/derived-fields/derived-fields.md#case-when) | 如果设置了规则3，则返回规则4；如果设置了规则1，则返回规则1；否则，返回规则2 |
+| 1 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的Meta参数。 |
+| 2 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取特定于级别的UTM参数。 |
+| 3 | [URL分析](/help/data-views/derived-fields/derived-fields.md#url-parse) | 从页面URL中读取`s_kwcid`。 |
+| 4 | [正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace) | 将特定于级别的表达式应用于规则3；输出`$1`。 |
+| 5 | [案例时间](/help/data-views/derived-fields/derived-fields.md#case-when) | 如果设置了规则3，则返回规则4；否则，如果设置了规则1，则返回规则1；否则，返回规则2。 |
 
 使用以下值：
 

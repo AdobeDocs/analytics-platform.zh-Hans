@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 9%
@@ -144,7 +144,7 @@ ht-degree: 9%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 项目 | 50,000 | 系统强制的护栏 | 组织的最大项目数。 |
-| 数据视图 | 2,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
+| 数据视图 | 5,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
 | 数据视图 | 500-1000 | 系统强制的护栏 | 连接的最大数据视图数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 数据集 | 100 | 系统强制的护栏 | 每个连接最多[个数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。 |
 | 连接 | 1000 | 系统强制的护栏 | 组织的最大[连接数](../connections/overview.md)。 |

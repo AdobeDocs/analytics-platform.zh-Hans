@@ -1,5 +1,5 @@
 ---
-description: 了解如何在 Analysis Workspace 中使用和管理项目。 使用项目管理器可对项目进行创建、删除、移动、共享、审批、固定、复制和添加标记等管理操作。
+description: 了解如何在 Analysis Workspace 中使用和管理项目。 使用项目管理器可对项目进行创建、删除、移动、共享、批准、固定、复制和添加标记等管理操作。
 keywords: Analysis Workspace
 title: 项目概述
 feature: Workspace Basics
@@ -8,26 +8,30 @@ role: User
 TQID: https://experienceleague.adobe.com/VKMyO7uNXu1Gj5QpJMxPD7WRBs2mHSLBg5H4iTgMI6w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6883ea7ea65827315805720142186eec75ad7558
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1675'
 ht-degree: 100%
-
 ---
-
 # 项目概述
 
 通过 Workspace 项目，可将面板、可视化图表和组件组合起来，以得出您的分析结果，并与您组织中的任何人共享。 在开始您的第一个项目之前，请了解如何访问、浏览和管理您的项目。
 
-要访问 Customer Journey Analytics 中的项目，请选择&#x200B;**[!UICONTROL 工作区]**。  **[!UICONTROL 项目]**&#x200B;管理器列出了您拥有的所有项目或与您共享的项目。 带有项目列表的项目管理器也是 Customer Journey Analytics 的默认登录页面，除非您在“偏好设置”中另有配置。
+要访问 Customer Journey Analytics 中的项目，请选择&#x200B;**[!UICONTROL 工作区]**。  **[!UICONTROL 项目]**&#x200B;管理器列出了您拥有的所有项目或与您共享的项目。 带有项目列表的项目管理器也是 Customer Journey Analytics 的默认登陆页面，除非您在“偏好设置”中另有配置。
 
 ![显示项目列表的项目登陆页面。](assets/projects.png)
 
@@ -37,7 +41,7 @@ ht-degree: 100%
 在标题区域 ➊ 内，您可以创建一个项目，创建一个文件夹，编辑您的偏好设置以及显示或隐藏带有附加图块的面板。
 
 * 要显示或隐藏左侧面板，以便您在&#x200B;**[!UICONTROL 项目]**&#x200B;和&#x200B;**[!UICONTROL 学习]**&#x200B;之间进行选择，请选择![边栏](/help/assets/icons/Rail.svg)。
-* 标题会显示“项目”，并可选择性地带有您所选文件夹的路径。 例如[!UICONTROL 项目] > **[!UICONTROL 公司文件夹]**。 您可以选择单个子文件夹部分，以直接跳转到特定文件夹。
+* 标题会显示“项目”，并可附加显示您所选文件夹的路径。 例如[!UICONTROL 项目] > **[!UICONTROL 公司文件夹]**。 您可以选择单个子文件夹部分，以直接跳转到特定文件夹。
 * 要显示[**[!UICONTROL 空白项目]**](create-projects.md)、[**[!UICONTROL 空白移动记分卡]**](/help/mobile-app/create-scorecard.md)、[**[!UICONTROL 引导式分析]**](/help/guided-analysis/overview.md)、**[!UICONTROL 打开文档]**&#x200B;和&#x200B;**[!UICONTROL 打开发行说明]**&#x200B;的图块，请选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 显示更多]**。 要隐藏带有图块的区域，请选择 ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL 显示更少]**。
 * 根据您使用[显示选择器](#show-selector)选择要显示的内容，您可以编辑偏好设置，并对&#x200B;**[!UICONTROL 项目]**&#x200B;中当前可见的文件夹执行操作：
 
@@ -146,14 +150,14 @@ ht-degree: 100%
 
 | 类型 | 描述 |
 |---|---|
-| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | **[!UICONTROL 类型]**&#x200B;部分允许您根据项目或文件夹的类型进行筛选。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 文件夹]**</li><li>**[!UICONTROL 工作区项目]**</li><li>**[!UICONTROL 移动记分卡]**</li></ul> <li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**5︎⃣**：当前过滤器生成的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定其他过滤器相关的项目数量。</li></ul></li></ul> |
+| ![Type](/help/analysis-workspace/build-workspace-project/assets/projects-filters-type.png){width="300"} | **[!UICONTROL 类型]**&#x200B;部分允许您根据项目或文件夹的类型进行筛选。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 文件夹]**</li><li>**[!UICONTROL 工作区项目]**</li><li>**[!UICONTROL 移动记分卡]**</li></ul> <li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**5︎⃣**：当前过滤器生成的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定其他筛选条件相关的项目数量。</li></ul></li></ul> |
 
 
 ### 其他过滤器
 
 | 其他过滤器 | 描述 |
 |---|---|
-| ![其他过滤器](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 其他过滤器]**&#x200B;部分按其他预定义过滤器进行过滤。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 显示所有]**</li><li>**[!UICONTROL 与我共享]**</li><li>**[!UICONTROL 我的]**</li><li>**[!UICONTROL 已批准]**</li><li>**[!UICONTROL 收藏夹]**</li></ul> 您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**5︎⃣**：当前过滤器生成的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定其他过滤器相关的项目数量。</li></ul></li></ul> |
+| ![其他过滤器](/help/analysis-workspace/build-workspace-project/assets/projects-filters-others.png){width="300"} | 您可以使用&#x200B;**[!UICONTROL 其他过滤器]**&#x200B;部分按其他预定义过滤器进行过滤。<ul><li>您可以选择以下一个或多个选项：<ul><li> **[!UICONTROL 显示所有]**</li><li>**[!UICONTROL 与我共享]**</li><li>**[!UICONTROL 我的]**</li><li>**[!UICONTROL 已批准]**</li><li>**[!UICONTROL 收藏夹]**</li></ul> 您可以选择的内容取决于您的角色和权限。</li><li>您可以选择多个其他过滤器。 可用的其他过滤器取决于在过滤器面板中对其他部分的选择。</li><li>这些数字表明：<ul><li>**5︎⃣**：当前过滤器生成的项目可用的其他过滤器数量。</li><li>4︎⃣：与特定其他筛选条件相关的项目数量。</li></ul></li></ul> |
 
 ## 搜索
 
@@ -168,8 +172,8 @@ ht-degree: 100%
 
 * 要移除过滤器：
 
-   1. 使用 **[!UICONTROL *x *过滤器]**![ChevronDown](/help/assets/icons/ChevronDown.svg) 顶部打开一个上下文菜单，其中列有过滤器的类型和单个过滤器。
-   1. 使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 来移除过滤器。
+  1. 使用 **[!UICONTROL *x *过滤器]**![ChevronDown](/help/assets/icons/ChevronDown.svg) 顶部打开一个上下文菜单，其中列有过滤器的类型和单个过滤器。
+  1. 使用 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 来移除过滤器。
 
 
 <!--
@@ -234,7 +238,7 @@ Settings include:
 |  Created By  | Project owner name  |
 |  Last Modified  | Date of last modification to the project.  |
 |  Tags  |Lists any tags applied to a project for easier categorization.  |
-|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it.  |
+|  Description  | A description is useful for clarifying the purpose of a project. You can double-click the description to edit it. <p>To have Adobe generate a description for you, select **[!UICONTROL Generate description]** below the description field. Adobe analyzes several panels in the project and summarizes them into a description. Generated descriptions include the text **[!UICONTROL Generated by Adobe using AI]** and can be edited. This option requires your organization to agree to certain generative AI legal terms.</p> |
 |  Count repeat instances in project  | Specifies whether repeat instances are counted in reports. Note: this setting does not apply to Flow or Fallout visualizations.  |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |

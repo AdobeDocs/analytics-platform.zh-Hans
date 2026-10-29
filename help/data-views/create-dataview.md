@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 78%
+source-wordcount: '3192'
+ht-degree: 76%
 ---
 # 创建或编辑数据视图
 
@@ -341,7 +341,17 @@ ht-degree: 78%
   * **[!UICONTROL 数据类型]** - 您可以选择以下一种或多种数据类型：[!UICONTROL 字符串]、[!UICONTROL 整数]、[!UICONTROL 短整数]、[!UICONTROL 布尔值]、[!UICONTROL 双精度浮点数]、[!UICONTROL 字节]、[!UICONTROL 长整数]、[!UICONTROL 日期]或[!UICONTROL 日期时间]。
   * **[!UICONTROL 数据集]** - 选择一个或多个数据集。
   * **[!UICONTROL 数据管理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
-  * **[!UICONTROL 其他]** - 选择一个或多个选项[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]或[!UICONTROL 未弃用]。
+  * **[!UICONTROL 其他]** — 选择以下一个或多个选项：
+
+    * [!UICONTROL 包含数据]
+
+    * [!UICONTROL 是标识]
+
+    * [!UICONTROL 未弃用]
+
+    * [!UICONTROL 缺少描述]
+
+      使用此选项可仅显示尚未具有说明的组件，如在您[同时为多个组件](/help/data-views/component-settings/overview.md)生成说明之前。
 
   选择&#x200B;**[!UICONTROL 应用]**，应用过滤器。
 

@@ -32,10 +32,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 65%
+source-wordcount: '1523'
+ht-degree: 51%
 ---
 # 编辑组件条目
 
@@ -101,14 +101,15 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
 1. 从组件列表中，选择要编辑的组件。
 
 1. 选择组件名称旁边的&#x200B;**编辑**&#x200B;图标，即![“数据词典编辑”图标](/help/assets/icons/Edit.svg)。
+   ![数据字典中的“编辑组件”对话框](assets/data-dictionary-edit-component.png)
 
 1. 编辑有关组件的以下任何信息：
 
    | 选项 | 功能 |
    |---------|----------|
    | **[!UICONTROL 已批准]** | <p>表示该组件已获管理员审阅和批准。</p><p>管理员会看到&#x200B;**[!UICONTROL 取消批准]**&#x200B;选项。 选择此选项会为用户将组件标记为“未批准”。</p> |
-   | **[!UICONTROL 未批准]** | <p>表示该组件尚未获得管理员审阅和批准。</p><p>管理员会看到&#x200B;**[!UICONTROL 批准]**&#x200B;选项。 选择此选项会为用户将组件标记为“已批准”。</p> |
-   | **[!UICONTROL 描述]** | 描述组件的预期功能。 （此信息由 Analytics 管理员添加，如[添加组件描述](/help/components/add-component-descriptions.md)中所述。） |
+   | **[!UICONTROL 批准]** | <p>向管理员指示该组件尚未由管理员审查和批准。</p><p>非管理员可以看到标签&#x200B;**[!UICONTROL 未批准]**。 选择此选项会为用户将组件标记为“已批准”。</p> |
+   | **[!UICONTROL 描述]** | 描述组件的预期功能。 只有Analytics管理员可以添加组件描述。 <p>您可以通过以下任一方式添加说明：</p><ul><li>手动键入描述</li><li>选择&#x200B;**[!UICONTROL 生成描述]**&#x200B;以使Adobe为您生成描述 <p>生成的描述包括Adobe使用AI **生成的文本**，生成后您可以编辑这些描述。</p><p>要同时为多个组件生成描述，请参阅[为多个组件生成描述](#generate-descriptions-for-multiple-components)。</p></li></ul> <p>有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
    | **[!UICONTROL 常常与以下组件一同使用]** | <p>显示最常与您正在查看的组件一起使用的组件。</p><p>在 5 种主要组件类型中，最多显示 5 个组件：量度、计算量度、维度、区段和日期范围。</p><p>此列表基于过去 90 天的数据。 其中仅列出您有权查看的组件。</p><p>管理员可通过在&#x200B;**[!UICONTROL 始终包括]**&#x200B;和&#x200B;**[!UICONTROL 始终排除]**&#x200B;下拉字段中选择所需的组件而编排用户可在此部分中看到的组件。 在您组织用户看到的组件之前，请首先应用&#x200B;**显示全部**&#x200B;区段，以确保您看到任何未与您共享的组件，这些组件可能已由其他管理员添加。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p> |
    | **[!UICONTROL 类似于]** | <p>显示与您正在查看的组件名称类似的组件。</p><p>在 5 种主要组件类型中，最多显示 5 个组件：量度、计算量度、维度、区段和日期范围。</p><p>其中仅列出您有权查看的组件。</p><p>数据视图中的任何重复组件都将显示在此处。 Analytics 管理员应识别并删除所有重复的组件，如[监视数据词典运行状况](/help/components/data-dictionary/monitor-data-dictionary-health.md)中所述。</p><p>管理员可通过在&#x200B;**[!UICONTROL 始终包括]**&#x200B;和&#x200B;**[!UICONTROL 始终排除]**&#x200B;下拉字段中选择所需的组件而编排用户可在此部分中看到的组件。 在您组织用户看到的组件之前，请首先应用&#x200B;**显示全部**&#x200B;区段，以确保您看到任何未与您共享的组件，这些组件可能已由其他管理员添加。<!-- Soon we will make it so any fields that an admin doesn't have access to will be greyed out, and then they can enable the Show all segment to make it editable. --></p><p>**注意：**&#x200B;**类似于**&#x200B;部分当前仅包括您创建的组件，而不包括 Adobe 提供的组件。 将在未来的版本中添加 Adobe 提供的组件。</p> |
    | **[!UICONTROL 产品兼容性]** | 指示Customer Journey Analytics中可以使用此计算量度的位置。 <p>可能的值包括：</p><ul><li>**[!UICONTROL Customer Journey Analytics中的所有位置]**：计算指标可在所有Customer Journey Analytics中使用，包括在Analysis Workspace、Report Builder等中。</li><li>**[!UICONTROL Customer Journey Analytics 中的所有地方（不包括实验）]**：计算量度可用于除实验面板之外的所有 Customer Journey Analytics 部分。</li> <p>有关确定计算量度是否可用于试验的标准的信息，请参阅[试验面板](/help/analysis-workspace/c-panels/experimentation.md)中的[在试验面板中使用计算量度](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel)。</p></ul> |
@@ -121,3 +122,29 @@ Customer Journey Analytics管理员可以在数据字典中编辑给定数据视
    {style="table-layout:auto"}
 
 1. 单击&#x200B;**保存**&#x200B;图标，即![“数据词典保存”图标](/help/assets/icons/SaveFloppy.svg)来保存您的更改。
+
+## 为多个组件生成描述
+
+Customer Journey Analytics管理员可以让Adobe同时为多个组件生成描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。
+
+>[!IMPORTANT]
+>
+>为多个组件生成说明将替换所选组件的任何现有说明。 要避免覆盖现有描述，请在选择组件之前，筛选列表以仅显示尚未具有描述的组件。
+
+要为数据字典中的多个组件生成说明：
+
+1. 打开数据字典，如[数据字典概述](/help/components/data-dictionary/data-dictionary-overview.md)中的“访问数据字典”中所述。
+
+1. 确保在下拉菜单中选择正确的数据视图。
+
+1. （推荐）选择&#x200B;**筛选器**&#x200B;图标![数据字典筛选器图标](/help/assets/icons/Filter.svg)，然后选择&#x200B;**[!UICONTROL 缺少描述]**&#x200B;以仅显示没有描述的组件。
+
+1. 选择要生成说明的组件。
+
+1. 在组件列表上选择![AI](/help/assets/icons/AI.svg) **[!UICONTROL 生成描述]**。
+
+1. 选择&#x200B;**[!UICONTROL 生成描述]**&#x200B;以确认。
+
+   确认消息会显示已添加的描述数。
+
+   如果选择了大量组件，则说明将在后台生成。 请求完成后，您会收到应用程序内[通知](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/account-preferences#view-notifications)，其中显示了生成的描述数量以及失败的描述数量。

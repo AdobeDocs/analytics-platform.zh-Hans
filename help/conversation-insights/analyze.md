@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -32,6 +32,7 @@ ht-degree: 0%
 
 # 分析对话见解
 
+{{release-limited-testing}}
 
 要分析对话见解，请在Analysis Workspace中创建或编辑项目，并将其中一个配置的数据视图用作项目中一个或多个面板的数据视图。
 

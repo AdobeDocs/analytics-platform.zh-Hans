@@ -7,20 +7,23 @@ role: User
 TQID: https://experienceleague.adobe.com/hXe1cEXGvuuBSd0bpavJGEJpEXng2zctXUxPinGu4es
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 542
-ht-degree: 95%
-
+source-wordcount: '589'
+ht-degree: 87%
 ---
-
 # 创建日期范围
 
 
@@ -64,6 +67,11 @@ Should we really mention API here. If so, we can do it all over the place in the
 
 1. 为日期范围指定一个&#x200B;**[!UICONTROL 标题]**。 例如，**[!UICONTROL 每季度]**。
 1. （可选）指定&#x200B;**[!UICONTROL 描述]**。
+
+   要让Adobe为您生成描述，请选择&#x200B;**[!UICONTROL 生成描述]**。 在创建日期范围定义之前，此选项不可用。
+
+   生成的描述包括Adobe使用AI **生成的文本**，生成后您可以编辑这些描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。
+
 1. 通过创建或应用一个或多个&#x200B;**[!UICONTROL 标记]**&#x200B;来组织区段。 开始键入，以查找您可以选择的现有标记。 或者按&#x200B;**[!UICONTROL 输入]**&#x200B;键添加新的标记。 选择 ![CrossSize75](/help/assets/icons/CrossSize75.svg) 以移除标记。 |
 1. 通过先选择开始日期，然后选择结束日期来选择&#x200B;**[!UICONTROL 日期范围]**。
 或者，您也可以从[!UICONTROL *选择预设*]&#x200B;下拉菜单中选择一个&#x200B;**[!UICONTROL 预设]**。

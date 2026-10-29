@@ -32,10 +32,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 32%
+source-wordcount: '970'
+ht-degree: 30%
 ---
 # 管理计算量度
 
@@ -88,6 +88,7 @@ ht-degree: 32%
 | ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的计算指标。 选中后，您可以内联重命名计算指标。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]** | 批准所选的计算指标。 请参阅[批准计算量度](cm-approving.md)。 |
 | ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制所选的计算指标。 新计算量度是使用相同的名称和后缀`(Copy)`创建的 |
+| ![AI](/help/assets/icons/AI.svg) | **[!UICONTROL 生成描述]** | <p>生成所选计算量度的描述，并替换任何现有的描述。</p><p>为避免覆盖现有描述，请先[筛选](#filter-panel)列表以仅显示没有描述的计算量度（在筛选器中的&#x200B;[!UICONTROL **其他筛选器**]&#x200B;下，选择&#x200B;[!UICONTROL **缺少描述**]）。</p><p>系统将提示您进行确认。 大型请求在后台运行，您可以在完成时收到通知。</p><p>有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出至 CSV]** | 将计算量度导出到`Calculated  metric List.csv`文件。 |
 
 ### 活动过滤器栏

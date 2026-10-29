@@ -7,19 +7,21 @@ exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 TQID: https://experienceleague.adobe.com/21Rc7-uX7Ie2qj5FHzjb89CTmvi79Ne-FR92okGF5uo
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 860
-ht-degree: 95%
-
+source-wordcount: '962'
+ht-degree: 85%
 ---
-
 # 保存项目 {#save-projects}
 
 <!-- markdownlint-disable MD034 -->
@@ -49,7 +51,7 @@ Analysis Workspace 中的项目每 2 分钟自动保存一次。 您还可以自
   1. 指定以下内容：
 
      * **[!UICONTROL 名称]**（必填项） 您的项目名称。
-     * **[!UICONTROL 描述]**。 您的项目描述。
+     * **[!UICONTROL 描述]**。 您的项目描述。 要让Adobe为您生成描述，请选择&#x200B;**[!UICONTROL 生成描述]**。 Adobe会分析项目中的多个面板，并将它们汇总为描述。 生成的描述包括Adobe使用AI **生成的文本**&#x200B;并可编辑。 此选项要求您的组织同意某些创新型人工智能法律条款。
      * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记，或使用&#x200B;**[!UICONTROL 输入]**&#x200B;添加新标记。
      * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果您未指定文件夹，则该项目会保存在您创建新项目的当前文件夹中。
      * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域添加版本说明。
@@ -86,7 +88,7 @@ Analysis Workspace 中的项目每 2 分钟自动保存一次。 您还可以自
   1. 指定以下内容：
 
      * **[!UICONTROL 名称]**（必填项） 您的项目名称。
-     * **[!UICONTROL 描述]**。 您的项目描述。
+     * **[!UICONTROL 描述]**。 您的项目描述。 要让Adobe为您生成描述，请选择&#x200B;**[!UICONTROL 生成描述]**。 Adobe会分析项目中的多个面板，并将它们汇总为描述。 生成的描述包括Adobe使用AI **生成的文本**&#x200B;并可编辑。 此选项要求您的组织同意某些创新型人工智能法律条款。
      * **[!UICONTROL 标记]**。 在&#x200B;[!UICONTROL *搜索标记*]&#x200B;字段中搜索标记，或使用&#x200B;**[!UICONTROL 输入]**&#x200B;添加新标记。
      * **[!UICONTROL 文件夹]**。 从&#x200B;[!UICONTROL *选择文件夹*]&#x200B;下拉菜单中选择文件夹。 如果您未指定文件夹，则该项目会保存在您创建新项目的当前文件夹中。
      * **[!UICONTROL 版本说明]**。 在&#x200B;*添加注释*&#x200B;文本区域添加版本说明。
