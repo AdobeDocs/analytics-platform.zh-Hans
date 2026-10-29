@@ -22,12 +22,16 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 67e9700015c9c8de24871feb4eedc4392ce72a3a
+source-git-commit: 88e67c92fc170b340149c9ab73ad5eea2122da2b
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 0%
+source-wordcount: '1960'
+ht-degree: 1%
 ---
 # 使用同事的产品内体验
+
+>[!AVAILABILITY]
+>
+>本部分描述的功能处于发布的有限测试阶段，因此可能在您的环境中尚不可用。 此外，Co-worker使用生成人工智能，这会产生不准确或意外的结果。 在对其采取行动或共享项目之前，请查看同事的响应以及它对您的项目所做的任何更改。
 
 Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 同事使用打开的项目作为上下文，因此您可以询问有关分析的问题或让同事构建项目，而无需解释其中包含的内容。
 
@@ -44,13 +48,13 @@ Co-worker的产品内体验位于Analysis Workspace右侧的聊天面板中。 �
 <!--
 FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
 
-* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
 
 -->
 
 ### 在Workspace中的同事和同事应用程序之间进行选择
 
-同事的产品内体验具有许多与[CX Enterprise Coworker应用程序](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)相同的功能，包括您有权访问的技能。 但是，在决定何时可以使用一种方式而不是使用另一种方式时，存在一些重要差异：
+同事的产品内体验具有许多与[CX Enterprise Coworker应用程序](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat)相同的功能，包括您有权访问的技能。 但是，在决定何时可以使用一种方式而不是使用另一种方式时，存在一些重要差异：
 
 | | 同事的产品内体验 | 同事应用程序 |
 | --- | --- | --- |
