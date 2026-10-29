@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
+source-git-commit: a80a12b061bee5165667b361a9e4bc1888d86c95
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 2%
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 ## 权限
 
-* [产品管理员](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
+* [产品管理员](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role)还需要[Experience Platform权限](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions)中所有沙盒的&#x200B;**管理数据使用策略**&#x200B;和&#x200B;**查看数据使用策略**&#x200B;权限。
 
 ## 工作流
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 1. 查看使用相同组件ID但具有不同组件设置的所有组件。 对于每个重复组件组，选择所需的组件设置，以将其应用于共享该组件ID的所有其他组件。
 1. 查看使用相同组件ID并具有相同组件设置的所有组件。 可以轻松安全地合并这些维度或量度。
 
-## [!UICONTROL 共享量度和维度]管理器
+## [!UICONTROL 共享量度和维度]管理器 {#smd-manager}
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL 数据视图]** > **[!UICONTROL 共享的量度和维度]**
 

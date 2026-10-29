@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+source-git-commit: e9ee69c84d5a8992acacf44d1ba5c9231c9cda5f
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 25%
-
+source-wordcount: '657'
+ht-degree: 23%
 ---
-
 # 管理日期范围
 
 
@@ -73,6 +71,7 @@ ht-degree: 25%
 | ![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 重命名]** | 重命名单个选定的日期范围。 选中后，您可以内联重命名日期范围。 |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL 批准]** | 批准选定的日期范围。 |
 | ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL 复制]** | 复制选定的日期范围。 将使用相同的名称和后缀创建新日期范围（复制） |
+| ![AI](/help/assets/icons/AI.svg) | **[!UICONTROL 生成描述]** | <p>生成选定日期范围的描述，并替换任何现有的描述。</p><p>为避免覆盖现有描述，请先[筛选](#filter-panel)列表以仅显示没有描述的日期范围（在筛选器中的&#x200B;[!UICONTROL **其他筛选器**]&#x200B;下，选择&#x200B;[!UICONTROL **缺少描述**]）。</p><p>系统将提示您进行确认。 大型请求在后台运行，您可以在完成时收到通知。</p><p>有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p> |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL 导出至 CSV]** | 将选定的日期范围导出到`Date ranges List.csv`文件。 |
 
 ### 活动过滤器栏
@@ -111,7 +110,8 @@ ht-degree: 25%
 
 * 在[[!UICONTROL 日期范围]列表](#date-ranges-list)中，选择日期范围的标题。
 
-使用[日期范围生成器](/help/components/date-ranges/create.md#date-range-builder)编辑日期范围。使用[日期范围管理器](/help/components/date-ranges/manage.md)共享、重命名或删除日期范围。
+使用[日期范围生成器](/help/components/date-ranges/create.md#date-range-builder)编辑日期范围。
+使用[日期范围管理器](/help/components/date-ranges/manage.md)共享、重命名或删除日期范围。
 
 
 <!--

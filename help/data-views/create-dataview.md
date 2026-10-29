@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '3165'
-ht-degree: 78%
+source-wordcount: '3192'
+ht-degree: 76%
 ---
 # 创建或编辑数据视图
 
@@ -53,7 +53,7 @@ ht-degree: 78%
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
+请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [创建或编辑数据视图](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"}以获取演示视频。
 
 >[!ENDSHADEBOX]
 
@@ -246,7 +246,7 @@ ht-degree: 78%
 
 1. 使用![搜索图标](/help/assets/icons/Search.svg) **[!UICONTROL 搜索架构字段]**&#x200B;来搜索架构字段，或者通过移动到任何数据集收藏集来查找字段，例如![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 事件数据集]**&#x200B;或![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 查找数据集]**。 对于事件数据集，![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL XDM字段]**&#x200B;和![文件夹](/help/assets/icons/Folder.svg) **[!UICONTROL 临时和关系字段]**&#x200B;的单独集合可用。<br/>或者，您可以使用![数据图标](/help/assets/icons/Data.svg) **创建派生字段**&#x200B;创建派生字段。 请参阅[派生字段](./derived-fields/derived-fields.md)，了解更多信息。
 
-1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](/help/assets/icons/DragHandle.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**&#x200B;部分。
+1. 找到特定架构字段或定义派生字段后，将该字段（如![句柄图标](/help/assets/icons/DragHandle.svg) **[!UICONTROL 页面名称]**）从左边栏拖动到&#x200B;**[!UICONTROL 包含的组件]**&#x200B;下的&#x200B;**[!UICONTROL 量度]**&#x200B;或&#x200B;**[!UICONTROL 维度]**部分。
 可将同一架构字段拖入“维度”或“量度”部分多次，并可按不同方式配置同一维度或量度。 例如，从pageName字段，使用右侧不同的[组件设置](component-settings/overview.md)创建`Product Pages`和`Error pages`维度。
 如果从左边栏拖动一个架构字段文件夹，文件夹中的字段会自动分类到相应的部分。 字符串字段最后落在[!UICONTROL 维度]部分中，而数值架构类型最后落在[!UICONTROL 量度]部分中。 您也可以点击&#x200B;**[!UICONTROL 全部添加]**，将所有架构字段添加到其相应的部分。
 
@@ -341,7 +341,17 @@ ht-degree: 78%
   * **[!UICONTROL 数据类型]** - 您可以选择以下一种或多种数据类型：[!UICONTROL 字符串]、[!UICONTROL 整数]、[!UICONTROL 短整数]、[!UICONTROL 布尔值]、[!UICONTROL 双精度浮点数]、[!UICONTROL 字节]、[!UICONTROL 长整数]、[!UICONTROL 日期]或[!UICONTROL 日期时间]。
   * **[!UICONTROL 数据集]** - 选择一个或多个数据集。
   * **[!UICONTROL 数据管理]**：从[!UICONTROL 自定义标签]、[!UICONTROL 合同标签]、[!UICONTROL 身份标签]、[!UICONTROL 敏感度标签]、[!UICONTROL 合作伙伴生态系统]或[!UICONTROL 策略]子类别中选择一个或多个标签。
-  * **[!UICONTROL 其他]** - 选择一个或多个选项[!UICONTROL 包含数据]、[!UICONTROL 是身份标识]或[!UICONTROL 未弃用]。
+  * **[!UICONTROL 其他]** — 选择以下一个或多个选项：
+
+    * [!UICONTROL 包含数据]
+
+    * [!UICONTROL 是标识]
+
+    * [!UICONTROL 未弃用]
+
+    * [!UICONTROL 缺少描述]
+
+      使用此选项可仅显示尚未具有说明的组件，如在您[同时为多个组件](/help/data-views/component-settings/overview.md)生成说明之前。
 
   选择&#x200B;**[!UICONTROL 应用]**，应用过滤器。
 

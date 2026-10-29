@@ -49,10 +49,10 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 9a829e9842d73bbc94b00c7470e50eaddf22f50c
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 22%
+source-wordcount: '1075'
+ht-degree: 21%
 ---
 # 当前Customer Journey Analytics发行说明（2026年10月）
 
@@ -68,7 +68,7 @@ ht-degree: 22%
 | **在Analysis Workspace中使用对话见解分析LLM客户体验**<br/> Customer Journey Analytics现在将非结构化聊天数据引入Analysis Workspace，允许您报告资产中利用LLM进行的浏览和购买体验。<p>利用此功能，您可以：</p><ul><li>通过Web SDK从对话代理（贵组织的自定义代理或Adobe Brand Concierge）收集提示、响应和代理元数据。</li><li>分析意图、语气和情绪，以便您了解客户提出的问题、您的座席如何回应以及客户对其交互的感受。</li><li>使用现有架构、数据集和数据视图进行大规模分析，然后在Analysis Workspace中显示见解。</li><li>通过将代理互动与更广泛的客户历程联系起来，将对话与成果联系起来，以便您衡量对转化、参与度等工作的实际影响。</li></ul><p>以前，由LLM提供支持的体验难以测量，并且几乎无法连接到您现有的客户历程。</p><p>有关详细信息，请参阅[对话分析](/help/conversation-insights/overview.md)。</p> | 2026年10月29日<p>（原计划于2026年9月22日）</p> | 待定 |
 | **Adobe Brand Visibility集成**<br/>&#x200B;将Adobe Brand Visibility与贵组织的Customer Journey Analytics数据连接起来，以便您可以衡量AI驱动的发现如何转化为真正的网站参与度和业务成果。<p>有关详细信息，请参阅[Adobe Brand Visibility集成](/help/integrations/bv/bv.md)。</p> | | 2026年10月8 |
 | **历程画布：比较百分比**<br/>&#x200B;将历程与前期进行比较时，现在可启用新的[!UICONTROL 比较百分比]选项，以显示每个节点、箭头和流失的百分比变化。 在比较比率（例如节点之间的维系率或流失率）时，这项功能非常有用，因为即使旅程中的人数在日期范围之间不同，比较仍会保持准确。<p>有关详细信息，请参阅[配置历程画布可视化图表](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings)中的“比较百分比”。</p> | | 2026年10月19 |
-| **自动生成组件描述** <br/>您现在可以自动生成维度、量度、计算量度、区段和日期范围的描述。 这使得Workspace用户能够了解要使用的组件，尤其是在具有大型组件库的组织中。 <p>您可以为单个组件生成描述，或同时为多个组件生成描述。</p> <p>（文档链接见下文。）<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 2026年10月28日 |
+| **自动为组件和项目生成描述** <br/>您现在可以自动生成维度、量度、计算量度、区段和日期范围的描述。 这使得Workspace用户能够了解要使用的组件，尤其是在具有大型组件库的组织中。 <p>您可以为单个组件生成描述，或同时为多个组件生成描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p><p>在[保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)或从[项目信息和设置](/help/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings)中为Workspace项目生成描述。</p> | 2026年10月29日 | 2026年11月11 |
 | 在Analysis Workspace的聊天面板中现在提供了&#x200B;**同事的产品内体验**<br/>&#x200B;同事。 同事使用您已打开的项目作为上下文，因此您可以询问有关分析的问题，而无需解释项目包含的内容。<p>使用同事的产品内体验，您可以：</p><ul><li>汇总打开的项目、查找见解并运行根本原因分析。</li><li>使用自然语言提示构建和编辑项目。 例如，您可以添加面板和表格、划分数据、更改可视化图表类型和日期范围以及创建区段。</li></ul><p>（后续文档更新。）<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 待定（原计划于2026年10月15日） | 待定 |
 
 
