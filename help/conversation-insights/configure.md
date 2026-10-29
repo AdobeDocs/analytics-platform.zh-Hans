@@ -80,7 +80,7 @@ ht-degree: 17%
 
    当某个数据集同时包含提示和响应时，请为&#x200B;**[!UICONTROL 提示事件数据集]**&#x200B;和&#x200B;**[!UICONTROL 响应事件数据集]**&#x200B;选择相同的数据集。
 
-   [通过&#x200B;**[!UICONTROL 指定混合会话](#blend-specification)的选项“配置混合规范”]**&#x200B;仅可用一次：
+   [通过&#x200B;**[[!UICONTROL 指定混合会话]](#blend-specification)的选项“配置混合规范”]**&#x200B;仅可用一次：
    * 此配置已完成。
    * 所有数据集都可用。
    * 您有Customer Journey Analytics [权限编辑连接](/help/technotes/access-control.md)。
