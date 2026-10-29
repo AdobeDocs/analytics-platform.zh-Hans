@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 9%
@@ -122,11 +122,11 @@ ht-degree: 9%
 | 受众刷新频率 | 4 | 系统强制的护栏 | 可以刷新[受众](../components/audiences/audiences-overview.md)的最大频率（小时）。 |
 | 受众刷新回顾窗口 | 90 | 系统强制的护栏 | 刷新回顾时间范围的最大天数。 |
 | 刷新受众过期日期 | 13 | 系统强制的护栏 | 受众从创建日期起停止刷新的最大月数。 客户可以将其延长13个月。 |
-| 刷新受众的数量 | 75 - 150 | 系统强制的护栏 | 配置为按计划频率刷新[&#128279;](/help/components/audiences/publish.md#audience-builder)的受众的最大数目（一次性刷新不计入此限制）。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
+| 刷新受众的数量 | 75 - 150 | 系统强制的护栏 | 配置为按计划频率刷新](/help/components/audiences/publish.md#audience-builder)的[受众的最大数目（一次性刷新不计入此限制）。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/rtcdp/guardrails/overview)。
+另请参阅Experience Platform [Real-time Customer Data Platform护栏](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 
 ## 自动数据集过期
@@ -144,7 +144,7 @@ ht-degree: 9%
 | 名称 | 值 | 限制类型 | 描述 |
 |---|--:|---|---|
 | 项目 | 50,000 | 系统强制的护栏 | 组织的最大项目数。 |
-| 数据视图 | 2,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
+| 数据视图 | 5,000 | 系统强制的护栏 | 组织的最大[数据视图](../data-views/data-views.md)数。 |
 | 数据视图 | 500-1000 | 系统强制的护栏 | 连接的最大数据视图数。 值因Customer Journey Analytics包而异（请参阅产品描述）。 |
 | 数据集 | 100 | 系统强制的护栏 | 每个连接最多[个数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh_Hans)。 |
 | 连接 | 1000 | 系统强制的护栏 | 组织的最大[连接数](../connections/overview.md)。 |
@@ -173,7 +173,7 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+另请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 
 ## 目标数据导出
@@ -185,7 +185,7 @@ ht-degree: 9%
 
 {style="table-layout:auto"}
 
-另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/guardrails#dataset-exports)
+另请参阅Experience Platform [数据集导出护栏](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## 数据登陆区
@@ -303,7 +303,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hans)。
+>以下处理时间是护栏，而不是合同服务级别协议(SLA)。 滞后时间因客户配置、数据卷和使用者应用程序而异。 实际处理时间通常更快。 请参阅您的Customer Journey Analytics合同，以了解具体的合同条款和SLA。 有关详细信息，请参阅Experience Platform [数据摄取的护栏](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)。
 
 | 数据流 | 预期延迟 |
 |---|---|
