@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 role: Admin
-source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
+source-git-commit: c5a7403374f26ebc641f3491a88dc14c5f8693c6
 workflow-type: tm+mt
-source-wordcount: '3907'
+source-wordcount: '3910'
 ht-degree: 3%
 ---
 # 将付费媒体数据与Web数据连接起来
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 您只能在ID显示在登陆页面URL或现有事件字段中的级别进行连接。 例如，仅营销活动标记支持营销活动报告，但不支持广告级别的报告。 体验级和资产级连接需要其他URL参数，并且不在本指南的范围之内。
 
-请参阅[摘要数据](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/summary-data)和[摘要数据组组件设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)以供参考。
+请参阅[摘要数据](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/summary-data)和[摘要数据组组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group)以供参考。
 
 ### 选择连接键
 
@@ -81,7 +81,7 @@ GUID结构为`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`。 
 * [!DNL Customer Journey Analytics]选择或更高，可访问此处使用的派生字段函数：[URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse)、[Case When](/help/data-views/derived-fields/derived-fields.md#case-when)、[Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace)，对于名称扩充，[Lookup](/help/data-views/derived-fields/derived-fields.md#lookup)。
 * [!DNL Adobe Experience Platform]权限用于管理目标沙盒中的架构、数据集和数据流，以及访问数据集和查询服务以进行验证。
 * [!DNL Customer Journey Analytics]编辑目标连接和数据视图的权限。
-* 付费媒体源连接器在同一沙盒中配置，并摄取摘要和查找数据集。 有关示例连接器，请参阅[Meta广告源](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/advertising/meta-ads)。
+* 付费媒体源连接器在同一沙盒中配置，并摄取摘要和查找数据集。 有关示例连接器，请参阅[Meta广告源](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)。
 * 捕获完整登陆页面URL（包括其查询字符串）或包含网络ID的等效字段的网站事件。
 
 
@@ -93,7 +93,7 @@ GUID结构为`{adNetwork}_{accountID}[_{campaignID}[_{adGroupID}[_{adID}]]]`。 
 |---|---|---|---|
 | 网站URL中的Meta ID | <code>campaign_id={{campaign.id}}</code> | <code>adset_id={{adset.id}}</code> | <code>ad_id={{ad.id}}</code> |
 | UTM参数中的Meta ID | <code>utm_campaign={{campaign.id}}</code> | <code>utm_term={{adset.id}}</code> | <code>utm_content={{ad.id}}</code> |
-| UTM参数中的Google广告ID | <code>utm_campaign={campaignid}</code> | <code>utm_term={adgroupid}</code> | <code>utm_content={creative}</code> |
+| UTM参数中的Google广告ID | <code>utm_campaign={{campaignid}}</code> | <code>utm_term={{adgroupid}}</code> | <code>utm_content={{creative}}</code> |
 
 对于Meta UTM标记，源值（如`utm_source=fb`）可以识别网络。 对于Google广告UTM标记，请使用源值，例如`utm_source=google`。
 
@@ -158,7 +158,7 @@ AL!<id>!3!{creative}!{matchtype}!{placement}!{network}!{product_partition_id}!{k
 1. 命名数据流并选择您的事件架构作为映射架构。
 1. 保存，然后选择&#x200B;**[!UICONTROL 添加服务]** > **[!UICONTROL Adobe Experience Platform]**。
 1. 选择沙盒和事件数据集，然后&#x200B;**[!UICONTROL 保存]**。
-1. 使用数据流ID配置[Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/js-overview)。
+1. 使用数据流ID配置[Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)。
 
 捕获以下内容：
 
@@ -215,8 +215,8 @@ LIMIT 20;
 | 数据集 | 类型 | 关键配置 |
 |---|---|---|
 | 付费媒体广告摘要 | 摘要 | 使用架构的每日时间戳配置；启用新数据导入和所需的回填。 |
-| 付费媒体帐户查找 | 查找 | 键： `paidMedia.accountGUID`；广告摘要中的匹配字段： `paidMedia.accountGUID`。 |
-| 付费媒体营销活动查找 | 查找 | 键： `paidMedia.campaignGUID`；广告摘要中的匹配字段： `paidMedia.campaignGUID`。 |
+| 付费媒体帐户查找 | 查询 | 键： `paidMedia.accountGUID`；广告摘要中的匹配字段： `paidMedia.accountGUID`。 |
+| 付费媒体营销活动查找 | 查询 | 键： `paidMedia.campaignGUID`；广告摘要中的匹配字段： `paidMedia.campaignGUID`。 |
 | 付费媒体广告组查找 | 查询 | 键： `paidMedia.adGroupGUID`；广告摘要中的匹配字段： `paidMedia.adGroupGUID`。 |
 | 付费媒体广告查找 | 查询 | 键： `paidMedia.adGUID`；广告摘要中的匹配字段： `paidMedia.adGUID`。 |
 
@@ -363,7 +363,7 @@ LIMIT 20;
 
 保持原始&#x200B;**[!UICONTROL 订单]**&#x200B;和&#x200B;**[!UICONTROL 收入]**&#x200B;量度不变，以保留现有报表。 此设置需要明确启用覆盖，即使显示的默认值似乎匹配。
 
-对于回访中的转化点数，请考虑&#x200B;**[!UICONTROL 人员]**&#x200B;容器和相应的回顾时间范围。 查看[摘要数据用例](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/summary-data)。
+对于回访中的转化点数，请考虑&#x200B;**[!UICONTROL 人员]**&#x200B;容器和相应的回顾时间范围。 查看[摘要数据用例](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data)。
 
 使用量度归因，而不是向Web ID维度添加持久性。 为避免夸大解释为登陆的计数，请勿将ID保留到以后的事件，因为这会更改哪些事件显示在促销活动行下。
 
