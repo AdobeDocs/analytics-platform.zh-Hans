@@ -50,7 +50,7 @@ ht-degree: 25%
    1. 如果您想要在量度上使用非默认的[归因](/help/analysis-workspace/attribution/models.md)模型，请选择&#x200B;**[!UICONTROL 使用非默认归因模型]**，然后选择&#x200B;**[!UICONTROL 模型]**、**[!UICONTROL 容器]**&#x200B;和&#x200B;**[!UICONTROL 回顾窗口]**。
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。
 
-要重新配置趋势主题可视化图表，请选择&#x200B;**[!UICONTROL 排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_]**。
+要重新配置趋势主题可视化图表，请选择&#x200B;**排名指标&#x200B;_排名指标_旁边的![编辑](/help/assets/icons/Edit.svg) |子主题级别： _x_**。
 
 ## 使用
 
