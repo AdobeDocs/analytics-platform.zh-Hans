@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
+source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 40%
+source-wordcount: '1596'
+ht-degree: 39%
 ---
 # 数据馈送中的组件可用性
 
@@ -100,7 +100,7 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
->title=""
+>title="无法同时使用的维度"
 >abstract="用户代理数据和设备查找数据不能存在于同一个数据馈送配置中。"
 
 <!-- markdownlint-enable MD034 -->
@@ -111,17 +111,35 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 
 * 设备查找维度，例如浏览器、移动设备和操作系统维度。 有关完整列表，请参阅[设备查找维度](#device-lookup-dimensions)。
 
+此限制也适用于引用这些维度的派生字段。
+
 >[!NOTE]
 >
 >如果您使用Web SDK，此限制在数据到达Experience Platform数据集之前在数据流中实施。 有关详细信息，请参阅数据收集指南中的[创建和配置数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)中的[配置设备查找](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#geolocation-device-lookup)。
 
+<!--
+SME CHECK (derived fields; from Slack thread with Ron Fulkerson, Matt Freestone, Courtney Ferguson). Assumptions to confirm:
+1. Derived fields are restricted only when combined with dimensions from the other group. They aren't blocked from data feeds entirely.
+2. The restriction applies in both directions. Derived fields that reference User agent or Mobile ID conflict with device lookup dimensions, not only the reverse.
+3. The restriction applies to nested derived fields (a derived field that references another derived field that references a restricted dimension).
+4. "Device Atlas sourced" dimensions are the same set as the device lookup dimensions listed on this page.
+5. The restriction itself is permanent.
+6. Derived fields get the same conflict dialog experience as dimensions (per Matt Freestone). This requires the UI to identify which derived fields reference these dimensions; Courtney Ferguson said the UI doesn't have that information today. Confirm this will be built before release.
+7. The priority rules in "Resolve dimension conflicts" apply to derived fields the same way they apply to the dimensions they reference. For example, a derived field that references User agent takes priority over device lookup dimensions in the same selection.
+8. Editing a derived field that is already in a data feed so that it references a conflicting dimension fails when the user adds the conflicting dimension to the derived field. Does this check every data feed that uses the derived field? What does the error say?
+Open question: Can a derived field that references dimensions from BOTH groups be added to any data feed?
+-->
+
 ### 解决维度冲突
 
-添加不能一起使用的维度时，会出现一个对话框，其中列出将添加的维度，以及不会添加或删除的维度。 冲突发生与否取决于冲突发生的地点：
+当添加不能一起使用的维度（包括引用这些维度的派生字段）时，会出现一个对话框，其中列出了将添加以及不会添加或删除的维度。 下表显示了根据冲突发生位置所发生的情况：
 
-* **您添加的维度与数据馈送中已有的维度冲突**：您添加的维度优先。 该对话框提示您添加选定内容并从数据馈送中删除冲突的维度。
+| 冲突 | 优先 | 结果 |
+|---|---|---|
+| 您添加的维度与数据馈送中已存在的维度冲突 | 您添加的维度 | 新维度将替换数据馈送中已存在的冲突维度。 |
+| 您添加的维度相互冲突 | **用户代理**&#x200B;和&#x200B;**移动设备ID**&#x200B;维度（以及引用它们的派生字段） | 所选内容（以及引用这些内容的派生字段）中的设备查找维度不会添加。 所选内容的其余部分将添加到数据馈送。 |
 
-* **您添加的维度相互冲突**： **用户代理**&#x200B;和&#x200B;**移动设备ID**&#x200B;维度优先。 对话框提示您添加这些维度；所选维度中的设备查找维度不会添加。
+{style="table-layout:auto"}
 
 若要保持数据馈送不变，请选择&#x200B;**[!UICONTROL 取消]**。
 
@@ -129,7 +147,7 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 
 ### 设备查找维度 {#device-lookup-dimensions}
 
-以下维度不能与&#x200B;**用户代理**&#x200B;或&#x200B;**移动设备ID**&#x200B;维度包含在同一数据馈送中。
+以下维度（以及引用这些维度的任何派生字段）不能与&#x200B;**用户代理**&#x200B;或&#x200B;**移动设备ID**&#x200B;维度包含在同一数据馈送中。
 
 >[!NOTE]
 >
