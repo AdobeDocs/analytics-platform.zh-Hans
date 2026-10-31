@@ -7,7 +7,7 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 16%
+ht-degree: 27%
 ---
 # 对话回顾
 
@@ -21,7 +21,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
 >title="对话回顾"
->abstract="了解各个对话的背景和流程，包括时间戳和信号。 配置要显示的信号。"
+>abstract="了解单次对话的上下文和交流过程，包括时间戳和信号。 配置要显示哪些信号。"
 
 
 ![聊天](/help/assets/icons/Chat.svg) **[!UICONTROL 对话评论]**&#x200B;可视化图表显示了客户与代理之间的完整逐次交换。

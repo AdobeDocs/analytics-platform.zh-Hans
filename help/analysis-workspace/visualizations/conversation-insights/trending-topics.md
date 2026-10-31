@@ -7,14 +7,14 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 16%
+ht-degree: 25%
 ---
 # 热门话题 {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
 >title="热门话题"
->abstract="创建一个可视化图表，该可视化图表显示启用层级向下钻取的、包含发生次数和百分比的趋势主题细分，以帮助您识别对话中的重要主题。"
+>abstract="创建一个分层展示细分情况的可视化图表，支持深入分析热门趋势话题，并显示出现次数和百分比，帮助您识别对话中的重要主题。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
@@ -32,12 +32,12 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel"
 >title="使用非默认的属性模型"
->abstract="为此量度启用非默认归因模型。"
+>abstract="为这个量度启用一个非默认的归因模型。"
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
 >title="使用非默认的属性模型"
->abstract="非默认归因模型不适用于此量度。"
+>abstract="非默认归因模型不适用于这个量度。"
 
 
 创建和配置&#x200B;**[!UICONTROL 趋势主题]**&#x200B;可视化图表：

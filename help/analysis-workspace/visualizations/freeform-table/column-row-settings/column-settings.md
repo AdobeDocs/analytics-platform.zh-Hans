@@ -99,7 +99,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="使用非默认归因模型"
->abstract="非默认归因模型不适用于此量度。"
+>abstract="非默认归因模型不适用于这个量度。"
 
 <!-- markdownlint-enable MD034 -->
 
