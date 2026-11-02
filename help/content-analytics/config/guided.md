@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4894'
 ht-degree: 55%
 ---
 
@@ -256,7 +256,7 @@ ht-degree: 55%
 
 然后，您可以更详细地配置渠道。 根据您是启用[移动设备](#mobile)、[Web](#web)还是[付费媒体](#paid-media)渠道的配置，该配置会有所不同。
 
-#### 移动
+#### 移动设备
 
 +++ 详细信息
 
@@ -297,6 +297,8 @@ ht-degree: 55%
 ### 体验捕捉和定义 {#mobile-experience-capture-and-definition}
 
 在此部分中，您可以选择将体验包含在通过Content Analytics收集的移动数据中。  对于移动渠道，体验是指您使用适用于Content Analytics的Adobe Experience Platform SDK注册为体验。
+
+默认情况下，您的数据集和数据视图中会启用体验维度。 **[!UICONTROL 包含体验]**&#x200B;选项用于在数据收集中启用Content Analytics体验。
 
 默认情况下，**[!UICONTROL 包含体验]**&#x200B;处于禁用状态。
 
@@ -470,6 +472,8 @@ ht-degree: 55%
 
 * 网站上的页面必须能够通过页面 URL 重现。
 * 任何给定用户看到的文本内容都可以使用页面 URL 重复出现，并且不取决于 cookie 或其他个性化机制。
+
+默认情况下，您的数据集和数据视图中会启用体验维度。 **[!UICONTROL 包含体验]**&#x200B;选项用于在数据收集中启用Content Analytics体验。
 
 >[!IMPORTANT]
 >
