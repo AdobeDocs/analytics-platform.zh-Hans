@@ -3,11 +3,10 @@ description: 使用对话摘要可视化图表来总结对话。
 title: 对话摘要
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 26%
+source-wordcount: '407'
+ht-degree: 22%
 ---
 # 对话摘要 {#conversation-summaries}
 
@@ -23,7 +22,7 @@ ht-degree: 26%
 
 {{release-limited-testing}}
 
-![摘要](/help/assets/icons/Summarize.svg) **[!UICONTROL 对话摘要]**&#x200B;可视化图表允许您摘要经过筛选的对话组。
+![AI](/help/assets/icons/AI.svg) **[!UICONTROL 对话摘要]**&#x200B;可视化图表允许您在[对话见解](/help/conversation-insights/overview.md)中摘要经过筛选的对话组。
 
 当您将可视化配置为包含子主题时，该可视化图表会显示所选量度的摘要（例如，“对话”），并显示子主题或逐字注释。
 
@@ -42,7 +41,7 @@ ht-degree: 26%
 
 创建和配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表：
 
-1. 添加![摘要](/help/assets/icons/Summarize.svg) **[!UICONTROL 对话摘要]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
+1. 添加![AI](/help/assets/icons/AI.svg) **[!UICONTROL 对话摘要]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
 
 1. 在&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表配置中：
 
@@ -52,7 +51,7 @@ ht-degree: 26%
 
 1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以生成可视化图表。 选择&#x200B;**[!UICONTROL 重置]**&#x200B;将配置值重置为默认值。 选择&#x200B;**[!UICONTROL 取消]**&#x200B;以取消配置。
 
-要重新配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 指标： _指标_]**&#x200B;或&#x200B;**[!UICONTROL 指标：_指标_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 区段：_区段_]**。
+要重新配置&#x200B;**[!UICONTROL 对话摘要]**&#x200B;可视化图表，请选择&#x200B;**[!UICONTROL 指标： _指标_]**或&#x200B;**[!UICONTROL 指标：_指标_]**&#x200B;旁边的![编辑](/help/assets/icons/Edit.svg) | **[!UICONTROL 区段：_区段_]**。
 
 ## 使用
 
@@ -72,6 +71,13 @@ ht-degree: 26%
 
 * 如果您有[包含的子主题](#settings)，请选择&#x200B;**[!UICONTROL 子主题]**&#x200B;显示子主题，或选择&#x200B;**[!UICONTROL 逐字注释]**&#x200B;显示逐字注释。
 * 选择&#x200B;**[!UICONTROL 逐字注释]**&#x200B;后，选择![FileSearch](/help/assets/icons/FileSearch.svg)为逐字注释所属的特定对话打开新的[**[!UICONTROL 对话评论]**](./conversation-review.md)可视化图表。
+
+要快速浏览多个对话评论，请执行以下操作：
+
+1. 创建一个[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)，其中&#x200B;**[!UICONTROL 对话ID]**&#x200B;和&#x200B;**[!UICONTROL 对话名称]**&#x200B;为维度。
+1. 选择自由格式表作为&#x200B;**[!UICONTROL 对话评论]**&#x200B;可视化图表的数据源。
+
+在自由格式表中选择一个对话以自动更新包含所选对话详细信息的&#x200B;**[!UICONTROL 对话审核]**。
 
 ## 设置
 

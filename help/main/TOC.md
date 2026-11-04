@@ -2,7 +2,7 @@
 user-guide-title: Customer Journey Analytics 指南
 user-guide-description: 了解 Adobe Customer Journey Analytics 以及如何将 Analysis Workspace 与来自 Experience Platform 的数据配合使用。
 breadcrumb-title: Customer Journey Analytics 指南
-source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 91%
@@ -241,9 +241,9 @@ ht-degree: 91%
       + [概述](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [配置](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [疑难解答](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
-    + {hide-from-toc}[对话评论](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
-    + {hide-from-toc}[对话摘要](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
-    + {hide-from-toc}[趋势主题](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
+    + [对话回顾](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
+    + [对话摘要](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
+    + [热门话题](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
     + [面积（堆叠）](../analysis-workspace/visualizations/area.md)
     + [条形图（堆叠）](../analysis-workspace/visualizations/bar.md)
     + [项目符号](../analysis-workspace/visualizations/bullet-graph.md)

@@ -3,11 +3,10 @@ description: 使用对话审核可视化图表来详细审核单个对话。
 title: 对话审阅
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 27%
+source-wordcount: '193'
+ht-degree: 26%
 ---
 # 对话回顾
 
@@ -24,7 +23,7 @@ ht-degree: 27%
 >abstract="了解单次对话的上下文和交流过程，包括时间戳和信号。 配置要显示哪些信号。"
 
 
-![聊天](/help/assets/icons/Chat.svg) **[!UICONTROL 对话评论]**&#x200B;可视化图表显示了客户与代理之间的完整逐次交换。
+![聊天](/help/assets/icons/Chat.svg) **[!UICONTROL 对话评论]**&#x200B;可视化图表显示客户和代理之间的完整逐次交换作为[对话见解](/help/conversation-insights/overview.md)的一部分。
 
 该可视化图表可帮助您了解单个会话的上下文和流程，包括时间戳和信号。 您可以配置要显示或不显示哪些信号。
 
