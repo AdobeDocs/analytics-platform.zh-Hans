@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6cecd447699645d21f5b198cdde1796dd49e80f6
+source-git-commit: c244c7d5c08f2059046603d09b09fbe70f8bff07
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2330'
 ht-degree: 24%
 ---
 # B2B人员与帐户拼接
@@ -150,7 +150,7 @@ B2B人员与帐户拼合使用以下操作可防止忽略且不摄取事件：
 >[!IMPORTANT]
 >
 >* 您的帐户到人员数据集中的人员ID字段必须在架构中标记为身份。
->* 人员到帐户查找数据集使用基于XDM业务帐户人员关系类的标准B2B架构，或使用自定义关系架构，其中人员ID和帐户ID字段为简单字符串。 人员到帐户数据集不支持使用`personComponents`数组对象检索帐户ID信息的架构。
+>* 人员到帐户查找数据集可以使用基于XDM业务帐户人员关系类的标准B2B架构，或使用人员ID和帐户ID字段为简单字符串的自定义关系架构。 对于人员到帐户数据集，不支持使用&#x200B;**[!UICONTROL personComponents]**&#x200B;数组对象检索帐户ID信息的架构。
 
 ## 启用人员到帐户拼接 {#enable-account-stitching}
 
