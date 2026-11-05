@@ -3,8 +3,7 @@ description: 使用趋势主题可视化图表来探索对话中的趋势主题�
 title: 趋势主题
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 25%
@@ -23,7 +22,7 @@ ht-degree: 25%
 
 {{release-limited-testing}}
 
-![信息源](/help/assets/icons/Feed.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表允许您浏览和分析趋势主题，作为对话见解的一部分。
+![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表允许您在[对话见解](/help/conversation-insights/overview.md)中浏览和分析趋势主题。
 
 您可以搜索特定主题，并将每个级别中每个主题的数量和百分比与其他数据范围进行比较。
 
@@ -42,7 +41,7 @@ ht-degree: 25%
 
 创建和配置&#x200B;**[!UICONTROL 趋势主题]**&#x200B;可视化图表：
 
-1. 添加![信息源](/help/assets/icons/Feed.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
+1. 添加![划分](/help/assets/icons/Breakdown.svg) **[!UICONTROL 趋势主题]**&#x200B;可视化图表。 请参阅[将可视化图表添加到面板](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)。
 
 1. 在&#x200B;**[!UICONTROL 趋势主题]**&#x200B;可视化图表配置中：
 

@@ -24,13 +24,11 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 7190b05d8c3d66a6f76ed256af3424ba3c971855
 workflow-type: tm+mt
-source-wordcount: 1117
+source-wordcount: '1119'
 ht-degree: 76%
-
 ---
-
 # [!UICONTROL 持久性]组件设置 {#persistence-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -64,7 +62,7 @@ ht-degree: 76%
 | --- | --- |
 | [!UICONTROL 设置持久性] | 为维度启用持久性。 如果未启用持久性，则维度仅与同一事件中存在的指标相关。 默认下禁用此设置。 |
 | [!UICONTROL 分配] | 指定在维度上使用用于持久性的分配模型。 选项如下：<ul><li>**[!UICONTROL 最近]**：维度中的值会一直保留，直到被后续值覆盖</li><li> **[!UICONTROL 原始]**：此维度的第一个值会持续存在，且不会被后续值覆盖</li><li>**[!UICONTROL 全部]**：同时保持此维度的所有值</li><li>**[!UICONTROL 第一个已知]**：使用此维度的第一个值，并将其应用于之前和之后的所有事件。</li><li>**[!UICONTROL 最后一个已知]**：使用此维度的最后一个值，并将其应用于之前和之后的所有事件。</li></ul> |
-| [!UICONTROL 有效期限] | 指定维度的持久性窗口。 选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>. 可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。 可设置的最长到期时间为90天。 如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
+| [!UICONTROL 有效期限] | 指定维度的持久性窗口。 选项如下： <ul><li>**[!UICONTROL 会话]**（默认）</li><li>**[!UICONTROL 人员报告窗口]**</li><li>**[!UICONTROL 自定义时间]**</li><li>**[!UICONTROL 量度]**</li></ul>. 可能需要能够在购买（如内部搜索词或其他促销用例）时让维度到期。 可设置的最长到期时间为90天。 如果选择[!UICONTROL 全部]分配，则仅有[!UICONTROL 会话]或[!UICONTROL 人员]有效期限可用。 |
 
 {style="table-layout:auto"}
 
