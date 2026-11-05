@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2dfdb8ea1cc0648fa1cffae9ac7823786ff3f11b
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1691'
 ht-degree: 5%
 ---
 # 将数据转换应用于数据馈送
@@ -63,13 +63,13 @@ ht-degree: 5%
 | **查找并替换文本值** | 不可用 | [查找和替换](/help/data-views/derived-fields/derived-fields.md#find-and-replace) | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 简单/适中 | |
 | **设置显示值的格式** | [格式](/help/data-views/component-settings/format.md) | 不可用 | 组件设置<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 困难 | <!-- Date-time formatting isn't yet reflected in data feed output — feeds currently show the standard timestamp regardless of this setting, though Adobe plans to support this for general availability. Whether numeric formats (decimal, currency, percent) on metrics affect data feed output is still being confirmed with the team.--> |
 | **从摘要数据集对维度进行分组** | 不适用 | 不适用 | 不适用 | 不适用 | 摘要数据组仅适用于摘要数据集，这些数据集不用于数据馈送。 此转换不适用于数据馈送输出。 |
-| **处理空白（“无值”）字段** | [无值选项](/help/data-views/component-settings/no-value-options.md)<br/>将“无值”视为值&#x200B;**选项适用于数据馈送，而默认情况下[!UICONTROL **&#x200B;不显示“无值”**]和[!UICONTROL **&#x200B;默认情况下显示“无值”**]选项不适用于数据馈送。** | 不可用 | 组件设置 | 不可能 | 所有“没有值”在最终数据馈送输出中都将作为空值返回，而不是作为“没有值”字符串返回。 |
+| **处理空白（“无值”）字段** | [无值选项](/help/data-views/component-settings/no-value-options.md)<br/>将“无值”视为值&#x200B;**]选项适用于数据馈送，而默认情况下[!UICONTROL **&#x200B;不显示“无值”**]和[!UICONTROL **&#x200B;默认情况下显示“无值”**]选项不适用于数据馈送。[!UICONTROL ** | 不可用 | 组件设置 | 不可能 | 所有“没有值”在最终数据馈送输出中都将作为空值返回，而不是作为“没有值”字符串返回。 |
 | **从查找数据集中查找值** | 不可用 | [查找](/help/data-views/derived-fields/derived-fields.md#lookup) | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 简单/适中<p>查询表必须已存在。</p> | |
 | **小写字符串** | [行为](/help/data-views/component-settings/behavior.md) | [小写](/help/data-views/derived-fields/derived-fields.md#lowercase) | 组件设置<p>推荐原因：</p><ul><li>相同的逻辑在Analysis Workspace和数据馈送输出中始终如一地适用（对于SQL则不可能）</li><li>它不会占用您有限的派生字段之一。</li></ul> | 简单/适中 | |
 | **将多个字段合并为一个** | 不可用 | [合并字段](/help/data-views/derived-fields/derived-fields.md#merge) | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 简单/适中 | |
 | **将URL解析为其组件** | [子字符串](/help/data-views/component-settings/substring.md)（URL解析方法） | [URL分析](/help/data-views/derived-fields/derived-fields.md#urlparse) | 组件设置<p>建议这样做，因为它不占用您有限的派生字段之一。</p> | 困难<p>需要自定义字符串解析以提取相同的组件。</p> | <!-- Possible discrepancy: in the component settings meeting, Matt and Derek described all Substring methods, including URL parse, as roughly interchangeable across component setting, derived field, and SQL ("either one would work... maybe a preference"), which is a looser SQL-difficulty read than "Difficult." Flagged for Luke to reconcile; not changed without confirmation. --> |
 | **对数字字段执行基本数学运算** | 不可用 | [数学](/help/data-views/derived-fields/derived-fields.md#math) | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 简单/适中 | |
-| **跨事件保留维度值** | [持久性](/help/data-views/component-settings/persistence.md) | 当前不可用<!-- Derek: considering adding this to FDL and surfacing it in derived fields; not currently possible. --> | 组件设置<p>推荐使用，因为它不会占用您有限的派生字段之一。</p> | 困难 | 与回顾日期范围交互的方式与范围相关的派生字段函数相同。 请参阅[了解回顾日期范围](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)。 |
+| **跨事件保留维度值** | [持久性](/help/data-views/component-settings/persistence.md) | 当前不可用<!-- Derek: considering adding this to FDL and surfacing it in derived fields; not currently possible. --> | 组件设置<p>推荐使用，因为它不会占用您有限的派生字段之一。</p> | 困难 | 与回顾日期范围交互的方式与范围相关的派生字段函数相同。 请参阅[了解处理窗口](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window)。 |
 | **使用正则表达式替换值** | [Substring](/help/data-views/component-settings/substring.md) （Regex方法） | [正则表达式替换](/help/data-views/derived-fields/derived-fields.md#regex-replace) | 组件设置<p>所有三种方法都会产生相同的结果，但首选组件设置，因为：</p><ul><li>相同的逻辑在Analysis Workspace和数据馈送输出中始终如一地适用（对于SQL则不可能）</li><li>它不会占用您有限的派生字段之一。</li></ul> | 简单/适中 | |
 | **解析会话中的下一个或上一个值** | 不可用 | [下一个或上一个](/help/data-views/derived-fields/derived-fields.md#next-previous) | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 困难 | 取决于范围设置。 请参阅[作用域设置如何影响数据馈送](#scope-settings)。 |
 | **返回两个日期之间的差值** | 不可用 | [日期数学](/help/data-views/derived-fields/derived-fields.md#datemath) | 派生字段<p>为便于使用，建议这样做，因为相同的逻辑在Analysis Workspace和数据馈送输出中始终适用。</p> | 困难 | 取决于范围设置。 请参阅[作用域设置如何影响数据馈送](#scope-settings)。 |
@@ -85,7 +85,7 @@ ht-degree: 5%
 “日期数学”、“去重”、“下一个”或“上一个”以及“摘要”都取决于“事件”、“会话”或“人员”的&#x200B;[!UICONTROL **范围**]&#x200B;设置（可用选项因函数而异）。 深度没有可配置的范围字段，但本质上与会话关联，类似于标准的事件深度维度。 具有范围的任何字段都会将相同的值写入该范围内的每行，该值取决于回顾日期范围内的数据。
 <!-- Open question as of 2026-09-09: is the lookback date range boundary anchored to a fixed point (e.g., midnight), or does it float with the feed run time, and is this configurable? Pending confirmation from Ron Fulkerson. -->
 
-由于[回顾日期范围](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range)随每次数据馈送投放向前滑动，因此同一字段可能会在以后的投放中返回不同的值，即使对于已发生的事件。
+由于[处理窗口](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-processing-window)随每次数据馈送投放向前滑动，因此同一字段可能会在以后的投放中返回不同的值，即使对于已发生的事件。
 
 风险随范围大小而增加：人员范围比会话范围风险更大，因为人员的历史在馈送运行中没有自然时间界限。
 
