@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 82%
+source-wordcount: '1923'
+ht-degree: 81%
 ---
 # 基于字段的拼接
 
@@ -235,11 +235,11 @@ ht-degree: 82%
 
 - Adobe Experience Platform 中您想对其应用拼接的事件数据集必须有两列用于帮助识别轮廓：
 
-  - **永久 ID**，这是每行都可用的标识符。 例如，由 Adobe Analytics AppMeasurement 库生成的访客 ID 或由身份标识服务生成的 ECID。
+  - **永久 ID**，这是每行都可用的标识符。 例如，由Adobe Analytics AppMeasurement库生成的访客ID或由Edge Network生成的ECID。
   - **人员 ID**，这是仅在某些行中可用的标识符。 例如，轮廓经过身份验证后，经过哈希处理的用户名或电子邮件地址。 实际上您可以使用任何标识符。 拼接会将此字段视为包含实际人员 ID 信息。 为获得最佳拼接结果，应在数据集的事件中为每个永久 ID 至少发送一次人员 ID。 如果您计划在 Customer Journey Analytics 连接中包含此数据集，那么其他数据集最好也有一个类似的常见标识符。
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

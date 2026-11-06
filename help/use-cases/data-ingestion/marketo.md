@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -79,7 +79,7 @@ Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`�
 
 要链接Marketo和Customer Journey Analytics数据，请在相关数据集中使用[基于图形的拼合](/help/stitching/gbs.md)。 您可以根据实施情况使用多个可用的ID：
 
-* ECID，由Experience Platform Identity Service提供
+* ECID，由Experience Platform Identity服务提供
 * 电子邮件
 * Munchkin ID，由Marketo Engage提供
 * 经销商ID
@@ -111,13 +111,13 @@ Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`�
 
 +++将Marketo源数据字段映射到其XDM目标
 
-将 [人员](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
+将 [人员](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 和 [活动](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) 对象映射到各自的 XDM 架构目标字段。
 
 +++
 
 +++将Marketo数据摄取到Adobe Experience Platform
 
-使用[Marketo Engage连接器](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将数据从Marketo引入Experience Platform，并使用Experience Platform应用程序使这些数据保持最新。
+使用[Marketo Engage连接器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)将数据从Marketo引入Experience Platform，并使用Experience Platform应用程序使这些数据保持最新。
 
 +++
 

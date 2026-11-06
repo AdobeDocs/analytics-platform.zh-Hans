@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 94%
 ---
 # 创建用于 Customer Journey Analytics 的自定义架构 {#create-custom-schema}
 
@@ -149,11 +149,11 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=zh-Hans)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=zh-Hans#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
+   >如果该字段组不可用，请寻找另一个包含身份标识字段的字段组。 或者[创建一个新的字段组](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html)，并[将新的身份标识字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field)（如 `ecid`、`crmId` 以及您需要的其他字段）添加到该字段组中，并选择该新字段组。
 
    ![识别对象](assets/identification-field.png)
 
-   识别对象为您的架构添加了识别功能。 在您的情况下，您希望使用 Experience Cloud ID 和电子邮件地址来识别访问您站点的轮廓。 还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
+   识别对象为您的架构添加了识别功能。 对于您自己的网站，您需要使用ECID和电子邮件地址来识别访问您网站的用户档案。 还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -161,7 +161,7 @@ ht-degree: 100%
 
    ![指定 ECID 作为身份标识](./assets/specify-identity.png)
 
-   您将 Experience Cloud Identity 指定为 Adobe Experience Platform 身份标识服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
+   您将ECID指定为Adobe Experience Platform Identity服务可用于组合（拼合）具有相同ECID的用户档案行为的主要标识。
 
    选择 **[!UICONTROL 应用]**。 您会看到 ecid 属性中出现指纹图标。
 
@@ -179,7 +179,7 @@ ht-degree: 100%
 
    系统会提示您为轮廓启用架构。 一旦启用，当数据被引入基于此架构的数据集中时，该数据将合并到实时客户轮廓。
 
-   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hans#profile)。
+   有关详细信息，请参阅[启用架构以在实时客户轮廓中使用](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile)。
 
    >[!IMPORTANT]
    >
@@ -189,7 +189,7 @@ ht-degree: 100%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-   您已经创建了一个最小架构，用于对您可以从您的网站捕获的数据进行建模。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过启用轮廓架构，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
+   您已经创建了一个最小架构，用于对您可以从您的网站捕获的数据进行建模。 该架构允许使用ECID和电子邮件地址识别用户档案。 通过启用轮廓架构，您可以确保从您的网站捕获的数据被添加到实时客户轮廓中。
 
    除了行为数据之外，您还可以从您的网站捕获轮廓属性数据（例如订阅新闻稿的轮廓的详细信息）。
 
@@ -201,10 +201,10 @@ ht-degree: 100%
 
    * 添加基于 Profile Core v2 字段组的身份标识对象。
 
-   * 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
+   * 将ECID定义为主标识符，将电子邮件定义为标识符。
 
    * 为轮廓启用架构
 
-   请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hans)，了解有关向架构添加和删除字段组和单个字段的更多信息。
+   请参阅[在 UI 中创建和编辑架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html)，了解有关向架构添加和删除字段组和单个字段的更多信息。
 
 {{upgrade-final-step}}

@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 ---
 # 了解 Customer Journey Analytics 独有的功能 {#feature-support-upgrade}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="拼接来自多个数据集的点击量"
->abstract="如果您的任何数据集不共享主要标识符（例如 Experience Cloud ID），您仍然可以使用其他维度（例如登录用户名或电子邮件地址）将该数据拼接在一起。"
+>abstract="如果任何数据集不共享主标识符（如ECID），您仍然可以使用其他维度（如登录用户名或电子邮件地址）将该数据拼合在一起。"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -111,7 +111,7 @@ ht-degree: 100%
 
 | Customer Journey Analytics 功能 | 功能 |
 |---------|----------|
-| [将网络数据与来自其他渠道的数据（例如呼叫中心数据）联系起来](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。 使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。 Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=zh-Hans)功能。 |
+| [将网络数据与来自其他渠道的数据（例如呼叫中心数据）联系起来](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics 与 Experience Platform 保存各种数据架构和类型的能力相结合。 使用[体验数据模型 (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，可以采用统一的方式来表示和组织数据，以便进行数据合并和分析。 Adobe Analytics 主要专注于 Web 和移动分析数据，并具有一些[数据导入](https://experienceleague.adobe.com/docs/analytics/import/home.html)功能。 |
 | [使用自定义维度拼接来自其他数据集的匹配项](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/stitching/overview) | 通过 Customer Journey Analytics，可从多个报告包[组合数据](/help/connections/combined-dataset.md)，如同它们是 Adobe Analytics 中的单个报告包一样。 |
 | [与 Adobe Real-Time CDP 集成](/help/components/audiences/audiences-overview.md) | 您现在可以在 Adobe Experience Platform 中[创建受众并将在 Customer Journey Analytics 中发现的受众](/help/components/audiences/audiences-overview.md)发布到实时客户轮廓，以实现和个性化。 |
 | [与 Adobe Target 集成 (A4T)](/help/integrations/at.md) | Customer Journey Analytics 中的 Target 报告可让您直接在 Customer Journey Analytics 中[衡量并报告 Adobe Target 活动](/help/integrations/at.md)。 不过，Adobe 建议与 Adobe Journey Optimizer 集成以实现个性化用例。 |

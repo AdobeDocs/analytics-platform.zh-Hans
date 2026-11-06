@@ -23,10 +23,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 44%
+source-wordcount: '461'
+ht-degree: 43%
 ---
 
 # Analytics产品比较
@@ -37,7 +37,7 @@ ht-degree: 44%
 |---|---|---|---|---|---|---|---|---|
 | **访问方法** | 浏览器 | Microsoft Excel | 浏览器 | 通过浏览器进行设置 | RESTful API工具 | 与MCP兼容的工具 | BI 工具 | 与MCP兼容的工具 |
 | **数据粒度** | 汇总 | 汇总 | 汇总 | 事件 | 汇总 | 汇总 | 汇总 | 汇总 |
-| **Experience Cloud ID (ECID) 可用** | 否 | 否 | 否 | 是 | 否 | 否 | 否 | 否 |
+| **ECID可用** | 否 | 否 | 否 | 是 | 否 | 否 | 否 | 否 |
 | **时间戳可用** | 否 | 否 | 否 | 是 | 否 | 否 | 否 | 否 |
 | **处理级别** | 完全处理 | 完全处理，具有单独的实时报表 | 完全处理 | 完全处理 | 完全处理 | 完全处理 | 完全处理 | 完全处理 |
 | **应用机器人过滤的位置** | 在[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/bot-detection)内和/或[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | 在[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/bot-detection)内和/或[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | 在[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/bot-detection)内和/或[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | 在[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/bot-detection)内和/或[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 |  |  | 在[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/bot-detection)内和/或[CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection)内 | |
@@ -49,7 +49,7 @@ ht-degree: 44%
 | **计算指标** <br> [了解详情](/help/components/calc-metrics/calc-metr-overview.md) | 是 | 是 | 是，具有[限制](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | 否 | 是 | 是 | 是 | 是 |
 | **派生字段** <br> [了解详情](/help/data-views/derived-fields/derived-fields.md) | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 |
 | **归因** <br> [了解详情](/help/analysis-workspace/attribution/overview.md) | 是 | 有限制 | 是，具有[限制](/help/analysis-workspace/export/export-cloud.md#attribution-behavior) | 否 | 是 | 是 | 是 | 是 |
-| **计划提交** | 是 | 是 | 是 | 是 | — | — | — | — |
-| **提交目标** | 电子邮件 | 电子邮件 | Amazon S3、Azure RBAC、Azure SAS、GCP | Amazon S3、Azure RBAC、Azure SAS、GCP | — | — | — | — |
+| **计划提交** | 是 | 是 | 是 | 是 | – | – | – | – |
+| **提交目标** | 电子邮件 | 电子邮件 | Amazon S3、Azure RBAC、Azure SAS、GCP | Amazon S3、Azure RBAC、Azure SAS、GCP | – | – | – | — |
 
 {style="table-layout:auto"}

@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 91%
 ---
 # Customer Journey Analytics 功能发布策略
 
@@ -41,9 +41,9 @@ Customer Journey Analytics 版本在持续交付模型上运行，该模型允�
 
 * **有限测试**：从 Adobe 内部用户测试开始的分阶段发布。 然后将其提供给一小组客户帐户，以确保该功能满足客户的需求和期望。
 
-* **开始推出**：从有限测试阶段开始推出分阶段发布。 然后，此发布在两个月内从 0% 到 100% 提供给客户。 由于分阶段推出在 CX Enterprise 组织级别进行，因此组织中所有授权用户都可以获得相同的体验。
+* **开始推出**：从有限测试阶段开始推出分阶段发布。 然后，此发布在两个月内从 0% 到 100% 提供给客户。 由于分阶段推出在Adobe组织级别进行，因此组织中所有授权用户都将获得相同的体验。
 
-* **正式发布 (GA)**：此功能可供 100% 授权的 CX Enterprise 组织使用，且功能发布已完成。
+* **正式发布(GA)**：此功能对100%授权组织可用，且功能发布已完成。
 
 对于每个功能发布，从 RTP 到 GA 的时间表可能会有所不同。 目标是让发布周期保持较短，以便功能可在发布开始 (RTP) 后 2 个月内达到 GA 阶段。
 
