@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2447'
-ht-degree: 62%
+source-wordcount: '2439'
+ht-degree: 60%
 ---
 # 通过Edge Network服务器API引入数据
 
@@ -143,7 +143,7 @@ ht-degree: 62%
 
    ![识别对象](./assets/identification-field-gaming.png)
 
-   识别对象为您的架构添加了识别功能。 在您的案例中，您希望使用Experience Cloud ID和电子邮件地址来识别玩游戏的用户档案，这些用户档案用于登录到游戏主机。 有许多其他属性可用于跟踪您的人员身份。
+   识别对象为您的架构添加了识别功能。 对于您的情况，您需要使用用户用来登录游戏主机的ECID和电子邮件地址来识别正在玩游戏的用户档案。 有许多其他属性可用于跟踪您的人员身份。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -151,7 +151,7 @@ ht-degree: 62%
 
    ![指定 ECID 作为身份标识](./assets/specify-identity-gaming.png)
 
-   您将 Experience Cloud Identity 指定为 Adobe Experience Platform 身份标识服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
+   您将ECID指定为Adobe Experience Platform Identity服务可用于组合（拼合）具有相同ECID的用户档案行为的主要标识。
 
    选择 **[!UICONTROL 应用]**。 您会看到 ecid 属性中出现指纹图标。
 
@@ -179,7 +179,7 @@ ht-degree: 62%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您创建了一个最小架构，用于模拟您可以从游戏中捕获的数据。 该架构允许使用 Experience Cloud Identity 和电子邮件地址来识别轮廓。 通过启用配置文件的架构，您可以确保将从控制台游戏中捕获的数据添加到实时客户配置文件中。
+您创建了一个最小架构，用于模拟您可以从游戏中捕获的数据。 该架构允许使用ECID和电子邮件地址识别用户档案。 通过启用配置文件的架构，您可以确保将从控制台游戏中捕获的数据添加到实时客户配置文件中。
 
 除了行为数据之外，您还可以从控制台捕获配置文件属性数据（例如，登录到控制台的配置文件的详细信息）。
 
@@ -191,7 +191,7 @@ ht-degree: 62%
 
 - 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
+- 将ECID定义为主标识符，将电子邮件定义为标识符。
 
 - 为轮廓启用架构
 

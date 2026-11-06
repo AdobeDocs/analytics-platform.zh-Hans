@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2335'
 ht-degree: 16%
 ---
 # 从 Tags 迁移到 XDM {#upgrade-migration-planner}
@@ -80,7 +80,7 @@ Migration Planner提供了一个迁移向导，可自动完成以下复杂且耗
 
 * 受支持的Adobe Analytics实施（标记的Analytics扩展）。 请参阅[支持的Adobe Analytics实施](#supported-adobe-analytics-implementations)。
 
-* 在您登录的Adobe组织中访问要迁移的Experience Cloud Tags属性。
+* 在您登录的Adobe组织中访问要迁移的Adobe Tags属性。
 
 * 访问要将其变量映射到XDM的Adobe Analytics报表包。
 
@@ -114,7 +114,7 @@ Migration Planner提供了一个迁移向导，可自动完成以下复杂且耗
 
 1. 选择要迁移的标记属性，然后选择&#x200B;[!UICONTROL **下一步**]。
 
-   只显示已登录Experience Cloud组织可用的标记属性。
+   只显示登录组织可用的标记属性。
 
 1. 选择要迁移的标记库快照，然后选择&#x200B;[!UICONTROL **下一步**]。
 

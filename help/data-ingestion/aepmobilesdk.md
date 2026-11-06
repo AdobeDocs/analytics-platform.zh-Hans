@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 63%
+source-wordcount: '3504'
+ht-degree: 61%
 ---
 # 通过Mobile SDK引入数据
 
@@ -147,7 +147,7 @@ ht-degree: 63%
 
    ![识别对象](./assets/identification-field-mobile.png)
 
-   识别对象为您的架构添加了识别功能。 对于您的案例，您希望使用Experience Cloud ID和电子邮件地址来识别使用移动应用程序的用户档案。 还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
+   识别对象为您的架构添加了识别功能。 对于您的情况，您希望使用ECID和电子邮件地址来识别使用移动应用程序的用户档案。 还有许多其他属性可用于跟踪您的人员身份（例如客户 ID、忠诚度 ID）。
 
    选择&#x200B;**[!UICONTROL 应用]**&#x200B;将此对象添加到您的架构中。
 
@@ -155,7 +155,7 @@ ht-degree: 63%
 
    ![指定 ECID 作为身份标识](./assets/specify-identity-mobile.png)
 
-   您将 Experience Cloud Identity 指定为 Adobe Experience Platform 身份标识服务可用于组合（缝合）具有相同 ECID 的轮廓行为的主要身份。
+   您将ECID指定为Adobe Experience Platform Identity服务可用于组合（拼合）具有相同ECID的用户档案行为的主要标识。
 
    选择 **[!UICONTROL 应用]**。 您会看到 ecid 属性中出现指纹图标。
 
@@ -183,7 +183,7 @@ ht-degree: 63%
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存架构。
 
-您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用 Experience Cloud 身份标识和电子邮件地址来识别轮廓。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
+您已创建一个最小架构，用于为您可从移动应用程序中捕获的数据建模。 该架构允许使用ECID和电子邮件地址识别用户档案。 通过为配置文件启用架构，您可以确保将从移动应用程序捕获的数据添加到实时客户配置文件。
 
 除了行为数据之外，您还可以从移动应用程序捕获配置文件属性数据（例如订阅新闻通讯的配置文件详细信息）。
 
@@ -195,7 +195,7 @@ ht-degree: 63%
 
 - 添加基于 Profile Core v2 字段组的身份标识对象。
 
-- 将 Experience Cloud ID 定义为主要标识符，并将电子邮件定义为标识符。
+- 将ECID定义为主标识符，将电子邮件定义为标识符。
 
 - 为轮廓启用架构
 

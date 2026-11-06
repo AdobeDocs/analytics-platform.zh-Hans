@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 98%
 ---
 # 与 Adobe Analytics 进行比较
 
@@ -85,7 +85,7 @@ Experience Platform 提供沙盒，可将其视为用于容纳给定环境中的
 
 ## 身份标识
 
-Customer Journey Analytics 支持您定义的身份标识，这些身份标识是包含您的数据的数据集所遵循的架构的一部分。 因此，身份标识是 Experience Platform 的基本概念，Customer Journey Analytics 在设置[连接](../../connections/overview.md)（通过为每个数据集定义人员 ID）以及应用[拼合](../../stitching/overview.md)以进行跨渠道分析时将使用这一概念。 Experience Platform SDK 和 API 使用的一个重要身份标识是 Experience Cloud ID (ECID)。
+Customer Journey Analytics 支持您定义的身份标识，这些身份标识是包含您的数据的数据集所遵循的架构的一部分。 因此，身份标识是 Experience Platform 的基本概念，Customer Journey Analytics 在设置[连接](../../connections/overview.md)（通过为每个数据集定义人员 ID）以及应用[拼合](../../stitching/overview.md)以进行跨渠道分析时将使用这一概念。 Experience Platform SDK和API使用的一个重要标识是ECID。
 
 Adobe Analytics 使用一组更明确的身份标识字段，例如 Adobe Analytics ID (AAID)。 在使用 Analytics 源连接器时，将对这些 Adobe Analytics 标识字段进行特殊处理。 有关更多信息，请参阅 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans)。
 

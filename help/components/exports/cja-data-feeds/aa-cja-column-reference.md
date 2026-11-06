@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3918'
 ht-degree: 48%
 ---
 # 将Adobe Analytics数据馈送列映射到Customer Journey Analytics
@@ -667,7 +667,7 @@ IPv4 地址，基于图像请求的 HTTP 标头。 与 `ipv6` 互斥；如果此
 
 +++**`mcvisid`**
 
-Experience Cloud 访客 ID。 一个 128 位数字，由两个填充到 19 位的 64 位数字拼接而成。
+ECID。 一个 128 位数字，由两个填充到 19 位的 64 位数字拼接而成。
 
 +++
 

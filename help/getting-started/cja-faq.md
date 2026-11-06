@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 95%
+source-wordcount: '2322'
+ht-degree: 94%
 ---
 # 常见问题解答
 
@@ -61,9 +61,9 @@ Adobe Customer Journey Analytics 是下一代分析产品。 本文提供有关 
 +++
 
 
-+++**[!UICONTROL Customer Journey Analytics] 是否需要 [!UICONTROL Experience Cloud ID] (ECID)？**
++++**我是否需要[!UICONTROL Customer Journey Analytics]的ECID？**
 
-不需要，[!UICONTROL Customer Journey Analytics] 支持数据集内的任何 ID，无论该 ID 是 [!UICONTROL ECID] 还是您选择的任何其他 ID。
+不需要，[!UICONTROL Customer Journey Analytics]支持数据集中的任何ID，无论该ID是ECID还是您选择的任何其他ID。
 
 +++
 

@@ -81,10 +81,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5aba7dcf73ddd7aee48a945911a8ff4b0f18e2e3
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '3089'
-ht-degree: 98%
+ht-degree: 97%
 ---
 # Customer Journey Analytics 功能支持
 
@@ -172,7 +172,7 @@ ht-degree: 98%
 | **分类规则生成器** | 支持在 Customer Journey Analytics 中使用[子字符串。](/help/data-views/component-settings/substring.md) 在报告时使用字符串操作，而不使用查找数据集。 |
 | **自定义会话长度** | 可通过数据视图中的[会话设置](../../data-views/create-dataview.md#session-settings)配置会话长度。 有关详细信息，请参阅[会话设置](../../data-views/session-settings.md)。 <br/>通过 Adobe Experience Platform Mobile SDK 支持处理移动后台事件。 有关更多信息，请参阅[边缘网络的生命周期](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/)。 |
 | **货币换算** | 在数据视图中[格式化量度组件](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/format)的过程中支持。 |
-| **客户属性** | 轮廓数据集相当于客户归因功能。 轮廓数据集不会自动从 Experience Cloud 导入，必须先上传至 Experience Platform，才可在 Customer Journey Analytics 中使用。 |
+| **客户属性** | 轮廓数据集相当于客户归因功能。 配置文件数据集不会自动从CX Enterprise导入，必须先上传到Experience Platform，然后才能在Customer Journey Analytics中使用。 |
 | **数据馈送** | 数据集的第一代数据导出可通过[&#x200B; Experience Platform 数据访问 API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-access/api)以及[&#x200B; Experience Platform 目标](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)实现。 这些选项提供对收集到 Experience Platform 数据湖中或摄入其中的所有数据进行事件/行级别的导出。 后处理数据列不可用，因为后处理列是在查询时计算的。 可通过报告导出帖子列。 |
 | **Data Warehouse 报告** | [Customer Journey Analytics 全表导出](/help/analysis-workspace/export/export-cloud.md)从 Adobe Analytics 中的 Data Warehouse 报告演化而来，具有许多当今在 Data Warehouse 中不提供但经常有人要求提供的新功能。 |
 | **登录、退出和花费时间维度和量度** | 受支持（现在“进入次数”和“退出次数”称为“会话启动次数”和“会话结束次数”），但计算方式略有不同。 |

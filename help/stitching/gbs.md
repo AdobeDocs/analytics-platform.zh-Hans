@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 64%
+source-wordcount: '1997'
+ht-degree: 63%
 ---
 # 基于图形的拼接
 
@@ -232,7 +232,7 @@ ht-degree: 64%
 
 以下先决条件专门适用于基于图的拼接：
 
-- 您想为其应用拼接的 Adobe Experience Platform 中的事件数据集必须有一列是在每一行上标识一个轮廓，就是&#x200B;**永久 ID**。 例如，Adobe Analytics AppMeasurement 库生成的访客 ID 或者身份标识服务生成的 ECID。
+- 您想为其应用拼接的 Adobe Experience Platform 中的事件数据集必须有一列是在每一行上标识一个轮廓，就是&#x200B;**永久 ID**。 例如，由Adobe Analytics AppMeasurement库生成的访客ID或由Edge Network生成的ECID。
 - 在启用基于图形的拼合之前，必须在沙盒级别设置Experience Platform Identity Service中的身份图形。
   - 身份图形必须具有要在拼接期间用于解析人员ID的命名空间（例如`Email`或`Phone`）。
   - 必须使用来自任何相关数据集（类型为&#x200B;*event*&#x200B;或&#x200B;*profile*&#x200B;且至少包含两个具有ID值的有用命名空间）的标识信息填充标识图。

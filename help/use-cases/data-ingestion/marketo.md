@@ -47,7 +47,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 9%
@@ -79,7 +79,7 @@ Marketo数据本身不包含ECID，但ECID字段可以添加为随`munchkin.js`�
 
 要链接Marketo和Customer Journey Analytics数据，请在相关数据集中使用[基于图形的拼合](/help/stitching/gbs.md)。 您可以根据实施情况使用多个可用的ID：
 
-* ECID，由Experience Platform Identity Service提供
+* ECID，由Experience Platform Identity服务提供
 * 电子邮件
 * Munchkin ID，由Marketo Engage提供
 * 经销商ID

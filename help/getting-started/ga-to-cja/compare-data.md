@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1297'
 ht-degree: 0%
 ---
 
@@ -95,7 +95,7 @@ GA4使用级联标识模型来标识用户：
 2. Google信号（如果用户登录到启用了个性化的Google帐户）
 3. 设备ID（基于Cookie的客户端ID）
 
-在大多数实施中，该人员ID是一个ECID (Experience Cloud ID)。 可选&#x200B;**[!UICONTROL 拼接]**&#x200B;功能随后可以使用基于字段或基于图形的方法解析跨设备和跨渠道身份，从而允许将移动应用程序会话和桌面浏览器会话与同一人关联。
+在大多数实施中，该人员ID是一个ECID。 可选&#x200B;**[!UICONTROL 拼接]**&#x200B;功能随后可以使用基于字段或基于图形的方法解析跨设备和跨渠道身份，从而允许将移动应用程序会话和桌面浏览器会话与同一人关联。
 
 由于不同平台之间的标识解析度不同，因此用户级别计数很少完全匹配。 此差异是预期行为，并不表示数据质量有问题。
 

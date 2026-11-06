@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '323'
 ht-degree: 85%
 ---
 # 将 Web SDK 扩展添加到您的标记中 {#upgrade-tag-extension}
@@ -50,7 +50,7 @@ ht-degree: 85%
 
 您可以使用 Adobe Experience Platform 中的“标记”功能在您的网站上实施代码，以收集数据。 这一标记管理解决方案可让您在满足其他标记要求的同时部署代码。 标签使用 Adobe Experience Platform Web SDK 扩展提供与 Adobe Experience Platform 的无缝集成。
 
-以下信息描述了如何将 Web SDK 扩展添加到您的标记中。 有关补充信息，请参阅 Experience Platform 文档中的[配置 Web SDK 标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。 Web SDK包含Experience Platform Identity服务，因此您无需将[!UICONTROL Experience Cloud ID服务]扩展添加到标记中。
+以下信息描述了如何将 Web SDK 扩展添加到您的标记中。 有关补充信息，请参阅 Experience Platform 文档中的[配置 Web SDK 标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。 Web SDK从Edge Network获取ECID，因此您无需将[!UICONTROL Experience Cloud ID服务]扩展添加到标记中。
 
 [创建标记](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)后，您必须使用 Adobe Experience Platform Web SDK 扩展对其进行配置。 这可确保您可以将数据发送到 Adobe Experience Platform（通过您的数据流）。
 
