@@ -220,7 +220,7 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 
 ### 标识映射
 
-[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)字段中的每个标识都导出为一个对象。 对象包含身份命名空间（键），以及标识符、身份验证状态和主标志。 命名空间会为该命名空间中的每个身份重复。
+[`identityMap`](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/field-groups/profile/identitymap)字段中的每个标识都导出为一个对象。 对象包含身份命名空间（键），以及标识符、身份验证状态和主标志。 命名空间会为该命名空间中的每个身份重复。
 
 仅导出作为数据视图中的维度存在并且添加到数据馈送中的身份映射属性。
 
