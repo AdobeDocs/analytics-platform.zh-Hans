@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 56f881fc811f0eeffb9633872b3edbe0eb2d7070
+source-git-commit: e4a2c292024e2d88c3dec02b86711d4f58d1c82c
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 39%
+source-wordcount: '1669'
+ht-degree: 37%
 ---
 # 数据馈送中的组件可用性
 
@@ -93,6 +93,12 @@ Customer Journey Analytics标准维度不能包含在数据馈送中。 下表�
 | Adobe全局帐户配置文件 | | 不可用 |
 | Adobe人事联合会 | | 不可用 |
 | Adobe人员配置文件 | | 不可用 |
+
+## 计算量度 {#calculated-metrics}
+
+计算量度不能包含在数据馈送中。 计算量度是在报表时通过汇总多个事件来计算的，因此它在单个事件行上没有任何值。
+
+如果您需要Customer Journey Analytics之外的计算量度结果，则可以使用[Customer Journey Analytics BI扩展](/help/data-views/bi-extension.md)。 BI扩展会返回报表级别的结果而不是事件行，因此可将其与数据馈送一起使用，而不是用作替代。
 
 ## 无法同时使用的维度 {#incompatible-dimensions}
 

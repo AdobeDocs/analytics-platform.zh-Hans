@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '562'
 ht-degree: 1%
 ---
 # 数据馈送概述
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 数据馈送可将原始事件级数据从Customer Journey Analytics导出到云目标。 您可以在Adobe以外的其他平台（如Data Warehouse）中使用此数据。
 
-数据馈送是从数据视图中的组件构建的。 您包括的每个维度和量度都会成为数据馈送中的一列，并且数据视图设置（如持久性、派生字段和区段）会应用于数据。 文件以Parquet格式传送。
+数据馈送是从数据视图中的组件构建的。 您包括的每个维度和量度都会成为数据馈送中的一列，并且数据视图设置（如持久性、派生字段和区段）会应用于数据。 文件以[Parquet格式](/help/components/exports/cja-data-feeds/df-parquet.md)传送。
 
 您可以创建以下类型的数据馈送：
 
@@ -71,13 +71,15 @@ ht-degree: 1%
 
 ### 规划您的数据馈送
 
-* [在Customer Journey Analytics和Adobe Analytics中比较数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)：如果您以前使用的是Adobe Analytics数据馈送，请了解功能和概念上的差异。
-
 * [了解数据馈送与Analysis Workspace之间的数据差异](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)：了解为什么数据馈送输出可能与Analysis Workspace中的报表不匹配。
 
 * [数据馈送中的组件可用性](/help/components/exports/cja-data-feeds/df-components.md)：了解数据馈送中需要、不支持或限制哪些维度和量度。
 
+* [在数据馈送中使用Parquet文件](/help/components/exports/cja-data-feeds/df-parquet.md)：了解数据馈送为何使用Parquet，以及如何在Data Warehouse中查询或加载文件。
+
 ### 从Adobe Analytics数据馈送迁移
+
+1. [在Customer Journey Analytics和Adobe Analytics中比较数据馈送](/help/components/exports/cja-data-feeds/df-comparison.md)：如果您以前使用的是Adobe Analytics数据馈送，请了解功能和概念上的差异。
 
 1. [准备映射数据馈送列](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)：了解影响Adobe Analytics列如何映射到Customer Journey Analytics的因素。
 
