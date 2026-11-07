@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1320'
 ht-degree: 0%
 ---
 # 数据馈送中的子事件组件
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 此组反映底层数据结构。
 
-在数据馈送输出中，所有这些组件都显示为单列中的嵌套数组。
+在数据馈送输出中，所有这些组件都显示为单列中的嵌套数组。 Parquet文件本身支持嵌套数组。 有关详细信息，请参阅[处理数据馈送中的Parquet文件](/help/components/exports/cja-data-feeds/df-parquet.md)。
 
 有关如何将组件（包括子事件组件）添加到数据馈送的信息，请参阅[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md)。
 

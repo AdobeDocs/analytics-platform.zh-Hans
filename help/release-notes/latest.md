@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 84fea2df7c99420099d8203de6fdfda5ddcb4667
+source-git-commit: 616f285c80b32279ea75f22dabe471831153cf2b
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1461'
 ht-degree: 17%
 ---
-# 当前Customer Journey Analytics发行说明（2026年10月）
+# 当前Customer Journey Analytics发行说明（2026年10月至12月）
 
-**上次更新**：2026年11月4日
+**上次更新**：2026年11月6日
 
 这些发行说明涵盖2026年10月发行期。 Adobe Customer Journey Analytics 版本在[持续投放模型](releases.md)上运行，通过该模型可采用更具可扩展性、分阶段的方法部署功能。 因此，这些发行说明每月更新几次。 请定期检查。
 
@@ -72,6 +72,10 @@ ht-degree: 17%
 | **自动为组件和项目生成描述** <br/>您现在可以自动生成维度、量度、计算量度、区段和日期范围的描述。 这使得Workspace用户能够了解要使用的组件，尤其是在具有大型组件库的组织中。 <p>您可以为单个组件生成描述，或同时为多个组件生成描述。 有关详细信息，请参阅[自动生成描述](/help/components/add-component-descriptions.md#automatically-generate-descriptions)。</p><p>在[保存项目](/help/analysis-workspace/build-workspace-project/save-projects.md)或从[项目信息和设置](/help/analysis-workspace/build-workspace-project/create-projects.md#project-info-settings)中为Workspace项目生成描述。</p> | 2026年10月29日 | 2026年11月18日 |
 | **CX Enterprise Coworker：询问有关您内容的问题** <br/>您现在可以使用同事聊天从Content Analytics获取有关您内容的准确答案。 提出特定问题，例如“哪些图像带来的上一季度收入最多？”，或者提出一般问题，例如“我应该优先考虑哪种内容？” 同事了解Content Analytics数据的结构并应用经验丰富的分析师所制定的报表规则，因此营销人员和其他业务用户无需深入了解Content Analytics专业知识即可获得可靠的结果。<p></p>有关详细信息，请参阅[通过同事聊天询问有关您内容的问题](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/content-performance/ask-content-questions) | 2026年10月14 | 2026年11月3日 |
 | 在Analysis Workspace的聊天面板中现在提供了&#x200B;**同事的产品内体验**<br/>&#x200B;同事。 同事使用您已打开的项目作为上下文，因此您可以询问有关分析的问题，而无需解释项目包含的内容。<p>使用同事的产品内体验，您可以：</p><ul><li>汇总打开的项目、查找见解并运行根本原因分析。</li><li>使用自然语言提示构建和编辑项目。 例如，您可以添加面板和表格、划分数据、更改可视化图表类型和日期范围以及创建区段。</li></ul><p>有关详细信息，请参阅[使用同事的产品内体验](/help/analysis-workspace/coworker.md)。</p> | 2026年10月29日 | 待定 |
+| **Customer Journey Analytics API：高级日期趋势报表**<br/>&#x200B;新指南介绍了日期趋势报表的高级功能，包括日期范围比较和添加区段。<p>有关详细信息，请参阅Customer Journey Analytics API文档中的[高级日期趋势报表](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/advanced)。</p> | | 2026年11月1日 |
+| **Customer Journey Analytics API：自动定期报告**<br/>&#x200B;新指南将介绍如何为自动工作流程设置定期的Customer Journey Analytics报告，并按计划提供最新指标。<p>（文档链接将随后提供。）</p> | | 2026年11月30日 |
+| **Customer Journey Analytics API：划分报表**<br/>&#x200B;新指南介绍了简单的划分报表请求并提供相关示例。 本指南还解释了简单划分与[多维度报表](https://developer.adobe.com/cja-apis/docs/endpoints/reporting/multidim)之间的区别。<p>（文档链接将随后提供。）</p> | | 2026年11月30日 |
+| **Customer Journey Analytics API：数据视图最佳实践**<br/>&#x200B;新指南描述了跨多个API服务使用数据视图标识符的最佳实践。<p>（文档链接将随后提供。）</p> | | 2026年11月30日 |
 
 
 ### Customer Journey Analytics 中的修复
