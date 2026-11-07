@@ -112,7 +112,7 @@ Customer Journey Analytics 使用一种强大的专有架构，可将分析分�
 
   * 为组织中的其他个人[策划](/help/analysis-workspace/curate-share/curate.md)以供持续探索、
   * 使用 [Report Builder](/help/report-builder/rb-overview.md)（专用插件）导出到 Excel、
-  * 以各种格式（包括 [PDF](/help/analysis-workspace/export/download-send.md)、[CSV](/help/analysis-workspace/export/download-send.md)）并通过[专用的移动应用程序](/help/mobile-app/home.md)[共享](/help/analysis-workspace/curate-share/share-projects.md)给对最终报告和/或可视化感兴趣的人士。
+  * 以各种格式（包括 [PDF](/help/analysis-workspace/export/download-send.md)、[CSV](/help/analysis-workspace/export/download-send.md)）并通过[专用的移动应用程序](/help/mobile-app/home.md) [共享](/help/analysis-workspace/curate-share/share-projects.md)给对最终报告和/或可视化感兴趣的人士。
 
 由于有多种多样的可视化可用，因此难以比较 Customer Journey Analytics 的可视化功能与 BI 工具提供的任何功能。 某些 BI 工具拥有更高级的可视化，但 Customer Journey Analytics 专门关注交互式和可互操作的客户历程可视化，这样只需几秒时间即可分解数据，同时无需为每个额外的查询“付款”。
 

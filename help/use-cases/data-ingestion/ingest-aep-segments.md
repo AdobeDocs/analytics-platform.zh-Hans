@@ -387,7 +387,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. 输入数据集的&#x200B;**[!UICONTROL 名称]**。
    1. （可选）输入数据集的&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
-1. 在数据集&#x200B;_]**的**[!UICONTROL &#x200B;数据集&#x200B;]**>**[!UICONTROL _&#x200B;名称中，将转换后的JSON数据文件拖放到&#x200B;**[!UICONTROL 拖放文件]**&#x200B;上。 此操作会开始将导出的JSON数据引入数据集。
+1. 在数据集&#x200B;_&#x200B;**的**&#x200B;[!UICONTROL &#x200B;数据集&#x200B;]&#x200B;**>**&#x200B;_&#x200B;名称中，将转换后的JSON数据文件拖放到&#x200B;**[!UICONTROL 拖放文件]**&#x200B;上。 此操作会开始将导出的JSON数据引入数据集。
 1. 验证摄取的批次。 如果数据集包含失败的批次，请使用&#x200B;**[!UICONTROL 数据管理]** > ![监视](/help/assets/icons2/Monitoring.svg) **[!UICONTROL 监视]**&#x200B;查看原因。 例如，您在JSON中定义的字段名称在架构中不存在。
 
 

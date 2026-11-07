@@ -83,7 +83,7 @@ ht-degree: 43%
 
 ### 线形图
 
-行](/help/content-analytics/assets/aca-line-thumbnail.png)的![Content Analytics缩略图
+行![&#128279;](/help/content-analytics/assets/aca-line-thumbnail.png)的Content Analytics缩略图
 
 将鼠标悬停在[行](/help/analysis-workspace/visualizations/line.md)中的数据点上时，将显示缩略图。
 
@@ -122,7 +122,7 @@ Content Analytics [模板](/help/analysis-workspace/templates/use-templates.md)�
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您已选择为 Content Analytics 配置的数据视图。
-1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用 **[!UICONTROL Web]**，为**[!UICONTROL 用例]**使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
+1. 搜索或使用区段（为&#x200B;**[!UICONTROL 渠道]**&#x200B;使用 **[!UICONTROL Web]**，为&#x200B;**[!UICONTROL 用例]**&#x200B;使用&#x200B;**[!UICONTROL 参与度]**）查找并选择 **[!UICONTROL Content Analytics]** 模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 1. 在&#x200B;**[!UICONTROL 设置模板]**&#x200B;对话框中，从&#x200B;**[!UICONTROL 选择转化量度]**&#x200B;对话框中选择一个量度。 例如，**[!UICONTROL 资产点进率]**。
 1. 选择&#x200B;**[!UICONTROL 继续]**。
@@ -219,7 +219,7 @@ Content Analytics使用AI和GenAI自动将元数据和属性（如主题、场�
 
 1. 从主菜单中选择&#x200B;**[!UICONTROL Workspace]**。
 1. 确保您已选择为 Content Analytics 配置的数据视图。
-1. 搜索或使用区段（**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和**[!UICONTROL 用例]**的&#x200B;**[!UICONTROL 参与]**）来查找和选择&#x200B;**[!UICONTROL 付费媒体Content Analytics]**&#x200B;模板。
+1. 搜索或使用区段（**[!UICONTROL 渠道]**&#x200B;的&#x200B;**[!UICONTROL Web]**&#x200B;和&#x200B;**[!UICONTROL 用例]**&#x200B;的&#x200B;**[!UICONTROL 参与]**）来查找和选择&#x200B;**[!UICONTROL 付费媒体Content Analytics]**&#x200B;模板。
 1. 选择&#x200B;**[!UICONTROL 使用模板]**。
 
 **[!UICONTROL Content Analytics — 付费媒体摘要数据]**&#x200B;项目在[Analysis Workspace](/help/analysis-workspace/home.md)中打开。 项目包含&#x200B;**[!UICONTROL 付费媒体性能]** [面板](/help/analysis-workspace/c-panels/panels.md)，其中包含[自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)和[可视化图表](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)。 使用该面板可跨网络、帐户、营销活动、体验和资产审查付费媒体覆盖率、参与度、支出和效率。 面板中的量度和维度会刻意停留在付费媒体资产摘要粒度；请勿将摘要数据集与事件数据结合使用。
