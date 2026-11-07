@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 5b0c9d764d17daa63316f8ab294aa9c8f7f94427
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '7452'
-ht-degree: 93%
+ht-degree: 92%
 ---
 
 # Customer Journey Analytics - 文档更新
@@ -99,7 +99,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2026 年 4 月** | |
 | 派生字段指南 | 添加了有关使用派生字段的[指南](/help/use-cases/data-views/derived-fields/guidelines.md)（最佳实践、护栏和常见陷阱）的文章。 |
 | 添加了缺失的有关集成 Journey Optimizer 时可包含的两个数据集的文档 | 为您的 IMS 组织启用高吞吐量事务型消息附加组件后，连接中会[额外包含系统生成的两个非轮廓数据集](/help/integrations/ajo.md#high-throughput-add-on-datasets)。 |
-| 更新了同类群组分析用例 | 根据反馈将 Analysis Workspace 示例添加到了同类群组分析用例中。 |
+| 更新了同类群组分析用例 | 根据反馈，向同类群组分析用例中添加了Analysis Workspace示例。 |
 | **2026 年 3 月** | |
 | 划分面板 | 重新整理了[&#128279;](/help/analysis-workspace/c-panels/panels.md#drop-zone)面板放置区域文档的结构，以支持新的[划分](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)功能。 |
 | 有关错误 ID (BAVID) 的技术说明 | 新的[有关错误 ID 的技术说明](/help/technotes/badids.md)。 此技术说明解释了错误 ID 的定义，在 Customer Journey Analytics 界面中的什么地方使用错误 ID，以及如何调查您连接中的数据以确定错误 ID。 |
@@ -131,7 +131,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 1900 年之前的日期 | 新增了一条[说明](/help/connections/create-connection.md#datasets)，介绍 Customer Journey Analytics 如何处理 1900 年之前的日期。 |
 | 实时报告 | 添加了有关 Customer Journey Analytics 中[实时报告](/help/components/real-time/real-time.md)的文档。 |
 | 使用界面 | 添加了有关连接中更新的[使用界面](/help/connections/manage-connections.md#usage)的文档。 |
-| 拼接 Journey Optimizer 数据集 | 记录了可用于拼接的[自动生成的 Journey Optimzer 数据集列表](/help/stitching/overview.md#journey-optimizer-datasets)。 |
+| 拼接 Journey Optimizer 数据集 | 记录了[个自动生成的、可用于拼合的Journey Optimizer数据集](/help/stitching/overview.md#journey-optimizer-datasets)列表。 |
 | 上下文标签 | 添加了有关数据视图组件中[上下文标签](/help/data-views/component-settings/overview.md#context-labels)的使用和目的的更多背景信息。 |
 | **2025 年 8 月** | |
 | 新的 Adobe Advertising 集成 | 添加了有关[集成 Adobe Advertising](/help/integrations/advertising.md) 的信息。 |

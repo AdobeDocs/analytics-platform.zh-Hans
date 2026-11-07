@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 85%
+ht-degree: 83%
 ---
 # 计算量度模板
 
@@ -44,7 +44,7 @@ Customer Journey Analytics提供了以下计算量度模板以涵盖最常见的
 | **[!UICONTROL 多渠道会话比率]** | 包含多个渠道（例如网络流量和移动流量）的会话与仅包含单个渠道的会话之间的比率。 |
 | **[!UICONTROL 多渠道人数比率]** | 参与多个渠道的人数与仅参与单个渠道的人数的比例。 |
 | **[!UICONTROL 移动应用程序会话]** | 移动应用程序上发生的会话数。 |
-| **[!UICONTROL Web + 应用程序跨渠道会话]** | 发生的会话数（包括网络流量和移动流量）。 |
+| **[!UICONTROL Web + 应用程序跨渠道会话]** | 发生的会话数，包括Web流量和移动流量。 |
 | **[!UICONTROL 通话成本]** | 呼叫中心通话的总成本。<!-- <p>Summary: Call length</p> --> |
 | **[!UICONTROL 平均通话持续时间]** | 呼叫中心接到的通话的平均持续时间。 |
 | **[!UICONTROL 每次通话的平均成本]** | 呼叫中心接到的通话的平均成本。 |

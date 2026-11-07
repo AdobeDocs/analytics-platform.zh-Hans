@@ -22,13 +22,11 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 955
-ht-degree: 93%
-
+source-wordcount: '955'
+ht-degree: 92%
 ---
-
 # 子字符串组件设置 {#substring-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -49,15 +47,15 @@ ht-degree: 93%
 
 ## 从左/右
 
-根据字符串开始或结束的位置提取字符串的一部分。 **[!UICONTROL 从左侧]**&#x200B;和&#x200B;**[!UICONTROL 从右侧]**&#x200B;方法提供两个下拉菜单：**[!UICONTROL 从]**（输出开始处）和&#x200B;**[!UICONTROL 到]**（输出结束处）。
+根据相对于字符串开头或结尾的位置提取字符串的一部分。 **[!UICONTROL 从左侧]**&#x200B;和&#x200B;**[!UICONTROL 从右侧]**&#x200B;方法提供两个下拉菜单：**[!UICONTROL 从]**（输出开始处）和&#x200B;**[!UICONTROL 到]**（输出结束处）。
 
 * **[!UICONTROL 字符串开始]**：字符串的开始。
 * **[!UICONTROL 字符串结束]**：字符串的结束。
 * **[!UICONTROL 位置]**：从左或从右开始的静态字符数，具体取决于方法。
 * **[!UICONTROL 字符串]**：匹配一个字符或字符序列以指示字符串的开始或结束。 此下拉菜单还显示其他选项：
-   * **[!UICONTROL 匹配]**：要匹配的字符串。 如果输入内容与此字段不匹配，则应用 [无值选项](no-value-options.md)。
-   * **[!UICONTROL 索引]**：**[!UICONTROL 匹配]** 条件可以在字符串中多次出现。 此整数确定开始或结束输出的匹配项，具体取决于方法。 例如，索引为 `1` 表示第一个匹配。 如果索引高于可用的匹配数，则应用 [无值选项](no-value-options.md)。
-   * **[!UICONTROL 包括字符串]**：如果启用，则在输出中包括 **[!UICONTROL 匹配]** 字符串的复选框。
+  * **[!UICONTROL 匹配]**：要匹配的字符串。 如果输入内容与此字段不匹配，则应用 [无值选项](no-value-options.md)。
+  * **[!UICONTROL 索引]**：**[!UICONTROL 匹配]** 条件可以在字符串中多次出现。 此整数根据所用方法确定输出从哪个匹配项开始或结束。 例如，索引为 `1` 表示第一个匹配。 如果索引高于可用的匹配数，则应用 [无值选项](no-value-options.md)。
+  * **[!UICONTROL 包括字符串]**：如果启用，则在输出中包括 **[!UICONTROL 匹配]** 字符串的复选框。
 * **[!UICONTROL 长度]**：指定输出起始位置后要包含的字符数的整数。 仅在&#x200B;**[!UICONTROL 至]**&#x200B;下拉菜单下可用。
 
 ## 分隔符
@@ -65,9 +63,9 @@ ht-degree: 93%
 对于使用分隔符分隔多个字符串值的字段，请使用此方法。 您可以提取单个元素用作输出，也可以将字符串转化为对象数组架构元素。
 
 * **[!UICONTROL 标准]**：您希望如何处理分隔的值列表。
-   * **[!UICONTROL 从左]**：从分隔列表的开头开始，向前计数。
-   * **[!UICONTROL 从右]**：从分隔列表的结尾开始，向后计数。
-   * **[!UICONTROL 转化为数组]**：将此维度视为对象数组架构元素。 该维度将作为[自定义容器](/help/data-views/create-dataview.md#containers-1)提供，您可以在数据视图中选择该维度，并将其用于工作区项目中的[子事件分析](/help/components/segments/sub-event.md)。
+  * **[!UICONTROL 从左]**：从分隔列表的开头开始，向前计数。
+  * **[!UICONTROL 从右]**：从分隔列表的结尾开始，向后计数。
+  * **[!UICONTROL 转化为数组]**：将此维度视为对象数组架构元素。 该维度将作为[自定义容器](/help/data-views/create-dataview.md#containers-1)提供，您可以在数据视图中选择该维度，并将其用于工作区项目中的[子事件分析](/help/components/segments/sub-event.md)。
 * **[!UICONTROL 分隔符]**：字段使用的分隔符。
 * **[!UICONTROL 索引]**：仅当标准为从左/右时才出现。 元素编号，就像它在一个数组中的编号一样。 例如，如果字符串输入是索引为 3 的 `"Fox,Turtle,Rabbit,Wolf"`，则输出是 `"Rabbit"`。 如果索引高于分隔元素的数量，则应用 [无值选项](no-value-options.md)。
 
@@ -95,7 +93,7 @@ ht-degree: 93%
 将正则表达式应用于维度以检索所需的值。
 
 * **[!UICONTROL 正则表达式]**：正则表达式公式。
-* **[!UICONTROL 输出格式]**：一个可选字段，允许您添加文本或对正则表达式子组输出内容重新排序。 如果此字段为空，则字符串输出是经过计算的正则表达式。
+* **[!UICONTROL 输出格式]**：一个可选字段，允许您添加文本或对正则表达式子组输出内容重新排序。 如果此字段为空，则字符串输出为求值后的正则表达式结果。
 * **[!UICONTROL 区分大小写]**：如果启用，强制正则表达式区分大小写的复选框。
 
 Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 如果输入内容与正则表达式不匹配，并且 **[!UICONTROL 输出格式]** 为空，则应用[无值选项](no-value-options.md)。 支持以下表达式：
@@ -127,7 +125,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 如果�
 | `(?:...)` | 无标记捕获。 防止在输出字符串中引用匹配项。 |
 | `a?` | 零个或一个 `a`。 |
 | `a*` | 零个或多个 `a`。 |
-| `a+` | 一个或多个 `a`。 |
+| `a+` | `a`中的一个或多个。 |
 | `a{3}` | 恰好 3 个 `a`。 |
 | `a{3,}` | 3 个或更多 `a`。 |
 | `a{3,6}` | 3 到 6 个 `a`。 |

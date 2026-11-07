@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1679'
 ht-degree: 14%
 ---
 # 摄取和使用 Experience Platform 受众
@@ -363,7 +363,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
    1. （可选）输入&#x200B;**[!UICONTROL 描述]**。
    1. 选择&#x200B;**[!UICONTROL 完成]**。
 1. 设置架构以包含自定义字段组（例如&#x200B;**[!UICONTROL 受众成员资格]**），该自定义字段组包含名为&#x200B;**[!UICONTROL audienceMembershipId]**&#x200B;和&#x200B;**[!UICONTROL audienceMembershipName]**&#x200B;的两个字段。
-1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 标识]**、**[!UICONTROL 主标识]**，并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为I&#x200B;**[!UICONTROL 标识命名空间]**。
+1. 确保&#x200B;**[!UICONTROL personID]**&#x200B;字段是&#x200B;**[!UICONTROL 身份]**、**[!UICONTROL 主身份]**&#x200B;并且具有&#x200B;**[!UICONTROL 电子邮件]**&#x200B;作为&#x200B;**[!UICONTROL 身份命名空间]**。
 
    用于导出的![区段](assets/segment-for-export.png)
 

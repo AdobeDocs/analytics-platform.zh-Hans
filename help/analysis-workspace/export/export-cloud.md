@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '3275'
+source-wordcount: '3276'
 ht-degree: 58%
 ---
 # 将全表导出到云 {#full-table-export}
@@ -81,7 +81,7 @@ ht-degree: 58%
 
 1. [从工作区导出完整表格](#export-full-tables)
 
-1. 访问云帐户中的数据并[在Adobe中管理导出](/help/components/exports/manage-exports.md)
+1. 在云帐户中访问云中的数据，并[在Adobe中管理导出](/help/components/exports/manage-exports.md)
 
 ![步骤 1 至 4 中所描述的完整表格导出流程。](assets/export-full-table-process.png)
 

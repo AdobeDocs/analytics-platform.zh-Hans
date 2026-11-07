@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3192'
 ht-degree: 76%
@@ -172,7 +172,7 @@ ht-degree: 76%
 
 | 容器名称 | 显示名称（默认） | 描述 |
 | --- | --- | --- |
-| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全局帐户&#x200B;]** | [!UICONTROL 全球帐户]容器包括全球帐户在指定的时间范围内的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全局帐户&#x200B;]** | [!UICONTROL 全局帐户]容器包含指定时间段内全局帐户的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |
 | 人员 | **[!UICONTROL 人员]** | [!UICONTROL 人员]容器包括人员在指定的时间范围内的每个会话和事件。 如果您的组织使用不同的用语（例如，“访客”或“用户”），可在此处将该容器重命名。 |
 | session | **[!UICONTROL 会话]** | 通过[!UICONTROL 会话]容器可以识别页面交互、营销活动或特定会话的转化。 可将此容器重命名为“访问”或您的组织更喜欢的任何其他用语。 |
 | 机会 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 机会&#x200B;]** | [!UICONTROL 机会]容器包括在指定的时间范围内机会的每个会话和事件。 如果您的组织使用不同的术语，您可以在此处重命名容器。 |

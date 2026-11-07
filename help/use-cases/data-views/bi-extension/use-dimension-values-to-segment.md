@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 1%
@@ -121,7 +121,7 @@ ht-degree: 1%
    1. 从字段列表中，选择&#x200B;**[!UICONTROL ‣产品类别]**。
 1. 确保&#x200B;**[!UICONTROL 是]**&#x200B;作为筛选器的选择。
 
-![AlertRed](/help/assets/icons/AlertRed.svg)查找未显示&#x200B;**[!UICONTROL 产品类别]**&#x200B;的可能值列表。
+![AlertRed](/help/assets/icons/AlertRed.svg)查找器未显示&#x200B;**[!UICONTROL 产品类别]**&#x200B;的可能值列表。
 
 ![非重复查找器计数](../assets/uc10-looker-result.png)
 

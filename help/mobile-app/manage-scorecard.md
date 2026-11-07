@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 81%
@@ -237,7 +237,7 @@ ht-degree: 81%
 1. 选择正确的磁贴。
 1. 在右边栏中的&#x200B;**[!UICONTROL 深入分析]**&#x200B;下，选择要删除其&#x200B;**[!UICONTROL 未指定]**&#x200B;项的维度项旁边的右箭头。
 
-   ![带有指向维度名称旁边的右箭头的箭头的属性。](assets/unspecified.png)
+   ![属性，其箭头指向维度名称旁边的右箭头。](assets/unspecified.png)
 
 1. 单击&#x200B;**[!UICONTROL 未指定]**&#x200B;旁边的图标以从报告中删除未指定数据。 （您也可以删除任何其他维度项。）
 

@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 78%
@@ -105,7 +105,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 * 要显示折叠的可视化图表，请选择![V形左侧](/help/assets/icons/ChevronLeft.svg)。
 * 要删除可视化图表，请选择![CrossSize400](/help/assets/icons/CrossSize400.svg)。 要撤消操作，请选择&#x200B;**[!UICONTROL 编辑]** > **[!UICONTROL 撤消]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**)。
 * 要将可视化返回到默认高度，请选择![ImageResize](/help/assets/icons/Resize.svg)。
-* 要在面板中移动可视化图表，请在![移动](/help/assets/icons/Move.svg)可见时拖放该可视化图表（通常是将鼠标悬停在标题上）。
+* 要在面板中移动可视化图表，请在![移动](/help/assets/icons/Move.svg)可见时拖放该可视化图表（通常是将鼠标悬停在标题上时）。
 
 
 
@@ -205,7 +205,7 @@ Analysis Workspace 中提供了以下可视化图表类型：
 | --- | --- |
 | **[!UICONTROL 插入复制的可视化内容]** | 将复制的可视化图表粘贴（插入）到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 将数据复制到剪贴板]** | [将可视化图表中的数据](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)复制到剪贴板。 |
-| **[!UICONTROL 将选择复制到剪贴板]** | [将可视化图表中的选定内容](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)复制到剪贴板。 |
+| **[!UICONTROL 将选择复制到剪贴板]** | [将选定内容](/help/analysis-workspace/export/download-send.md#copy-to-clipboard)从可视化图表复制到剪贴板。 |
 | **[!UICONTROL 将项目下载为 CSV（*维度名称*）]** | [将可视化图表的维度项](/help/analysis-workspace/export/download-send.md#download-items-as-csv)（最多50,000个）下载到您的本地设备。 所选维度最多可有 50,000 个维度项。 |
 | **[!UICONTROL 复制可视化图表]** | 复制可视化图表，您可以将其插入到项目中的其他位置或完全不同的项目中。 |
 | **[!UICONTROL 下载数据 CSV]** | [将可视化图表显示的数据](/help/analysis-workspace/export/download-send.md#download-as-csv)下载到您的本地设备。 |

@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 10%
@@ -92,7 +92,7 @@ ht-degree: 10%
             ![Power BI桌面转换数据](../assets/powerbi-transform-data.png)
             * 选择&#x200B;**[!UICONTROL 关闭并应用]**。
    1. 一段时间后，**[!UICONTROL public.cc_data_view]**&#x200B;显示在&#x200B;**[!UICONTROL 数据]**&#x200B;窗格中。 选择![V形右侧](/help/assets/icons/ChevronRight.svg)以显示维度和量度。
-      ![Power BI Destkop服务器数据已加载](../assets/powerbi-navigator-loaded.png)
+      ![Power BI Desktop Server数据已加载](../assets/powerbi-navigator-loaded.png)
 
 
 ## 是否扁平化
@@ -327,7 +327,7 @@ Looker支持`FLATTEN`参数的以下方案。 有关详细信息，请参阅[拼
    ORDER BY 1,2;
    ```
 
-   执行shell。 您应该会在下面的屏幕快照中看到输出模拟。
+   执行shell。 您应该会看到类似于以下屏幕快照的输出。
 
    ![Jupyter笔记本配置步骤5](../assets/jupyter-config-step3.png)
 
@@ -415,7 +415,7 @@ Jupyter Notebook支持`FLATTEN`参数的以下方案。 有关详细信息，请
    glimpse(dv)
    ```
 
-1. 运行块。 您应该会在下面的屏幕快照中看到输出模拟。
+1. 运行块。 您应该会看到类似于以下屏幕快照的输出。
 
    ![RStudio配置步骤2](../assets/rstudio-config-step2.png)
 

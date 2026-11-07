@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4894'
 ht-degree: 55%
@@ -72,7 +72,7 @@ ht-degree: 55%
 | **[!UICONTROL 创建日期]** | 创建配置的时间戳。 |
 | **[!UICONTROL 修改日期]** | 配置最后修改的时间戳。 |
 | **[!UICONTROL 沙盒]** | 组织内（计划）配置并实施 Content Analytics 的沙盒。 |
-| **[!UICONTROL 状态]** | 配置的状态。 状态指示已完成配置的启用通道数。 使用![InfoOutline](/help/assets/icons/InfoOutline.svg)打开包含更多详细信息的弹出窗口。 |
+| **[!UICONTROL 状态]** | 配置的状态。 状态指示已完成配置的启用通道数。 使用![信息大纲](/help/assets/icons/InfoOutline.svg)打开包含更多详细信息的弹出窗口。 |
 
 您可以使用 ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) 来自定义该表格。 选择要在&#x200B;**[!UICONTROL 自定义表格]**&#x200B;对话框中显示哪些列，然后选择&#x200B;**[!UICONTROL 应用]**，以应用更改。
 

@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 96%
+ht-degree: 93%
 ---
 # Customer Journey Analytics 概述
 
@@ -52,7 +52,7 @@ Customer Journey Analytics 架构大致如下所示：
 
 ![Customer Journey Analytics 架构](assets/cja-overview.png)
 
-该架构展示了 Customer Journey Analytics 如何实现以下功能：
+此架构展示了Customer Journey Analytics如何允许您：
 
 * 在一个[连接](/help/connections/overview.md)中合并多个数据集![数据](/help/assets/icons/Data.svg)。
 * 在[数据视图](/help/data-views/data-views.md)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Dimensions.svg)和量度![事件](/help/assets/icons/Event.svg)。
@@ -131,7 +131,7 @@ Adobe Experience Platform 让您可以实现源自任何系统的客户数据和
 
 >[!BEGINSHADEBOX]
 
-请参阅 ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在 Customer Journey Analytics 中处理数据](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"}以获取有关如何在 Customer Journey Analytics 中处理数据的介绍视频。
+请参阅![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [在Customer Journey Analytics中处理数据](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"}，获取有关如何在Customer Journey Analytics中处理数据的简介视频。
 
 >[!ENDSHADEBOX]
 

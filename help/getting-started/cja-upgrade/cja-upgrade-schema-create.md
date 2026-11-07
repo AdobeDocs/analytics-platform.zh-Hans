@@ -32,7 +32,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 94%
@@ -159,7 +159,7 @@ ht-degree: 94%
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL ecid]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 主要身份标识]** 和 **[!UICONTROL ECID]** 来自右侧面板中的 [!UICONTROL 身份标识命名空间] 列表。
 
-   ![指定 ECID 作为身份标识](./assets/specify-identity.png)
+   ![将ECID指定为标识](./assets/specify-identity.png)
 
    您将ECID指定为Adobe Experience Platform Identity服务可用于组合（拼合）具有相同ECID的用户档案行为的主要标识。
 
@@ -167,7 +167,7 @@ ht-degree: 94%
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]** 和 [!UICONTROL 身份标识命名空间] 列表中的 [!UICONTROL 字段属性] 面板。
 
-   ![将电子邮件指定为身份标识](./assets/specify-email-identity.png)
+   ![将电子邮件指定为标识](./assets/specify-email-identity.png)
 
    您将电子邮件地址指定为 Adobe Experience Platform 身份标识服务可用于组合（拼接）轮廓行为的另一个身份标识。
 

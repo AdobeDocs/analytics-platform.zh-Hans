@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '10578'
 ht-degree: 98%
@@ -1685,7 +1685,7 @@ Customer Journey Analytics 使用 Perl 正则表达式语法的子集。 支持�
 | `(?:...)` | 无标记捕获。 防止在输出字符串中引用匹配项。 |
 | `a?` | 零个或一个 `a`。 |
 | `a*` | 零个或多个 `a`。 |
-| `a+` | 一个或多个 `a`。 |
+| `a+` | `a`中的一个或多个。 |
 | `a{3}` | 恰好 3 个 `a`。 |
 | `a{3,}` | 3 个或更多 `a`。 |
 | `a{3,6}` | 3 到 6 个 `a`。 |

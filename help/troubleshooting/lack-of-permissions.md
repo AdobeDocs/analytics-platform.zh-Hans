@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 93%
+ht-degree: 90%
 ---
 # 缺乏权限
 
@@ -56,7 +56,7 @@ ht-degree: 93%
    * 您必须是 AEP-Default-All-Users 产品配置文件中的用户。 如果您没有权限将自己添加到该轮廓中，请询问您的管理员。 请参阅 [Access 控制层次结构和工作流程](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans#access-control-hierarchy-and-workflow) 了解更多信息。
 
 
-1. 导航到 Adobe Experience Platfom UI。
+1. 导航到Adobe Experience Platform UI。
 
 1. 从左侧栏中选择 **[!UICONTROL 权限]** 。
 

@@ -30,7 +30,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%
@@ -252,7 +252,7 @@ Customer Journey Analytics对象（维度、量度、过滤器、计算量度和
 
    ![Jupyter笔记本结果](../assets/uc13-jupyter-results.png)
 
-查询由Jupyter Notebook中定义的BI扩展执行。
+查询由BI扩展执行，如Jupyter Notebook中所定义。
 
 >[!TAB RStudio]
 

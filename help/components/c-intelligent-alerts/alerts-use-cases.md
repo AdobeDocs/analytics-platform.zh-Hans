@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 20%
@@ -47,6 +47,6 @@ ht-degree: 20%
 
 ## 栈叠警报
 
-您可以合并（栈叠）警报，而不是创建多个警报。 栈叠警报可确保合并警报，这样您就不会收到大量单独的警报。 在下面的示例中，当触发其中一个量度阈值时，将发送警报。
+您可以合并（栈叠）警报，而不是创建多个警报。 栈叠警报可确保合并警报，这样您就不会收到大量单独的警报。 在以下示例中，触发其中一个度量阈值时会发送警报。
 
 ![](assets/alerts-example2.png)

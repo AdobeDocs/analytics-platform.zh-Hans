@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1852'
 ht-degree: 80%
@@ -152,7 +152,7 @@ ht-degree: 80%
 
 流量配置的摘要显示在可视化图表的顶部。 图中的路径是成比例的。 活动量较大的路径看起来较粗。
 
-![显示访问结束、路径维度的流量输出示例：页面和流量容器：访客。](assets/flow-output.png)
+![显示以访问结束的流量输出示例，路径维度：页面，以及流量容器：访客。](assets/flow-output.png)
 
 要进一步深入分析数据，您有几个选项：
 

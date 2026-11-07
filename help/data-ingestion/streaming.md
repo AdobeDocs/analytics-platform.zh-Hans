@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 83%
@@ -139,7 +139,7 @@ ht-degree: 83%
 
 1. 选择刚刚添加的身份标识对象中的&#x200B;**[!UICONTROL 邮件]**&#x200B;字段，选择&#x200B;**[!UICONTROL 身份标识]**&#x200B;和&#x200B;**[!UICONTROL 邮件]**&#x200B;和[!UICONTROL 身份标识命名空间]中的[!UICONTROL 字段属性]面板。
 
-   ![将电子邮件指定为身份标识](./assets/specify-email-loyalty-id.png)
+   ![将电子邮件指定为标识](./assets/specify-email-loyalty-id.png)
 
    您将电子邮件地址指定为 Adobe Experience Platform 身份标识服务可用于组合（拼接）轮廓行为的标识。
 

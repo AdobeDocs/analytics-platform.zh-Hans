@@ -29,7 +29,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 58%
@@ -56,7 +56,7 @@ Content Analytics 将以下类别的组件（维度、（计算）量度、派�
 |---|---|---|
 | ID SOURCE | 对于Content Analytics，值为`ContentAnalytics`。 | 维度 |
 | 渠道 | 体验的渠道。 值为`Web`、`Mobile`或`Paid Media`。 | 维度 |
-| 内容体验Id | 体验的唯一 ID。 <br>对于&#x200B;**Web**：网页的URL。 <br/>对于&#x200B;**粒度Web**：哈希计算客户端，基于前缀为`web-`的内容有效负载（文本、图像、CTA）。 <br/>对于&#x200B;**移动设备**：哈希计算客户端，基于前缀为`mobile-`的内容有效负载（文本、图像、CTA）。 | 维度 |
+| 内容体验Id | 体验的唯一 ID。 <br>对于&#x200B;**Web**：网页的URL。 <br/>对于&#x200B;**粒度Web**：哈希计算的客户端，基于前缀为`web-`的内容有效负载（文本、图像、CTA）。 <br/>对于&#x200B;**移动设备**：哈希计算客户端，基于前缀为`mobile-`的内容有效负载（文本、图像、CTA）。 | 维度 |
 | 内容体验Source | 对于&#x200B;**Web**：网页的URL。<br/>对于&#x200B;**移动设备**：屏幕名称，通过Experience Platform Mobile SDK传入。 | 维度 |
 | 体验渠道（已弃用） | 体验的渠道。 值为`Web`或`Mobile`。 | 维度 |
 | Experience Extras | 任何其他要跟踪的数据。 如外部ID或投放位置。 | 维度 |
@@ -73,7 +73,7 @@ Content Analytics 将以下类别的组件（维度、（计算）量度、派�
 | 标题 | 描述 | 类型 |
 |---|---|---|
 | 体验属性 | ![AI 生成](/help/assets/icons/AI.svg) 所有体验属性的名称和值的完整列表 | 维度<br>派生字段 |
-| 体验可读性得分 | ![AI 生成](/help/assets/icons/AI.svg) 体验的可读性得分 | 维度 |
+| 体验可读性得分 | ![AI生成](/help/assets/icons/AI.svg)体验的可读性分数 | 维度 |
 | 体验关键词 | ![AI 生成](/help/assets/icons/AI.svg) 体验的关键词。 | 维度<br>派生字段 |
 | 体验说服策略 | ![AI 生成](/help/assets/icons/AI.svg) 某个给定体验中存在的说服策略。 可能的值包括：社会身份、社会认同、权威、具体性、入门机会、克服抵触、互惠、锚定和比较、社会影响、稀缺性和拟人化。 | 维度<br/>派生字段 |
 | 体验叙述 | ![AI 生成](/help/assets/icons/AI.svg) 体验基于营销人员观点的相关性而生成的叙述。 | 维度<br/>派生字段 |
