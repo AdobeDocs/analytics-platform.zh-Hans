@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 15%
@@ -248,7 +248,7 @@ ht-degree: 15%
 
   1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
-  有关在使用[Azure Databricks](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
+  有关在使用[Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)或[Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)连接器时如何连接和身份验证的详细信息，请参阅Experience Platform文档。
 
 
 ### 选择数据
@@ -330,7 +330,7 @@ ht-degree: 15%
 
       1. 选择包含镜像数据的数据集。 例如： **[!UICONTROL event-data-mirror]**。 数据集具有&#x200B;**[!UICONTROL 关系]**&#x200B;作为&#x200B;**[!UICONTROL 数据集类型]**。
 
-         ![CJA - Connections — 添加数据集](assets/cja-add-dataset.png)
+         ![CJA — 连接 — 添加数据集](assets/cja-add-dataset.png)
 
       1. 添加与连接相关的任何其他数据集。
       1. 选择&#x200B;**[!UICONTROL 下一步]**。

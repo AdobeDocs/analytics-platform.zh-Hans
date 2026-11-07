@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 59%
+ht-degree: 58%
 ---
 # 使用对象数组
 
@@ -97,7 +97,7 @@ ht-degree: 59%
   * product : name
   * product : order_id
   * product : warranty : coverage
-  * prodcut : warranty : length
+  * product ： warranty ： length
   * product : warranty : name
   * product : warranty : type
 * **量度：**
@@ -295,5 +295,5 @@ Customer Journey Analytics本身不会组合名称相似但对象级别不同的
 
 ## 限制
 
-限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)中的[数据模型限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-model-limits)和[数据大小限制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails#data-size-limits)。
+限制确实适用于Customer Journey Analytics使用的数据中的数组，并作为Experience Platform中的架构的一部分进行建模。 查看[实时客户个人资料数据和分段默认护栏](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/guardrails)中的[数据模型限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits)和[数据大小限制](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits)。
 

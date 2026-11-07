@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 798
-ht-degree: 75%
-
+source-wordcount: '798'
+ht-degree: 73%
 ---
-
 # 日期比较
 
 Analysis Workspace中的日期比较允许您采用包含日期范围的任何列来创建常见的日期比较，例如：年同比、季度同比、月同比，等等。
@@ -91,7 +89,7 @@ Analysis Workspace中的日期比较允许您采用包含日期范围的任何�
 
 1. 时段会被插入到选定列的顶部：
 
-   ![自由格式表格，显示当前日历周期与上一个日历月份的事件发生次数。](assets/add-time-period-column2.png)
+   ![显示当前日历期间和上一个日历月发生次数的自由格式表。](assets/add-time-period-column2.png)
 
 1. 您可以根据需要添加任意数量的时间列，还可以混合和匹配不同的日期范围：
 

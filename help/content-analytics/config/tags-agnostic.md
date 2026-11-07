@@ -25,13 +25,11 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 5%
-
 ---
-
 
 # Content Analytics JavaScript 库
 
@@ -73,7 +71,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
 
 直接从CDN加载库。
 
-1. 初始化[Web SDK JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library)并加载Content Analytics捆绑包：
+1. 初始化[Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)并加载Content Analytics捆绑包：
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -95,7 +93,7 @@ Adobe Content Analytics JavaScript库允许通过Experience Platform Edge Networ
    ```
 
    位置
-   * `alloy/2.x.x`引用您要使用[Web SDK JavaScript库](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library)的版本。
+   * `alloy/2.x.x`引用您要使用[Web SDK JavaScript库](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library)的版本。
    * `content-analytics/1.x.x`是指您要使用Content Analytics SDK库的版本。
 
 2. 独立内部版本将`window.contentAnalytics`公开为初始化函数。

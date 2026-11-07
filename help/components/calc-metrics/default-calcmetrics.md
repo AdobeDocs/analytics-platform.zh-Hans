@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 85%
+ht-degree: 83%
 ---
 # 计算量度模板
 
@@ -34,17 +34,17 @@ Customer Journey Analytics提供了以下计算量度模板以涵盖最常见的
 
 | 计算量度名称 | 描述<br/>公式 |
 |---------|----------|
-| **[!UICONTROL 会话开始比率]** | 任何维度项在会话的第一个事件上出现的百分比。<p>当您将[!UICONTROL 会话开始]&#x200B;[标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **会话开始** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **会话** **）** |
-| **[!UICONTROL 每人逗留时间]** | 某人在任何给定维度项上逗留的平均时间。<p>当您将[!UICONTROL 逗留时间（秒）]&#x200B;[标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。 “排除最后一个会话事件”区段将应用于“人员”量度。 区段不包括数据集中每个会话的最后一个事件。 这种排除功能可帮助您在排除最终操作本身的同时，分析导致事件或操作（如购买或提交表单）的用户行为。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **逗留时间（秒）** ![划分](/help/assets/icons/Divide.svg) ![分段](/help/assets/icons/Segmentation.svg) **排除会话的最后一个事件（** ![事件](/help/assets/icons/Event.svg) **人员））** |
+| **[!UICONTROL 会话开始比率]** | 任何维度项在会话的第一个事件上出现的百分比。<p>当您将[!UICONTROL 会话开始][标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **会话开始** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **会话** **）** |
+| **[!UICONTROL 每人逗留时间]** | 某人在任何给定维度项上逗留的平均时间。<p>当您将[!UICONTROL 逗留时间（秒）][标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。 “排除最后一个会话事件”区段将应用于“人员”量度。 区段不包括数据集中每个会话的最后一个事件。 这种排除功能可帮助您在排除最终操作本身的同时，分析导致事件或操作（如购买或提交表单）的用户行为。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **逗留时间（秒）** ![划分](/help/assets/icons/Divide.svg) ![分段](/help/assets/icons/Segmentation.svg) **排除会话的最后一个事件（** ![事件](/help/assets/icons/Event.svg) **人员））** |
 | **[!UICONTROL 每人的会话次数]** | 每个人的平均会话次数。<p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **会话** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **人员** **）** |
-| **[!UICONTROL 每次会话逗留的时间]** | 每个会话在任何给定维度项上逗留的平均时间。<p>当您将[!UICONTROL 逗留时间（秒）]&#x200B;[标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。 “排除会话的最后一个事件”区段将应用于“会话”量度。 区段不包括数据集中每个会话的最后一个事件。 这种排除功能可帮助您在排除最终操作本身的同时，分析导致事件或操作（如购买或提交表单）的用户行为。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **逗留时间（秒）** ![划分](/help/assets/icons/Divide.svg) ![分段](/help/assets/icons/Segmentation.svg) **排除会话的最后一个事件（** ![事件](/help/assets/icons/Event.svg) **会话））** |
-| **[!UICONTROL 会话结束率]** | 任何维度项在会话的最后一个事件上出现的百分比。 <p>当您将[!UICONTROL 会话结束]&#x200B;[标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **会话结束** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **会话** **）** |
+| **[!UICONTROL 每次会话逗留的时间]** | 每个会话在任何给定维度项上逗留的平均时间。<p>当您将[!UICONTROL 逗留时间（秒）][标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。 “排除会话的最后一个事件”区段将应用于“会话”量度。 区段不包括数据集中每个会话的最后一个事件。 这种排除功能可帮助您在排除最终操作本身的同时，分析导致事件或操作（如购买或提交表单）的用户行为。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **逗留时间（秒）** ![划分](/help/assets/icons/Divide.svg) ![分段](/help/assets/icons/Segmentation.svg) **排除会话的最后一个事件（** ![事件](/help/assets/icons/Event.svg) **会话））** |
+| **[!UICONTROL 会话结束率]** | 任何维度项在会话的最后一个事件上出现的百分比。 <p>当您将[!UICONTROL 会话结束][标准组件](/help/data-views/component-reference.md)纳入您的[数据视图](/help/data-views/create-dataview.md)时，此计算量度会自动添加到工作区。</p>摘要：**（** ![事件](/help/assets/icons/Event.svg) **会话结束** ![划分](/help/assets/icons/Divide.svg) ![事件](/help/assets/icons/Event.svg) **会话** **）** |
 | **[!UICONTROL Web 会话]** | 网站上发生的会话数。 |
 | **[!UICONTROL 调查完成率]** | 人们开始调查后完成调查的比率。 |
 | **[!UICONTROL 多渠道会话比率]** | 包含多个渠道（例如网络流量和移动流量）的会话与仅包含单个渠道的会话之间的比率。 |
 | **[!UICONTROL 多渠道人数比率]** | 参与多个渠道的人数与仅参与单个渠道的人数的比例。 |
 | **[!UICONTROL 移动应用程序会话]** | 移动应用程序上发生的会话数。 |
-| **[!UICONTROL Web + 应用程序跨渠道会话]** | 发生的会话数（包括网络流量和移动流量）。 |
+| **[!UICONTROL Web + 应用程序跨渠道会话]** | 发生的会话数，包括Web流量和移动流量。 |
 | **[!UICONTROL 通话成本]** | 呼叫中心通话的总成本。<!-- <p>Summary: Call length</p> --> |
 | **[!UICONTROL 平均通话持续时间]** | 呼叫中心接到的通话的平均持续时间。 |
 | **[!UICONTROL 每次通话的平均成本]** | 呼叫中心接到的通话的平均成本。 |

@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # 比较 Customer Journey Analytics 和 BI 解决方案
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 分析客户历程的传统方法有一个常见的障碍，即这些方法不以客户为中心。 每个团队都将数据收集到孤岛中，并根据其有权访问的数据分析和优化体验。
 
-![本节中描述的传统 BI 工作流](./assets/biworkflow.png)
+![传统BI工作流，如本节](./assets/biworkflow.png)中所述
 
 如果要了解特定的数字营销活动如何影响存储在不同数据孤岛中的离线操作，请向 BI 团队的队列发出请求。 BI 团队编写所需的查询以获取并转换数据。 检索原始数据后，BI 团队即创建可视化图表。 这些数据会与您共享，而您需要耗时梳理这些洞察并提取数据，以便在其他系统中用于激活。
 

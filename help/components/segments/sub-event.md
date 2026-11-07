@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 8%
@@ -46,10 +46,10 @@ ht-degree: 8%
 
 在分段生成器中，或作为&#x200B;**[!UICONTROL 快速区段]**&#x200B;的一部分，您指定在&#x200B;**[!UICONTROL 事件]**&#x200B;容器上&#x200B;**[!UICONTROL 包含]** **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL 等于]** **[!UICONTROL 专业套装]**。
 
-![显示产品类别专业套装的事件级别分段的面板](./assets/product-category-segmentation-events.png)
+![在事件级别显示产品类别专业套装细分的面板](./assets/product-category-segmentation-events.png)
 
-因此，至少包含一个&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**&#x200B;的所有订单都将被考虑，这些订单中来自其他产品的收入包含在&#x200B;**[!UICONTROL 收入]**&#x200B;量度中。
-当您报告类别时，报告了&#x200B;**[!UICONTROL product_category]**&#x200B;的所有其他值，这些值属于包含&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**&#x200B;产品的订单。
+因此，至少包含一个&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**&#x200B;的所有订单都将被考虑，这些订单中来自其他产品的收入包含在&#x200B;**[!UICONTROL 收入]**量度中。
+当您报告类别时，报告了**[!UICONTROL product_category]**&#x200B;的所有其他值，这些值属于包含&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**&#x200B;产品的订单。
 
 >[!TAB 子事件分析]
 
@@ -59,10 +59,10 @@ ht-degree: 8%
 
 在分段生成器中，或作为&#x200B;**[!UICONTROL 快速区段]**&#x200B;的一部分，您指定在&#x200B;**[!UICONTROL 产品详细信息]**&#x200B;容器上&#x200B;**[!UICONTROL 包含]** **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL 等于]** **[!UICONTROL 专业套装]**。
 
-![显示产品类别专业套装子事件级别分段的面板](./assets/product-category-segmentation-subevents.png)
+![在子事件级别显示产品类别专业套装细分的面板](./assets/product-category-segmentation-subevents.png)
 
-因此，所有至少包含&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**&#x200B;的订单都被考虑在内，并且只有属于&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_categorey]**&#x200B;的产品收入包含在&#x200B;**[!UICONTROL 收入]**&#x200B;指标中。
-当您报告类别时，仅报告&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**。
+因此，所有至少包含&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**&#x200B;的订单都被考虑在内，并且只有属于&#x200B;**[!UICONTROL 专业套装]** **[!UICONTROL product_categorey]**&#x200B;的产品收入包含在&#x200B;**[!UICONTROL 收入]**指标中。
+当您报告类别时，仅报告**[!UICONTROL 专业套装]** **[!UICONTROL product_category]**。
 
 >[!TAB 子事件分析（排除）]
 
@@ -72,7 +72,7 @@ ht-degree: 8%
 
 在分段生成器中，或作为&#x200B;**[!UICONTROL 快速区段]**&#x200B;的一部分，您指定在&#x200B;**[!UICONTROL 产品详细信息]**&#x200B;容器上&#x200B;**[!UICONTROL 排除]** **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL 等于]** **[!UICONTROL 专业套装]**。
 
-![显示子点击级别的分段以排除产品类别门槛的面板](./assets/product-category-segmentation-subevents-exclude.png)
+![显示子点击级别的分段以排除产品类别男士的面板](./assets/product-category-segmentation-subevents-exclude.png)
 
 要在产品级别排除，应包含至少包含一个产品的事件，然后在该范围内应用子事件级别的排除。 此排除项与事件级别排除项不同，后者排除整个事件。
 

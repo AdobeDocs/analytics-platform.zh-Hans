@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3765'
-ht-degree: 86%
+ht-degree: 82%
 ---
 # Customer Journey Analytics BI 扩展
 
@@ -48,7 +48,7 @@ ht-degree: 86%
 
 通过 [!DNL Customer Journey Analytics BI extension]，SQL 可访问您在 Customer Journey Analytics 中定义的[数据视图](./data-views.md)。 您的数据工程师和分析师可能更熟悉 Power BI、Tableau Desktop 或其他商业智能和可视化工具（也称为 BI 工具）。 他们现在可以基于 Customer Journey Analytics 用户在创建 Analysis Workspace 项目时使用的相同数据视图来创建报告和仪表板。
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home) 是 Experience Platform 数据湖中可用数据的 SQL 接口。 启用 [!DNL Customer Journey Analytics BI extension] 后，[!DNL Query Service]的功能将得到扩展，以便在[!DNL Query Service]会话中以表或视图的形式查看 Customer Journey Analytics 数据视图。 因此，将[!DNL Query Service]用作其 PostgresSQL 接口的商业智能工具可以无缝地从这项扩展的功能中受益。
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home) 是 Experience Platform 数据湖中可用数据的 SQL 接口。 启用 [!DNL Customer Journey Analytics BI extension] 后，[!DNL Query Service]的功能将得到扩展，以便在[!DNL Query Service]会话中以表或视图的形式查看 Customer Journey Analytics 数据视图。 因此，使用[!DNL Query Service]作为其PostgreSQL接口的业务智能工具可以无缝地受益于此扩展功能。
 
 主要好处是：
 
@@ -78,7 +78,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 要使用非过期型凭据：
 
-1. 在Experience Platform[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/credentials#migrate-credentials)。
+1. 在Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials)中创建[未过期的凭据。 如果要使用已存在的未过期的凭据，请确保这些凭据[已迁移到OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials)。
 
 1. 确保Customer Journey Analytics产品和产品配置文件具有未过期的凭据。 您必须是组织系统管理员才能执行以下步骤。
    1. 从![应用程序](/help/assets/icons/Apps.svg)中选择&#x200B;**[!UICONTROL Admin Console]**。
@@ -113,7 +113,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 ### SQL
 
-您可以通过查询编辑器或标准 PostgresSQL 命令行界面 (CLI) 客户端直接在 SQL 语句中使用此功能。
+您可以使用查询编辑器或标准的PostgreSQL命令行界面(CLI)客户端直接在SQL语句中使用这些功能。
 
 +++ 查询编辑器
 
@@ -130,9 +130,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 +++
 
 
-+++ PostgresSQL CLI
++++ PostgreSQL CLI
 
-1. 在 Adobe Experience Platform 中，找到并复制您的 PostgresSQL 凭据：
+1. 在Adobe Experience Platform中查找并复制您的PostgreSQL凭据：
 
    1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
 
@@ -140,7 +140,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从&#x200B;**[!UICONTROL 数据库]**&#x200B;下拉菜单的数据库列表中选择沙盒的`cja`数据库。 例如：`prod:cja`。
 
-   1. 若要复制命令字符串，请使用 **[!UICONTROL **&#x200B; PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
+   1. 若要复制命令字符串，请使用 **[!UICONTROL ** PSQL 命令&#x200B;**]**&#x200B;部分中的![复制](assets/Smock_Copy_18_N.svg)。
 
 1. 打开命令或终端窗口。
 
@@ -157,7 +157,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 +++ Power BI
 
-1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+1. 在Adobe Experience Platform中查找PostgreSQL凭据的详细信息：
 
    1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
 
@@ -173,9 +173,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 选择左边栏中的&#x200B;**[!UICONTROL 更多...]**。
 
-   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索 `PostgresSQL`，并从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL 数据库&#x200B;**]**。
+   1. 在&#x200B;**获取数据**&#x200B;屏幕中，搜索`PostgreSQL`并从列表中选择&#x200B;**[!UICONTROL ** PostgreSQL数据库&#x200B;**]**。
 
-   1. 在 **[!UICONTROL **&#x200B; PostgressSQL 数据库&#x200B;**]**&#x200B;对话框中：
+   1. 在&#x200B;**[!UICONTROL ** PostgreSQL数据库&#x200B;**]**&#x200B;对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -200,7 +200,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 +++Tableau桌面
 
-1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+1. 在Adobe Experience Platform中查找PostgreSQL凭据的详细信息：
 
    1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
 
@@ -214,9 +214,9 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
    1. 从左边栏中的&#x200B;**[!UICONTROL **&#x200B;至服务器&#x200B;**]**&#x200B;中选择&#x200B;**[!UICONTROL **&#x200B;更多&#x200B;**]**。
 
-   1. 从列表中选择 **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]**。
+   1. 从列表中选择&#x200B;**[!UICONTROL ** PostgreSQL **]**。
 
-   1. 在 [!UICONTROL PostgresSQL] 对话框中：
+   1. 在[!UICONTROL PostgreSQL]对话框中：
 
       1. 将 Experience Platform 查询[!UICONTROL 凭据]中的&#x200B;**[!UICONTROL **&#x200B;主机&#x200B;**]**&#x200B;参数粘贴到&#x200B;**[!UICONTROL **&#x200B;服务器&#x200B;**]**&#x200B;文本字段中。
 
@@ -246,7 +246,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 +++ Looker
 
-1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+1. 在Adobe Experience Platform中查找PostgreSQL凭据的详细信息：
 
    1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
 
@@ -273,7 +273,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 +++ Jupyter Notebook
 
-1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+1. 在Adobe Experience Platform中查找PostgreSQL凭据的详细信息：
 
    1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
 
@@ -297,7 +297,7 @@ Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/zh-
 
 +++ RStudio
 
-1. 在 Adobe Experience Platform 中，查找 PostgresSQL 凭据的详细信息：
+1. 在Adobe Experience Platform中查找PostgreSQL凭据的详细信息：
 
    1. 从左边栏中（**[!UICONTROL **&#x200B;数据管理&#x200B;**]**&#x200B;下），选择&#x200B;**[!UICONTROL **&#x200B;查询&#x200B;**]**。
 
@@ -355,7 +355,7 @@ prod:cja=> \dv
 
 ### 默认设置和限制
 
-以下附加默认值和限制在使用 BI 扩展时适用：
+使用BI扩展时，以下附加默认值和限制也适用：
 
 * BI 扩展要求对查询结果的行数进行限制。 默认值为 50，但您可以在 SQL 中使用 `LIMIT n` 覆盖此值，其中 `n` 为 1 - 50000。
 * BI 扩展需要一个日期范围来限制用于计算的行数。 其默认值为最近 30 天，但您可以使用特殊的 `WHERE` 或 [`timestamp`](#timestamp) 列在 SQL [`daterange`](#date-range) 子句中覆盖它。
@@ -705,6 +705,6 @@ BI 扩展仅部分支持某些 SQL 功能，并且不会返回与其他数据库
 
 | 功能 | 示例 | 详细信息 |
 |---|---|---|
-| MIN() &amp; MAX() | ``MIN(daterange)`` 或 <br/> ``MAX(daterange)`` | 使用 `MIN()` 对 `timestamp`、`daterange` 或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回两年前的结果。<br/><br/> `timestamp`、`daterange`或任何`daterangeX`（如`daterangeday`）上的`MAX()`将返回当前日期/时间。<br/><br/>`MIN()` 或者`MAX()`对于任何其他维度、量度或表达式将返回0。 |
+| MIN() &amp; MAX() | ``MIN(daterange)`` 或 <br/> ``MAX(daterange)`` | 使用 `MIN()` 对 `timestamp`、`daterange` 或类似的 `daterangeX`（如 `daterangeday`）进行操作，将返回两年前的结果。<br/><br/> `timestamp`、`daterange`或任何`daterangeX`（如`daterangeday`）上的`MAX()`将返回当前日期/时间。<br/><br/>`MIN()` 或者，任何其他维度、量度或表达式上的`MAX()`将返回0。 |
 
 {style="table-layout:auto"}

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # 数据摄取概述
 
@@ -48,7 +48,7 @@ Customer Journey Analytics 架构大致如下所示：
 
 ![Customer Journey Analytics 架构](/help/getting-started/assets/cja-overview.png)
 
-该架构展示了 Customer Journey Analytics 如何实现以下功能：
+此架构展示了Customer Journey Analytics如何允许您：
 
 * 在一个[连接](/help/connections/overview.md)中合并多个数据集![数据](/help/assets/icons/Data.svg)。
 * 在[数据视图](/help/data-views/data-views.md)中，根据您在连接中定义的数据集中可用的字段，定义和配置维度![维度](/help/assets/icons/Dimensions.svg)和量度![事件](/help/assets/icons/Event.svg)。
@@ -137,5 +137,5 @@ Customer Journey Analytics 架构大致如下所示：
 
 >[!MORELIKETHIS]
 >
->博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=zh-Hans)
+>博客：[仔细了解 Adobe Customer Journey Analytics 中的数据处理和摄取](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

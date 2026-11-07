@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # 智能题注 {#intelligent-captions}
 
@@ -105,7 +105,7 @@ Here is an example of what intelligent captions could look like:
 您可以在扩展视图中一次显示所有智能标题，也可以在逐个视图中显示单个智能标题。
 
 * 要显示所有智能标题，请选择![显示所有智能标题](/help/assets/icons/Maximize.svg)。
-* 要逐个显示单个智能标题，请选择![显示单个智能标题](/help/assets/icons/Minimize.svg)。
+* 要逐一显示单个智能字幕，请选择![显示单个智能字幕](/help/assets/icons/Minimize.svg)。
 
 ### 编辑显示内容 {#edit}
 

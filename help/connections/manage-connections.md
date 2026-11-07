@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '7127'
 ht-degree: 87%
@@ -71,7 +71,7 @@ ht-degree: 87%
 
 **[!UICONTROL 列表]**&#x200B;界面是“连接”的默认界面。 如果未选择，请选择&#x200B;**[!UICONTROL 列表]**&#x200B;选项卡以访问该界面。
 
-**[!UICONTROL 列表]**&#x200B;界面会显示所有可用连接的表格。
+**[!UICONTROL 列表]**界面会显示所有可用连接的表格。
 △
 ![列表视图](assets/list-view.png)
 
@@ -304,7 +304,7 @@ ht-degree: 87%
 | **[!UICONTROL 添加的批次数]** | 在选定日期范围内添加到某个连接的批次数。 |
 | **[!UICONTROL 上次添加时间]** | 已添加到连接的最新批次的时间戳。 |
 | **[!UICONTROL 数据源类型]** | 源类型。 您在向连接添加数据集时定义源类型。 |
-| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。 临时或关联型数据集通过&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。 例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
+| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。 临时或关系数据集由&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。 例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
 | **[!UICONTROL 已拼接]** | 如果数据集[在连接 UI 中启用了拼接](/help/stitching/use-stitching-ui.md)，则该值为&#x200B;**[!UICONTROL 真]**。 否则，该值为&#x200B;**[!UICONTROL 假]**。 通过[请求拼接流程](/help/stitching//use-stitching.md)生成的已拼接数据集不会在此表中标识为已拼接，默认值为&#x200B;**[!UICONTROL 假]**。 |
 | **[!UICONTROL 架构]** | 此数据集所基于的 Experience Platform 架构。 |
 | **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>如果数据集已配置为导入新数据，则![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**，以及<p>如果数据集已配置为不导入新数据，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
@@ -346,8 +346,8 @@ ht-degree: 87%
 
 | 详细信息 | 描述 |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID &#x200B;]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID &#x200B;]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 全球帐户 ID ]** | 您为连接指定作为全球帐户 ID 的身份标识。 仅适用于配置了全球帐户容器的基于帐户的连接。 |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL 帐户 ID ]** | 您为连接指定作为帐户 ID 的身份标识。 仅适用于未配置全球帐户容器的基于帐户的连接。 |
 | **[!UICONTROL 人员 ID]** | 您为该连接指定为人员 ID 的身份标识。 |
 | **[!UICONTROL 键]** | 您为查找数据集指定的键。 |
 | **[!UICONTROL 匹配键]** | 您为查找数据集指定的匹配键。 |
@@ -361,7 +361,7 @@ ht-degree: 87%
 | **[!UICONTROL 导入新数据]** | 数据集导入新数据的状态： <p>如果数据集已配置为导入新数据，则![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _开启]**，以及<p>如果数据集已配置为不导入新数据，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _x 关闭_]**。 |
 | **[!UICONTROL 回填数据]** | 数据集的回填数据的状态。<p>![状态为红色](assets/status-red.svg)   **[!UICONTROL _x _回填失败]**，表示回填失败的次数，<p>![状态为红色](assets/status-orange.svg)   **[!UICONTROL _x _正在处理回填]**，正在处理的回填次数，<p>![状态为绿色](assets/status-green.svg)   **[!UICONTROL _x _回填完成]**，已完成的回填次数，以及<p>如果没有配置回填，则![状态为灰色](assets/status-gray.svg)   **[!UICONTROL _关闭_]**。<p>要显示包含数据集过去回填情况概述的对话框，请选择 <img src="./assets/pastbackfill.svg" alt="过去的回填" width="15"/> **[!UICONTROL 过去的回填]**。 |
 | **[!UICONTROL 数据源类型]** | 数据集添加到连接时定义的数据源类型。 |
-| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。 临时或关联型数据集通过&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。 例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
+| **[!UICONTROL 数据集类型]** | [数据集类型](create-connection.md#dataset-types)。 类型可以是&#x200B;**[!UICONTROL 事件]**、**[!UICONTROL 轮廓]**、**[!UICONTROL 查找]**&#x200B;或&#x200B;**[!UICONTROL 摘要]**。 临时或关系数据集由&#x200B;**[!UICONTROL （临时）]**&#x200B;或&#x200B;**[!UICONTROL （关系）]**&#x200B;标识。 例如，**[!UICONTROL 事件（临时）]**&#x200B;或&#x200B;**[!UICONTROL 查找（关系）]**。 |
 | **[!UICONTROL 架构]** | 此数据集所基于的 Experience Platform 架构。 |
 | **[!UICONTROL 数据集 ID]** | 在 Experience Platform 中生成的数据集 ID。 |
 

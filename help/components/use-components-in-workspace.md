@@ -32,7 +32,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 92%
@@ -129,7 +129,7 @@ ht-degree: 92%
 向自由格式表中的列添加区段时，区段会应用于表列中的所有内容。 您还可以添加区段作为流失可视化图表的一部分。
 
 * 在组件中使用区段
-当您定义[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)甚至[区段](/help/components/segments/seg-builder.md)等组件时，可以将区段用作定义的一部分。
+当您定义诸如[计算量度](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md)、[注释](/help/components/annotations/create-annotations.md#annotation-builder)甚至[区段](/help/components/segments/seg-builder.md)之类的组件时，可以将区段用作定义的一部分。
 
 
 ### 在项目中添加日期范围
