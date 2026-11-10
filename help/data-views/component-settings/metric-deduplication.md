@@ -24,10 +24,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 76%
+source-wordcount: '303'
+ht-degree: 73%
 ---
 # 量度重复数据删除组件设置 {#metric-deduplication-component-settings}
 
@@ -54,6 +54,3 @@ ht-degree: 76%
 
 {style="table-layout:auto"}
 
->[!CAUTION]
->
->在 UTC 时间的足月前评估在&#x200B;_人员_&#x200B;范围的重复数据删除。 如果某些实例发生在足月内但在报告日期外，则不足月报告时段可能并不显示所有第一个或最后一个实例。
