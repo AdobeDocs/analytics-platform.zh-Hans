@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
+source-git-commit: 7f081993082ce478cc0032ece7f100eb0fb40438
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2111'
 ht-degree: 0%
 ---
 # 在Customer Journey Analytics和Adobe Analytics中比较数据馈送
@@ -100,6 +100,7 @@ Customer Journey Analytics和Adobe Analytics中的数据馈送允许您向第三
 | **持久性模型**<br/>&#x200B;维度值如何或是否从一个事件持续到下一个事件。 | 灵活。 数据视图中的持久性设置（分配和到期）在生成馈送时在报告时应用。 支持数据视图中可用的所有分配设置：**原有**、**最近**、**全部**、**第一个已知**&#x200B;和&#x200B;**最后一个已知**。 | 仅表示&#x200B;**最近（最近联系）**&#x200B;和&#x200B;**原始值（首次联系）**&#x200B;归因模型。 线性分配的处理方式与最近联系相同。 |
 | **子事件处理**<br/>&#x200B;子事件在数据馈送输出中的表示方式。 | 以单行表示，但保留关系层次结构。 有关详细信息，请参阅数据馈送中的[子事件组件](/help/components/exports/cja-data-feeds/df-sub-event.md)。 | 在一行中表示为扁平的分隔字符串。 解析字符串需要自定义逻辑。 |
 | **输出文件格式**<br/>&#x200B;用于数据馈送输出文件的格式已传送到您的云目标。 | Parquet<p>本机支持复杂的嵌套和结构化数据。 诸如`post_product_list`之类的字段表示为结构化数组/嵌套对象。 </p><p>需要Parquet感知工具才能读取，例如BigQuery、Snowflake或Apache Spark。</p><p>架构结构嵌入在输出文件中。</p><p>有关详细信息，请参阅[处理数据馈送中的Parquet文件](/help/components/exports/cja-data-feeds/df-parquet.md)。</p> | TSV<p>平坦、可读的行。 本身不支持结构化数据；复杂字段（如产品列表）必须编码为需要自定义分析逻辑的专有分隔字符串。</p> |
+| **压缩格式**<br/>&#x200B;输出文件的压缩方式。 | Snappy、GZip或Z Standard (Zstd)。 压缩应用于每个Parquet文件，因此读取Parquet的工具可以直接加载文件，而无需先解压缩。<p>若要比较格式并选择一种格式，请参阅[创建数据馈送](/help/components/exports/cja-data-feeds/create-feed.md#create-and-configure-data-feed)中的&#x200B;**压缩格式**&#x200B;设置。</p> | Gzip (`.tar.gz`)或Zip (`.zip`)。 压缩将应用于整个文件。 |
 | **输出文件路径**<br/>&#x200B;用于传送的输出文件的目录结构。 | 使用&#x200B;**配置单元样式分区路径**（例如，`year=2024/month=01/day=15/`），在数据湖环境（如Databricks或Apache Spark）中查询数据时启用高效分区修剪。 | 使用平面目录结构。 不支持配置单元样式路径。 |
 | **交付目标**<br/>&#x200B;可以发送数据馈送输出文件的云存储位置。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 | Amazon S3、Azure RBAC、Azure SAS、Google云平台。 <p>还支持&#x200B;**SFTP**。</p> |
 | **与Analysis Workspace的相似性**<br/>&#x200B;数据馈送生成器是否使用与Analysis Workspace相同的组件和术语。 | 数据馈送中的左边栏类似于Workspace左边栏，并且数据馈送中可用的组件也在Workspace中可用。 | 变量名称的静态列表，这些名称不一定与您在Analysis Workspace中看到的内容相匹配。 |

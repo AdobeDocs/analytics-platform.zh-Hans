@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
+source-git-commit: f77f416ad958b28a8489d7a6eb13100ba699236e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -35,7 +35,9 @@ Customer Journey Analytics数据馈送以Parquet格式交付文件。 大多数�
 
 * **嵌套字段**： Parquet以本机方式表示嵌套字段，如产品列表。 CSV和TSV只能通过将它们编码为字符串来表示它们。 有关详细信息，请参阅数据馈送中的[子事件组件](/help/components/exports/cja-data-feeds/df-sub-event.md)。
 
-* **大型导出**： Parquet通常可降低存储和传输成本。 它还可避免在加载数据时进行文本解析和类型推测。
+* **内置架构**：每个Parquet文件存储自己的架构，包括列名、数据类型和嵌套结构。 由于架构位于文件中，因此Data Warehouse可以直接从文件创建表。 您无需提供单独的头文件或架构定义，并且Data Warehouse无需推断数据类型。
+
+* **大型导出**： Parquet通常可降低存储和传输成本。 它还可避免在加载数据时进行文本解析。
 
 ## Parquet与CSV、TSV和JSON的比较
 
@@ -49,7 +51,6 @@ CSV、TSV和JSON是常见的基于文本的文件格式：
 
 | 特征 | Parquet | CSV或TSV | JSON |
 | --- | --- | --- | --- |
-| **文件大小** | 最小。 压缩内置于文件中，工具仅解压缩查询读取的列。 | 更大。 压缩（如gzip）适用于整个文件，因此工具必须解压缩整个文件才能读取它，并且通常无法并行读取。 | 最大。 字段名称在每个记录中重复。 |
 | **查询速度** | 快。 查询只读取它需要的列。 | 慢点。 必须读取并解析整行。 | 慢点。 必须读取并解析整行。 |
 | **数据类型** | 已键入。 架构将嵌入到文件中。 | 无类型。 所有值均为文本，加载数据时会推断其类型。 | 打字不严。 |
 | **嵌套数据** | 本机支持数组和对象。 | 不支持。 数组和对象必须拼合或编码为字符串。 | 本机支持数组和对象。 |
