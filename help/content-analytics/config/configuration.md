@@ -68,12 +68,12 @@ ht-degree: 67%
 ### Web
 
 * 您已将 Content Analytics 中使用的特征化服务的用户代理和 IP 地址列入允许列表。 要配置的用户代理字符串是：<code>AdobeFeaturization/1.0</code>。
-* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
+* 如果您[使用 JavaScript 实施了 Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/js/install/library){target="_blank"}用于定期收集行为数据，请确保您使用了默认名称 <code>alloy</code> 为 JavaScript 库。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
 * 如果您决定收集Content Analytics体验，请确保您根据对网页所做的更改来设置和更新Content Analytics版本控制。
-* 您必须具有[数据收集权限](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}：
-  * [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}权限。
-  * [Experience Platform数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}权限。
+* 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions){target="_blank"}：
+  * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}权限。
+  * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}权限。
 * 您已仔细考虑了以下重要的配置选项：
 
   * 您的网站适合用于体验报告。 只有满足以下条件才可以生成正确的体验报告：
@@ -86,9 +86,9 @@ ht-degree: 67%
 
 * 请确保为移动设备应用程序启用了[Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/)和[Edge Network的Experience Platform标识](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/)扩展。
 * 您具有 Customer Journey Analytics 产品管理员角色，并具有管理连接和管理数据视图的额外权限。
-* 您必须具有[数据收集权限](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}：
-  * [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}权限。
-  * [Experience Platform数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}权限。
+* 您必须具有[数据收集权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions){target="_blank"}：
+  * [Experience Platform](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"}权限。
+  * [Experience Platform数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}权限。
 
 
 
