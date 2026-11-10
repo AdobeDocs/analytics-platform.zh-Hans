@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 90%
+source-wordcount: '624'
+ht-degree: 88%
 ---
 # AAID、ECID、AACUSTOMID 和 Analytics 源连接器
 
@@ -48,7 +48,7 @@ Adobe Analytics ID (AAID) 是 Adobe Analytics 中的主要设备标识符，并�
 
 ## ECID
 
-ECID有时也称为MCID (Marketing Cloud ID)，它是一个单独的设备标识符字段，在使用[访客ID服务](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hans) (AppMeasurement)或Web SDK实施Analytics时，会在Adobe Analytics中填充该字段。 在 Adobe Analytics 数据馈送中，ECID 由 `mcvisid` 列表示。
+ECID有时也称为MCID (Marketing Cloud ID)，它是一个单独的设备标识符字段，在使用[访客ID服务](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/implementation/implementation-guides) (AppMeasurement)或Web SDK实施Analytics时，会在Adobe Analytics中填充该字段。 在 Adobe Analytics 数据馈送中，ECID 由 `mcvisid` 列表示。
 
 如果事件中存在 ECID，则 AAID 可能基于 ECID，具体取决于是否配置了 Analytics [宽限期](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=zh-Hans)。 另请参阅：[Analytics和ECID请求](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=zh-Hans)。
 

@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 96%
+source-wordcount: '995'
+ht-degree: 95%
 ---
 # 了解您的 Adobe Analytics 实施情况及其对升级到 Customer Journey Analytics 的影响 {#implementation-affects-upgrade}
 
@@ -139,7 +139,7 @@ Adobe Analytics 可以通过多种方式实施。 升级到 Customer Journey Ana
 | Experience Platform Web SDK (alloy.js) | Experience Platform Web SDK 是 Adobe 目前推荐的实施 Adobe Analytics 的方法。 Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 <p>有关该实施类型的更多信息，请参阅[使用 Adobe Experience Platform Edge Network 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/overview)。</p> | <ul><li>[（推荐）对 Experience Platform Web SDK 进行新的实施，以持续收集数据；使用 Analytics 源连接器收集历史数据](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 &#x200B;](/help/data-ingestion/aepwebsdk.md) </li><li>[配置 Adobe Analytics Web SDK 实施，以将数据发送到 Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
 | Experience Platform Web SDK 扩展（标记） | Experience Platform Web SDK 是 Adobe 目前推荐的针对 Web 数据实施 Adobe Analytics 的方法。 Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。 <p>有关此实施类型的详细信息，请参阅[使用 Adobe Experience Platform Web SDK 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/overview)</p> | <ul><li>[（推荐）对 Experience Platform Web SDK 进行新的实施，以持续收集数据；使用 Analytics 源连接器收集历史数据](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 &#x200B;](/help/data-ingestion/aepwebsdk.md)</li><li>[配置 Adobe Analytics Web SDK 实施，以将数据发送到 Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
 | Experience Platform Mobile SDK | Experience Platform Mobile SDK 是 Adobe 目前推荐的针对 Mobile 数据实施 Adobe Analytics 的方法。 Adobe Experience Platform Edge Network 允许您将发送到多个产品的数据发送到一个集中的位置。<p>Adobe Experience Platform Mobile SDK有助于在您的移动应用程序中支持Adobe的CX Enterprise解决方案和服务。 </p><p>有关此实施类型的详细信息，请参阅[使用 Adobe Experience Platform Mobile SDK 实施 Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/mobile-sdk/overview)</p> | <ul><li>[（推荐）对 Experience Platform Web SDK 进行新的实施，以持续收集数据；使用 Analytics 源连接器收集历史数据](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 &#x200B;](/help/data-ingestion/aepwebsdk.md) </li><li>[配置 Adobe Analytics Web SDK 实施，以将数据发送到 Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)</li></ul> |
-| 批量数据插入 API | 批量数据插入 API（BDIA）是一种 Adobe Analytics 功能，允许您以文件的形式批量上传服务器调用数据，而不是使用客户端库（如 AppMeasurement）。 </p><p>有关此实施类型的详细信息，请参阅[批量数据插入 API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/)。</p> | <ul><li>[（推荐）对 Experience Platform Web SDK 进行新的实施，以持续收集数据；使用 Analytics 源连接器收集历史数据](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 &#x200B;](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network 服务器 API 和 Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
+| 批量数据插入 API | 批量数据插入 API（BDIA）是一种 Adobe Analytics 功能，允许您以文件的形式批量上传服务器调用数据，而不是使用客户端库（如 AppMeasurement）。 </p><p>有关此实施类型的详细信息，请参阅[批量数据插入 API](https://developer.adobe.com/analytics-collection-apis/methods/bulk-data-insertion/)。</p> | <ul><li>[（推荐）对 Experience Platform Web SDK 进行新的实施，以持续收集数据；使用 Analytics 源连接器收集历史数据](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[Experience Platform Web SDK 的新实施 &#x200B;](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network 服务器 API 和 Edge Network](/help/data-ingestion/serverapi.md)</li></ul> |
 
 {style="table-layout:auto"}
 

@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 94%
+source-wordcount: '2334'
+ht-degree: 93%
 ---
 # 常见问题解答
 
@@ -285,7 +285,7 @@ Adobe 定期监控和执行使用限制。 “数据行数”表示可供在 Cus
 
 Adobe CX Enterprise使用区域数据收集(RDC)，以便访客与Adobe和非Adobe解决方案之间的交互尽可能靠近访客。 在数据收集中心（DCC，也称为边缘站点，它是 Platform 边缘网络的一部分）区域性地收集数据后，将根据您的数据流和/或事件转发的配置通过一个安全的连接将这些数据转发到相关的解决方案。
 
-![使用边缘网络的数据流](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+有关数据如何通过Edge Network的图表，请参阅[数据收集概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/home)。
 
 区域数据收集过程包括以下步骤：
 
@@ -315,4 +315,4 @@ RDC 目前包括以下位置（可能发生变化）：
 Customer Journey Analytics 需要来自 Adobe Experience Platform 的数据集，因此，您的数据流/事件转发配置需要 Adobe Experience Platform 服务将数据从区域数据中心路由到 Adobe Experience Platform 实例所在的数据中心。 Customer Journey Analytics 及其支持服务和基础设施部署在同一个 Adobe Experience Platform 实例中。
 
 
-有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=zh-Hans)。
+有关在 Adobe Experience Platform Edge Network 及其区域数据中心之外收集数据的过程，请参阅[数据收集概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/collection/home)。

@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7436'
 ht-degree: 92%
 ---
 
@@ -165,7 +165,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 媒体收藏集：Adobe Source Connector 针对新的媒体报告 XDM 的更新 | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025 年 2 月** |  |
 | 媒体收藏集：Adobe Source Connector 针对新的媒体报告 XDM 的更新 | Analytics 源连接器会自动[将 Adobe Analytics 中的流媒体数据映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en)到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 |
-| BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en)。 |
+| BI 扩展 - 扩展支持 | Customer Journey Analytics BI 扩展现在[支持 Looker、Jupyter Notebook 和 R Studio](/help/use-cases/data-views/bi-extension-usecases.md)。 |
 | **2025 年 1 月** |  |
 | 更新的 Connections 使用体验 | 现在，Connection 中的 [使用情况](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) 选项卡增强了以下类型可报告行的显示效果：核心数据、摄取的数据和历史数据。 您还可以按连接、数据集、沙盒或标记查看和细分使用情况数据。 |
 | 使用情况量度 | 更新了有关改进的[使用情况量度](/help/connections/manage-connections.md#usage)界面的文档。 |
