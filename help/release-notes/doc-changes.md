@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '7436'
+source-wordcount: '7485'
 ht-degree: 92%
 ---
 
@@ -69,6 +69,8 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 
 | 功能 | 描述 |
 |---|---|
+| **2026年11月** | |
+| 指标去重范围 | 删除了将[量度的重复数据删除范围设置为“人员](/help/data-views/component-settings/metric-deduplication.md)”时所应用的警告，该设置表明已使用完整的日历月评估该量度。 对于将重复数据删除范围设置为“人员”的量度，重复数据删除现在仅适用于选定的报表窗口。 |
 | **2026年10月** | |
 | 数据视图的护栏 | 更新了组织最大数据视图数的[guadrail](/help/technotes/guardrails.md)（从2,000到5,000）。 |
 | 将付费媒体数据与Web数据连接起来 | [用例指南](/help/use-cases/cross-channel/paid-media-web.md)如何将付费媒体数据与Web数据联接。 |
