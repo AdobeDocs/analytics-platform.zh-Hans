@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: a48eccd77887e94bce5c0ef18bd070877601ddbd
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 73%
+source-wordcount: '1773'
+ht-degree: 72%
 ---
 # 访问控制
 
@@ -195,7 +195,7 @@ ht-degree: 73%
 
 | 类别 | 权限 | 描述 |
 | --- | --- | ---|
-| [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换到&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。 如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。 |
+| [!UICONTROL 数据视图] | *数据视图名称* | 如果您将&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换为&#x200B;**[!UICONTROL 开启]**，则属于此产品配置文件的用户可以查看所有现有和新创建的数据视图。 这包括Adobe为您创建的数据视图。<p>如果此设置被设置为&#x200B;**[!UICONTROL 关闭]**，则可以选择用户有权访问的特定数据视图。  </p> |
 | [!UICONTROL 报告工具] | [!UICONTROL 引导式分析访问权限] | 允许用户访问[引导分析](/help/guided-analysis/overview.md)。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 计算量度创建] | 允许用户创建[计算量度](/help/components/calc-metrics/calc-metr-overview.md)。 用户只能标记、共享、删除和重命名他们创建的计算指标或与他们共享的计算指标。 |
 | [!UICONTROL 报告工具] | [!UICONTROL 区段创建] | 允许用户创建[区段](/help/components/segments/seg-overview.md)。 用户只能标记、共享、删除和重命名他们创建的区段或与他们共享的区段。 |
@@ -245,3 +245,6 @@ ht-degree: 73%
 有权访问数据视图的用户只能使用管理员在这个数据视图中包含的量度和维度。 管理员可以在数据视图中使用[包含/排除功能](/help/data-views/component-settings/include-exclude-values.md)或[值分段](../data-views/component-settings/value-bucketing.md)组件设置从数据视图中排除或聚合某些维度值。
 
 例如：您从一个其中包含数据集中单个患者数据的组件，在数据视图中创建了一个名为&#x200B;*高血压*&#x200B;的量度。 您使用值分段来仅提供对分段值的访问权限，以便数据的用户不会看到各个患者的数据。
+
+
+
