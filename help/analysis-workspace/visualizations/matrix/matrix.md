@@ -74,7 +74,7 @@ Analysis Workspace中的矩阵可视化图表允许您查看来自两个维度�
 
 ## 在矩阵、自由格式表、维恩图或散点图可视化图表之间进行选择
 
-矩阵可视化图表与使用自由格式表](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)中的多个维度列的[、[维恩可视化图表](/help/analysis-workspace/visualizations/venn.md)和[散点可视化图表](/help/analysis-workspace/visualizations/scatterplot.md)具有相似之处。 每个可视化图表都会显示组件如何相互关联，但它们使用的组件以及显示结果的方式有所不同。
+矩阵可视化图表与使用自由格式表[&#128279;](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)中的多个维度列的、[维恩可视化图表](/help/analysis-workspace/visualizations/venn.md)和[散点可视化图表](/help/analysis-workspace/visualizations/scatterplot.md)具有相似之处。 每个可视化图表都会显示组件如何相互关联，但它们使用的组件以及显示结果的方式有所不同。
 
 ### 何时使用每个可视化图表
 
