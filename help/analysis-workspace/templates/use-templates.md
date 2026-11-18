@@ -1168,20 +1168,20 @@ Analysis Workspace 中的模板（或公司模板）可帮助您快速洞察最�
 | [!UICONTROL **B2B 购买群组活动**] | 将每个帐户内的购买群组活动可视化，为帐户和购买群组营销策略提供参考。<p>**这可以帮助您**&#x200B;直观地了解哪些购买群组以及这些购买群组中的哪些人参与度最高，突出显示群组参与度方面的差异。</p><p>**根据您获得的见解，您可以**&#x200B;采取很多措施，例如尝试与购买群组中那些似乎未参与的人进行更多接触。</p> |
 
 
-### 营销活动分析 {#marketing-campaign-analytics-templates}
+### Marketing Campaign Analytics {#marketing-campaign-analytics-templates}
 
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
->title="查看来自Marketing Campaign Analytics生成的选定模型的洞察。"
->abstract="**这有助于您**&#x200B;更好地了解在Marketing Campaign Analytics（以前为Mix Modeler）中生成的模型中的增量见解。 <br/>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul>"
+>title="查看 Marketing Campaign Analytics 生成的所选模型的分析洞察。"
+>abstract="**这可以帮助您**&#x200B;更好地了解 Marketing Campaign Analytics（之前为 Mix Modeler）生成的模型带来的增量洞察。 <br/>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul>"
 
 可使用以下模板：
 
 &#x200B;| 模板名称 | 为什么使用此模板<!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Marketing Campaign Analytics增量模型分析**] | 查看来自Marketing Campaign Analytics生成的选定模型的洞察。<p>**这有助于您**&#x200B;更好地了解在Marketing Campaign Analytics（以前为Mix Modeler）中生成的模型中的增量见解。<p>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul></p> |
+| [!UICONTROL **Marketing Campaign Analytics增量模型分析**] | 查看 Marketing Campaign Analytics 生成的所选模型的分析洞察。<p>**这可以帮助您**&#x200B;更好地了解 Marketing Campaign Analytics（之前为 Mix Modeler）生成的模型带来的增量洞察。<p>**基于这些洞察**，您能够：<ul><li>可视化并量化组织营销活动的影响。</li><li>识别表现优异的渠道。</li><li>识别可能需要优化的渠道。</li></ul></p> |
 
 
 
