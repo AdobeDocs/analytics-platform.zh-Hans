@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: b46a27ff9faca74c3c2baa7938a588b643633705
+source-git-commit: 3199a70eee577f4e283208e2c5089c05fe20ed0d
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 10%
@@ -56,8 +56,6 @@ Analysis Workspace中的数据字典可帮助用户和管理员跟踪并更好�
 
 ## 自动生成描述
 
-{{release-limited-testing-section}}
-
 Customer Journey Analytics可以使用创新型人工智能来为您编写描述，而不是手动编写每个描述。 您可以为单个组件生成说明，也可以同时为多个组件生成说明。
 
 生成的描述：
@@ -83,7 +81,7 @@ Customer Journey Analytics可以使用创新型人工智能来为您编写描述
 
 您可以在Customer Journey Analytics的以下区域中生成描述。 某些位置允许您为多个组件生成描述，而其他位置则没有。
 
-选择一个位置以了解如何在该位置生成描述。
+Select是一个学习如何在该处生成描述的位置。
 
 | 位置 | 支持的组件 | 单个组件 | 多个组件 |
 | --- | --- | --- | --- |
