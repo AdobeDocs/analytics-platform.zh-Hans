@@ -32,17 +32,17 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 388edf58e0950e0d018ce08b2aa2d0a562252c5a
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 64%
+source-wordcount: '1373'
+ht-degree: 58%
 ---
 # 比较 Adobe Analytics 和 Customer Journey Analytics 的数据处理
 
 您通常需要能够在数据可用于报告之前对其进行处理。 您可以在从收集数据到生成报告或可视化的过程中的多个阶段处理这些数据。
 
-在 Adobe Analytics 中，大部分数据处理是在收集数据后立即进行的。 VISTA规则、处理规则、营销渠道处理规则等功能可用于支持此&#x200B;**收集时间处理**。
-然后，数据会被存储，并且您可以在报告时应用其他处理。 例如，划分维度、应用分段或选择不同的归因模型。 该&#x200B;**报告时处理**&#x200B;会即时发生。
+在Adobe Analytics中，大多数数据处理会在收集数据后立即进行，并在发送到报表包后永久进行。 VISTA规则、处理规则和营销渠道处理规则等功能可用于支持此&#x200B;**收集时间处理**。
+在报告时，您可以应用其他处理，例如划分维度、应用分段或选择其他归因模型。 该&#x200B;**报告时处理**&#x200B;会即时发生。
 
 在 Adobe Analytics 中，报告时处理通常意味着比收集时发生的处理量要少的处理量。
 
@@ -52,11 +52,13 @@ ht-degree: 64%
 
 ![Customer Journey Analytics 报告时处理](../assets/cja-processing.png)
 
-了解各种报告功能的数据处理差异有助于了解哪些量度在哪里可用以及它们存在差异的可能原因。
+了解各种报表功能的数据处理差异，有助于了解哪些量度在哪里可用以及它们存在差异的可能原因。
 
 例如，*访问次数*&#x200B;被定义为Adobe Analytics中数据处理时的量度。 在报告时，在Customer Journey Analytics中将&#x200B;*会话*&#x200B;计算为指标。 因此，根据Customer Journey Analytics数据视图中会话定义的规则，这两个量度可能会有所不同。
 
-此外，在Analytics Source Connector创建的数据集中，访问和会话量度不可用。 因此，需要您在查询逻辑中定义会话，以便进行比较。
+此外，Analytics在数据收集时通过可用的[识别方法](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/id/overview)来识别&#x200B;*独特访客*。 Customer Journey Analytics通过连接的事件[数据集设置](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-connections/create-connection#dataset-settings)中配置为人员ID的字段来识别&#x200B;*人员*。
+
+
 
 ## 术语 {#terms}
 
