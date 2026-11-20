@@ -76,7 +76,7 @@ ht-degree: 57%
 
 虽然派生字段为Adobe Analytics中的营销渠道提供了类似的基于规则的处理逻辑，但两个平台之间的体系结构差异可能会导致两个平台之间的结果有所不同。
 
-* 仅在Adobe Analytics中支持[覆盖最近联系渠道](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)设置
+* 仅在Adobe Analytics中支持[覆盖最近联系渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)设置
 
-* [营销渠道到期](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)在非活动状态一段时间后开始，而Customer Journey Analytics持久性到期则基于值的实例化。
+* [营销渠道到期](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)在非活动状态一段时间后开始，而Customer Journey Analytics持久性到期则基于值的实例化。
 
