@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 98%
+source-wordcount: '1114'
+ht-degree: 52%
 ---
 # 与 Adobe Analytics 进行比较
 
@@ -43,33 +43,34 @@ ht-degree: 98%
 
 这两个解决方案之间的根本区别在于构建报告和分析时（可）考虑的数据广度。
 
-在 Customer Journey Analytics 中，*任何*&#x200B;数据源都可以是用于报告和分析的数据的一部分。 Adobe Analytics 主要针对从网站和移动应用程序收集的在线数据。 Adobe Analytics 提供从其他源导入数据的功能，但此功能的主要用途在于提供有关以前提到过的在线数据的更多上下文。
+在 Customer Journey Analytics 中，*任何*&#x200B;数据源都可以是用于报告和分析的数据的一部分。 Adobe Analytics主要针对从网站和移动应用程序收集的在线数据。 Adobe Analytics提供从其他来源导入数据的功能，但此功能的主要目的是围绕前面提到的在线数据提供更多上下文。
 
 ## 数据收集
 
-Customer Journey Analytics 依赖存储在 Adobe Experience Platform 数据集中的数据。 您有若干选项可在 Experience Platform 中从这些数据集收集和摄取数据。 [数据摄取概述](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=zh-Hans)中更详细地介绍了这些选项。
+Customer Journey Analytics 依赖存储在 Adobe Experience Platform 数据集中的数据。 您有若干选项可在 Experience Platform 中从这些数据集收集和摄取数据。 [数据摄取概述](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-data-ingestion/data-ingestion)中详细介绍了这些选项。
 
-Adobe Analytics 最终在解决方案本身中收集数据。 同样，您有若干选项可收集这些数据，在 [Adobe Analytics 实施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)中更详细地概述了这些选项。
+Adobe Analytics 最终在解决方案本身中收集数据。 同样，您有多个选项可用于收集这些数据，在[Adobe Analytics Implementation Guide](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/home)中有详细介绍。
 
-可使用 [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans) 在 Customer Journey Analytics 中使用您的 Adobe Analytics 报告包数据。 此连接器将在 Adobe Analytics 中收集的数据摄取到 Experience Platform 中。 您随后即可在 Customer Journey Analytics 中创建与此数据集的连接。 有关更多信息，请参阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=zh-Hans)。
+可使用 [Analytics Source Connector](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) 在 Customer Journey Analytics 中使用您的 Adobe Analytics 报告包数据。 此连接器将在 Adobe Analytics 中收集的数据摄取到 Experience Platform 中。 您随后即可在 Customer Journey Analytics 中创建与此数据集的连接。 有关更多信息，请参阅[在 Customer Journey Analytics 中使用 Adobe Analytics 报告包数据](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja)。
 
+Adobe Analytics报表包中的数据与构成Customer Journey Analytics连接的Adobe Experience Platform数据集中所存储的数据无关。 因此，Adobe建议您单独评估每个平台中的数据，而不是希望两个平台都反映相同的值。
 
 ## 数据处理
 
 一般需要处理这些数据以确保可正确地将数据用于报告，然后才能报告这些数据。 可在收集时和报告时处理数据。
 
-Customer Journey Analytics 一般是要在报告时处理所收集并存储在 Experience Platform 数据集中的数据。 Customer Journey Analytics 提供强大的报告时处理功能以确保数据准备好进行报告和分析。 如果必须映射、转换和验证数据后才能将数据摄取到 Experience Platform 中，则可使用 Experience Platform 的[数据准备](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hans)功能。
+通常，Customer Journey Analytics设计用于在报告时处理Experience Platform数据集中所收集和存储的数据。 Customer Journey Analytics 提供强大的报告时处理功能以确保数据准备好进行报告和分析。 可以修改[派生字段](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/derived-fields)和[组件设置](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)，并将其逆向应用于历史数据。 如果您必须在摄取数据之前映射、转换和验证数据，则可以使用Experience Platform的[数据准备](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/home)功能。
 
-在 Adobe Analytics 中，在收集数据后立即进行大部分数据处理。
+在 Adobe Analytics 中，在收集数据后立即进行大部分数据处理。 此时会应用营销渠道规则、处理规则、eVar持久性和其他后处理逻辑，这些规则在报表包中是永久性的。 对其中任何配置所做的更改只会影响从该时间点开始的新传入数据。
 
-有关更多信息，请参阅[比较 Adobe Analytics 和 Customer Journey Analytics 的数据处理](data-processing-comparisons.md)和[处理规则、VISTA 和分类与数据准备](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=zh-Hans)。
+有关更多信息，请参阅[比较 Adobe Analytics 和 Customer Journey Analytics 的数据处理](data-processing-comparisons.md)和[处理规则、VISTA 和分类与数据准备](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep)。
 
 
 ## 术语
 
-Customer Journey Analytics 可灵活定义维度和量度，这得益于底层基于体验数据模型 (XDM) 的架构所提供的灵活性。 例如，Adobe Analytics 使用访客数、访问次数和点击次数，而 Customer Journey Analytics 使用人员数、会话数和事件数作为等效概念（您可将命名更改为您认为合适的形式）。
+Customer Journey Analytics 可灵活定义维度和量度，这得益于底层基于体验数据模型 (XDM) 的架构所提供的灵活性。 例如，在Adobe Analytics使用访客、访问和点击的情况下，Customer Journey Analytics使用人员、会话和事件（您可以根据需要更改命名）。
 
-有关术语中各种区别的详细信息，请参阅[比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=zh-Hans)。
+有关术语中各种区别的详细信息，请参阅[比较通过 Analytics Source Connector 传递的 Analytics 数据的术语](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology)。
 
 
 ## 虚拟报告环境和沙盒
@@ -78,18 +79,22 @@ Adobe Analytics 具有虚拟报告包的概念，通过这个概念，可为收�
 
 Customer Journey Analytics 具有一个类似的概念，称为数据视图。 数据视图是一些容器，通过这些容器，可确定如何解释从连接获得的数据。 利用它们，可以非常灵活地指定和配置维度和量度以准备用于您的报告和分析。
 
-Experience Platform 提供沙盒，可将其视为用于容纳给定环境中的数据和应用程序的容器。 沙盒的功能与 Adobe Analytics 虚拟报告包或 Customer Journey Analytics 数据视图无关。 Adobe Analytics 自身完全不依赖 Experience Platform 沙盒，并且完全与其无关。 Customer Journey Analytics 支持 Experience Platform 沙盒，但有一些重要的注意事项。
+Experience Platform提供了沙盒，沙盒可用作容纳给定环境的数据和应用程序的容器。 沙盒的功能与 Adobe Analytics 虚拟报告包或 Customer Journey Analytics 数据视图无关。 Adobe Analytics本身与Experience Platform沙盒没有依赖关系或关系。 Customer Journey Analytics 支持 Experience Platform 沙盒，但有一些重要的注意事项。
 
-有关更多信息，请参阅[虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=zh-Hans)。
+有关更多信息，请参阅[虚拟报告包、数据视图、Adobe Experience Platform 沙盒和 Analytics Source Connector](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc)。
 
 
 ## 身份标识
 
 Customer Journey Analytics 支持您定义的身份标识，这些身份标识是包含您的数据的数据集所遵循的架构的一部分。 因此，身份标识是 Experience Platform 的基本概念，Customer Journey Analytics 在设置[连接](../../connections/overview.md)（通过为每个数据集定义人员 ID）以及应用[拼合](../../stitching/overview.md)以进行跨渠道分析时将使用这一概念。 Experience Platform SDK和API使用的一个重要标识是ECID。
 
-Adobe Analytics 使用一组更明确的身份标识字段，例如 Adobe Analytics ID (AAID)。 在使用 Analytics 源连接器时，将对这些 Adobe Analytics 标识字段进行特殊处理。 有关更多信息，请参阅 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=zh-Hans)。
+Adobe Analytics 使用一组更明确的身份标识字段，例如 Adobe Analytics ID (AAID)。 使用Analytics Source Connector时，这些Adobe Analytics标识字段将得到特殊处理。 有关更多信息，请参阅 [AAID、ECID、AACUSTOMID 和 Analytics Source Connector](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc)。
 
+
+## 高基数维度
+
+Customer Journey Analytics存储整个维度值，并且一个维度可以跨越的唯一值数量没有限制。 相比之下，Adobe Analytics使用32位哈希来映射维度值，以优化报表和存储。 此行为可能导致报表中出现[哈希冲突](https://experienceleague.adobe.com/en/docs/analytics/implementation/validate/hash-collisions)。 在达到唯一限制阈值后，Adobe Analytics还会将值存储到[低流量](https://experienceleague.adobe.com/en/docs/analytics/technotes/low-traffic)行项目中。 使用这些维度的区段可能会显示Adobe Analytics报表与Customer Journey Analytics报表之间的差异。
 
 ## 支持的功能
 
-有关 Adobe Analytics 功能以及 Customer Journey Analytics 如何支持这些功能的概述，请参阅 [Customer Journey Analytics 功能支持](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html?lang=zh-Hans)。
+您可以在[Adobe Analytics功能支持](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa)上找到Customer Journey Analytics功能以及Customer Journey Analytics如何支持这些功能的概述。

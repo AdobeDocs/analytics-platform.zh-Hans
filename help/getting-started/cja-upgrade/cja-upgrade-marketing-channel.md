@@ -27,10 +27,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 57%
 ---
 # 创建 Customer Journey Analytics 的营销渠道派生字段 {#create-marketing-channel-derived-field}
 
@@ -47,8 +47,7 @@ ht-degree: 100%
 
 使用 Analytics Source Connector 时，“营销渠道”数据会通过该连接器流入 Customer Journey Analytics。 在传统的 Adobe Analytics 中配置营销渠道规则，其中不支持某些规则。 如需了解更多信息，请参阅[使用营销渠道维度](/help/use-cases/aa-data/marketing-channels.md)。
 
-为了在使用 Experience Platform Web SDK 时使用 Customer Journey Analytics 中的营销渠道，您可以使用数据视图中的派生字段为 Customer Journey Analytics 重新创建相同的营销渠道和处理规则。
-
+要在Customer Journey Analytics中将营销渠道与Experience Platform Web SDK结合使用，请在数据视图中使用派生字段重新创建相同的营销渠道和处理规则。
 1. 在 Customer Journey Analytics，选择您想要添加营销渠道的数据视图。
 
 1. 在数据视图中，选择&#x200B;**[!UICONTROL 组件]**&#x200B;选项卡。
@@ -61,7 +60,7 @@ ht-degree: 100%
 
 1. 将&#x200B;**[!UICONTROL 营销渠道]**&#x200B;模板拖到空白画布上。
 
-1. 自定义每个营销渠道的逻辑，以确保它与您在 Adobe Analytics 环境中识别每个渠道所使用的逻辑相匹配。
+1. 自定义每个营销渠道的逻辑。 请确保其与在Adobe Analytics环境中用于标识每个渠道的逻辑相匹配。
 
    您可以通过修改输出渠道名称或添加逻辑来识别特定于您的组织的其他渠道。
 
@@ -72,3 +71,12 @@ ht-degree: 100%
    您的新派生字段将会被添加到派生字段 > 容器中，作为数据视图左边栏中架构字段的一部分。
 
 {{upgrade-final-step}}
+
+# Adobe Analytics和Customer Journey Analytics中的营销渠道之间的差异
+
+虽然派生字段为Adobe Analytics中的营销渠道提供了类似的基于规则的处理逻辑，但两个平台之间的体系结构差异可能会导致两个平台之间的结果有所不同。
+
+* 仅在Adobe Analytics中支持[覆盖最近联系渠道](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)设置
+
+* [营销渠道到期](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)在非活动状态一段时间后开始，而Customer Journey Analytics持久性到期则基于值的实例化。
+
