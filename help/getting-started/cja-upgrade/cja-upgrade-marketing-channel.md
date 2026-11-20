@@ -72,7 +72,7 @@ ht-degree: 57%
 
 {{upgrade-final-step}}
 
-# Adobe Analytics和Customer Journey Analytics中的营销渠道之间的差异
+&#x200B;# Adobe Analytics和Customer Journey Analytics中的营销渠道之间的差异
 
 虽然派生字段为Adobe Analytics中的营销渠道提供了类似的基于规则的处理逻辑，但两个平台之间的体系结构差异可能会导致两个平台之间的结果有所不同。
 
