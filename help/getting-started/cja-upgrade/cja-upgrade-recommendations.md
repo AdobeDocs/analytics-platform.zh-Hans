@@ -165,9 +165,9 @@ ht-degree: 73%
 
    1. [在Experience Platform UI中监视数据集摄取](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}，以确认批次已成功摄取到数据集中。
 
-   1. 检查数据集中的值是否符合您的预期。 您可以[在Experience Platform UI中预览数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}，或者，如果您有权访问Adobe CX Enterprise Coworker，则可以[与同事一起验证Experience Platform数据](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/data-validation-aep){target="_blank"}，以检查最近数据示例中的null值和与预期格式不匹配的值。
+   1. 检查数据集中的值是否符合您的预期。 您可以[在Experience Platform UI中预览数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}，或者，如果您有权访问Adobe CX Enterprise Coworker，则可以[与同事一起验证Experience Platform数据](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/data-validation-aep){target="_blank"}，以检查最近数据示例中的null值和与预期格式不匹配的值。
 
-   1. （视情况而定）如果包含流媒体数据，请检查您的媒体会话是否到达数据集。 您可以[检查流媒体事件的数据集](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/edge/reporting-schema#validate-your-implementation){target="_blank"}，或者，如果您有权访问合作者，您可以[与合作者验证您的流媒体实施](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/streaming-media-validation){target="_blank"}，以检查您的数据流、架构和数据集配置以及最近的媒体会话。
+   1. （视情况而定）如果包含流媒体数据，请检查您的媒体会话是否到达数据集。 您可以[检查流媒体事件的数据集](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/edge/reporting-schema#validate-your-implementation){target="_blank"}，或者，如果您有权访问合作者，您可以[与合作者验证您的流媒体实施](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/streaming-media-validation){target="_blank"}，以检查您的数据流、架构和数据集配置以及最近的媒体会话。
 
 1. [在 Customer Journey Analytics 中创建连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md){target="_blank"}。
 
@@ -179,7 +179,7 @@ ht-degree: 73%
 
 1. 验证数据是否流入Customer Journey Analytics中的数据视图。
 
-   您可以[在Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}中检查连接详细信息，或者，如果您有权访问同事，则可以[与同事](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/validate-dataset-quality-for-cja){target="_blank"}验证Customer Journey Analytics数据，以查看哪些数据集为您的连接和数据视图提供信息并检查其中的数据质量。
+   您可以[在Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}中检查连接详细信息，或者，如果您有权访问同事，则可以[与同事](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/validate-dataset-quality-for-cja){target="_blank"}验证Customer Journey Analytics数据，以查看哪些数据集为您的连接和数据视图提供信息并检查其中的数据质量。
 
 1. 在您的 Adobe Analytics 环境中，[使用 Analytics 库存](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/analytics-inventory){target="_blank"}了解 Adobe Analytics 环境的全面概述，包括项目和组件的数量、报告包、用户等。
 
@@ -197,7 +197,7 @@ ht-degree: 73%
 
 1. 比较Adobe Analytics中旧实施的数据与Customer Journey Analytics中新实施的数据，并确保您了解任何差异及其存在原因。
 
-   您可以在Analysis Workspace中通过产品和比较关键量度和维度构建相同的报表，或者，如果您有权访问同事，则可以[与同事](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/data-validation-aa-cja){target="_blank"}验证数据，以将报表包与数据视图进行比较，并了解导致差异的可能原因。
+   您可以在Analysis Workspace中通过产品和比较关键量度和维度构建相同的报表，或者，如果您有权访问同事，则可以[与同事](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/data-validation-aa-cja){target="_blank"}验证数据，以将报表包与数据视图进行比较，并了解导致差异的可能原因。
 
    有关数据可能不同的原因的详细信息，请参阅[比较Adobe Analytics和Customer Journey Analytics的数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md){target="_blank"}。
 
@@ -251,13 +251,13 @@ ht-degree: 73%
 
 如果您有权访问同事，则可以使用它来动态生成升级步骤：
 
-1. 在同事中，开始新聊天并请求同事帮助您规划从Adobe Analytics到Customer Journey Analytics的升级。 有关详细信息，请参阅[与同事一起规划实施](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/implementation-guide#adobe-analytics-to-customer-journey-analytics-upgrade){target="_blank"}。
+1. 在同事中，开始新聊天并请求同事帮助您规划从Adobe Analytics到Customer Journey Analytics的升级。 有关详细信息，请参阅[与同事一起规划实施](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/implementation-guide#adobe-analytics-to-customer-journey-analytics-upgrade){target="_blank"}。
 
    同事会向您询问有关环境和目标的问题，然后生成一个特定于贵组织的升级计划。 该计划可用作交互式核对清单，其中包含每个步骤的所有者、工作估计和依赖关系。 您还可以以CSV、Jira、Workfront或Markdown文件的形式下载计划。
 
 1. 按照计划中的步骤升级到Customer Journey Analytics。
 
-   要跟踪每个步骤的进度，请将您的计划转换为同事项目。 有关详细信息，请参阅[生成同事项目的实施核对清单](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/intelligent-checklist){target="_blank"}。
+   要跟踪每个步骤的进度，请将您的计划转换为同事项目。 有关详细信息，请参阅[生成同事项目的实施核对清单](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/intelligent-checklist){target="_blank"}。
 
 ### 使用Customer Journey Analytics中的升级指南生成升级步骤
 
