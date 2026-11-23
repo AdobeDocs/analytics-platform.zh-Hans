@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
+source-git-commit: da6fd038a1ec8a662550b5c31382e18dca18a9c3
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 57%
@@ -72,11 +72,11 @@ ht-degree: 57%
 
 {{upgrade-final-step}}
 
-&#x200B;# Adobe Analytics和Customer Journey Analytics中的营销渠道之间的差异
+## Adobe Analytics和Customer Journey Analytics中的营销渠道之间的差异
 
 虽然派生字段为Adobe Analytics中的营销渠道提供了类似的基于规则的处理逻辑，但两个平台之间的体系结构差异可能会导致两个平台之间的结果有所不同。
 
-* 仅在Adobe Analytics中支持[覆盖最近联系渠道](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)设置
+* 仅在Adobe Analytics中支持[覆盖最近联系渠道](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices)设置
 
-* [营销渠道到期](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)在非活动状态一段时间后开始，而Customer Journey Analytics持久性到期则基于值的实例化。
+* [营销渠道到期](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement)在非活动状态一段时间后开始，而Customer Journey Analytics持久性到期则基于值的实例化。
 
