@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
-source-wordcount: '7485'
-ht-degree: 92%
+source-wordcount: '7516'
+ht-degree: 91%
 ---
 
 # Customer Journey Analytics - 文档更新
@@ -70,6 +70,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | 功能 | 描述 |
 |---|---|
 | **2026年11月** | |
+| 升级到Customer Journey Analytics时使用合作者 | 更新了[从Adobe Analytics升级到Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)，其中包含指向新Adobe CX Enterprise Coworker功能的链接，如生成升级步骤和验证数据。 |
 | 指标去重范围 | 删除了将[量度的重复数据删除范围设置为“人员](/help/data-views/component-settings/metric-deduplication.md)”时所应用的警告，该设置表明已使用完整的日历月评估该量度。 对于将重复数据删除范围设置为“人员”的量度，重复数据删除现在仅适用于选定的报表窗口。 |
 | **2026年10月** | |
 | 数据视图的护栏 | 更新了组织最大数据视图数的[guadrail](/help/technotes/guardrails.md)（从2,000到5,000）。 |
@@ -162,7 +163,7 @@ Customer Journey Analytics 文档自创建以来进行了以下更新。
 | **2025 年 3 月** | |
 | Quantum Metric 用例 | 添加了从 [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md) 收集数据的用例。 |
 | 产品使用模板 | 新的工作区模板允许您查看 Customer Journey Analytics 产品在您的组织内如何使用。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-workspace/templates/use-templates)。 |
-| Customer Journey Analytics 升级指南 | 让您生成从 Adobe Analytics 升级到 Customer Journey Analytics 的分步指南。 要开始生成自定义指南，请登录 [!DNL Customer Journey Analytics]，然后在 **[!UICONTROL Workspace]** 选项卡上选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Customer Journey Analytics 升级指南 | 让您生成从 Adobe Analytics 升级到 Customer Journey Analytics 的分步指南。 要开始生成自定义指南，请登录 [!DNL Customer Journey Analytics]，然后在 **[!UICONTROL Workspace]** 选项卡上选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#upgrade-process) |
 | 数值维度的“无值”行项目的更新 | 对于数值维度，此更新允许您在区段中使用“无值”维度项，并在报告中对“无值”行项目进行细分。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
 | 媒体收藏集：Adobe Source Connector 针对新的媒体报告 XDM 的更新 | Analytics 源连接器会自动将 Adobe Analytics 中的流媒体数据映射到 Web SDK 使用的相同字段。 以前，数据被映射到旧位置和新位置，但未来只使用新位置。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **2025 年 2 月** |  |

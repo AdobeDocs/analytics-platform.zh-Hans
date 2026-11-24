@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 14%
@@ -181,4 +181,4 @@ ht-degree: 14%
 
 ## 按照建议的升级步骤操作
 
-准备好开始升级过程后，请按照[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或《Customer Journey Analytics升级指南》中动态生成的升级步骤操作。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。
+准备好开始升级过程后，请按照[建议的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#upgrade-process)或《Customer Journey Analytics升级指南》中动态生成的升级步骤操作。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。

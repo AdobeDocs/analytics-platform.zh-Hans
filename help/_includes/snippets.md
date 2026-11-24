@@ -1,5 +1,5 @@
 ---
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
 source-wordcount: '5607'
 ht-degree: 95%
@@ -206,7 +206,7 @@ Customer Journey Analytics 中的各种可视化图表旨在分析您为客户�
 
 ## 升级清单最后一步 {#upgrade-final-step}
 
-1. 继续遵循[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations)或 Customer Journey Analytics 升级指南动态生成的升级步骤。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。
+1. 继续遵循[推荐的升级步骤](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#upgrade-process)或 Customer Journey Analytics 升级指南动态生成的升级步骤。 要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。
 
 
 ## 草稿 Content Analytics 文档 {#draft-aca}

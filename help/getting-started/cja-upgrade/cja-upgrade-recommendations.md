@@ -45,14 +45,14 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
-source-wordcount: '3365'
-ht-degree: 90%
+source-wordcount: '3941'
+ht-degree: 73%
 ---
 # 从 Adobe Analytics 升级到 Customer Journey Analytics
 
-从 Adobe Analytics 升级到 Customer Journey Analytics 时，您可以按照[建议的升级步骤](#recommended-upgrade-steps-for-most-organizations)操作。 或者您可以为您组织的独特情况[动态生成升级步骤](#dynamically-generate-upgrade-steps-for-your-organization)。
+从 Adobe Analytics 升级到 Customer Journey Analytics 时，您可以按照[建议的升级步骤](#upgrade-process)操作。 或者您可以为您组织的独特情况[动态生成升级步骤](#dynamically-generate-upgrade-steps-for-your-organization)。
 
 ## 适用于大多数组织的建议升级步骤 {#upgrade-process}
 
@@ -62,7 +62,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->如果本节中描述的升级步骤不适合您的组织，请使用 Customer Journey Analytics 升级指南以动态生成适合您组织独特情况的升级步骤。 （要从 Customer Journey Analytics 访问升级指南，请选择&#x200B;**[!UICONTROL 工作区]**&#x200B;选项卡，然后在左侧面板中选择&#x200B;**[!UICONTROL 升级到 Customer Journey Analytics]**。 按照屏幕上的说明操作。）
+>如果本节中描述的升级步骤对贵组织不切实际，您可以[动态生成针对贵组织独特情况定制的升级步骤](#dynamically-generate-upgrade-steps-for-your-organization)。
 
 ### 高层建议升级流程 {#high-level-upgade-process}
 
@@ -161,7 +161,13 @@ ht-degree: 90%
 
    +++
 
-1. [验证您的 Web SDK 实施是否在将数据发送到数据集](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}。
+1. 验证Web SDK实施是否向数据集发送数据，以及数据是否正确：
+
+   1. [在Experience Platform UI中监视数据集摄取](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}，以确认批次已成功摄取到数据集中。
+
+   1. 检查数据集中的值是否符合您的预期。 您可以[在Experience Platform UI中预览数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/user-guide#preview){target="_blank"}，或者，如果您有权访问Adobe CX Enterprise Coworker，则可以[与同事一起验证Experience Platform数据](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/data-validation-aep){target="_blank"}，以检查最近数据示例中的null值和与预期格式不匹配的值。
+
+   1. （视情况而定）如果包含流媒体数据，请检查您的媒体会话是否到达数据集。 您可以[检查流媒体事件的数据集](https://experienceleague.adobe.com/zh-hans/docs/media-analytics/using/implementation/edge/reporting-schema#validate-your-implementation){target="_blank"}，或者，如果您有权访问合作者，您可以[与合作者验证您的流媒体实施](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/streaming-media-validation){target="_blank"}，以检查您的数据流、架构和数据集配置以及最近的媒体会话。
 
 1. [在 Customer Journey Analytics 中创建连接](/help/getting-started/cja-upgrade/cja-upgrade-connection.md){target="_blank"}。
 
@@ -171,7 +177,9 @@ ht-degree: 90%
 
 1. [在 Customer Journey Analytics 中创建数据视图](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md){target="_blank"}。
 
-1. [验证数据是否在流入 Customer Journey Analytics 中的数据视图](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}。
+1. 验证数据是否流入Customer Journey Analytics中的数据视图。
+
+   您可以[在Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}中检查连接详细信息，或者，如果您有权访问同事，则可以[与同事](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/validate-dataset-quality-for-cja){target="_blank"}验证Customer Journey Analytics数据，以查看哪些数据集为您的连接和数据视图提供信息并检查其中的数据质量。
 
 1. 在您的 Adobe Analytics 环境中，[使用 Analytics 库存](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/analytics-inventory){target="_blank"}了解 Adobe Analytics 环境的全面概述，包括项目和组件的数量、报告包、用户等。
 
@@ -187,7 +195,11 @@ ht-degree: 90%
 
    使用派生字段中的[营销渠道功能模板](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}可以为营销渠道快速创建一个派生字段。
 
-1. [将Adobe Analytics中旧实施的数据与Customer Journey Analytics中新实施的数据进行比较](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/data-validation-aa-cja)，确保您了解任何差异及其存在原因。
+1. 比较Adobe Analytics中旧实施的数据与Customer Journey Analytics中新实施的数据，并确保您了解任何差异及其存在原因。
+
+   您可以在Analysis Workspace中通过产品和比较关键量度和维度构建相同的报表，或者，如果您有权访问同事，则可以[与同事](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/data-validation-aa-cja){target="_blank"}验证数据，以将报表包与数据视图进行比较，并了解导致差异的可能原因。
+
+   有关数据可能不同的原因的详细信息，请参阅[比较Adobe Analytics和Customer Journey Analytics的数据处理](/help/getting-started/aa-vs-cja/data-processing-comparisons.md){target="_blank"}。
 
 1. 使用 Analytics 源连接器从 Adobe Analytics 中提取历史数据：
 
@@ -225,9 +237,29 @@ ht-degree: 90%
 
 ## 为您的组织动态生成升级步骤
 
-根据时间表和资源限制等多个因素，在[了解推荐的升级步骤](#recommended-upgrade-steps-for-most-organizations)中描述的推荐升级步骤可能并不适合您的组织。 在这种情况下，您可以为您组织的独特情况动态生成升级步骤。 生成这些步骤的过程会有所不同，具体取决于您是否有权访问 Customer Journey Analytics。
+根据时间表和资源限制等多个因素，[为大多数组织推荐的升级步骤](#upgrade-process)中所述的推荐升级步骤可能对您的组织不实用。 在这种情况下，您可以为您组织的独特情况动态生成升级步骤。
 
-### 对于有权访问 Customer Journey Analytics 的客户
+以下每种方法都会生成相同的自定义升级步骤。 当您完成这些步骤时，在获得多少帮助方面，它们有所不同：
+
+* **同事（最简单）：**&#x200B;回答有关您的实施的问题，然后同事生成您的升级步骤。 然后，同事可以指导您完成每个步骤并跟踪您的进度。
+
+* **Customer Journey Analytics中的升级指南：**&#x200B;请回答有关您的实施的问题，然后Customer Journey Analytics生成您的升级步骤。 每一步都由您自己跟踪。
+
+* **您的Adobe帐户团队：**&#x200B;如果您无权访问同事或Customer Journey Analytics，您的Adobe帐户团队可以指导您完成升级指南，并向您发送升级步骤。
+
+### 使用同事生成升级步骤
+
+如果您有权访问同事，则可以使用它来动态生成升级步骤：
+
+1. 在同事中，开始新聊天并请求同事帮助您规划从Adobe Analytics到Customer Journey Analytics的升级。 有关详细信息，请参阅[与同事一起规划实施](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/implementation-guide#adobe-analytics-to-customer-journey-analytics-upgrade){target="_blank"}。
+
+   同事会向您询问有关环境和目标的问题，然后生成一个特定于贵组织的升级计划。 该计划可用作交互式核对清单，其中包含每个步骤的所有者、工作估计和依赖关系。 您还可以以CSV、Jira、Workfront或Markdown文件的形式下载计划。
+
+1. 按照计划中的步骤升级到Customer Journey Analytics。
+
+   要跟踪每个步骤的进度，请将您的计划转换为同事项目。 有关详细信息，请参阅[生成同事项目的实施核对清单](https://experienceleague.adobe.com/zh-hans/docs/coworker/content/chat/use-cases/data-insights/intelligent-implementation-and-administration/intelligent-checklist){target="_blank"}。
+
+### 使用Customer Journey Analytics中的升级指南生成升级步骤
 
 要为您组织的独特情况动态生成升级步骤：
 
@@ -239,7 +271,7 @@ ht-degree: 90%
 
 1. 按照生成的分步说明升级到 Customer Journey Analytics。
 
-### 对于尚无法访问 Customer Journey Analytics 的客户
+### 与您的Adobe客户团队合作生成升级步骤
 
 要为您组织的独特情况动态生成升级步骤：
 
