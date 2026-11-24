@@ -281,7 +281,7 @@ Migration Planner可以标记以下类型的调查结果：
 
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
->title="字段组首选项"
+>title="字段组偏好设置"
 >abstract="选择标准字段组，以便尽可能使用 Adobe 已发布的字段组。 这有助于最大限度地确保一致性；如果没有可用的标准字段，则会改用租户自定义字段。<br/>选择自定义字段组，以便尽可能使用租户命名空间下的自定义字段。 这有助于最大限度地提高灵活性。"
 
 <!-- markdownlint-enable MD034 -->
